@@ -9,7 +9,7 @@ founder and hiring data, and presents everything through a polished dashboard.
 
 ## What This Is
 
-A pipeline + dashboard that tracks **800+ YC-backed companies**, their founders,
+A pipeline + dashboard that tracks **4200+ YC-backed companies**, their founders,
 open jobs, and funding data. The pipeline refreshes weekly via GitHub Actions;
 the dashboard reads the resulting JSON and renders a filterable, searchable grid
 with company detail pages.

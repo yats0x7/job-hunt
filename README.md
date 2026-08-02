@@ -3,7 +3,7 @@
 Automated pipeline that discovers startups from VC portfolios, enriches with
 founder and hiring data, and presents everything through a polished dashboard.
 
-![Dashboard](dashboard/dashboard_real.png)
+
 
 ---
 
@@ -167,6 +167,4 @@ Each company gets a score from 0.0 → 1.0 across 4 dimensions (0.25 each):
 - **Scheduling**: GitHub Actions (weekly cron)
 - **LLM**: Ollama (local, optional — `llama3.2:1b`)
 
-## License
 
-MIT

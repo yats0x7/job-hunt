@@ -40,6 +40,24 @@ ATS_SLUG_OVERRIDES: dict[str, dict[str, str]] = {
 }
 
 
+def _to_public_url(platform: str, slug: str) -> str | None:
+    """Convert ATS API slug to the human-visitable job board URL.
+
+    The API endpoint is only used to count jobs; clickable links must
+    point at public boards (boards.greenhouse.io, jobs.lever.co, etc.).
+    """
+    if not platform or not slug:
+        return None
+    public_url_patterns = {
+        "greenhouse": f"https://boards.greenhouse.io/{slug}",
+        "lever": f"https://jobs.lever.co/{slug}",
+        "ashby": f"https://jobs.ashbyhq.com/{slug}",
+        "workable": f"https://apply.workable.com/{slug}",
+        "smartrecruiters": f"https://jobs.smartrecruiters.com/{slug}",
+    }
+    return public_url_patterns.get(platform)
+
+
 logger = logging.getLogger(__name__)
 
 # ATS platform configurations
@@ -364,13 +382,23 @@ class JobResolver:
                 else:
                     return None
 
-            if company and count == 0 and getattr(company, 'is_hiring', False):
-                logger.debug(f"ATS API for {platform}/{slug} returned 0 jobs but company is hiring, skipping")
+            if company and count == 0 and getattr(company, "is_hiring", False):
+                logger.debug(
+                    f"ATS API for {platform}/{slug} returned 0 jobs but company is hiring, skipping"
+                )
+                return None
+
+            # Never expose api_url — it returns raw JSON, not a job board page.
+            public_url = _to_public_url(platform, slug)
+            if not public_url:
+                logger.debug(
+                    f"No public URL mapping for ATS platform={platform!r} slug={slug!r}"
+                )
                 return None
 
             return JobBoardResult(
                 count=count,
-                url=api_url.replace("/api/", "/").replace("api.", ""),
+                url=public_url,
                 source_type="ats_api",
                 ats_platform=platform,
             )

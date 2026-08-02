@@ -541,7 +541,7 @@ class JobResolver:
             ) as client:
                 base = company.website.rstrip("/")
 
-                for path in CAREER_PATHS:
+                for path in CAREER_URL_PATHS:
                     try:
                         response = await client.get(
                             f"{base}{path}", timeout=5.0

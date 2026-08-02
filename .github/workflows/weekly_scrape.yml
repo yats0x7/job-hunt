@@ -5,29 +5,42 @@
 #   python3 -m pipeline --source yc --hiring-only
 # The pipeline degrades gracefully — college field = null in CI runs,
 # all other fields (jobs, founders, company data) work fully.
+#
+# --no-founders in CI: Playwright browser scraping is slow/flaky on runners.
+# Founder photos stay in SQLite from previous local runs when present.
 
 name: Weekly Startup Data Refresh
 
 on:
   schedule:
-    - cron: '0 9 * * 1'  # Every Monday at 9am UTC
-  workflow_dispatch:       # Also allows manual trigger from GitHub UI
+    - cron: "0 9 * * 1" # Every Monday at 9am UTC
+  workflow_dispatch: # Manual trigger from GitHub UI
+
+permissions:
+  contents: write
+
+concurrency:
+  group: weekly-scrape-${{ github.ref }}
+  cancel-in-progress: false
 
 jobs:
   scrape:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
-    timeout-minutes: 60    # Kill if takes longer than 1 hour (something broke)
+    timeout-minutes: 60
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          # Required so subsequent git push can update the default branch
+          token: ${{ secrets.GITHUB_TOKEN }}
+          persist-credentials: true
+          fetch-depth: 0
 
       - name: Set up Python 3.11
         uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version: "3.11"
 
       - name: Cache pip dependencies
         uses: actions/cache@v4
@@ -37,29 +50,55 @@ jobs:
 
       - name: Install Python dependencies
         run: |
-          cd pipeline
-          pip install -r requirements.txt
+          python -m pip install --upgrade pip
+          pip install -r pipeline/requirements.txt
 
-      - name: Install Playwright browsers
-        run: |
-          cd pipeline
-          python -m playwright install chromium --with-deps
-
-      - name: Set up pipeline path
-        run: echo "PYTHONPATH=$GITHUB_WORKSPACE" >> $GITHUB_ENV
+      # Playwright not installed in CI: --no-founders skips browser enrichment.
 
       - name: Run pipeline
-        run: python3 -m pipeline --source yc --hiring-only --no-llm --no-founders
+        env:
+          PYTHONPATH: ${{ github.workspace }}
+        run: |
+          python -m pipeline --source yc --hiring-only --no-llm --no-founders
 
       - name: Copy data to dashboard
-        run: cp data/companies.json dashboard/public/companies.json
+        run: |
+          test -f data/companies.json
+          cp data/companies.json dashboard/public/companies.json
+          # Sanity: file non-empty and valid JSON with companies
+          python - <<'PY'
+          import json, pathlib, sys
+          p = pathlib.Path("dashboard/public/companies.json")
+          data = json.loads(p.read_text())
+          companies = data.get("companies") if isinstance(data, dict) else data
+          if not companies:
+              print("ERROR: companies.json has zero companies", file=sys.stderr)
+              sys.exit(1)
+          print(f"OK: {len(companies)} companies, {p.stat().st_size} bytes")
+          PY
 
       - name: Commit and push fresh data
-        run: |
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add data/companies.json dashboard/public/companies.json
-          git diff --staged --quiet || git commit -m "chore: weekly data refresh $(date -u '+%Y-%m-%d')"
-          git push
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # Use the Actions token for authenticated pushes
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          # Ensure we push with the job token (handles remotes without credentials)
+          git remote set-url origin "https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}.git"
+
+          git add data/companies.json dashboard/public/companies.json
+
+          if git diff --staged --quiet; then
+            echo "No data changes to commit."
+            exit 0
+          fi
+
+          git commit -m "chore: weekly data refresh $(date -u '+%Y-%m-%d')"
+
+          # Rebase onto latest main in case other commits landed during the scrape
+          git pull --rebase origin "${{ github.ref_name }}"
+          git push origin "HEAD:${{ github.ref_name }}"

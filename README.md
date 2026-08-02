@@ -4,7 +4,7 @@ Automated pipeline that discovers YC startups, enriches them with founder and hi
 
 **Live demo:** [https://job-hunt-self.vercel.app/](https://job-hunt-self.vercel.app/)
 
-![Dashboard](dashboard/dashboard_real.png)
+
 
 ---
 

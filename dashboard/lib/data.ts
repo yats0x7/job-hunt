@@ -28,6 +28,86 @@ export function normalizePhotoUrl(url: string | null | undefined): string | null
   }
 }
 
+/**
+ * Rewrite ATS API / mangled job URLs to human-clickable public boards.
+ * Old pipeline rewrites left values like:
+ *   https://greenhouse.io/v1/boards/{slug}/jobs
+ *   https://ashbyhq.com/posting-api/job-board/{slug}
+ * which 404 or dump JSON — fine on a re-scraped local DB, broken on Vercel.
+ */
+export function normalizeJobBoardUrl(
+  url: string | null | undefined,
+  platform?: string | null
+): string | null {
+  if (!url || typeof url !== "string") return null;
+  let trimmed = url.trim();
+  if (!trimmed) return null;
+
+  // Prefer platform from data when available
+  const plat = (platform || "").toLowerCase();
+
+  const patterns: Array<{ re: RegExp; platform: string }> = [
+    { re: /(?:api\.)?greenhouse\.io\/(?:v1\/)?boards\/([^/?#]+)/i, platform: "greenhouse" },
+    { re: /boards\.greenhouse\.io\/([^/?#]+)/i, platform: "greenhouse" },
+    { re: /(?:api\.)?lever\.co\/(?:v0\/)?postings\/([^/?#]+)/i, platform: "lever" },
+    { re: /jobs\.lever\.co\/([^/?#]+)/i, platform: "lever" },
+    { re: /(?:api\.)?ashbyhq\.com\/(?:posting-api\/)?job-board\/([^/?#]+)/i, platform: "ashby" },
+    { re: /jobs\.ashbyhq\.com\/([^/?#]+)/i, platform: "ashby" },
+    { re: /apply\.workable\.com\/([^/?#]+)/i, platform: "workable" },
+    { re: /(?:api\.)?smartrecruiters\.com\/(?:v1\/)?companies\/([^/?#]+)/i, platform: "smartrecruiters" },
+    { re: /jobs\.smartrecruiters\.com\/([^/?#]+)/i, platform: "smartrecruiters" },
+  ];
+
+  const publicOf: Record<string, (slug: string) => string> = {
+    greenhouse: (s) => `https://boards.greenhouse.io/${s}`,
+    lever: (s) => `https://jobs.lever.co/${s}`,
+    ashby: (s) => `https://jobs.ashbyhq.com/${s}`,
+    workable: (s) => `https://apply.workable.com/${s}`,
+    smartrecruiters: (s) => `https://jobs.smartrecruiters.com/${s}`,
+  };
+
+  for (const { re, platform: p } of patterns) {
+    const m = trimmed.match(re);
+    if (m?.[1]) {
+      const slug = m[1].replace(/\/+$/, "");
+      if (slug && publicOf[p]) return publicOf[p](slug);
+    }
+  }
+
+  // Platform known + last-path slug fallback for residual API shapes
+  if (plat && publicOf[plat]) {
+    try {
+      const parsed = new URL(trimmed);
+      const parts = parsed.pathname.split("/").filter(Boolean);
+      const slug = parts[parts.length - 1];
+      if (
+        slug &&
+        !["jobs", "postings", "api", "v1", "v0", "boards", "companies", "job-board"].includes(
+          slug.toLowerCase()
+        )
+      ) {
+        // Only rewrite when URL still looks like an API host/path
+        if (
+          parsed.hostname.includes("api.") ||
+          parsed.pathname.includes("/v1/") ||
+          parsed.pathname.includes("posting-api")
+        ) {
+          return publicOf[plat](slug);
+        }
+      }
+    } catch {
+      /* keep as-is */
+    }
+  }
+
+  // Prefer https for career links
+  if (trimmed.startsWith("http://")) {
+    trimmed = "https://" + trimmed.slice("http://".length);
+  }
+
+  return trimmed;
+}
+
 export async function getCompanyData(): Promise<CompanyData> {
   const emptyMetadata: DataMetadata = {
     exported_at: new Date().toISOString(),
@@ -105,12 +185,23 @@ export async function getCompanyData(): Promise<CompanyData> {
           };
         }),
         job_board: jobBoardRaw
-          ? {
-              count: typeof jobBoardRaw.count === "number" ? jobBoardRaw.count : null,
-              url: typeof jobBoardRaw.url === "string" ? jobBoardRaw.url : null,
-              source_type: (typeof jobBoardRaw.source_type === "string" ? jobBoardRaw.source_type : "manual_visit") as Company["job_board"] extends { source_type: infer S } ? S : never,
-              ats_platform: typeof jobBoardRaw.ats_platform === "string" ? jobBoardRaw.ats_platform : null,
-            }
+          ? (() => {
+              const ats_platform =
+                typeof jobBoardRaw.ats_platform === "string" ? jobBoardRaw.ats_platform : null;
+              return {
+                count: typeof jobBoardRaw.count === "number" ? jobBoardRaw.count : null,
+                url: normalizeJobBoardUrl(
+                  typeof jobBoardRaw.url === "string" ? jobBoardRaw.url : null,
+                  ats_platform
+                ),
+                source_type: (typeof jobBoardRaw.source_type === "string"
+                  ? jobBoardRaw.source_type
+                  : "manual_visit") as Company["job_board"] extends { source_type: infer S }
+                  ? S
+                  : never,
+                ats_platform,
+              };
+            })()
           : null,
         last_scraped: typeof c.last_scraped === "string" ? c.last_scraped : new Date().toISOString(),
         data_completeness: typeof c.data_completeness === "number" ? c.data_completeness : 0,

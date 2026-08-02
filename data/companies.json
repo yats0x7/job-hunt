@@ -1,10 +1,10 @@
 {
   "metadata": {
-    "exported_at": "2026-08-02T03:54:42.396951",
+    "exported_at": "2026-08-02T09:57:44.244350",
     "total_companies": 276,
     "avg_completeness": 0.99,
     "hiring_count": 276,
-    "last_updated": "2026-08-02T03:54:42.384247",
+    "last_updated": "2026-08-02T09:57:44.226635",
     "tier_breakdown": {
       "ats_api": 45,
       "html_heuristic": 21,
@@ -81,7 +81,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.368299",
+      "last_scraped": "2026-08-02T09:57:44.211149",
       "data_completeness": 1.0
     },
     {
@@ -143,7 +143,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.353450",
+      "last_scraped": "2026-08-02T09:57:44.195125",
       "data_completeness": 1.0
     },
     {
@@ -198,11 +198,11 @@
       ],
       "job_board": {
         "count": 13,
-        "url": "https://ashbyhq.com/posting-api/job-board/9-mothers",
+        "url": "https://jobs.ashbyhq.com/9-mothers",
         "source_type": "ats_api",
         "ats_platform": "ashby"
       },
-      "last_scraped": "2026-08-02T03:54:42.365113",
+      "last_scraped": "2026-08-02T09:57:44.208087",
       "data_completeness": 1.0
     },
     {
@@ -247,7 +247,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.358158",
+      "last_scraped": "2026-08-02T09:57:44.199644",
       "data_completeness": 1.0
     },
     {
@@ -301,7 +301,7 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.359802",
+      "last_scraped": "2026-08-02T09:57:44.202548",
       "data_completeness": 1.0
     },
     {
@@ -352,7 +352,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.367598",
+      "last_scraped": "2026-08-02T09:57:44.210589",
       "data_completeness": 1.0
     },
     {
@@ -402,7 +402,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.346076",
+      "last_scraped": "2026-08-02T09:57:44.186930",
       "data_completeness": 1.0
     },
     {
@@ -453,7 +453,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.378470",
+      "last_scraped": "2026-08-02T09:57:44.221325",
       "data_completeness": 1.0
     },
     {
@@ -509,11 +509,11 @@
       ],
       "job_board": {
         "count": 40,
-        "url": "https://greenhouse.io/v1/boards/algolia/jobs",
+        "url": "https://boards.greenhouse.io/algolia",
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T03:54:42.335519",
+      "last_scraped": "2026-08-02T09:57:44.175899",
       "data_completeness": 1.0
     },
     {
@@ -580,7 +580,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.375286",
+      "last_scraped": "2026-08-02T09:57:44.218146",
       "data_completeness": 1.0
     },
     {
@@ -635,11 +635,64 @@
       ],
       "job_board": {
         "count": null,
-        "url": "http://www.useandco.com/careers",
+        "url": "https://www.useandco.com/careers",
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.360244",
+      "last_scraped": "2026-08-02T09:57:44.203040",
+      "data_completeness": 1.0
+    },
+    {
+      "yc_id": 30890,
+      "name": "AnswerThis",
+      "slug": "answerthis",
+      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/7447a5f4c087378428be2bea5adcf3daf4a4e9e8.png",
+      "website": "https://answerthis.io/",
+      "location": "San Francisco, CA, USA",
+      "description": "End-to-end workspace to accelerate scientific discovery",
+      "long_description": "AnswerThis is a scientific discovery platform used by over 200,000 researchers that reduces weeks of manual research work to hours. \r\n\r\nInstead of manually searching, reading, and organizing dozens of papers, researchers use AnswerThis to find the most relevant work, see how ideas are connected, and get comprehensive answers to complex scientific questions with line by line answers. \r\n\r\nThis allows them to map research gaps, analyze trends, and draft literature reviews far faster, all while building a searchable library of their own research materials. ",
+      "industry": "Consumer",
+      "industries": [
+        "Consumer"
+      ],
+      "subindustry": "Consumer",
+      "batch": null,
+      "is_hiring": true,
+      "is_top_company": false,
+      "status": "Active",
+      "stage": "Early",
+      "team_size": 6,
+      "tags": [],
+      "regions": [
+        "United States of America",
+        "America / Canada",
+        "Remote",
+        "Partly Remote"
+      ],
+      "source_vc": "Y Combinator",
+      "founders": [
+        {
+          "name": "Ayush Garg",
+          "college": "Stanford University",
+          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/cd86db276bec92ff8fd4890d10f2cb50d92ba8a3.jpg",
+          "linkedin_url": "https://www.linkedin.com/in/ayush4921/",
+          "raw_bio": "Founder @ AnswerThis. Deeply passionate about accelerating humanity's scientific progress (and GTM & Tech!)"
+        },
+        {
+          "name": "Ryan McCarroll",
+          "college": "University College Dublin",
+          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/d9c981b3123b5b454b6ecfdc89ce9ef74a7908be.jpg",
+          "linkedin_url": "https://www.linkedin.com/in/ryan-mccarroll-/",
+          "raw_bio": "I’m Ryan McCarroll, CMO and co-founder of AnswerThis. I grew up in Northern Ireland and have built and scaled multiple ventures until joining AnswerThis. Speed up humanity's progress and research with stellar speed and accuracy with AnswerThis!"
+        }
+      ],
+      "job_board": {
+        "count": null,
+        "url": "https://answerthis.io/careers",
+        "source_type": "manual_visit",
+        "ats_platform": null
+      },
+      "last_scraped": "2026-08-02T09:57:44.218615",
       "data_completeness": 1.0
     },
     {
@@ -694,7 +747,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.371879",
+      "last_scraped": "2026-08-02T09:57:44.213626",
       "data_completeness": 1.0
     },
     {
@@ -755,11 +808,11 @@
       ],
       "job_board": {
         "count": null,
-        "url": "http://apollographql.com/careers",
+        "url": "https://apollographql.com/careers",
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.349715",
+      "last_scraped": "2026-08-02T09:57:44.191739",
       "data_completeness": 1.0
     },
     {
@@ -817,7 +870,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.350755",
+      "last_scraped": "2026-08-02T09:57:44.192782",
       "data_completeness": 1.0
     },
     {
@@ -873,7 +926,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.358969",
+      "last_scraped": "2026-08-02T09:57:44.200674",
       "data_completeness": 1.0
     },
     {
@@ -918,7 +971,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.358440",
+      "last_scraped": "2026-08-02T09:57:44.199970",
       "data_completeness": 1.0
     },
     {
@@ -970,7 +1023,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.357712",
+      "last_scraped": "2026-08-02T09:57:44.199206",
       "data_completeness": 1.0
     },
     {
@@ -1021,7 +1074,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.357181",
+      "last_scraped": "2026-08-02T09:57:44.198563",
       "data_completeness": 1.0
     },
     {
@@ -1075,7 +1128,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.358836",
+      "last_scraped": "2026-08-02T09:57:44.200494",
       "data_completeness": 1.0
     },
     {
@@ -1139,7 +1192,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.374203",
+      "last_scraped": "2026-08-02T09:57:44.215972",
       "data_completeness": 1.0
     },
     {
@@ -1186,7 +1239,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.368466",
+      "last_scraped": "2026-08-02T09:57:44.211320",
       "data_completeness": 1.0
     },
     {
@@ -1245,7 +1298,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.377464",
+      "last_scraped": "2026-08-02T09:57:44.220419",
       "data_completeness": 1.0
     },
     {
@@ -1296,7 +1349,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.356862",
+      "last_scraped": "2026-08-02T09:57:44.198277",
       "data_completeness": 1.0
     },
     {
@@ -1357,7 +1410,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.376223",
+      "last_scraped": "2026-08-02T09:57:44.219124",
       "data_completeness": 1.0
     },
     {
@@ -1402,7 +1455,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.362892",
+      "last_scraped": "2026-08-02T09:57:44.205830",
       "data_completeness": 1.0
     },
     {
@@ -1448,7 +1501,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.379682",
+      "last_scraped": "2026-08-02T09:57:44.222873",
       "data_completeness": 1.0
     },
     {
@@ -1507,7 +1560,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.363902",
+      "last_scraped": "2026-08-02T09:57:44.206826",
       "data_completeness": 1.0
     },
     {
@@ -1558,7 +1611,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.358286",
+      "last_scraped": "2026-08-02T09:57:44.199774",
       "data_completeness": 1.0
     },
     {
@@ -1618,11 +1671,11 @@
       ],
       "job_board": {
         "count": 9,
-        "url": "https://greenhouse.io/v1/boards/bitmovin/jobs",
+        "url": "https://boards.greenhouse.io/bitmovin",
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T03:54:42.344899",
+      "last_scraped": "2026-08-02T09:57:44.185797",
       "data_completeness": 1.0
     },
     {
@@ -1672,7 +1725,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.353991",
+      "last_scraped": "2026-08-02T09:57:44.195768",
       "data_completeness": 1.0
     },
     {
@@ -1730,7 +1783,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.377739",
+      "last_scraped": "2026-08-02T09:57:44.220650",
       "data_completeness": 1.0
     },
     {
@@ -1781,7 +1834,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.363481",
+      "last_scraped": "2026-08-02T09:57:44.206431",
       "data_completeness": 1.0
     },
     {
@@ -1829,7 +1882,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.346398",
+      "last_scraped": "2026-08-02T09:57:44.187252",
       "data_completeness": 1.0
     },
     {
@@ -1886,7 +1939,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.374881",
+      "last_scraped": "2026-08-02T09:57:44.217664",
       "data_completeness": 1.0
     },
     {
@@ -1943,7 +1996,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.378623",
+      "last_scraped": "2026-08-02T09:57:44.221479",
       "data_completeness": 1.0
     },
     {
@@ -1995,7 +2048,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.378025",
+      "last_scraped": "2026-08-02T09:57:44.220890",
       "data_completeness": 1.0
     },
     {
@@ -2045,7 +2098,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.352700",
+      "last_scraped": "2026-08-02T09:57:44.194260",
       "data_completeness": 1.0
     },
     {
@@ -2110,7 +2163,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.354437",
+      "last_scraped": "2026-08-02T09:57:44.196798",
       "data_completeness": 1.0
     },
     {
@@ -2164,7 +2217,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.360097",
+      "last_scraped": "2026-08-02T09:57:44.202858",
       "data_completeness": 1.0
     },
     {
@@ -2206,11 +2259,11 @@
       ],
       "job_board": {
         "count": null,
-        "url": "http://www.cambly.com/careers",
+        "url": "https://www.cambly.com/careers",
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.350603",
+      "last_scraped": "2026-08-02T09:57:44.192657",
       "data_completeness": 1.0
     },
     {
@@ -2261,7 +2314,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.365960",
+      "last_scraped": "2026-08-02T09:57:44.208874",
       "data_completeness": 1.0
     },
     {
@@ -2312,7 +2365,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.362445",
+      "last_scraped": "2026-08-02T09:57:44.205395",
       "data_completeness": 1.0
     },
     {
@@ -2364,7 +2417,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.371110",
+      "last_scraped": "2026-08-02T09:57:44.212688",
       "data_completeness": 1.0
     },
     {
@@ -2416,7 +2469,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.368135",
+      "last_scraped": "2026-08-02T09:57:44.211038",
       "data_completeness": 1.0
     },
     {
@@ -2470,7 +2523,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.357559",
+      "last_scraped": "2026-08-02T09:57:44.199006",
       "data_completeness": 1.0
     },
     {
@@ -2521,7 +2574,7 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.364073",
+      "last_scraped": "2026-08-02T09:57:44.206997",
       "data_completeness": 1.0
     },
     {
@@ -2577,11 +2630,11 @@
       ],
       "job_board": {
         "count": 55,
-        "url": "https://greenhouse.io/v1/boards/checkr/jobs",
+        "url": "https://boards.greenhouse.io/checkr",
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T03:54:42.337944",
+      "last_scraped": "2026-08-02T09:57:44.178025",
       "data_completeness": 1.0
     },
     {
@@ -2634,7 +2687,7 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.351936",
+      "last_scraped": "2026-08-02T09:57:44.193531",
       "data_completeness": 1.0
     },
     {
@@ -2689,11 +2742,11 @@
       ],
       "job_board": {
         "count": null,
-        "url": "http://askclara.com/careers",
+        "url": "https://askclara.com/careers",
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.370833",
+      "last_scraped": "2026-08-02T09:57:44.212432",
       "data_completeness": 1.0
     },
     {
@@ -2750,7 +2803,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.371636",
+      "last_scraped": "2026-08-02T09:57:44.213293",
       "data_completeness": 1.0
     },
     {
@@ -2797,11 +2850,11 @@
       ],
       "job_board": {
         "count": 32,
-        "url": "https://ashbyhq.com/posting-api/job-board/clipboard",
+        "url": "https://jobs.ashbyhq.com/clipboard",
         "source_type": "ats_api",
         "ats_platform": "ashby"
       },
-      "last_scraped": "2026-08-02T03:54:42.338152",
+      "last_scraped": "2026-08-02T09:57:44.178273",
       "data_completeness": 1.0
     },
     {
@@ -2862,7 +2915,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.359389",
+      "last_scraped": "2026-08-02T09:57:44.202129",
       "data_completeness": 1.0
     },
     {
@@ -2918,7 +2971,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.381529",
+      "last_scraped": "2026-08-02T09:57:44.224945",
       "data_completeness": 1.0
     },
     {
@@ -2970,7 +3023,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.376773",
+      "last_scraped": "2026-08-02T09:57:44.219749",
       "data_completeness": 1.0
     },
     {
@@ -3017,7 +3070,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.367873",
+      "last_scraped": "2026-08-02T09:57:44.210806",
       "data_completeness": 1.0
     },
     {
@@ -3065,11 +3118,11 @@
       ],
       "job_board": {
         "count": 4,
-        "url": "https://ashbyhq.com/posting-api/job-board/dayjob-ai",
+        "url": "https://jobs.ashbyhq.com/dayjob-ai",
         "source_type": "ats_api",
         "ats_platform": "ashby"
       },
-      "last_scraped": "2026-08-02T03:54:42.361225",
+      "last_scraped": "2026-08-02T09:57:44.204122",
       "data_completeness": 1.0
     },
     {
@@ -3129,7 +3182,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.338548",
+      "last_scraped": "2026-08-02T09:57:44.178489",
       "data_completeness": 1.0
     },
     {
@@ -3180,7 +3233,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.377317",
+      "last_scraped": "2026-08-02T09:57:44.220279",
       "data_completeness": 1.0
     },
     {
@@ -3234,7 +3287,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.370400",
+      "last_scraped": "2026-08-02T09:57:44.212052",
       "data_completeness": 1.0
     },
     {
@@ -3292,7 +3345,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.379021",
+      "last_scraped": "2026-08-02T09:57:44.222005",
       "data_completeness": 1.0
     },
     {
@@ -3348,7 +3401,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.372148",
+      "last_scraped": "2026-08-02T09:57:44.213877",
       "data_completeness": 1.0
     },
     {
@@ -3398,11 +3451,11 @@
       ],
       "job_board": {
         "count": 3,
-        "url": "https://greenhouse.io/v1/boards/dispatch/jobs",
+        "url": "https://boards.greenhouse.io/dispatch",
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T03:54:42.362726",
+      "last_scraped": "2026-08-02T09:57:44.205660",
       "data_completeness": 1.0
     },
     {
@@ -3446,11 +3499,11 @@
       ],
       "job_board": {
         "count": null,
-        "url": "http://dripcapital.com/careers",
+        "url": "https://dripcapital.com/careers",
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.345757",
+      "last_scraped": "2026-08-02T09:57:44.186626",
       "data_completeness": 1.0
     },
     {
@@ -3502,7 +3555,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.357994",
+      "last_scraped": "2026-08-02T09:57:44.199522",
       "data_completeness": 1.0
     },
     {
@@ -3562,11 +3615,11 @@
       ],
       "job_board": {
         "count": null,
-        "url": "http://eightsleep.com/careers",
+        "url": "https://eightsleep.com/careers",
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.344571",
+      "last_scraped": "2026-08-02T09:57:44.185516",
       "data_completeness": 1.0
     },
     {
@@ -3613,7 +3666,7 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.352390",
+      "last_scraped": "2026-08-02T09:57:44.193973",
       "data_completeness": 1.0
     },
     {
@@ -3658,7 +3711,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.372998",
+      "last_scraped": "2026-08-02T09:57:44.214735",
       "data_completeness": 1.0
     },
     {
@@ -3703,11 +3756,11 @@
       ],
       "job_board": {
         "count": 12,
-        "url": "https://ashbyhq.com/posting-api/job-board/f2-ai",
+        "url": "https://jobs.ashbyhq.com/f2-ai",
         "source_type": "ats_api",
         "ats_platform": "ashby"
       },
-      "last_scraped": "2026-08-02T03:54:42.378748",
+      "last_scraped": "2026-08-02T09:57:44.221659",
       "data_completeness": 1.0
     },
     {
@@ -3767,11 +3820,11 @@
       ],
       "job_board": {
         "count": 72,
-        "url": "https://greenhouse.io/v1/boards/faire/jobs",
+        "url": "https://boards.greenhouse.io/faire",
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T03:54:42.338975",
+      "last_scraped": "2026-08-02T09:57:44.178748",
       "data_completeness": 1.0
     },
     {
@@ -3827,7 +3880,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.365545",
+      "last_scraped": "2026-08-02T09:57:44.208486",
       "data_completeness": 1.0
     },
     {
@@ -3888,11 +3941,11 @@
       ],
       "job_board": {
         "count": 7,
-        "url": "https://ashbyhq.com/posting-api/job-board/finto",
+        "url": "https://jobs.ashbyhq.com/finto",
         "source_type": "ats_api",
         "ats_platform": "ashby"
       },
-      "last_scraped": "2026-08-02T03:54:42.383494",
+      "last_scraped": "2026-08-02T09:57:44.226133",
       "data_completeness": 1.0
     },
     {
@@ -3949,7 +4002,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.380692",
+      "last_scraped": "2026-08-02T09:57:44.224114",
       "data_completeness": 1.0
     },
     {
@@ -3996,11 +4049,11 @@
       ],
       "job_board": {
         "count": 152,
-        "url": "https://greenhouse.io/v1/boards/flexport/jobs",
+        "url": "https://boards.greenhouse.io/flexport",
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T03:54:42.339170",
+      "last_scraped": "2026-08-02T09:57:44.178941",
       "data_completeness": 1.0
     },
     {
@@ -4057,7 +4110,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.375968",
+      "last_scraped": "2026-08-02T09:57:44.218839",
       "data_completeness": 1.0
     },
     {
@@ -4115,7 +4168,7 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.339379",
+      "last_scraped": "2026-08-02T09:57:44.179238",
       "data_completeness": 1.0
     },
     {
@@ -4172,7 +4225,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.381979",
+      "last_scraped": "2026-08-02T09:57:44.225316",
       "data_completeness": 1.0
     },
     {
@@ -4231,7 +4284,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.363738",
+      "last_scraped": "2026-08-02T09:57:44.206703",
       "data_completeness": 1.0
     },
     {
@@ -4282,63 +4335,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.379397",
-      "data_completeness": 1.0
-    },
-    {
-      "yc_id": 168,
-      "name": "GOAT Group",
-      "slug": "goat-group",
-      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/4f3a455935f36a6655742aae286b206df1cd13bd.png",
-      "website": "https://www.goatgroup.com/",
-      "location": "Los Angeles, CA, USA",
-      "description": "Platform for the greatest products from the past, present and future.",
-      "long_description": "GOAT Group represents the leading platforms for authentic sneakers, apparel and accessories. Operating four distinct brands–GOAT, Flight Club, Grailed and alias–GOAT Group has a global community of over 50M members across 170 countries.\r\n\r\nWe are backed by some of the leading names in venture capital including Accel Partners, Andreessen Horowitz, Index Ventures, Matrix Partners, NEA, SV Angel, Upfront Ventures, Webb Investment Network and Y Combinator.",
-      "industry": "Consumer",
-      "industries": [
-        "Consumer",
-        "Apparel and Cosmetics"
-      ],
-      "subindustry": "Consumer -> Apparel and Cosmetics",
-      "batch": null,
-      "is_hiring": true,
-      "is_top_company": true,
-      "status": "Active",
-      "stage": "Growth",
-      "team_size": 1600,
-      "tags": [
-        "Marketplace"
-      ],
-      "regions": [
-        "United States of America",
-        "America / Canada",
-        "Remote",
-        "Partly Remote"
-      ],
-      "source_vc": "Y Combinator",
-      "founders": [
-        {
-          "name": "Eddy Lu",
-          "college": null,
-          "photo_url": null,
-          "linkedin_url": "https://www.linkedin.com/in/eddylu/",
-          "raw_bio": null
-        },
-        {
-          "name": "Daishin Sugano",
-          "college": null,
-          "photo_url": null,
-          "linkedin_url": "https://www.linkedin.com/in/sensugano",
-          "raw_bio": null
-        }
-      ],
-      "job_board": {
-        "count": 24,
-        "url": "https://greenhouse.io/v1/boards/goatgroup/jobs",
-        "source_type": "ats_api",
-        "ats_platform": "greenhouse"
-      },
-      "last_scraped": "2026-08-02T03:54:42.339962",
+      "last_scraped": "2026-08-02T09:57:44.222428",
       "data_completeness": 1.0
     },
     {
@@ -4388,7 +4385,7 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.346709",
+      "last_scraped": "2026-08-02T09:57:44.187630",
       "data_completeness": 1.0
     },
     {
@@ -4433,7 +4430,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.372751",
+      "last_scraped": "2026-08-02T09:57:44.214458",
       "data_completeness": 1.0
     },
     {
@@ -4487,11 +4484,11 @@
       ],
       "job_board": {
         "count": 12,
-        "url": "https://greenhouse.io/v1/boards/givecampus/jobs",
+        "url": "https://boards.greenhouse.io/givecampus",
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T03:54:42.345574",
+      "last_scraped": "2026-08-02T09:57:44.186489",
       "data_completeness": 1.0
     },
     {
@@ -4545,11 +4542,11 @@
       ],
       "job_board": {
         "count": null,
-        "url": "http://giveffect.com/careers",
+        "url": "https://giveffect.com/careers",
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.348751",
+      "last_scraped": "2026-08-02T09:57:44.189315",
       "data_completeness": 1.0
     },
     {
@@ -4621,7 +4618,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.339735",
+      "last_scraped": "2026-08-02T09:57:44.179492",
       "data_completeness": 1.0
     },
     {
@@ -4682,7 +4679,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.359924",
+      "last_scraped": "2026-08-02T09:57:44.202660",
       "data_completeness": 1.0
     },
     {
@@ -4746,7 +4743,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.351011",
+      "last_scraped": "2026-08-02T09:57:44.193061",
       "data_completeness": 1.0
     },
     {
@@ -4807,11 +4804,11 @@
       ],
       "job_board": {
         "count": 85,
-        "url": "https://greenhouse.io/v1/boards/gusto/jobs",
+        "url": "https://boards.greenhouse.io/gusto",
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T03:54:42.340340",
+      "last_scraped": "2026-08-02T09:57:44.180153",
       "data_completeness": 1.0
     },
     {
@@ -4917,11 +4914,11 @@
       ],
       "job_board": {
         "count": 33,
-        "url": "https://greenhouse.io/v1/boards/hackerrank/jobs",
+        "url": "https://boards.greenhouse.io/hackerrank",
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T03:54:42.349554",
+      "last_scraped": "2026-08-02T09:57:44.191575",
       "data_completeness": 1.0
     },
     {
@@ -4978,7 +4975,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.362312",
+      "last_scraped": "2026-08-02T09:57:44.205248",
       "data_completeness": 1.0
     },
     {
@@ -5030,7 +5027,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.381238",
+      "last_scraped": "2026-08-02T09:57:44.224634",
       "data_completeness": 1.0
     },
     {
@@ -5085,11 +5082,11 @@
       ],
       "job_board": {
         "count": 18,
-        "url": "https://greenhouse.io/v1/boards/hive/jobs",
+        "url": "https://boards.greenhouse.io/hive",
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T03:54:42.349869",
+      "last_scraped": "2026-08-02T09:57:44.191894",
       "data_completeness": 1.0
     },
     {
@@ -5149,7 +5146,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.360960",
+      "last_scraped": "2026-08-02T09:57:44.203822",
       "data_completeness": 1.0
     },
     {
@@ -5211,11 +5208,11 @@
       ],
       "job_board": {
         "count": 10,
-        "url": "https://ashbyhq.com/posting-api/job-board/humanarchive",
+        "url": "https://jobs.ashbyhq.com/humanarchive",
         "source_type": "ats_api",
         "ats_platform": "ashby"
       },
-      "last_scraped": "2026-08-02T03:54:42.364806",
+      "last_scraped": "2026-08-02T09:57:44.207756",
       "data_completeness": 1.0
     },
     {
@@ -5271,11 +5268,11 @@
       ],
       "job_board": {
         "count": 64,
-        "url": "https://greenhouse.io/v1/boards/humaninterest/jobs",
+        "url": "https://boards.greenhouse.io/humaninterest",
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T03:54:42.344428",
+      "last_scraped": "2026-08-02T09:57:44.185380",
       "data_completeness": 1.0
     },
     {
@@ -5329,7 +5326,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.356471",
+      "last_scraped": "2026-08-02T09:57:44.197843",
       "data_completeness": 1.0
     },
     {
@@ -5376,11 +5373,11 @@
       ],
       "job_board": {
         "count": 1,
-        "url": "https://ashbyhq.com/posting-api/job-board/hypercubic",
+        "url": "https://jobs.ashbyhq.com/hypercubic",
         "source_type": "ats_api",
         "ats_platform": "ashby"
       },
-      "last_scraped": "2026-08-02T03:54:42.376654",
+      "last_scraped": "2026-08-02T09:57:44.219600",
       "data_completeness": 1.0
     },
     {
@@ -5439,7 +5436,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.377616",
+      "last_scraped": "2026-08-02T09:57:44.220534",
       "data_completeness": 1.0
     },
     {
@@ -5484,11 +5481,11 @@
       ],
       "job_board": {
         "count": 27,
-        "url": "https://greenhouse.io/v1/boards/icarus/jobs",
+        "url": "https://boards.greenhouse.io/icarus",
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T03:54:42.373245",
+      "last_scraped": "2026-08-02T09:57:44.214993",
       "data_completeness": 1.0
     },
     {
@@ -5549,7 +5546,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.381832",
+      "last_scraped": "2026-08-02T09:57:44.225206",
       "data_completeness": 1.0
     },
     {
@@ -5606,7 +5603,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.374487",
+      "last_scraped": "2026-08-02T09:57:44.216269",
       "data_completeness": 1.0
     },
     {
@@ -5657,7 +5654,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.370557",
+      "last_scraped": "2026-08-02T09:57:44.212192",
       "data_completeness": 1.0
     },
     {
@@ -5709,7 +5706,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.352241",
+      "last_scraped": "2026-08-02T09:57:44.193847",
       "data_completeness": 1.0
     },
     {
@@ -5754,11 +5751,11 @@
       ],
       "job_board": {
         "count": 47,
-        "url": "https://greenhouse.io/v1/boards/instawork/jobs",
+        "url": "https://boards.greenhouse.io/instawork",
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T03:54:42.344747",
+      "last_scraped": "2026-08-02T09:57:44.185660",
       "data_completeness": 1.0
     },
     {
@@ -5810,7 +5807,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.356619",
+      "last_scraped": "2026-08-02T09:57:44.197981",
       "data_completeness": 1.0
     },
     {
@@ -5859,7 +5856,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.380280",
+      "last_scraped": "2026-08-02T09:57:44.223685",
       "data_completeness": 1.0
     },
     {
@@ -5905,11 +5902,11 @@
       ],
       "job_board": {
         "count": null,
-        "url": "http://ironcladapp.com/careers",
+        "url": "https://ironcladapp.com/careers",
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.347007",
+      "last_scraped": "2026-08-02T09:57:44.188015",
       "data_completeness": 1.0
     },
     {
@@ -5967,7 +5964,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.372850",
+      "last_scraped": "2026-08-02T09:57:44.214564",
       "data_completeness": 1.0
     },
     {
@@ -6019,7 +6016,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.360666",
+      "last_scraped": "2026-08-02T09:57:44.203452",
       "data_completeness": 1.0
     },
     {
@@ -6065,7 +6062,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.380957",
+      "last_scraped": "2026-08-02T09:57:44.224420",
       "data_completeness": 1.0
     },
     {
@@ -6116,7 +6113,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.373646",
+      "last_scraped": "2026-08-02T09:57:44.215367",
       "data_completeness": 1.0
     },
     {
@@ -6163,7 +6160,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.360524",
+      "last_scraped": "2026-08-02T09:57:44.203333",
       "data_completeness": 1.0
     },
     {
@@ -6222,7 +6219,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.360800",
+      "last_scraped": "2026-08-02T09:57:44.203582",
       "data_completeness": 1.0
     },
     {
@@ -6282,7 +6279,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.377025",
+      "last_scraped": "2026-08-02T09:57:44.220013",
       "data_completeness": 1.0
     },
     {
@@ -6334,7 +6331,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.358543",
+      "last_scraped": "2026-08-02T09:57:44.200090",
       "data_completeness": 1.0
     },
     {
@@ -6397,7 +6394,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.352997",
+      "last_scraped": "2026-08-02T09:57:44.194505",
       "data_completeness": 1.0
     },
     {
@@ -6455,7 +6452,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.368600",
+      "last_scraped": "2026-08-02T09:57:44.211423",
       "data_completeness": 1.0
     },
     {
@@ -6507,11 +6504,11 @@
       ],
       "job_board": {
         "count": 7,
-        "url": "https://greenhouse.io/v1/boards/lattice/jobs",
+        "url": "https://boards.greenhouse.io/lattice",
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T03:54:42.344091",
+      "last_scraped": "2026-08-02T09:57:44.184948",
       "data_completeness": 1.0
     },
     {
@@ -6569,7 +6566,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.374609",
+      "last_scraped": "2026-08-02T09:57:44.217381",
       "data_completeness": 1.0
     },
     {
@@ -6634,7 +6631,7 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.372304",
+      "last_scraped": "2026-08-02T09:57:44.214038",
       "data_completeness": 1.0
     },
     {
@@ -6693,7 +6690,7 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.361475",
+      "last_scraped": "2026-08-02T09:57:44.204378",
       "data_completeness": 1.0
     },
     {
@@ -6745,7 +6742,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.381392",
+      "last_scraped": "2026-08-02T09:57:44.224788",
       "data_completeness": 1.0
     },
     {
@@ -6792,7 +6789,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.353298",
+      "last_scraped": "2026-08-02T09:57:44.194797",
       "data_completeness": 1.0
     },
     {
@@ -6845,7 +6842,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.373767",
+      "last_scraped": "2026-08-02T09:57:44.215502",
       "data_completeness": 1.0
     },
     {
@@ -6897,11 +6894,11 @@
       ],
       "job_board": {
         "count": null,
-        "url": "http://lugg.com/careers",
+        "url": "https://lugg.com/careers",
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.347829",
+      "last_scraped": "2026-08-02T09:57:44.188152",
       "data_completeness": 1.0
     },
     {
@@ -6953,7 +6950,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.359639",
+      "last_scraped": "2026-08-02T09:57:44.202401",
       "data_completeness": 1.0
     },
     {
@@ -7030,7 +7027,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.349201",
+      "last_scraped": "2026-08-02T09:57:44.189807",
       "data_completeness": 1.0
     },
     {
@@ -7082,7 +7079,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.380545",
+      "last_scraped": "2026-08-02T09:57:44.223943",
       "data_completeness": 1.0
     },
     {
@@ -7136,7 +7133,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.357017",
+      "last_scraped": "2026-08-02T09:57:44.198423",
       "data_completeness": 1.0
     },
     {
@@ -7177,11 +7174,11 @@
       ],
       "job_board": {
         "count": 6,
-        "url": "https://greenhouse.io/v1/boards/mantis/jobs",
+        "url": "https://boards.greenhouse.io/mantis",
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T03:54:42.371241",
+      "last_scraped": "2026-08-02T09:57:44.212867",
       "data_completeness": 1.0
     },
     {
@@ -7239,7 +7236,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.383828",
+      "last_scraped": "2026-08-02T09:57:44.226396",
       "data_completeness": 1.0
     },
     {
@@ -7295,11 +7292,11 @@
       ],
       "job_board": {
         "count": 19,
-        "url": "https://lever.co/v0/postings/mashgin",
+        "url": "https://jobs.lever.co/mashgin",
         "source_type": "ats_api",
         "ats_platform": "lever"
       },
-      "last_scraped": "2026-08-02T03:54:42.347971",
+      "last_scraped": "2026-08-02T09:57:44.188411",
       "data_completeness": 1.0
     },
     {
@@ -7345,11 +7342,11 @@
       ],
       "job_board": {
         "count": null,
-        "url": "http://www.bymason.com/careers",
+        "url": "https://www.bymason.com/careers",
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.342947",
+      "last_scraped": "2026-08-02T09:57:44.183612",
       "data_completeness": 1.0
     },
     {
@@ -7410,7 +7407,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.365388",
+      "last_scraped": "2026-08-02T09:57:44.208316",
       "data_completeness": 1.0
     },
     {
@@ -7456,7 +7453,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.373515",
+      "last_scraped": "2026-08-02T09:57:44.215261",
       "data_completeness": 1.0
     },
     {
@@ -7510,7 +7507,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.359118",
+      "last_scraped": "2026-08-02T09:57:44.200863",
       "data_completeness": 1.0
     },
     {
@@ -7562,7 +7559,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.382405",
+      "last_scraped": "2026-08-02T09:57:44.225870",
       "data_completeness": 1.0
     },
     {
@@ -7614,7 +7611,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.363183",
+      "last_scraped": "2026-08-02T09:57:44.206154",
       "data_completeness": 1.0
     },
     {
@@ -7664,11 +7661,11 @@
       ],
       "job_board": {
         "count": null,
-        "url": "http://moritzlegal.com/careers",
+        "url": "https://moritzlegal.com/careers",
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.367345",
+      "last_scraped": "2026-08-02T09:57:44.210374",
       "data_completeness": 1.0
     },
     {
@@ -7725,7 +7722,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.371490",
+      "last_scraped": "2026-08-02T09:57:44.213129",
       "data_completeness": 1.0
     },
     {
@@ -7770,7 +7767,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.375148",
+      "last_scraped": "2026-08-02T09:57:44.217970",
       "data_completeness": 1.0
     },
     {
@@ -7838,11 +7835,11 @@
       ],
       "job_board": {
         "count": null,
-        "url": "http://mux.com/careers",
+        "url": "https://mux.com/careers",
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.344229",
+      "last_scraped": "2026-08-02T09:57:44.185083",
       "data_completeness": 1.0
     },
     {
@@ -7895,7 +7892,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.380000",
+      "last_scraped": "2026-08-02T09:57:44.223355",
       "data_completeness": 1.0
     },
     {
@@ -7947,7 +7944,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.381684",
+      "last_scraped": "2026-08-02T09:57:44.225098",
       "data_completeness": 1.0
     },
     {
@@ -7998,7 +7995,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.376507",
+      "last_scraped": "2026-08-02T09:57:44.219452",
       "data_completeness": 1.0
     },
     {
@@ -8055,7 +8052,7 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.346863",
+      "last_scraped": "2026-08-02T09:57:44.187777",
       "data_completeness": 1.0
     },
     {
@@ -8111,7 +8108,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.361351",
+      "last_scraped": "2026-08-02T09:57:44.204242",
       "data_completeness": 1.0
     },
     {
@@ -8155,11 +8152,11 @@
       ],
       "job_board": {
         "count": null,
-        "url": "http://noorahealth.org/careers",
+        "url": "https://noorahealth.org/careers",
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.350448",
+      "last_scraped": "2026-08-02T09:57:44.192474",
       "data_completeness": 1.0
     },
     {
@@ -8203,7 +8200,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.383978",
+      "last_scraped": "2026-08-02T09:57:44.226533",
       "data_completeness": 1.0
     },
     {
@@ -8246,11 +8243,11 @@
       ],
       "job_board": {
         "count": 13,
-        "url": "https://ashbyhq.com/posting-api/job-board/nox-metals",
+        "url": "https://jobs.ashbyhq.com/nox-metals",
         "source_type": "ats_api",
         "ats_platform": "ashby"
       },
-      "last_scraped": "2026-08-02T03:54:42.378881",
+      "last_scraped": "2026-08-02T09:57:44.221851",
       "data_completeness": 1.0
     },
     {
@@ -8307,7 +8304,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.382134",
+      "last_scraped": "2026-08-02T09:57:44.225476",
       "data_completeness": 1.0
     },
     {
@@ -8352,11 +8349,11 @@
       ],
       "job_board": {
         "count": 23,
-        "url": "https://greenhouse.io/v1/boards/odeko/jobs",
+        "url": "https://boards.greenhouse.io/odeko",
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T03:54:42.340548",
+      "last_scraped": "2026-08-02T09:57:44.180428",
       "data_completeness": 1.0
     },
     {
@@ -8408,7 +8405,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.370219",
+      "last_scraped": "2026-08-02T09:57:44.211903",
       "data_completeness": 1.0
     },
     {
@@ -8468,7 +8465,7 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.349051",
+      "last_scraped": "2026-08-02T09:57:44.189599",
       "data_completeness": 1.0
     },
     {
@@ -8517,7 +8514,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.353791",
+      "last_scraped": "2026-08-02T09:57:44.195614",
       "data_completeness": 1.0
     },
     {
@@ -8558,11 +8555,11 @@
       ],
       "job_board": {
         "count": 14,
-        "url": "https://greenhouse.io/v1/boards/openwork/jobs",
+        "url": "https://boards.greenhouse.io/openwork",
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T03:54:42.357839",
+      "last_scraped": "2026-08-02T09:57:44.199400",
       "data_completeness": 1.0
     },
     {
@@ -8610,7 +8607,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.353630",
+      "last_scraped": "2026-08-02T09:57:44.195476",
       "data_completeness": 1.0
     },
     {
@@ -8660,7 +8657,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.352554",
+      "last_scraped": "2026-08-02T09:57:44.194096",
       "data_completeness": 1.0
     },
     {
@@ -8719,7 +8716,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.366395",
+      "last_scraped": "2026-08-02T09:57:44.209380",
       "data_completeness": 1.0
     },
     {
@@ -8768,7 +8765,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.355712",
+      "last_scraped": "2026-08-02T09:57:44.197330",
       "data_completeness": 1.0
     },
     {
@@ -8829,7 +8826,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.377864",
+      "last_scraped": "2026-08-02T09:57:44.220771",
       "data_completeness": 1.0
     },
     {
@@ -8881,7 +8878,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.366241",
+      "last_scraped": "2026-08-02T09:57:44.209227",
       "data_completeness": 1.0
     },
     {
@@ -8932,7 +8929,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.370699",
+      "last_scraped": "2026-08-02T09:57:44.212301",
       "data_completeness": 1.0
     },
     {
@@ -8983,7 +8980,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.362060",
+      "last_scraped": "2026-08-02T09:57:44.204909",
       "data_completeness": 1.0
     },
     {
@@ -9035,7 +9032,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.384099",
+      "last_scraped": "2026-08-02T09:57:44.226635",
       "data_completeness": 1.0
     },
     {
@@ -9092,7 +9089,7 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.380415",
+      "last_scraped": "2026-08-02T09:57:44.223807",
       "data_completeness": 1.0
     },
     {
@@ -9151,7 +9148,7 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.350008",
+      "last_scraped": "2026-08-02T09:57:44.192047",
       "data_completeness": 1.0
     },
     {
@@ -9207,7 +9204,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.350291",
+      "last_scraped": "2026-08-02T09:57:44.192321",
       "data_completeness": 1.0
     },
     {
@@ -9264,7 +9261,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.368010",
+      "last_scraped": "2026-08-02T09:57:44.210927",
       "data_completeness": 1.0
     },
     {
@@ -9310,7 +9307,7 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.370978",
+      "last_scraped": "2026-08-02T09:57:44.212581",
       "data_completeness": 1.0
     },
     {
@@ -9363,7 +9360,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.364521",
+      "last_scraped": "2026-08-02T09:57:44.207434",
       "data_completeness": 1.0
     },
     {
@@ -9422,7 +9419,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.340680",
+      "last_scraped": "2026-08-02T09:57:44.181083",
       "data_completeness": 1.0
     },
     {
@@ -9473,7 +9470,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.364366",
+      "last_scraped": "2026-08-02T09:57:44.207322",
       "data_completeness": 1.0
     },
     {
@@ -9530,7 +9527,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.382545",
+      "last_scraped": "2026-08-02T09:57:44.226018",
       "data_completeness": 1.0
     },
     {
@@ -9582,7 +9579,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.359524",
+      "last_scraped": "2026-08-02T09:57:44.202288",
       "data_completeness": 1.0
     },
     {
@@ -9634,7 +9631,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.366530",
+      "last_scraped": "2026-08-02T09:57:44.209555",
       "data_completeness": 1.0
     },
     {
@@ -9688,11 +9685,11 @@
       ],
       "job_board": {
         "count": 2,
-        "url": "https://lever.co/v0/postings/quartzy",
+        "url": "https://jobs.lever.co/quartzy",
         "source_type": "ats_api",
         "ats_platform": "lever"
       },
-      "last_scraped": "2026-08-02T03:54:42.348125",
+      "last_scraped": "2026-08-02T09:57:44.188581",
       "data_completeness": 1.0
     },
     {
@@ -9747,11 +9744,11 @@
       ],
       "job_board": {
         "count": 26,
-        "url": "https://greenhouse.io/v1/boards/qventus/jobs",
+        "url": "https://boards.greenhouse.io/qventus",
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T03:54:42.349389",
+      "last_scraped": "2026-08-02T09:57:44.191251",
       "data_completeness": 1.0
     },
     {
@@ -9797,11 +9794,11 @@
       ],
       "job_board": {
         "count": 17,
-        "url": "https://greenhouse.io/v1/boards/radar/jobs",
+        "url": "https://boards.greenhouse.io/radar",
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T03:54:42.352094",
+      "last_scraped": "2026-08-02T09:57:44.193676",
       "data_completeness": 1.0
     },
     {
@@ -9858,7 +9855,7 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.367470",
+      "last_scraped": "2026-08-02T09:57:44.210480",
       "data_completeness": 1.0
     },
     {
@@ -9919,11 +9916,11 @@
       ],
       "job_board": {
         "count": null,
-        "url": "http://www.rappi.com/careers",
+        "url": "https://www.rappi.com/careers",
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.340859",
+      "last_scraped": "2026-08-02T09:57:44.181335",
       "data_completeness": 1.0
     },
     {
@@ -9982,7 +9979,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.341046",
+      "last_scraped": "2026-08-02T09:57:44.181497",
       "data_completeness": 1.0
     },
     {
@@ -10032,7 +10029,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.346245",
+      "last_scraped": "2026-08-02T09:57:44.187118",
       "data_completeness": 1.0
     },
     {
@@ -10086,11 +10083,11 @@
       ],
       "job_board": {
         "count": 8,
-        "url": "https://ashbyhq.com/posting-api/job-board/reacher",
+        "url": "https://jobs.ashbyhq.com/reacher",
         "source_type": "ats_api",
         "ats_platform": "ashby"
       },
-      "last_scraped": "2026-08-02T03:54:42.381091",
+      "last_scraped": "2026-08-02T09:57:44.224525",
       "data_completeness": 1.0
     },
     {
@@ -10145,7 +10142,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.383675",
+      "last_scraped": "2026-08-02T09:57:44.226250",
       "data_completeness": 1.0
     },
     {
@@ -10197,7 +10194,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.361777",
+      "last_scraped": "2026-08-02T09:57:44.204674",
       "data_completeness": 1.0
     },
     {
@@ -10253,7 +10250,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.365242",
+      "last_scraped": "2026-08-02T09:57:44.208205",
       "data_completeness": 1.0
     },
     {
@@ -10299,7 +10296,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.366103",
+      "last_scraped": "2026-08-02T09:57:44.209055",
       "data_completeness": 1.0
     },
     {
@@ -10351,11 +10348,11 @@
       ],
       "job_board": {
         "count": null,
-        "url": "http://rippling.com/careers",
+        "url": "https://rippling.com/careers",
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.341251",
+      "last_scraped": "2026-08-02T09:57:44.181855",
       "data_completeness": 1.0
     },
     {
@@ -10420,7 +10417,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.354639",
+      "last_scraped": "2026-08-02T09:57:44.197028",
       "data_completeness": 1.0
     },
     {
@@ -10471,7 +10468,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.359241",
+      "last_scraped": "2026-08-02T09:57:44.201001",
       "data_completeness": 1.0
     },
     {
@@ -10528,7 +10525,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.372606",
+      "last_scraped": "2026-08-02T09:57:44.214281",
       "data_completeness": 1.0
     },
     {
@@ -10576,11 +10573,11 @@
       ],
       "job_board": {
         "count": null,
-        "url": "http://rudus.ai/careers",
+        "url": "https://rudus.ai/careers",
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.361632",
+      "last_scraped": "2026-08-02T09:57:44.204561",
       "data_completeness": 1.0
     },
     {
@@ -10631,7 +10628,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.368871",
+      "last_scraped": "2026-08-02T09:57:44.211736",
       "data_completeness": 1.0
     },
     {
@@ -10683,7 +10680,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.368749",
+      "last_scraped": "2026-08-02T09:57:44.211576",
       "data_completeness": 1.0
     },
     {
@@ -10735,7 +10732,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.357438",
+      "last_scraped": "2026-08-02T09:57:44.198875",
       "data_completeness": 1.0
     },
     {
@@ -10785,11 +10782,11 @@
       ],
       "job_board": {
         "count": null,
-        "url": "http://soundboks.com/careers",
+        "url": "https://soundboks.com/careers",
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.343944",
+      "last_scraped": "2026-08-02T09:57:44.184378",
       "data_completeness": 1.0
     },
     {
@@ -10840,7 +10837,7 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.367217",
+      "last_scraped": "2026-08-02T09:57:44.210233",
       "data_completeness": 1.0
     },
     {
@@ -10891,7 +10888,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.373377",
+      "last_scraped": "2026-08-02T09:57:44.215105",
       "data_completeness": 1.0
     },
     {
@@ -10937,11 +10934,11 @@
       ],
       "job_board": {
         "count": 215,
-        "url": "https://greenhouse.io/v1/boards/scaleai/jobs",
+        "url": "https://boards.greenhouse.io/scaleai",
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T03:54:42.341386",
+      "last_scraped": "2026-08-02T09:57:44.182086",
       "data_completeness": 1.0
     },
     {
@@ -10992,7 +10989,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.374361",
+      "last_scraped": "2026-08-02T09:57:44.216121",
       "data_completeness": 1.0
     },
     {
@@ -11051,7 +11048,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.365666",
+      "last_scraped": "2026-08-02T09:57:44.208637",
       "data_completeness": 1.0
     },
     {
@@ -11105,7 +11102,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.375823",
+      "last_scraped": "2026-08-02T09:57:44.218727",
       "data_completeness": 1.0
     },
     {
@@ -11163,7 +11160,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.345263",
+      "last_scraped": "2026-08-02T09:57:44.186233",
       "data_completeness": 1.0
     },
     {
@@ -11216,11 +11213,11 @@
       ],
       "job_board": {
         "count": null,
-        "url": "http://shipbob.com/careers",
+        "url": "https://shipbob.com/careers",
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.341540",
+      "last_scraped": "2026-08-02T09:57:44.182243",
       "data_completeness": 1.0
     },
     {
@@ -11278,7 +11275,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.353161",
+      "last_scraped": "2026-08-02T09:57:44.194661",
       "data_completeness": 1.0
     },
     {
@@ -11321,11 +11318,11 @@
       ],
       "job_board": {
         "count": null,
-        "url": "http://simplyinsured.com/careers",
+        "url": "https://simplyinsured.com/careers",
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.351782",
+      "last_scraped": "2026-08-02T09:57:44.193396",
       "data_completeness": 1.0
     },
     {
@@ -11381,7 +11378,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.364978",
+      "last_scraped": "2026-08-02T09:57:44.207919",
       "data_completeness": 1.0
     },
     {
@@ -11427,11 +11424,11 @@
       ],
       "job_board": {
         "count": 5,
-        "url": "https://greenhouse.io/v1/boards/smartasset/jobs",
+        "url": "https://boards.greenhouse.io/smartasset",
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T03:54:42.341691",
+      "last_scraped": "2026-08-02T09:57:44.182407",
       "data_completeness": 1.0
     },
     {
@@ -11479,11 +11476,11 @@
       ],
       "job_board": {
         "count": 5,
-        "url": "https://ashbyhq.com/posting-api/job-board/snapmagic",
+        "url": "https://jobs.ashbyhq.com/snapmagic",
         "source_type": "ats_api",
         "ats_platform": "ashby"
       },
-      "last_scraped": "2026-08-02T03:54:42.346556",
+      "last_scraped": "2026-08-02T09:57:44.187382",
       "data_completeness": 1.0
     },
     {
@@ -11535,7 +11532,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.382260",
+      "last_scraped": "2026-08-02T09:57:44.225705",
       "data_completeness": 1.0
     },
     {
@@ -11643,7 +11640,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.377183",
+      "last_scraped": "2026-08-02T09:57:44.220158",
       "data_completeness": 1.0
     },
     {
@@ -11699,7 +11696,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.373932",
+      "last_scraped": "2026-08-02T09:57:44.215665",
       "data_completeness": 1.0
     },
     {
@@ -11744,7 +11741,7 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.367089",
+      "last_scraped": "2026-08-02T09:57:44.210128",
       "data_completeness": 1.0
     },
     {
@@ -11796,7 +11793,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.360401",
+      "last_scraped": "2026-08-02T09:57:44.203211",
       "data_completeness": 1.0
     },
     {
@@ -11861,7 +11858,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.366661",
+      "last_scraped": "2026-08-02T09:57:44.209700",
       "data_completeness": 1.0
     },
     {
@@ -11906,11 +11903,11 @@
       ],
       "job_board": {
         "count": null,
-        "url": "http://streak.com/careers",
+        "url": "https://streak.com/careers",
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.348600",
+      "last_scraped": "2026-08-02T09:57:44.189175",
       "data_completeness": 1.0
     },
     {
@@ -11963,11 +11960,11 @@
       ],
       "job_board": {
         "count": 548,
-        "url": "https://greenhouse.io/v1/boards/stripe/jobs",
+        "url": "https://boards.greenhouse.io/stripe",
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T03:54:42.341869",
+      "last_scraped": "2026-08-02T09:57:44.182794",
       "data_completeness": 1.0
     },
     {
@@ -12031,7 +12028,7 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.378146",
+      "last_scraped": "2026-08-02T09:57:44.220995",
       "data_completeness": 1.0
     },
     {
@@ -12077,7 +12074,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.375015",
+      "last_scraped": "2026-08-02T09:57:44.217827",
       "data_completeness": 1.0
     },
     {
@@ -12138,11 +12135,11 @@
       ],
       "job_board": {
         "count": 5,
-        "url": "https://greenhouse.io/v1/boards/superset/jobs",
+        "url": "https://boards.greenhouse.io/superset",
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T03:54:42.364204",
+      "last_scraped": "2026-08-02T09:57:44.207162",
       "data_completeness": 1.0
     },
     {
@@ -12193,7 +12190,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.348442",
+      "last_scraped": "2026-08-02T09:57:44.188972",
       "data_completeness": 1.0
     },
     {
@@ -12249,11 +12246,11 @@
       ],
       "job_board": {
         "count": null,
-        "url": "http://www.tara.ai/careers",
+        "url": "https://www.tara.ai/careers",
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.348260",
+      "last_scraped": "2026-08-02T09:57:44.188786",
       "data_completeness": 1.0
     },
     {
@@ -12307,7 +12304,7 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.358697",
+      "last_scraped": "2026-08-02T09:57:44.200289",
       "data_completeness": 1.0
     },
     {
@@ -12360,11 +12357,11 @@
       ],
       "job_board": {
         "count": 3,
-        "url": "https://greenhouse.io/v1/boards/tempo/jobs",
+        "url": "https://boards.greenhouse.io/tempo",
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T03:54:42.348914",
+      "last_scraped": "2026-08-02T09:57:44.189451",
       "data_completeness": 1.0
     },
     {
@@ -12416,7 +12413,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.366840",
+      "last_scraped": "2026-08-02T09:57:44.209870",
       "data_completeness": 1.0
     },
     {
@@ -12460,7 +12457,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.361088",
+      "last_scraped": "2026-08-02T09:57:44.204006",
       "data_completeness": 1.0
     },
     {
@@ -12505,7 +12502,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.372460",
+      "last_scraped": "2026-08-02T09:57:44.214169",
       "data_completeness": 1.0
     },
     {
@@ -12561,7 +12558,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.374757",
+      "last_scraped": "2026-08-02T09:57:44.217542",
       "data_completeness": 1.0
     },
     {
@@ -12618,7 +12615,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.356203",
+      "last_scraped": "2026-08-02T09:57:44.197474",
       "data_completeness": 1.0
     },
     {
@@ -12670,7 +12667,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.361917",
+      "last_scraped": "2026-08-02T09:57:44.204788",
       "data_completeness": 1.0
     },
     {
@@ -12715,11 +12712,11 @@
       ],
       "job_board": {
         "count": 10,
-        "url": "https://lever.co/v0/postings/tovala",
+        "url": "https://jobs.lever.co/tovala",
         "source_type": "ats_api",
         "ats_platform": "lever"
       },
-      "last_scraped": "2026-08-02T03:54:42.343084",
+      "last_scraped": "2026-08-02T09:57:44.183827",
       "data_completeness": 1.0
     },
     {
@@ -12779,7 +12776,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.354148",
+      "last_scraped": "2026-08-02T09:57:44.195909",
       "data_completeness": 1.0
     },
     {
@@ -12836,7 +12833,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.376906",
+      "last_scraped": "2026-08-02T09:57:44.219906",
       "data_completeness": 1.0
     },
     {
@@ -12892,7 +12889,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.375442",
+      "last_scraped": "2026-08-02T09:57:44.218297",
       "data_completeness": 1.0
     },
     {
@@ -12953,11 +12950,11 @@
       ],
       "job_board": {
         "count": 6,
-        "url": "https://ashbyhq.com/posting-api/job-board/uplane",
+        "url": "https://jobs.ashbyhq.com/uplane",
         "source_type": "ats_api",
         "ats_platform": "ashby"
       },
-      "last_scraped": "2026-08-02T03:54:42.378311",
+      "last_scraped": "2026-08-02T09:57:44.221158",
       "data_completeness": 1.0
     },
     {
@@ -13013,7 +13010,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.379153",
+      "last_scraped": "2026-08-02T09:57:44.222163",
       "data_completeness": 1.0
     },
     {
@@ -13064,7 +13061,7 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.363024",
+      "last_scraped": "2026-08-02T09:57:44.205981",
       "data_completeness": 1.0
     },
     {
@@ -13116,7 +13113,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.371750",
+      "last_scraped": "2026-08-02T09:57:44.213495",
       "data_completeness": 1.0
     },
     {
@@ -13167,7 +13164,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.363334",
+      "last_scraped": "2026-08-02T09:57:44.206300",
       "data_completeness": 1.0
     },
     {
@@ -13223,7 +13220,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.372012",
+      "last_scraped": "2026-08-02T09:57:44.213766",
       "data_completeness": 1.0
     },
     {
@@ -13274,7 +13271,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.366966",
+      "last_scraped": "2026-08-02T09:57:44.210023",
       "data_completeness": 1.0
     },
     {
@@ -13317,11 +13314,11 @@
       ],
       "job_board": {
         "count": 1,
-        "url": "https://ashbyhq.com/posting-api/job-board/verge-genomics",
+        "url": "https://jobs.ashbyhq.com/verge-genomics",
         "source_type": "ats_api",
         "ats_platform": "ashby"
       },
-      "last_scraped": "2026-08-02T03:54:42.345922",
+      "last_scraped": "2026-08-02T09:57:44.186757",
       "data_completeness": 1.0
     },
     {
@@ -13382,11 +13379,11 @@
       ],
       "job_board": {
         "count": 2,
-        "url": "https://ashbyhq.com/posting-api/job-board/veritus",
+        "url": "https://jobs.ashbyhq.com/veritus",
         "source_type": "ats_api",
         "ats_platform": "ashby"
       },
-      "last_scraped": "2026-08-02T03:54:42.379809",
+      "last_scraped": "2026-08-02T09:57:44.223043",
       "data_completeness": 1.0
     },
     {
@@ -13445,7 +13442,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.380124",
+      "last_scraped": "2026-08-02T09:57:44.223485",
       "data_completeness": 1.0
     },
     {
@@ -13503,7 +13500,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.376382",
+      "last_scraped": "2026-08-02T09:57:44.219297",
       "data_completeness": 1.0
     },
     {
@@ -13548,7 +13545,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.362603",
+      "last_scraped": "2026-08-02T09:57:44.205551",
       "data_completeness": 1.0
     },
     {
@@ -13602,11 +13599,11 @@
       ],
       "job_board": {
         "count": 28,
-        "url": "https://greenhouse.io/v1/boards/webflow/jobs",
+        "url": "https://boards.greenhouse.io/webflow",
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T03:54:42.342099",
+      "last_scraped": "2026-08-02T09:57:44.183095",
       "data_completeness": 1.0
     },
     {
@@ -13657,11 +13654,11 @@
       ],
       "job_board": {
         "count": null,
-        "url": "http://wefunder.com/careers",
+        "url": "https://wefunder.com/careers",
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.351181",
+      "last_scraped": "2026-08-02T09:57:44.193231",
       "data_completeness": 1.0
     },
     {
@@ -13717,7 +13714,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.342620",
+      "last_scraped": "2026-08-02T09:57:44.183240",
       "data_completeness": 1.0
     },
     {
@@ -13777,11 +13774,11 @@
       ],
       "job_board": {
         "count": 25,
-        "url": "https://greenhouse.io/v1/boards/xendit/jobs",
+        "url": "https://boards.greenhouse.io/xendit",
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T03:54:42.345076",
+      "last_scraped": "2026-08-02T09:57:44.186006",
       "data_completeness": 1.0
     },
     {
@@ -13833,7 +13830,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.374053",
+      "last_scraped": "2026-08-02T09:57:44.215818",
       "data_completeness": 1.0
     },
     {
@@ -13880,11 +13877,11 @@
       ],
       "job_board": {
         "count": null,
-        "url": "http://zapier.com/careers",
+        "url": "https://zapier.com/careers",
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.342769",
+      "last_scraped": "2026-08-02T09:57:44.183459",
       "data_completeness": 1.0
     },
     {
@@ -13932,7 +13929,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.352844",
+      "last_scraped": "2026-08-02T09:57:44.194380",
       "data_completeness": 1.0
     },
     {
@@ -13991,11 +13988,11 @@
       ],
       "job_board": {
         "count": 8,
-        "url": "https://greenhouse.io/v1/boards/burnt/jobs",
+        "url": "https://boards.greenhouse.io/burnt",
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T03:54:42.379526",
+      "last_scraped": "2026-08-02T09:57:44.222672",
       "data_completeness": 1.0
     },
     {
@@ -14042,7 +14039,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.376094",
+      "last_scraped": "2026-08-02T09:57:44.219016",
       "data_completeness": 1.0
     },
     {
@@ -14089,11 +14086,11 @@
       ],
       "job_board": {
         "count": null,
-        "url": "http://www.isonohealth.com/careers",
+        "url": "https://www.isonohealth.com/careers",
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.343629",
+      "last_scraped": "2026-08-02T09:57:44.183980",
       "data_completeness": 1.0
     },
     {
@@ -14150,7 +14147,7 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.371370",
+      "last_scraped": "2026-08-02T09:57:44.212974",
       "data_completeness": 1.0
     },
     {
@@ -14195,7 +14192,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.362213",
+      "last_scraped": "2026-08-02T09:57:44.205091",
       "data_completeness": 1.0
     },
     {
@@ -14248,7 +14245,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.354284",
+      "last_scraped": "2026-08-02T09:57:44.196139",
       "data_completeness": 1.0
     },
     {
@@ -14299,45 +14296,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.357316",
-      "data_completeness": 0.75
-    },
-    {
-      "yc_id": 30890,
-      "name": "AnswerThis",
-      "slug": "answerthis",
-      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/7447a5f4c087378428be2bea5adcf3daf4a4e9e8.png",
-      "website": "https://answerthis.io/",
-      "location": "San Francisco, CA, USA",
-      "description": "End-to-end workspace to accelerate scientific discovery",
-      "long_description": "AnswerThis is a scientific discovery platform used by over 200,000 researchers that reduces weeks of manual research work to hours. \r\n\r\nInstead of manually searching, reading, and organizing dozens of papers, researchers use AnswerThis to find the most relevant work, see how ideas are connected, and get comprehensive answers to complex scientific questions with line by line answers. \r\n\r\nThis allows them to map research gaps, analyze trends, and draft literature reviews far faster, all while building a searchable library of their own research materials. ",
-      "industry": "Consumer",
-      "industries": [
-        "Consumer"
-      ],
-      "subindustry": "Consumer",
-      "batch": null,
-      "is_hiring": true,
-      "is_top_company": false,
-      "status": "Active",
-      "stage": "Early",
-      "team_size": 6,
-      "tags": [],
-      "regions": [
-        "United States of America",
-        "America / Canada",
-        "Remote",
-        "Partly Remote"
-      ],
-      "source_vc": "Y Combinator",
-      "founders": [],
-      "job_board": {
-        "count": null,
-        "url": "https://answerthis.io/careers",
-        "source_type": "manual_visit",
-        "ats_platform": null
-      },
-      "last_scraped": "2026-08-02T03:54:42.375736",
+      "last_scraped": "2026-08-02T09:57:44.198745",
       "data_completeness": 0.75
     },
     {
@@ -14380,7 +14339,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.356768",
+      "last_scraped": "2026-08-02T09:57:44.198154",
       "data_completeness": 0.75
     },
     {
@@ -14424,7 +14383,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.367747",
+      "last_scraped": "2026-08-02T09:57:44.210694",
       "data_completeness": 0.75
     },
     {
@@ -14479,7 +14438,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.345399",
+      "last_scraped": "2026-08-02T09:57:44.186357",
       "data_completeness": 0.75
     },
     {
@@ -14522,7 +14481,63 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.343792",
+      "last_scraped": "2026-08-02T09:57:44.184229",
+      "data_completeness": 0.75
+    },
+    {
+      "yc_id": 168,
+      "name": "GOAT Group",
+      "slug": "goat-group",
+      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/4f3a455935f36a6655742aae286b206df1cd13bd.png",
+      "website": "https://www.goatgroup.com/",
+      "location": "Los Angeles, CA, USA",
+      "description": "Platform for the greatest products from the past, present and future.",
+      "long_description": "GOAT Group represents the leading platforms for authentic sneakers, apparel and accessories. Operating four distinct brands–GOAT, Flight Club, Grailed and alias–GOAT Group has a global community of over 50M members across 170 countries.\r\n\r\nWe are backed by some of the leading names in venture capital including Accel Partners, Andreessen Horowitz, Index Ventures, Matrix Partners, NEA, SV Angel, Upfront Ventures, Webb Investment Network and Y Combinator.",
+      "industry": "Consumer",
+      "industries": [
+        "Consumer",
+        "Apparel and Cosmetics"
+      ],
+      "subindustry": "Consumer -> Apparel and Cosmetics",
+      "batch": null,
+      "is_hiring": true,
+      "is_top_company": true,
+      "status": "Active",
+      "stage": "Growth",
+      "team_size": 1600,
+      "tags": [
+        "Marketplace"
+      ],
+      "regions": [
+        "United States of America",
+        "America / Canada",
+        "Remote",
+        "Partly Remote"
+      ],
+      "source_vc": "Y Combinator",
+      "founders": [
+        {
+          "name": "Eddy Lu",
+          "college": null,
+          "photo_url": null,
+          "linkedin_url": "https://www.linkedin.com/in/eddylu/",
+          "raw_bio": null
+        },
+        {
+          "name": "Daishin Sugano",
+          "college": null,
+          "photo_url": null,
+          "linkedin_url": "https://www.linkedin.com/in/sensugano",
+          "raw_bio": null
+        }
+      ],
+      "job_board": {
+        "count": 24,
+        "url": "https://boards.greenhouse.io/goatgroup",
+        "source_type": "ats_api",
+        "ats_platform": "greenhouse"
+      },
+      "last_scraped": "2026-08-02T09:57:44.179925",
       "data_completeness": 0.75
     },
     {
@@ -14573,7 +14588,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.363614",
+      "last_scraped": "2026-08-02T09:57:44.206568",
       "data_completeness": 0.75
     },
     {
@@ -14624,7 +14639,7 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.365829",
+      "last_scraped": "2026-08-02T09:57:44.208752",
       "data_completeness": 0.75
     },
     {
@@ -14675,7 +14690,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.373123",
+      "last_scraped": "2026-08-02T09:57:44.214878",
       "data_completeness": 0.75
     },
     {
@@ -14712,11 +14727,11 @@
       "founders": [],
       "job_board": {
         "count": 6,
-        "url": "https://greenhouse.io/v1/boards/lob/jobs",
+        "url": "https://boards.greenhouse.io/lob",
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T03:54:42.350886",
+      "last_scraped": "2026-08-02T09:57:44.192919",
       "data_completeness": 0.75
     },
     {
@@ -14758,7 +14773,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.379299",
+      "last_scraped": "2026-08-02T09:57:44.222315",
       "data_completeness": 0.75
     },
     {
@@ -14816,7 +14831,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.375571",
+      "last_scraped": "2026-08-02T09:57:44.218452",
       "data_completeness": 0.75
     },
     {
@@ -14874,7 +14889,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.364671",
+      "last_scraped": "2026-08-02T09:57:44.207590",
       "data_completeness": 0.75
     },
     {
@@ -14918,7 +14933,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.350146",
+      "last_scraped": "2026-08-02T09:57:44.192183",
       "data_completeness": 0.75
     },
     {
@@ -14969,7 +14984,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.380814",
+      "last_scraped": "2026-08-02T09:57:44.224262",
       "data_completeness": 0.75
     }
   ]

@@ -6,6 +6,7 @@ from playwright.async_api import TimeoutError as PlaywrightTimeoutError
 from pipeline.storage.models import Company, Founder
 from pipeline.storage.db import Database
 from pipeline.enrichment.llm_fallback import extract_college_from_bio
+from pipeline.enrichment.photo_url import normalize_photo_url
 
 logger = logging.getLogger(__name__)
 
@@ -106,7 +107,8 @@ class FounderEnricher:
                 try:
                     # Photo is the img inside this container
                     photo_el = await container.query_selector('img')
-                    photo_url = await photo_el.get_attribute('src') if photo_el else None
+                    raw_photo = await photo_el.get_attribute('src') if photo_el else None
+                    photo_url = normalize_photo_url(raw_photo)
 
                     # Name and bio are in the sibling div: div.min-w-0.flex-1
                     # Use XPath to get the next sibling

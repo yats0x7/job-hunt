@@ -11,6 +11,7 @@ from datetime import datetime
 from pathlib import Path
 
 from pipeline.storage.db import Database
+from pipeline.enrichment.photo_url import normalize_photo_url
 
 logger = logging.getLogger(__name__)
 
@@ -85,5 +86,11 @@ def _company_to_export_dict(company) -> dict:
     # Ensure datetime is serialized as ISO string
     if isinstance(data.get("last_scraped"), datetime):
         data["last_scraped"] = data["last_scraped"].isoformat()
+
+    # Strip expiring S3 presign query params from founder avatars
+    founders = data.get("founders") or []
+    for founder in founders:
+        if isinstance(founder, dict):
+            founder["photo_url"] = normalize_photo_url(founder.get("photo_url"))
 
     return data

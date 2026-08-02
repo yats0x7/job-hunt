@@ -2,6 +2,32 @@ import fs from "fs";
 import path from "path";
 import { Company, DataMetadata, CompanyData } from "./types";
 
+/**
+ * YC Bookface serves founder avatars as S3 presigned URLs that expire in ~1 hour.
+ * The same objects are publicly readable without the signature query string
+ * (confirmed: bookface-images.s3…/avatars/<hash>.jpg returns 200 unsigned).
+ * Strip query/fragment so Vercel deploys keep working after the scrape session ends.
+ * Also drop relative placeholders like "/avatars/thumb/missing.png".
+ */
+export function normalizePhotoUrl(url: string | null | undefined): string | null {
+  if (!url || typeof url !== "string") return null;
+  const trimmed = url.trim();
+  if (!trimmed) return null;
+  if (trimmed.startsWith("/")) return null; // relative / missing placeholders
+  if (trimmed.includes("missing.png") || trimmed.includes("missing.jpg")) return null;
+
+  try {
+    const parsed = new URL(trimmed);
+    if (parsed.protocol !== "http:" && parsed.protocol !== "https:") return null;
+    // Drop AWS signature / session query params
+    parsed.search = "";
+    parsed.hash = "";
+    return parsed.toString();
+  } catch {
+    return null;
+  }
+}
+
 export async function getCompanyData(): Promise<CompanyData> {
   const emptyMetadata: DataMetadata = {
     exported_at: new Date().toISOString(),
@@ -71,7 +97,9 @@ export async function getCompanyData(): Promise<CompanyData> {
           return {
             name: typeof f.name === "string" ? f.name : "Founder",
             college: typeof f.college === "string" ? f.college : null,
-            photo_url: typeof f.photo_url === "string" ? f.photo_url : null,
+            photo_url: normalizePhotoUrl(
+              typeof f.photo_url === "string" ? f.photo_url : null
+            ),
             linkedin_url: typeof f.linkedin_url === "string" ? f.linkedin_url : null,
             raw_bio: typeof f.raw_bio === "string" ? f.raw_bio : null,
           };

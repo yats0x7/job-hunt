@@ -15,6 +15,7 @@ from pipeline.scrapers.base import VCSource
 from pipeline.scrapers.yc.algolia_client import AlgoliaClient
 from pipeline.scrapers.yc.company_parser import parse_algolia_hit
 from pipeline.storage.models import Company, Founder
+from pipeline.enrichment.photo_url import normalize_photo_url
 
 logger = logging.getLogger(__name__)
 
@@ -146,11 +147,11 @@ def _extract_founder_from_element(element) -> Founder | None:
     if not name:
         return None
 
-    # Find photo
+    # Find photo (strip expiring S3 presign query params)
     photo_url = None
     img = element.find("img")
     if img:
-        photo_url = img.get("src") or img.get("data-src")
+        photo_url = normalize_photo_url(img.get("src") or img.get("data-src"))
 
     # Find LinkedIn
     linkedin_url = None

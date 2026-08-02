@@ -18,6 +18,19 @@ logger = logging.getLogger(__name__)
 DEFAULT_DB_PATH = Path(__file__).parent.parent.parent / "data" / "startups.db"
 
 
+def safe_json(value, default):
+    if value is None:
+        return default
+    if isinstance(value, (list, dict)):
+        return value  # already parsed by sqlite3
+    if isinstance(value, str):
+        try:
+            return json.loads(value)
+        except Exception:
+            return default
+    return default
+
+
 class Database:
     """
     SQLite database wrapper for the startup discovery pipeline.
@@ -37,6 +50,14 @@ class Database:
         self._conn.row_factory = sqlite3.Row
         self._conn.execute("PRAGMA journal_mode=WAL")
         self._conn.execute("PRAGMA foreign_keys=ON")
+        
+        cursor = self._conn.execute("SELECT sql FROM sqlite_master WHERE type='table' AND name='companies'")
+        row = cursor.fetchone()
+        if row and "UNIQUE(slug, source_vc)" not in row["sql"]:
+            logger.warning("Schema mismatch detected. Recreating tables...")
+            self._conn.execute("DROP TABLE IF EXISTS companies")
+            self._conn.commit()
+            
         self._create_schema()
         logger.info(f"Database connected: {self._db_path}")
 
@@ -60,7 +81,7 @@ class Database:
             CREATE TABLE IF NOT EXISTS companies (
                 yc_id INTEGER PRIMARY KEY,
                 name TEXT NOT NULL,
-                slug TEXT NOT NULL UNIQUE,
+                slug TEXT NOT NULL,
                 logo_url TEXT,
                 website TEXT,
                 location TEXT,
@@ -81,7 +102,8 @@ class Database:
                 founders TEXT,          -- JSON array of founder objects
                 job_board TEXT,         -- JSON object
                 last_scraped TEXT,
-                data_completeness REAL DEFAULT 0.0
+                data_completeness REAL DEFAULT 0.0,
+                UNIQUE(slug, source_vc)
             );
 
             CREATE INDEX IF NOT EXISTS idx_companies_batch
@@ -129,7 +151,7 @@ class Database:
             if age_days > max_age_days:
                 return None
                 
-            founders_data = json.loads(founders_json)
+            founders_data = safe_json(founders_json, [])
             return [Founder(**f) for f in founders_data]
         except Exception as e:
             logger.debug(f"Failed to read cached founders for {slug}: {e}")
@@ -159,9 +181,9 @@ class Database:
                 ?, ?, ?, ?, ?, ?, ?, ?, ?, ?,
                 ?, ?, ?, ?
             )
-            ON CONFLICT(yc_id) DO UPDATE SET
+            ON CONFLICT(slug, source_vc) DO UPDATE SET
+                yc_id=excluded.yc_id,
                 name=excluded.name,
-                slug=excluded.slug,
                 logo_url=excluded.logo_url,
                 website=excluded.website,
                 location=excluded.location,
@@ -178,9 +200,16 @@ class Database:
                 team_size=excluded.team_size,
                 tags=excluded.tags,
                 regions=excluded.regions,
-                source_vc=excluded.source_vc,
-                founders=excluded.founders,
-                job_board=excluded.job_board,
+                founders = CASE
+                    WHEN excluded.founders = '[]' OR excluded.founders IS NULL
+                    THEN founders
+                    ELSE excluded.founders
+                END,
+                job_board = CASE
+                    WHEN excluded.job_board IS NULL
+                    THEN job_board
+                    ELSE excluded.job_board
+                END,
                 last_scraped=excluded.last_scraped,
                 data_completeness=excluded.data_completeness
             """,
@@ -235,7 +264,7 @@ class Database:
     def get_all_companies(self) -> list[Company]:
         """Retrieve all companies from the database."""
         cursor = self._conn.execute(
-            "SELECT * FROM companies ORDER BY data_completeness DESC"
+            "SELECT * FROM companies ORDER BY data_completeness DESC, name ASC"
         )
         return [self._row_to_company(row) for row in cursor.fetchall()]
 
@@ -266,10 +295,10 @@ class Database:
         cursor2 = self._conn.execute("SELECT job_board FROM companies WHERE job_board IS NOT NULL")
         for r in cursor2.fetchall():
             try:
-                jb = json.loads(r["job_board"])
+                jb = safe_json(r["job_board"], None)
                 if jb and "source_type" in jb:
                     tier_stats[jb["source_type"]] = tier_stats.get(jb["source_type"], 0) + 1
-            except (json.JSONDecodeError, TypeError):
+            except Exception:
                 pass
 
         total_with_jobs = sum(tier_stats.values())
@@ -289,10 +318,10 @@ class Database:
     @staticmethod
     def _row_to_company(row: sqlite3.Row) -> Company:
         """Convert a database row to a Company model."""
-        founders_data = json.loads(row["founders"]) if row["founders"] else []
+        founders_data = safe_json(row["founders"], [])
         founders = [Founder(**f) for f in founders_data]
 
-        job_board_data = json.loads(row["job_board"]) if row["job_board"] else None
+        job_board_data = safe_json(row["job_board"], None)
         job_board = JobBoardResult(**job_board_data) if job_board_data else None
 
         return Company(
@@ -305,7 +334,7 @@ class Database:
             description=row["description"],
             long_description=row["long_description"],
             industry=row["industry"],
-            industries=json.loads(row["industries"]) if row["industries"] else [],
+            industries=safe_json(row["industries"], []),
             subindustry=row["subindustry"],
             batch=row["batch"],
             is_hiring=bool(row["is_hiring"]),
@@ -313,8 +342,8 @@ class Database:
             status=row["status"],
             stage=row["stage"],
             team_size=row["team_size"],
-            tags=json.loads(row["tags"]) if row["tags"] else [],
-            regions=json.loads(row["regions"]) if row["regions"] else [],
+            tags=safe_json(row["tags"], []),
+            regions=safe_json(row["regions"], []),
             source_vc=row["source_vc"],
             founders=founders,
             job_board=job_board,

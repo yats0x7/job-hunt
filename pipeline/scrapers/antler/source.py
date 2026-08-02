@@ -37,7 +37,17 @@ class AntlerSource(VCSource):
             async with httpx.AsyncClient(follow_redirects=True, timeout=15) as client:
                 r = await client.get(self.BASE_URL, headers=headers)
                 r.raise_for_status()
-                return self._parse_portfolio_html(r.text)
+                companies = self._parse_portfolio_html(r.text)
+                
+                # Check HTML for total company count to detect pagination
+                soup = BeautifulSoup(r.text, 'html.parser')
+                text_content = soup.get_text()
+                if "Showing" in text_content and "companies" in text_content:
+                    logger.info(f'Antler: fetched {len(companies)} of total companies')
+                else:
+                    logger.warning(f'Antler: only initial page loaded ({len(companies)} companies). Site may require JS scroll for full dataset.')
+                    
+                return companies
         except Exception as e:
             logger.error(f'Antler: failed to fetch portfolio: {e}')
             return []
@@ -57,6 +67,7 @@ class AntlerSource(VCSource):
         # Antler portfolio cards — inspect antler.co/portfolio for exact selectors
         # Common patterns to try in order:
         card_selectors = [
+            'div[class*="portco_card"]',
             'div[class*="portfolio-company"]',
             'div[class*="company-card"]', 
             'a[class*="portfolio"]',
@@ -77,12 +88,12 @@ class AntlerSource(VCSource):
         for card in cards:
             try:
                 raw = {
-                    'name': self._extract_text(card, ['h3', 'h2', '[class*="name"]']),
+                    'name': self._extract_text(card, ['h3', 'h2', '[class*="name"]', '[fs-cmsfilter-field="name"]']),
                     'website': self._extract_href(card),
-                    'description': self._extract_text(card, ['p', '[class*="description"]']),
+                    'description': self._extract_text(card, ['p', '[class*="description"]', '[fs-cmsfilter-field="description"]']),
                     'logo_url': self._extract_img(card),
-                    'location': self._extract_text(card, ['[class*="location"]', '[class*="region"]']),
-                    'industry': self._extract_text(card, ['[class*="tag"]', '[class*="industry"]']),
+                    'location': self._extract_text(card, ['[class*="location"]', '[class*="region"]', '[fs-cmsfilter-field="location"]']),
+                    'industry': self._extract_text(card, ['[class*="tag"]', '[class*="industry"]', '[fs-cmsfilter-field="sector"]']),
                     'source_vc': self.name,
                 }
                 if raw['name']:  # only add if we got at least a name
@@ -91,8 +102,17 @@ class AntlerSource(VCSource):
                 logger.debug(f'Antler: error parsing card: {e}')
                 continue
 
-        logger.info(f'Antler: parsed {len(companies)} companies')
-        return companies
+        seen_names = set()
+        unique_companies = []
+        for company in companies:
+            name = company['name']
+            if name and name not in seen_names:
+                seen_names.add(name)
+                unique_companies.append(company)
+                logger.info(f'Antler: {name} | website: {company.get("website")}')
+
+        logger.info(f'Antler: parsed {len(unique_companies)} companies')
+        return unique_companies
 
     def parse_company(self, raw: dict) -> Company:
         """
@@ -136,11 +156,27 @@ class AntlerSource(VCSource):
         return None
 
     def _extract_href(self, el) -> str | None:
-        a = el.find('a', href=True)
-        if a:
-            href = a['href']
+        hrefs = []
+        
+        # Check card itself for href
+        if el.get('href'): hrefs.append(el.get('href'))
+        if el.get('data-href'): hrefs.append(el.get('data-href'))
+        
+        # Check all <a> tags inside card
+        for a in el.find_all('a'):
+            if a.get('href'): hrefs.append(a.get('href'))
+            if a.get('data-href'): hrefs.append(a.get('data-href'))
+            
+        # Prefer hrefs starting with "http"
+        for href in hrefs:
             if href.startswith('http'):
                 return href
+                
+        # Fall back to hrefs starting with "/"
+        for href in hrefs:
+            if href.startswith('/'):
+                return "https://www.antler.co" + href
+                
         return None
 
     def _extract_img(self, el) -> str | None:

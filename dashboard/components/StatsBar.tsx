@@ -1,13 +1,14 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { DataMetadata } from "@/lib/types";
+import { Company, DataMetadata } from "@/lib/types";
 
 interface StatsBarProps {
   metadata: DataMetadata;
+  companies: Company[];
 }
 
-export default function StatsBar({ metadata }: StatsBarProps) {
+export default function StatsBar({ metadata, companies }: StatsBarProps) {
   const formattedDate = metadata.last_updated
     ? new Date(metadata.last_updated).toLocaleDateString("en-US", {
         month: "short",
@@ -18,6 +19,15 @@ export default function StatsBar({ metadata }: StatsBarProps) {
 
   const completenessPercent = Math.round(metadata.avg_completeness * 100);
   const tp = metadata.tier_percentages;
+
+  const bySource = companies.reduce((acc: Record<string, number>, c: Company) => {
+    acc[c.source_vc] = (acc[c.source_vc] || 0) + 1;
+    return acc;
+  }, {});
+
+  const formattedSourceCounts = Object.entries(bySource)
+    .map(([source, count]) => `${count} ${source === 'Y Combinator' ? 'YC' : source}`)
+    .join(" · ");
 
   return (
     <motion.div
@@ -31,7 +41,7 @@ export default function StatsBar({ metadata }: StatsBarProps) {
         <div className="flex flex-wrap items-center gap-6 text-sm">
           <StatPill
             label="Companies tracked"
-            value={metadata.total_companies.toLocaleString()}
+            value={formattedSourceCounts || metadata.total_companies.toLocaleString()}
             icon="📊"
           />
           <Divider />

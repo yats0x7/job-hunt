@@ -36,7 +36,7 @@ export default function DashboardClient({ companies, metadata }: { companies: Co
       </header>
 
       {/* Stats Bar */}
-      <StatsBar metadata={metadata} />
+      <StatsBar metadata={metadata} companies={companies} />
 
       {/* Main Content */}
       <main className="flex-1 max-w-[1400px] mx-auto w-full px-6 py-8">

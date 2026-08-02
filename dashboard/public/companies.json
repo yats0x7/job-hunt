@@ -1,21 +1,21 @@
 {
   "metadata": {
-    "exported_at": "2026-08-02T09:57:44.244350",
+    "exported_at": "2026-08-02T11:14:13.521868",
     "total_companies": 276,
     "avg_completeness": 0.99,
     "hiring_count": 276,
-    "last_updated": "2026-08-02T09:57:44.226635",
+    "last_updated": "2026-08-02T11:14:13.511361",
     "tier_breakdown": {
       "ats_api": 45,
-      "html_heuristic": 21,
-      "llm_extracted": 0,
-      "manual_visit": 210
+      "html_heuristic": 22,
+      "llm_extracted": 42,
+      "manual_visit": 167
     },
     "tier_percentages": {
       "ats_api": 16.3,
-      "html_heuristic": 7.6,
-      "llm_extracted": 0.0,
-      "manual_visit": 76.1
+      "html_heuristic": 8.0,
+      "llm_extracted": 15.2,
+      "manual_visit": 60.5
     }
   },
   "companies": [
@@ -81,7 +81,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.211149",
+      "last_scraped": "2026-08-02T11:14:13.497686",
       "data_completeness": 1.0
     },
     {
@@ -143,7 +143,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.195125",
+      "last_scraped": "2026-08-02T11:14:13.482421",
       "data_completeness": 1.0
     },
     {
@@ -202,7 +202,7 @@
         "source_type": "ats_api",
         "ats_platform": "ashby"
       },
-      "last_scraped": "2026-08-02T09:57:44.208087",
+      "last_scraped": "2026-08-02T11:14:13.494658",
       "data_completeness": 1.0
     },
     {
@@ -247,7 +247,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.199644",
+      "last_scraped": "2026-08-02T11:14:13.486373",
       "data_completeness": 1.0
     },
     {
@@ -301,7 +301,7 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.202548",
+      "last_scraped": "2026-08-02T11:14:13.488218",
       "data_completeness": 1.0
     },
     {
@@ -352,7 +352,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.210589",
+      "last_scraped": "2026-08-02T11:14:13.497120",
       "data_completeness": 1.0
     },
     {
@@ -402,7 +402,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.186930",
+      "last_scraped": "2026-08-02T11:14:13.474694",
       "data_completeness": 1.0
     },
     {
@@ -453,7 +453,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.221325",
+      "last_scraped": "2026-08-02T11:14:13.507004",
       "data_completeness": 1.0
     },
     {
@@ -513,7 +513,7 @@
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T09:57:44.175899",
+      "last_scraped": "2026-08-02T11:14:13.466695",
       "data_completeness": 1.0
     },
     {
@@ -580,7 +580,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.218146",
+      "last_scraped": "2026-08-02T11:14:13.503152",
       "data_completeness": 1.0
     },
     {
@@ -635,11 +635,11 @@
       ],
       "job_board": {
         "count": null,
-        "url": "https://www.useandco.com/careers",
+        "url": "http://www.useandco.com/careers",
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.203040",
+      "last_scraped": "2026-08-02T11:14:13.490154",
       "data_completeness": 1.0
     },
     {
@@ -692,7 +692,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.218615",
+      "last_scraped": "2026-08-02T11:14:13.504546",
       "data_completeness": 1.0
     },
     {
@@ -747,7 +747,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.213626",
+      "last_scraped": "2026-08-02T11:14:13.499920",
       "data_completeness": 1.0
     },
     {
@@ -807,12 +807,12 @@
         }
       ],
       "job_board": {
-        "count": null,
-        "url": "https://apollographql.com/careers",
-        "source_type": "manual_visit",
+        "count": 12,
+        "url": "http://apollographql.com/careers",
+        "source_type": "llm_extracted",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.191739",
+      "last_scraped": "2026-08-02T11:14:13.477795",
       "data_completeness": 1.0
     },
     {
@@ -870,7 +870,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.192782",
+      "last_scraped": "2026-08-02T11:14:13.478897",
       "data_completeness": 1.0
     },
     {
@@ -926,7 +926,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.200674",
+      "last_scraped": "2026-08-02T11:14:13.487371",
       "data_completeness": 1.0
     },
     {
@@ -971,7 +971,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.199970",
+      "last_scraped": "2026-08-02T11:14:13.486629",
       "data_completeness": 1.0
     },
     {
@@ -1023,7 +1023,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.199206",
+      "last_scraped": "2026-08-02T11:14:13.485870",
       "data_completeness": 1.0
     },
     {
@@ -1069,12 +1069,12 @@
         }
       ],
       "job_board": {
-        "count": null,
+        "count": 0,
         "url": "https://asendia.ai/careers",
-        "source_type": "manual_visit",
+        "source_type": "llm_extracted",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.198563",
+      "last_scraped": "2026-08-02T11:14:13.485204",
       "data_completeness": 1.0
     },
     {
@@ -1128,7 +1128,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.200494",
+      "last_scraped": "2026-08-02T11:14:13.487178",
       "data_completeness": 1.0
     },
     {
@@ -1192,7 +1192,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.215972",
+      "last_scraped": "2026-08-02T11:14:13.502055",
       "data_completeness": 1.0
     },
     {
@@ -1239,7 +1239,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.211320",
+      "last_scraped": "2026-08-02T11:14:13.497870",
       "data_completeness": 1.0
     },
     {
@@ -1298,7 +1298,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.220419",
+      "last_scraped": "2026-08-02T11:14:13.506169",
       "data_completeness": 1.0
     },
     {
@@ -1349,7 +1349,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.198277",
+      "last_scraped": "2026-08-02T11:14:13.484891",
       "data_completeness": 1.0
     },
     {
@@ -1410,7 +1410,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.219124",
+      "last_scraped": "2026-08-02T11:14:13.505012",
       "data_completeness": 1.0
     },
     {
@@ -1450,12 +1450,12 @@
         }
       ],
       "job_board": {
-        "count": null,
+        "count": 1,
         "url": "https://aurorincad.com/careers",
-        "source_type": "manual_visit",
+        "source_type": "llm_extracted",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.205830",
+      "last_scraped": "2026-08-02T11:14:13.492575",
       "data_completeness": 1.0
     },
     {
@@ -1496,12 +1496,12 @@
         }
       ],
       "job_board": {
-        "count": null,
+        "count": 1,
         "url": "https://www.aventindustrial.com/careers",
-        "source_type": "manual_visit",
+        "source_type": "llm_extracted",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.222873",
+      "last_scraped": "2026-08-02T11:14:13.508214",
       "data_completeness": 1.0
     },
     {
@@ -1560,7 +1560,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.206826",
+      "last_scraped": "2026-08-02T11:14:13.493501",
       "data_completeness": 1.0
     },
     {
@@ -1611,7 +1611,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.199774",
+      "last_scraped": "2026-08-02T11:14:13.486494",
       "data_completeness": 1.0
     },
     {
@@ -1675,7 +1675,7 @@
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T09:57:44.185797",
+      "last_scraped": "2026-08-02T11:14:13.473658",
       "data_completeness": 1.0
     },
     {
@@ -1725,7 +1725,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.195768",
+      "last_scraped": "2026-08-02T11:14:13.482941",
       "data_completeness": 1.0
     },
     {
@@ -1783,7 +1783,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.220650",
+      "last_scraped": "2026-08-02T11:14:13.506380",
       "data_completeness": 1.0
     },
     {
@@ -1834,7 +1834,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.206431",
+      "last_scraped": "2026-08-02T11:14:13.493178",
       "data_completeness": 1.0
     },
     {
@@ -1882,7 +1882,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.187252",
+      "last_scraped": "2026-08-02T11:14:13.474949",
       "data_completeness": 1.0
     },
     {
@@ -1939,7 +1939,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.217664",
+      "last_scraped": "2026-08-02T11:14:13.502707",
       "data_completeness": 1.0
     },
     {
@@ -1996,7 +1996,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.221479",
+      "last_scraped": "2026-08-02T11:14:13.507155",
       "data_completeness": 1.0
     },
     {
@@ -2048,7 +2048,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.220890",
+      "last_scraped": "2026-08-02T11:14:13.506595",
       "data_completeness": 1.0
     },
     {
@@ -2098,7 +2098,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.194260",
+      "last_scraped": "2026-08-02T11:14:13.481572",
       "data_completeness": 1.0
     },
     {
@@ -2163,7 +2163,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.196798",
+      "last_scraped": "2026-08-02T11:14:13.483456",
       "data_completeness": 1.0
     },
     {
@@ -2217,7 +2217,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.202858",
+      "last_scraped": "2026-08-02T11:14:13.489958",
       "data_completeness": 1.0
     },
     {
@@ -2259,11 +2259,11 @@
       ],
       "job_board": {
         "count": null,
-        "url": "https://www.cambly.com/careers",
+        "url": "http://www.cambly.com/careers",
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.192657",
+      "last_scraped": "2026-08-02T11:14:13.478762",
       "data_completeness": 1.0
     },
     {
@@ -2309,12 +2309,12 @@
         }
       ],
       "job_board": {
-        "count": null,
+        "count": 3,
         "url": "https://usecardboard.com/careers",
-        "source_type": "manual_visit",
+        "source_type": "llm_extracted",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.208874",
+      "last_scraped": "2026-08-02T11:14:13.495394",
       "data_completeness": 1.0
     },
     {
@@ -2365,7 +2365,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.205395",
+      "last_scraped": "2026-08-02T11:14:13.492148",
       "data_completeness": 1.0
     },
     {
@@ -2417,7 +2417,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.212688",
+      "last_scraped": "2026-08-02T11:14:13.499175",
       "data_completeness": 1.0
     },
     {
@@ -2469,7 +2469,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.211038",
+      "last_scraped": "2026-08-02T11:14:13.497547",
       "data_completeness": 1.0
     },
     {
@@ -2523,7 +2523,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.199006",
+      "last_scraped": "2026-08-02T11:14:13.485672",
       "data_completeness": 1.0
     },
     {
@@ -2574,7 +2574,7 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.206997",
+      "last_scraped": "2026-08-02T11:14:13.493647",
       "data_completeness": 1.0
     },
     {
@@ -2634,7 +2634,7 @@
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T09:57:44.178025",
+      "last_scraped": "2026-08-02T11:14:13.467897",
       "data_completeness": 1.0
     },
     {
@@ -2687,7 +2687,7 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.193531",
+      "last_scraped": "2026-08-02T11:14:13.479712",
       "data_completeness": 1.0
     },
     {
@@ -2742,11 +2742,11 @@
       ],
       "job_board": {
         "count": null,
-        "url": "https://askclara.com/careers",
+        "url": "http://askclara.com/careers",
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.212432",
+      "last_scraped": "2026-08-02T11:14:13.498925",
       "data_completeness": 1.0
     },
     {
@@ -2803,7 +2803,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.213293",
+      "last_scraped": "2026-08-02T11:14:13.499715",
       "data_completeness": 1.0
     },
     {
@@ -2854,7 +2854,7 @@
         "source_type": "ats_api",
         "ats_platform": "ashby"
       },
-      "last_scraped": "2026-08-02T09:57:44.178273",
+      "last_scraped": "2026-08-02T11:14:13.468125",
       "data_completeness": 1.0
     },
     {
@@ -2910,12 +2910,12 @@
         }
       ],
       "job_board": {
-        "count": null,
+        "count": 5,
         "url": "https://complir.io/careers",
-        "source_type": "manual_visit",
+        "source_type": "llm_extracted",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.202129",
+      "last_scraped": "2026-08-02T11:14:13.487823",
       "data_completeness": 1.0
     },
     {
@@ -2971,7 +2971,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.224945",
+      "last_scraped": "2026-08-02T11:14:13.509891",
       "data_completeness": 1.0
     },
     {
@@ -3023,7 +3023,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.219749",
+      "last_scraped": "2026-08-02T11:14:13.505593",
       "data_completeness": 1.0
     },
     {
@@ -3070,7 +3070,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.210806",
+      "last_scraped": "2026-08-02T11:14:13.497333",
       "data_completeness": 1.0
     },
     {
@@ -3122,7 +3122,7 @@
         "source_type": "ats_api",
         "ats_platform": "ashby"
       },
-      "last_scraped": "2026-08-02T09:57:44.204122",
+      "last_scraped": "2026-08-02T11:14:13.491002",
       "data_completeness": 1.0
     },
     {
@@ -3177,12 +3177,12 @@
         }
       ],
       "job_board": {
-        "count": null,
+        "count": 234,
         "url": "https://www.deel.com/careers",
-        "source_type": "manual_visit",
+        "source_type": "llm_extracted",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.178489",
+      "last_scraped": "2026-08-02T11:14:13.468343",
       "data_completeness": 1.0
     },
     {
@@ -3233,7 +3233,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.220279",
+      "last_scraped": "2026-08-02T11:14:13.506064",
       "data_completeness": 1.0
     },
     {
@@ -3287,7 +3287,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.212052",
+      "last_scraped": "2026-08-02T11:14:13.498560",
       "data_completeness": 1.0
     },
     {
@@ -3345,7 +3345,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.222005",
+      "last_scraped": "2026-08-02T11:14:13.507490",
       "data_completeness": 1.0
     },
     {
@@ -3401,7 +3401,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.213877",
+      "last_scraped": "2026-08-02T11:14:13.500151",
       "data_completeness": 1.0
     },
     {
@@ -3455,7 +3455,7 @@
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T09:57:44.205660",
+      "last_scraped": "2026-08-02T11:14:13.492408",
       "data_completeness": 1.0
     },
     {
@@ -3498,12 +3498,12 @@
         }
       ],
       "job_board": {
-        "count": null,
-        "url": "https://dripcapital.com/careers",
-        "source_type": "manual_visit",
+        "count": 1,
+        "url": "http://dripcapital.com/careers",
+        "source_type": "llm_extracted",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.186626",
+      "last_scraped": "2026-08-02T11:14:13.474400",
       "data_completeness": 1.0
     },
     {
@@ -3555,7 +3555,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.199522",
+      "last_scraped": "2026-08-02T11:14:13.486181",
       "data_completeness": 1.0
     },
     {
@@ -3614,12 +3614,12 @@
         }
       ],
       "job_board": {
-        "count": null,
-        "url": "https://eightsleep.com/careers",
-        "source_type": "manual_visit",
+        "count": 4,
+        "url": "http://eightsleep.com/careers",
+        "source_type": "llm_extracted",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.185516",
+      "last_scraped": "2026-08-02T11:14:13.473409",
       "data_completeness": 1.0
     },
     {
@@ -3666,7 +3666,7 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.193973",
+      "last_scraped": "2026-08-02T11:14:13.480112",
       "data_completeness": 1.0
     },
     {
@@ -3706,12 +3706,12 @@
         }
       ],
       "job_board": {
-        "count": null,
+        "count": 0,
         "url": "https://exonic.ai/careers",
-        "source_type": "manual_visit",
+        "source_type": "llm_extracted",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.214735",
+      "last_scraped": "2026-08-02T11:14:13.500900",
       "data_completeness": 1.0
     },
     {
@@ -3760,7 +3760,7 @@
         "source_type": "ats_api",
         "ats_platform": "ashby"
       },
-      "last_scraped": "2026-08-02T09:57:44.221659",
+      "last_scraped": "2026-08-02T11:14:13.507261",
       "data_completeness": 1.0
     },
     {
@@ -3824,7 +3824,7 @@
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T09:57:44.178748",
+      "last_scraped": "2026-08-02T11:14:13.468559",
       "data_completeness": 1.0
     },
     {
@@ -3880,7 +3880,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.208486",
+      "last_scraped": "2026-08-02T11:14:13.495031",
       "data_completeness": 1.0
     },
     {
@@ -3945,7 +3945,7 @@
         "source_type": "ats_api",
         "ats_platform": "ashby"
       },
-      "last_scraped": "2026-08-02T09:57:44.226133",
+      "last_scraped": "2026-08-02T11:14:13.510898",
       "data_completeness": 1.0
     },
     {
@@ -3997,12 +3997,12 @@
         }
       ],
       "job_board": {
-        "count": null,
+        "count": 23,
         "url": "https://fleetline.ai/careers",
-        "source_type": "manual_visit",
+        "source_type": "llm_extracted",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.224114",
+      "last_scraped": "2026-08-02T11:14:13.509110",
       "data_completeness": 1.0
     },
     {
@@ -4053,7 +4053,7 @@
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T09:57:44.178941",
+      "last_scraped": "2026-08-02T11:14:13.468786",
       "data_completeness": 1.0
     },
     {
@@ -4110,7 +4110,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.218839",
+      "last_scraped": "2026-08-02T11:14:13.504757",
       "data_completeness": 1.0
     },
     {
@@ -4168,7 +4168,7 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.179238",
+      "last_scraped": "2026-08-02T11:14:13.469027",
       "data_completeness": 1.0
     },
     {
@@ -4220,12 +4220,12 @@
         }
       ],
       "job_board": {
-        "count": null,
+        "count": 1,
         "url": "https://floot.com/careers",
-        "source_type": "manual_visit",
+        "source_type": "llm_extracted",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.225316",
+      "last_scraped": "2026-08-02T11:14:13.510246",
       "data_completeness": 1.0
     },
     {
@@ -4284,7 +4284,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.206703",
+      "last_scraped": "2026-08-02T11:14:13.493388",
       "data_completeness": 1.0
     },
     {
@@ -4335,7 +4335,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.222428",
+      "last_scraped": "2026-08-02T11:14:13.507894",
       "data_completeness": 1.0
     },
     {
@@ -4385,7 +4385,7 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.187630",
+      "last_scraped": "2026-08-02T11:14:13.475181",
       "data_completeness": 1.0
     },
     {
@@ -4430,7 +4430,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.214458",
+      "last_scraped": "2026-08-02T11:14:13.500664",
       "data_completeness": 1.0
     },
     {
@@ -4488,7 +4488,7 @@
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T09:57:44.186489",
+      "last_scraped": "2026-08-02T11:14:13.474274",
       "data_completeness": 1.0
     },
     {
@@ -4541,12 +4541,12 @@
         }
       ],
       "job_board": {
-        "count": null,
-        "url": "https://giveffect.com/careers",
-        "source_type": "manual_visit",
+        "count": 3,
+        "url": "http://giveffect.com/careers",
+        "source_type": "llm_extracted",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.189315",
+      "last_scraped": "2026-08-02T11:14:13.476474",
       "data_completeness": 1.0
     },
     {
@@ -4613,12 +4613,12 @@
         }
       ],
       "job_board": {
-        "count": null,
+        "count": 1,
         "url": "https://go1.com/careers",
-        "source_type": "manual_visit",
+        "source_type": "llm_extracted",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.179492",
+      "last_scraped": "2026-08-02T11:14:13.469181",
       "data_completeness": 1.0
     },
     {
@@ -4679,7 +4679,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.202660",
+      "last_scraped": "2026-08-02T11:14:13.488340",
       "data_completeness": 1.0
     },
     {
@@ -4743,7 +4743,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.193061",
+      "last_scraped": "2026-08-02T11:14:13.479285",
       "data_completeness": 1.0
     },
     {
@@ -4808,7 +4808,7 @@
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T09:57:44.180153",
+      "last_scraped": "2026-08-02T11:14:13.469597",
       "data_completeness": 1.0
     },
     {
@@ -4918,7 +4918,7 @@
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T09:57:44.191575",
+      "last_scraped": "2026-08-02T11:14:13.477593",
       "data_completeness": 1.0
     },
     {
@@ -4975,7 +4975,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.205248",
+      "last_scraped": "2026-08-02T11:14:13.492036",
       "data_completeness": 1.0
     },
     {
@@ -5027,7 +5027,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.224634",
+      "last_scraped": "2026-08-02T11:14:13.509595",
       "data_completeness": 1.0
     },
     {
@@ -5086,7 +5086,7 @@
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T09:57:44.191894",
+      "last_scraped": "2026-08-02T11:14:13.477954",
       "data_completeness": 1.0
     },
     {
@@ -5141,12 +5141,12 @@
         }
       ],
       "job_board": {
-        "count": null,
+        "count": 21,
         "url": "https://hub.xyz/careers",
-        "source_type": "manual_visit",
+        "source_type": "llm_extracted",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.203822",
+      "last_scraped": "2026-08-02T11:14:13.490756",
       "data_completeness": 1.0
     },
     {
@@ -5212,7 +5212,7 @@
         "source_type": "ats_api",
         "ats_platform": "ashby"
       },
-      "last_scraped": "2026-08-02T09:57:44.207756",
+      "last_scraped": "2026-08-02T11:14:13.494349",
       "data_completeness": 1.0
     },
     {
@@ -5272,7 +5272,7 @@
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T09:57:44.185380",
+      "last_scraped": "2026-08-02T11:14:13.473260",
       "data_completeness": 1.0
     },
     {
@@ -5326,7 +5326,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.197843",
+      "last_scraped": "2026-08-02T11:14:13.484468",
       "data_completeness": 1.0
     },
     {
@@ -5377,7 +5377,7 @@
         "source_type": "ats_api",
         "ats_platform": "ashby"
       },
-      "last_scraped": "2026-08-02T09:57:44.219600",
+      "last_scraped": "2026-08-02T11:14:13.505443",
       "data_completeness": 1.0
     },
     {
@@ -5436,7 +5436,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.220534",
+      "last_scraped": "2026-08-02T11:14:13.506274",
       "data_completeness": 1.0
     },
     {
@@ -5485,7 +5485,7 @@
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T09:57:44.214993",
+      "last_scraped": "2026-08-02T11:14:13.501102",
       "data_completeness": 1.0
     },
     {
@@ -5546,7 +5546,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.225206",
+      "last_scraped": "2026-08-02T11:14:13.510141",
       "data_completeness": 1.0
     },
     {
@@ -5603,7 +5603,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.216269",
+      "last_scraped": "2026-08-02T11:14:13.502352",
       "data_completeness": 1.0
     },
     {
@@ -5654,7 +5654,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.212192",
+      "last_scraped": "2026-08-02T11:14:13.498670",
       "data_completeness": 1.0
     },
     {
@@ -5701,12 +5701,12 @@
         }
       ],
       "job_board": {
-        "count": null,
+        "count": 10,
         "url": "https://influxdata.com/careers",
-        "source_type": "manual_visit",
+        "source_type": "llm_extracted",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.193847",
+      "last_scraped": "2026-08-02T11:14:13.479980",
       "data_completeness": 1.0
     },
     {
@@ -5755,7 +5755,7 @@
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T09:57:44.185660",
+      "last_scraped": "2026-08-02T11:14:13.473536",
       "data_completeness": 1.0
     },
     {
@@ -5807,7 +5807,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.197981",
+      "last_scraped": "2026-08-02T11:14:13.484600",
       "data_completeness": 1.0
     },
     {
@@ -5856,7 +5856,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.223685",
+      "last_scraped": "2026-08-02T11:14:13.508729",
       "data_completeness": 1.0
     },
     {
@@ -5901,12 +5901,12 @@
         }
       ],
       "job_board": {
-        "count": null,
-        "url": "https://ironcladapp.com/careers",
-        "source_type": "manual_visit",
+        "count": 6,
+        "url": "http://ironcladapp.com/careers",
+        "source_type": "llm_extracted",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.188015",
+      "last_scraped": "2026-08-02T11:14:13.475452",
       "data_completeness": 1.0
     },
     {
@@ -5964,7 +5964,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.214564",
+      "last_scraped": "2026-08-02T11:14:13.500766",
       "data_completeness": 1.0
     },
     {
@@ -6016,7 +6016,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.203452",
+      "last_scraped": "2026-08-02T11:14:13.490533",
       "data_completeness": 1.0
     },
     {
@@ -6062,7 +6062,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.224420",
+      "last_scraped": "2026-08-02T11:14:13.509393",
       "data_completeness": 1.0
     },
     {
@@ -6113,7 +6113,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.215367",
+      "last_scraped": "2026-08-02T11:14:13.501460",
       "data_completeness": 1.0
     },
     {
@@ -6160,7 +6160,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.203333",
+      "last_scraped": "2026-08-02T11:14:13.490427",
       "data_completeness": 1.0
     },
     {
@@ -6214,12 +6214,12 @@
         }
       ],
       "job_board": {
-        "count": null,
+        "count": 4,
         "url": "https://www.kinro.com/careers",
-        "source_type": "manual_visit",
+        "source_type": "llm_extracted",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.203582",
+      "last_scraped": "2026-08-02T11:14:13.490643",
       "data_completeness": 1.0
     },
     {
@@ -6279,7 +6279,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.220013",
+      "last_scraped": "2026-08-02T11:14:13.505836",
       "data_completeness": 1.0
     },
     {
@@ -6331,7 +6331,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.200090",
+      "last_scraped": "2026-08-02T11:14:13.486758",
       "data_completeness": 1.0
     },
     {
@@ -6389,12 +6389,12 @@
         }
       ],
       "job_board": {
-        "count": null,
+        "count": 6,
         "url": "https://lambdarobotics.ai/careers",
-        "source_type": "manual_visit",
+        "source_type": "llm_extracted",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.194505",
+      "last_scraped": "2026-08-02T11:14:13.481930",
       "data_completeness": 1.0
     },
     {
@@ -6452,7 +6452,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.211423",
+      "last_scraped": "2026-08-02T11:14:13.497975",
       "data_completeness": 1.0
     },
     {
@@ -6508,7 +6508,7 @@
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T09:57:44.184948",
+      "last_scraped": "2026-08-02T11:14:13.472660",
       "data_completeness": 1.0
     },
     {
@@ -6566,7 +6566,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.217381",
+      "last_scraped": "2026-08-02T11:14:13.502498",
       "data_completeness": 1.0
     },
     {
@@ -6631,7 +6631,7 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.214038",
+      "last_scraped": "2026-08-02T11:14:13.500297",
       "data_completeness": 1.0
     },
     {
@@ -6690,7 +6690,7 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.204378",
+      "last_scraped": "2026-08-02T11:14:13.491220",
       "data_completeness": 1.0
     },
     {
@@ -6742,7 +6742,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.224788",
+      "last_scraped": "2026-08-02T11:14:13.509748",
       "data_completeness": 1.0
     },
     {
@@ -6789,7 +6789,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.194797",
+      "last_scraped": "2026-08-02T11:14:13.482281",
       "data_completeness": 1.0
     },
     {
@@ -6842,7 +6842,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.215502",
+      "last_scraped": "2026-08-02T11:14:13.501590",
       "data_completeness": 1.0
     },
     {
@@ -6894,11 +6894,61 @@
       ],
       "job_board": {
         "count": null,
-        "url": "https://lugg.com/careers",
+        "url": "http://lugg.com/careers",
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.188152",
+      "last_scraped": "2026-08-02T11:14:13.475572",
+      "data_completeness": 1.0
+    },
+    {
+      "yc_id": 30804,
+      "name": "Luminal",
+      "slug": "luminal",
+      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/200fe1fa3e40bd9aed419582490f17ed6cf00c37.png",
+      "website": "https://luminal.com",
+      "location": "San Francisco, CA, USA",
+      "description": "Making AI run fast on any hardware.",
+      "long_description": "Luminal builds an ML framework and compiler that generates GPU code.\r\nOur stack 10x's model speed while simplifying deployment and cutting idle GPU costs\r\n\r\nGithub: https://github.com/luminal-ai/luminal\r\nDiscord: https://discord.gg/APjuwHAbGy",
+      "industry": "B2B",
+      "industries": [
+        "B2B",
+        "Infrastructure"
+      ],
+      "subindustry": "B2B -> Infrastructure",
+      "batch": null,
+      "is_hiring": true,
+      "is_top_company": false,
+      "status": "Active",
+      "stage": "Early",
+      "team_size": 5,
+      "tags": [
+        "AIOps",
+        "Developer Tools",
+        "Cloud Computing",
+        "AI"
+      ],
+      "regions": [
+        "United States of America",
+        "America / Canada"
+      ],
+      "source_vc": "Y Combinator",
+      "founders": [
+        {
+          "name": "Joe Fioti",
+          "college": "University of California, Berkeley",
+          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/0583e75ba29d754c8f1ed1c3827cf290ad883aae.jpg",
+          "linkedin_url": "https://linkedin.com/in/joe-fioti-24a986189",
+          "raw_bio": "Generating GPU kernels automatically to speed up ML models. Ex-Intel, worked on CPU microcode and ML accelerators."
+        }
+      ],
+      "job_board": {
+        "count": null,
+        "url": "https://luminal.com/careers",
+        "source_type": "manual_visit",
+        "ats_platform": null
+      },
+      "last_scraped": "2026-08-02T11:14:13.507786",
       "data_completeness": 1.0
     },
     {
@@ -6950,7 +7000,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.202401",
+      "last_scraped": "2026-08-02T11:14:13.488085",
       "data_completeness": 1.0
     },
     {
@@ -7022,12 +7072,12 @@
         }
       ],
       "job_board": {
-        "count": null,
+        "count": 5,
         "url": "https://getmagic.com/careers",
-        "source_type": "manual_visit",
+        "source_type": "llm_extracted",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.189807",
+      "last_scraped": "2026-08-02T11:14:13.476872",
       "data_completeness": 1.0
     },
     {
@@ -7079,7 +7129,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.223943",
+      "last_scraped": "2026-08-02T11:14:13.508952",
       "data_completeness": 1.0
     },
     {
@@ -7133,7 +7183,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.198423",
+      "last_scraped": "2026-08-02T11:14:13.485025",
       "data_completeness": 1.0
     },
     {
@@ -7178,7 +7228,7 @@
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T09:57:44.212867",
+      "last_scraped": "2026-08-02T11:14:13.499319",
       "data_completeness": 1.0
     },
     {
@@ -7236,7 +7286,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.226396",
+      "last_scraped": "2026-08-02T11:14:13.511142",
       "data_completeness": 1.0
     },
     {
@@ -7296,7 +7346,7 @@
         "source_type": "ats_api",
         "ats_platform": "lever"
       },
-      "last_scraped": "2026-08-02T09:57:44.188411",
+      "last_scraped": "2026-08-02T11:14:13.475736",
       "data_completeness": 1.0
     },
     {
@@ -7342,11 +7392,11 @@
       ],
       "job_board": {
         "count": null,
-        "url": "https://www.bymason.com/careers",
+        "url": "http://www.bymason.com/careers",
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.183612",
+      "last_scraped": "2026-08-02T11:14:13.471834",
       "data_completeness": 1.0
     },
     {
@@ -7407,7 +7457,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.208316",
+      "last_scraped": "2026-08-02T11:14:13.494877",
       "data_completeness": 1.0
     },
     {
@@ -7453,7 +7503,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.215261",
+      "last_scraped": "2026-08-02T11:14:13.501316",
       "data_completeness": 1.0
     },
     {
@@ -7502,12 +7552,12 @@
         }
       ],
       "job_board": {
-        "count": null,
+        "count": 1,
         "url": "https://minicor.com/careers",
-        "source_type": "manual_visit",
+        "source_type": "llm_extracted",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.200863",
+      "last_scraped": "2026-08-02T11:14:13.487565",
       "data_completeness": 1.0
     },
     {
@@ -7559,7 +7609,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.225870",
+      "last_scraped": "2026-08-02T11:14:13.510680",
       "data_completeness": 1.0
     },
     {
@@ -7611,7 +7661,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.206154",
+      "last_scraped": "2026-08-02T11:14:13.492884",
       "data_completeness": 1.0
     },
     {
@@ -7661,11 +7711,11 @@
       ],
       "job_board": {
         "count": null,
-        "url": "https://moritzlegal.com/careers",
+        "url": "http://moritzlegal.com/careers",
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.210374",
+      "last_scraped": "2026-08-02T11:14:13.496900",
       "data_completeness": 1.0
     },
     {
@@ -7722,7 +7772,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.213129",
+      "last_scraped": "2026-08-02T11:14:13.499568",
       "data_completeness": 1.0
     },
     {
@@ -7767,7 +7817,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.217970",
+      "last_scraped": "2026-08-02T11:14:13.502997",
       "data_completeness": 1.0
     },
     {
@@ -7834,12 +7884,12 @@
         }
       ],
       "job_board": {
-        "count": null,
-        "url": "https://mux.com/careers",
-        "source_type": "manual_visit",
+        "count": 11,
+        "url": "http://mux.com/careers",
+        "source_type": "llm_extracted",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.185083",
+      "last_scraped": "2026-08-02T11:14:13.472804",
       "data_completeness": 1.0
     },
     {
@@ -7892,7 +7942,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.223355",
+      "last_scraped": "2026-08-02T11:14:13.508472",
       "data_completeness": 1.0
     },
     {
@@ -7944,7 +7994,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.225098",
+      "last_scraped": "2026-08-02T11:14:13.510037",
       "data_completeness": 1.0
     },
     {
@@ -7995,7 +8045,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.219452",
+      "last_scraped": "2026-08-02T11:14:13.505300",
       "data_completeness": 1.0
     },
     {
@@ -8052,7 +8102,7 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.187777",
+      "last_scraped": "2026-08-02T11:14:13.475301",
       "data_completeness": 1.0
     },
     {
@@ -8108,7 +8158,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.204242",
+      "last_scraped": "2026-08-02T11:14:13.491111",
       "data_completeness": 1.0
     },
     {
@@ -8151,12 +8201,12 @@
         }
       ],
       "job_board": {
-        "count": null,
-        "url": "https://noorahealth.org/careers",
-        "source_type": "manual_visit",
+        "count": 0,
+        "url": "http://noorahealth.org/careers",
+        "source_type": "llm_extracted",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.192474",
+      "last_scraped": "2026-08-02T11:14:13.478514",
       "data_completeness": 1.0
     },
     {
@@ -8200,7 +8250,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.226533",
+      "last_scraped": "2026-08-02T11:14:13.511270",
       "data_completeness": 1.0
     },
     {
@@ -8247,7 +8297,7 @@
         "source_type": "ats_api",
         "ats_platform": "ashby"
       },
-      "last_scraped": "2026-08-02T09:57:44.221851",
+      "last_scraped": "2026-08-02T11:14:13.507367",
       "data_completeness": 1.0
     },
     {
@@ -8304,7 +8354,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.225476",
+      "last_scraped": "2026-08-02T11:14:13.510398",
       "data_completeness": 1.0
     },
     {
@@ -8353,7 +8403,7 @@
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T09:57:44.180428",
+      "last_scraped": "2026-08-02T11:14:13.469742",
       "data_completeness": 1.0
     },
     {
@@ -8405,7 +8455,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.211903",
+      "last_scraped": "2026-08-02T11:14:13.498453",
       "data_completeness": 1.0
     },
     {
@@ -8465,7 +8515,7 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.189599",
+      "last_scraped": "2026-08-02T11:14:13.476718",
       "data_completeness": 1.0
     },
     {
@@ -8509,12 +8559,12 @@
         }
       ],
       "job_board": {
-        "count": null,
+        "count": 1,
         "url": "https://ooakdata.com/careers",
-        "source_type": "manual_visit",
+        "source_type": "llm_extracted",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.195614",
+      "last_scraped": "2026-08-02T11:14:13.482802",
       "data_completeness": 1.0
     },
     {
@@ -8559,7 +8609,7 @@
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T09:57:44.199400",
+      "last_scraped": "2026-08-02T11:14:13.486061",
       "data_completeness": 1.0
     },
     {
@@ -8602,12 +8652,12 @@
         }
       ],
       "job_board": {
-        "count": null,
+        "count": 2,
         "url": "https://operonsolutions.com/en/careers",
-        "source_type": "manual_visit",
+        "source_type": "llm_extracted",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.195476",
+      "last_scraped": "2026-08-02T11:14:13.482607",
       "data_completeness": 1.0
     },
     {
@@ -8657,7 +8707,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.194096",
+      "last_scraped": "2026-08-02T11:14:13.480259",
       "data_completeness": 1.0
     },
     {
@@ -8716,7 +8766,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.209380",
+      "last_scraped": "2026-08-02T11:14:13.495840",
       "data_completeness": 1.0
     },
     {
@@ -8765,7 +8815,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.197330",
+      "last_scraped": "2026-08-02T11:14:13.483831",
       "data_completeness": 1.0
     },
     {
@@ -8821,12 +8871,12 @@
         }
       ],
       "job_board": {
-        "count": null,
+        "count": 3,
         "url": "https://parrotapp.com/careers",
-        "source_type": "manual_visit",
+        "source_type": "llm_extracted",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.220771",
+      "last_scraped": "2026-08-02T11:14:13.506485",
       "data_completeness": 1.0
     },
     {
@@ -8878,7 +8928,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.209227",
+      "last_scraped": "2026-08-02T11:14:13.495692",
       "data_completeness": 1.0
     },
     {
@@ -8929,7 +8979,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.212301",
+      "last_scraped": "2026-08-02T11:14:13.498777",
       "data_completeness": 1.0
     },
     {
@@ -8980,7 +9030,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.204909",
+      "last_scraped": "2026-08-02T11:14:13.491779",
       "data_completeness": 1.0
     },
     {
@@ -9032,7 +9082,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.226635",
+      "last_scraped": "2026-08-02T11:14:13.511361",
       "data_completeness": 1.0
     },
     {
@@ -9089,7 +9139,7 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.223807",
+      "last_scraped": "2026-08-02T11:14:13.508830",
       "data_completeness": 1.0
     },
     {
@@ -9148,7 +9198,7 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.192047",
+      "last_scraped": "2026-08-02T11:14:13.478090",
       "data_completeness": 1.0
     },
     {
@@ -9204,7 +9254,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.192321",
+      "last_scraped": "2026-08-02T11:14:13.478356",
       "data_completeness": 1.0
     },
     {
@@ -9261,7 +9311,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.210927",
+      "last_scraped": "2026-08-02T11:14:13.497437",
       "data_completeness": 1.0
     },
     {
@@ -9307,7 +9357,7 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.212581",
+      "last_scraped": "2026-08-02T11:14:13.499074",
       "data_completeness": 1.0
     },
     {
@@ -9360,7 +9410,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.207434",
+      "last_scraped": "2026-08-02T11:14:13.494058",
       "data_completeness": 1.0
     },
     {
@@ -9419,7 +9469,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.181083",
+      "last_scraped": "2026-08-02T11:14:13.469943",
       "data_completeness": 1.0
     },
     {
@@ -9470,7 +9520,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.207322",
+      "last_scraped": "2026-08-02T11:14:13.493955",
       "data_completeness": 1.0
     },
     {
@@ -9527,7 +9577,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.226018",
+      "last_scraped": "2026-08-02T11:14:13.510779",
       "data_completeness": 1.0
     },
     {
@@ -9579,7 +9629,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.202288",
+      "last_scraped": "2026-08-02T11:14:13.487959",
       "data_completeness": 1.0
     },
     {
@@ -9631,7 +9681,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.209555",
+      "last_scraped": "2026-08-02T11:14:13.496018",
       "data_completeness": 1.0
     },
     {
@@ -9689,7 +9739,7 @@
         "source_type": "ats_api",
         "ats_platform": "lever"
       },
-      "last_scraped": "2026-08-02T09:57:44.188581",
+      "last_scraped": "2026-08-02T11:14:13.475858",
       "data_completeness": 1.0
     },
     {
@@ -9748,7 +9798,7 @@
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T09:57:44.191251",
+      "last_scraped": "2026-08-02T11:14:13.477064",
       "data_completeness": 1.0
     },
     {
@@ -9798,7 +9848,7 @@
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T09:57:44.193676",
+      "last_scraped": "2026-08-02T11:14:13.479852",
       "data_completeness": 1.0
     },
     {
@@ -9855,7 +9905,7 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.210480",
+      "last_scraped": "2026-08-02T11:14:13.497010",
       "data_completeness": 1.0
     },
     {
@@ -9915,12 +9965,12 @@
         }
       ],
       "job_board": {
-        "count": null,
-        "url": "https://www.rappi.com/careers",
-        "source_type": "manual_visit",
+        "count": 19,
+        "url": "http://www.rappi.com/careers",
+        "source_type": "llm_extracted",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.181335",
+      "last_scraped": "2026-08-02T11:14:13.470144",
       "data_completeness": 1.0
     },
     {
@@ -9974,12 +10024,12 @@
         }
       ],
       "job_board": {
-        "count": null,
-        "url": "https://razorpay.com/careers",
-        "source_type": "manual_visit",
+        "count": 2,
+        "url": "https://razorpay.com/careers/",
+        "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.181497",
+      "last_scraped": "2026-08-02T11:14:13.470326",
       "data_completeness": 1.0
     },
     {
@@ -10029,7 +10079,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.187118",
+      "last_scraped": "2026-08-02T11:14:13.474828",
       "data_completeness": 1.0
     },
     {
@@ -10087,7 +10137,7 @@
         "source_type": "ats_api",
         "ats_platform": "ashby"
       },
-      "last_scraped": "2026-08-02T09:57:44.224525",
+      "last_scraped": "2026-08-02T11:14:13.509492",
       "data_completeness": 1.0
     },
     {
@@ -10142,7 +10192,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.226250",
+      "last_scraped": "2026-08-02T11:14:13.511042",
       "data_completeness": 1.0
     },
     {
@@ -10194,7 +10244,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.204674",
+      "last_scraped": "2026-08-02T11:14:13.491495",
       "data_completeness": 1.0
     },
     {
@@ -10245,12 +10295,12 @@
         }
       ],
       "job_board": {
-        "count": null,
+        "count": 3,
         "url": "https://revion.inc/careers",
-        "source_type": "manual_visit",
+        "source_type": "llm_extracted",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.208205",
+      "last_scraped": "2026-08-02T11:14:13.494770",
       "data_completeness": 1.0
     },
     {
@@ -10296,7 +10346,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.209055",
+      "last_scraped": "2026-08-02T11:14:13.495551",
       "data_completeness": 1.0
     },
     {
@@ -10348,11 +10398,11 @@
       ],
       "job_board": {
         "count": null,
-        "url": "https://rippling.com/careers",
+        "url": "http://rippling.com/careers",
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.181855",
+      "last_scraped": "2026-08-02T11:14:13.470568",
       "data_completeness": 1.0
     },
     {
@@ -10417,7 +10467,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.197028",
+      "last_scraped": "2026-08-02T11:14:13.483651",
       "data_completeness": 1.0
     },
     {
@@ -10468,7 +10518,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.201001",
+      "last_scraped": "2026-08-02T11:14:13.487697",
       "data_completeness": 1.0
     },
     {
@@ -10525,7 +10575,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.214281",
+      "last_scraped": "2026-08-02T11:14:13.500553",
       "data_completeness": 1.0
     },
     {
@@ -10573,11 +10623,11 @@
       ],
       "job_board": {
         "count": null,
-        "url": "https://rudus.ai/careers",
+        "url": "http://rudus.ai/careers",
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.204561",
+      "last_scraped": "2026-08-02T11:14:13.491377",
       "data_completeness": 1.0
     },
     {
@@ -10628,7 +10678,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.211736",
+      "last_scraped": "2026-08-02T11:14:13.498300",
       "data_completeness": 1.0
     },
     {
@@ -10680,7 +10730,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.211576",
+      "last_scraped": "2026-08-02T11:14:13.498151",
       "data_completeness": 1.0
     },
     {
@@ -10732,7 +10782,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.198875",
+      "last_scraped": "2026-08-02T11:14:13.485542",
       "data_completeness": 1.0
     },
     {
@@ -10782,11 +10832,11 @@
       ],
       "job_board": {
         "count": null,
-        "url": "https://soundboks.com/careers",
+        "url": "http://soundboks.com/careers",
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.184378",
+      "last_scraped": "2026-08-02T11:14:13.472506",
       "data_completeness": 1.0
     },
     {
@@ -10837,7 +10887,7 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.210233",
+      "last_scraped": "2026-08-02T11:14:13.496782",
       "data_completeness": 1.0
     },
     {
@@ -10888,7 +10938,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.215105",
+      "last_scraped": "2026-08-02T11:14:13.501205",
       "data_completeness": 1.0
     },
     {
@@ -10938,7 +10988,7 @@
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T09:57:44.182086",
+      "last_scraped": "2026-08-02T11:14:13.470695",
       "data_completeness": 1.0
     },
     {
@@ -10989,7 +11039,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.216121",
+      "last_scraped": "2026-08-02T11:14:13.502206",
       "data_completeness": 1.0
     },
     {
@@ -11048,7 +11098,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.208637",
+      "last_scraped": "2026-08-02T11:14:13.495174",
       "data_completeness": 1.0
     },
     {
@@ -11102,7 +11152,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.218727",
+      "last_scraped": "2026-08-02T11:14:13.504655",
       "data_completeness": 1.0
     },
     {
@@ -11160,7 +11210,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.186233",
+      "last_scraped": "2026-08-02T11:14:13.474024",
       "data_completeness": 1.0
     },
     {
@@ -11212,12 +11262,12 @@
         }
       ],
       "job_board": {
-        "count": null,
-        "url": "https://shipbob.com/careers",
-        "source_type": "manual_visit",
+        "count": 23,
+        "url": "http://shipbob.com/careers",
+        "source_type": "llm_extracted",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.182243",
+      "last_scraped": "2026-08-02T11:14:13.470862",
       "data_completeness": 1.0
     },
     {
@@ -11275,7 +11325,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.194661",
+      "last_scraped": "2026-08-02T11:14:13.482137",
       "data_completeness": 1.0
     },
     {
@@ -11317,12 +11367,12 @@
         }
       ],
       "job_board": {
-        "count": null,
-        "url": "https://simplyinsured.com/careers",
-        "source_type": "manual_visit",
+        "count": 12,
+        "url": "http://simplyinsured.com/careers",
+        "source_type": "llm_extracted",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.193396",
+      "last_scraped": "2026-08-02T11:14:13.479580",
       "data_completeness": 1.0
     },
     {
@@ -11378,7 +11428,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.207919",
+      "last_scraped": "2026-08-02T11:14:13.494511",
       "data_completeness": 1.0
     },
     {
@@ -11428,7 +11478,7 @@
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T09:57:44.182407",
+      "last_scraped": "2026-08-02T11:14:13.471021",
       "data_completeness": 1.0
     },
     {
@@ -11480,7 +11530,7 @@
         "source_type": "ats_api",
         "ats_platform": "ashby"
       },
-      "last_scraped": "2026-08-02T09:57:44.187382",
+      "last_scraped": "2026-08-02T11:14:13.475062",
       "data_completeness": 1.0
     },
     {
@@ -11532,7 +11582,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.225705",
+      "last_scraped": "2026-08-02T11:14:13.510538",
       "data_completeness": 1.0
     },
     {
@@ -11640,7 +11690,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.220158",
+      "last_scraped": "2026-08-02T11:14:13.505962",
       "data_completeness": 1.0
     },
     {
@@ -11696,7 +11746,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.215665",
+      "last_scraped": "2026-08-02T11:14:13.501758",
       "data_completeness": 1.0
     },
     {
@@ -11741,7 +11791,7 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.210128",
+      "last_scraped": "2026-08-02T11:14:13.496673",
       "data_completeness": 1.0
     },
     {
@@ -11793,7 +11843,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.203211",
+      "last_scraped": "2026-08-02T11:14:13.490318",
       "data_completeness": 1.0
     },
     {
@@ -11858,7 +11908,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.209700",
+      "last_scraped": "2026-08-02T11:14:13.496173",
       "data_completeness": 1.0
     },
     {
@@ -11902,12 +11952,12 @@
         }
       ],
       "job_board": {
-        "count": null,
-        "url": "https://streak.com/careers",
-        "source_type": "manual_visit",
+        "count": 1,
+        "url": "http://streak.com/careers",
+        "source_type": "llm_extracted",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.189175",
+      "last_scraped": "2026-08-02T11:14:13.476315",
       "data_completeness": 1.0
     },
     {
@@ -11964,7 +12014,7 @@
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T09:57:44.182794",
+      "last_scraped": "2026-08-02T11:14:13.471214",
       "data_completeness": 1.0
     },
     {
@@ -12028,7 +12078,7 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.220995",
+      "last_scraped": "2026-08-02T11:14:13.506703",
       "data_completeness": 1.0
     },
     {
@@ -12069,12 +12119,12 @@
         }
       ],
       "job_board": {
-        "count": null,
+        "count": 10,
         "url": "https://sunflowersober.com/careers",
-        "source_type": "manual_visit",
+        "source_type": "llm_extracted",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.217827",
+      "last_scraped": "2026-08-02T11:14:13.502858",
       "data_completeness": 1.0
     },
     {
@@ -12139,7 +12189,7 @@
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T09:57:44.207162",
+      "last_scraped": "2026-08-02T11:14:13.493808",
       "data_completeness": 1.0
     },
     {
@@ -12185,12 +12235,12 @@
         }
       ],
       "job_board": {
-        "count": null,
+        "count": 6,
         "url": "https://www.tab.travel/careers",
-        "source_type": "manual_visit",
+        "source_type": "llm_extracted",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.188972",
+      "last_scraped": "2026-08-02T11:14:13.476106",
       "data_completeness": 1.0
     },
     {
@@ -12246,11 +12296,11 @@
       ],
       "job_board": {
         "count": null,
-        "url": "https://www.tara.ai/careers",
+        "url": "http://www.tara.ai/careers",
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.188786",
+      "last_scraped": "2026-08-02T11:14:13.475982",
       "data_completeness": 1.0
     },
     {
@@ -12304,7 +12354,7 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.200289",
+      "last_scraped": "2026-08-02T11:14:13.486985",
       "data_completeness": 1.0
     },
     {
@@ -12361,7 +12411,7 @@
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T09:57:44.189451",
+      "last_scraped": "2026-08-02T11:14:13.476595",
       "data_completeness": 1.0
     },
     {
@@ -12413,7 +12463,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.209870",
+      "last_scraped": "2026-08-02T11:14:13.496386",
       "data_completeness": 1.0
     },
     {
@@ -12457,7 +12507,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.204006",
+      "last_scraped": "2026-08-02T11:14:13.490903",
       "data_completeness": 1.0
     },
     {
@@ -12502,7 +12552,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.214169",
+      "last_scraped": "2026-08-02T11:14:13.500445",
       "data_completeness": 1.0
     },
     {
@@ -12553,12 +12603,12 @@
         }
       ],
       "job_board": {
-        "count": null,
+        "count": 0,
         "url": "https://thesislabs.ai/careers",
-        "source_type": "manual_visit",
+        "source_type": "llm_extracted",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.217542",
+      "last_scraped": "2026-08-02T11:14:13.502603",
       "data_completeness": 1.0
     },
     {
@@ -12615,7 +12665,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.197474",
+      "last_scraped": "2026-08-02T11:14:13.483951",
       "data_completeness": 1.0
     },
     {
@@ -12667,7 +12717,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.204788",
+      "last_scraped": "2026-08-02T11:14:13.491606",
       "data_completeness": 1.0
     },
     {
@@ -12716,7 +12766,7 @@
         "source_type": "ats_api",
         "ats_platform": "lever"
       },
-      "last_scraped": "2026-08-02T09:57:44.183827",
+      "last_scraped": "2026-08-02T11:14:13.472049",
       "data_completeness": 1.0
     },
     {
@@ -12776,7 +12826,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.195909",
+      "last_scraped": "2026-08-02T11:14:13.483072",
       "data_completeness": 1.0
     },
     {
@@ -12833,7 +12883,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.219906",
+      "last_scraped": "2026-08-02T11:14:13.505734",
       "data_completeness": 1.0
     },
     {
@@ -12884,12 +12934,12 @@
         }
       ],
       "job_board": {
-        "count": null,
+        "count": 5,
         "url": "https://www.unsiloed.ai/careers",
-        "source_type": "manual_visit",
+        "source_type": "llm_extracted",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.218297",
+      "last_scraped": "2026-08-02T11:14:13.504226",
       "data_completeness": 1.0
     },
     {
@@ -12954,7 +13004,7 @@
         "source_type": "ats_api",
         "ats_platform": "ashby"
       },
-      "last_scraped": "2026-08-02T09:57:44.221158",
+      "last_scraped": "2026-08-02T11:14:13.506854",
       "data_completeness": 1.0
     },
     {
@@ -13010,7 +13060,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.222163",
+      "last_scraped": "2026-08-02T11:14:13.507639",
       "data_completeness": 1.0
     },
     {
@@ -13061,7 +13111,7 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.205981",
+      "last_scraped": "2026-08-02T11:14:13.492718",
       "data_completeness": 1.0
     },
     {
@@ -13113,7 +13163,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.213495",
+      "last_scraped": "2026-08-02T11:14:13.499817",
       "data_completeness": 1.0
     },
     {
@@ -13164,7 +13214,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.206300",
+      "last_scraped": "2026-08-02T11:14:13.493051",
       "data_completeness": 1.0
     },
     {
@@ -13220,7 +13270,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.213766",
+      "last_scraped": "2026-08-02T11:14:13.500050",
       "data_completeness": 1.0
     },
     {
@@ -13271,7 +13321,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.210023",
+      "last_scraped": "2026-08-02T11:14:13.496553",
       "data_completeness": 1.0
     },
     {
@@ -13318,7 +13368,7 @@
         "source_type": "ats_api",
         "ats_platform": "ashby"
       },
-      "last_scraped": "2026-08-02T09:57:44.186757",
+      "last_scraped": "2026-08-02T11:14:13.474520",
       "data_completeness": 1.0
     },
     {
@@ -13383,7 +13433,7 @@
         "source_type": "ats_api",
         "ats_platform": "ashby"
       },
-      "last_scraped": "2026-08-02T09:57:44.223043",
+      "last_scraped": "2026-08-02T11:14:13.508355",
       "data_completeness": 1.0
     },
     {
@@ -13442,7 +13492,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.223485",
+      "last_scraped": "2026-08-02T11:14:13.508575",
       "data_completeness": 1.0
     },
     {
@@ -13500,7 +13550,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.219297",
+      "last_scraped": "2026-08-02T11:14:13.505159",
       "data_completeness": 1.0
     },
     {
@@ -13545,7 +13595,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.205551",
+      "last_scraped": "2026-08-02T11:14:13.492288",
       "data_completeness": 1.0
     },
     {
@@ -13603,7 +13653,7 @@
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T09:57:44.183095",
+      "last_scraped": "2026-08-02T11:14:13.471352",
       "data_completeness": 1.0
     },
     {
@@ -13654,11 +13704,11 @@
       ],
       "job_board": {
         "count": null,
-        "url": "https://wefunder.com/careers",
+        "url": "http://wefunder.com/careers",
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.193231",
+      "last_scraped": "2026-08-02T11:14:13.479447",
       "data_completeness": 1.0
     },
     {
@@ -13714,7 +13764,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.183240",
+      "last_scraped": "2026-08-02T11:14:13.471505",
       "data_completeness": 1.0
     },
     {
@@ -13778,7 +13828,7 @@
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T09:57:44.186006",
+      "last_scraped": "2026-08-02T11:14:13.473842",
       "data_completeness": 1.0
     },
     {
@@ -13830,7 +13880,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.215818",
+      "last_scraped": "2026-08-02T11:14:13.501903",
       "data_completeness": 1.0
     },
     {
@@ -13876,12 +13926,12 @@
         }
       ],
       "job_board": {
-        "count": null,
-        "url": "https://zapier.com/careers",
-        "source_type": "manual_visit",
+        "count": 1,
+        "url": "http://zapier.com/careers",
+        "source_type": "llm_extracted",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.183459",
+      "last_scraped": "2026-08-02T11:14:13.471691",
       "data_completeness": 1.0
     },
     {
@@ -13924,12 +13974,12 @@
         }
       ],
       "job_board": {
-        "count": null,
+        "count": 10,
         "url": "https://zentail.com/careers",
-        "source_type": "manual_visit",
+        "source_type": "llm_extracted",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.194380",
+      "last_scraped": "2026-08-02T11:14:13.481777",
       "data_completeness": 1.0
     },
     {
@@ -13992,7 +14042,7 @@
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T09:57:44.222672",
+      "last_scraped": "2026-08-02T11:14:13.508049",
       "data_completeness": 1.0
     },
     {
@@ -14039,7 +14089,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.219016",
+      "last_scraped": "2026-08-02T11:14:13.504909",
       "data_completeness": 1.0
     },
     {
@@ -14086,11 +14136,11 @@
       ],
       "job_board": {
         "count": null,
-        "url": "https://www.isonohealth.com/careers",
+        "url": "http://www.isonohealth.com/careers",
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.183980",
+      "last_scraped": "2026-08-02T11:14:13.472245",
       "data_completeness": 1.0
     },
     {
@@ -14147,7 +14197,7 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.212974",
+      "last_scraped": "2026-08-02T11:14:13.499421",
       "data_completeness": 1.0
     },
     {
@@ -14192,7 +14242,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.205091",
+      "last_scraped": "2026-08-02T11:14:13.491930",
       "data_completeness": 1.0
     },
     {
@@ -14240,12 +14290,12 @@
         }
       ],
       "job_board": {
-        "count": null,
+        "count": 1,
         "url": "https://screenpipe.com/careers",
-        "source_type": "manual_visit",
+        "source_type": "llm_extracted",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.196139",
+      "last_scraped": "2026-08-02T11:14:13.483288",
       "data_completeness": 1.0
     },
     {
@@ -14296,7 +14346,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.198745",
+      "last_scraped": "2026-08-02T11:14:13.485412",
       "data_completeness": 0.75
     },
     {
@@ -14339,7 +14389,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.198154",
+      "last_scraped": "2026-08-02T11:14:13.484760",
       "data_completeness": 0.75
     },
     {
@@ -14383,7 +14433,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.210694",
+      "last_scraped": "2026-08-02T11:14:13.497229",
       "data_completeness": 0.75
     },
     {
@@ -14438,7 +14488,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.186357",
+      "last_scraped": "2026-08-02T11:14:13.474146",
       "data_completeness": 0.75
     },
     {
@@ -14476,12 +14526,12 @@
       "source_vc": "Y Combinator",
       "founders": [],
       "job_board": {
-        "count": null,
+        "count": 1,
         "url": "https://www.deepgram.com/careers",
-        "source_type": "manual_visit",
+        "source_type": "llm_extracted",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.184229",
+      "last_scraped": "2026-08-02T11:14:13.472377",
       "data_completeness": 0.75
     },
     {
@@ -14537,7 +14587,7 @@
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T09:57:44.179925",
+      "last_scraped": "2026-08-02T11:14:13.469423",
       "data_completeness": 0.75
     },
     {
@@ -14588,7 +14638,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.206568",
+      "last_scraped": "2026-08-02T11:14:13.493281",
       "data_completeness": 0.75
     },
     {
@@ -14639,7 +14689,7 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.208752",
+      "last_scraped": "2026-08-02T11:14:13.495287",
       "data_completeness": 0.75
     },
     {
@@ -14690,7 +14740,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.214878",
+      "last_scraped": "2026-08-02T11:14:13.500997",
       "data_completeness": 0.75
     },
     {
@@ -14731,49 +14781,7 @@
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T09:57:44.192919",
-      "data_completeness": 0.75
-    },
-    {
-      "yc_id": 30804,
-      "name": "Luminal",
-      "slug": "luminal",
-      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/200fe1fa3e40bd9aed419582490f17ed6cf00c37.png",
-      "website": "https://luminal.com",
-      "location": "San Francisco, CA, USA",
-      "description": "Making AI run fast on any hardware.",
-      "long_description": "Luminal builds an ML framework and compiler that generates GPU code.\r\nOur stack 10x's model speed while simplifying deployment and cutting idle GPU costs\r\n\r\nGithub: https://github.com/luminal-ai/luminal\r\nDiscord: https://discord.gg/APjuwHAbGy",
-      "industry": "B2B",
-      "industries": [
-        "B2B",
-        "Infrastructure"
-      ],
-      "subindustry": "B2B -> Infrastructure",
-      "batch": null,
-      "is_hiring": true,
-      "is_top_company": false,
-      "status": "Active",
-      "stage": "Early",
-      "team_size": 5,
-      "tags": [
-        "AIOps",
-        "Developer Tools",
-        "Cloud Computing",
-        "AI"
-      ],
-      "regions": [
-        "United States of America",
-        "America / Canada"
-      ],
-      "source_vc": "Y Combinator",
-      "founders": [],
-      "job_board": {
-        "count": null,
-        "url": "https://luminal.com/careers",
-        "source_type": "manual_visit",
-        "ats_platform": null
-      },
-      "last_scraped": "2026-08-02T09:57:44.222315",
+      "last_scraped": "2026-08-02T11:14:13.479159",
       "data_completeness": 0.75
     },
     {
@@ -14831,7 +14839,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.218452",
+      "last_scraped": "2026-08-02T11:14:13.504398",
       "data_completeness": 0.75
     },
     {
@@ -14884,12 +14892,12 @@
         }
       ],
       "job_board": {
-        "count": null,
+        "count": 2,
         "url": "https://samora.ai/careers",
-        "source_type": "manual_visit",
+        "source_type": "llm_extracted",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.207590",
+      "last_scraped": "2026-08-02T11:14:13.494201",
       "data_completeness": 0.75
     },
     {
@@ -14928,12 +14936,12 @@
         }
       ],
       "job_board": {
-        "count": null,
+        "count": 12,
         "url": "https://www.ycombinator.com/careers",
-        "source_type": "manual_visit",
+        "source_type": "llm_extracted",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.192183",
+      "last_scraped": "2026-08-02T11:14:13.478224",
       "data_completeness": 0.75
     },
     {
@@ -14979,12 +14987,12 @@
         }
       ],
       "job_board": {
-        "count": null,
+        "count": 2,
         "url": "https://stagewise.io/careers",
-        "source_type": "manual_visit",
+        "source_type": "llm_extracted",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.224262",
+      "last_scraped": "2026-08-02T11:14:13.509250",
       "data_completeness": 0.75
     }
   ]

@@ -47,8 +47,8 @@ function CalendarIcon() {
 
 /* ─── Main Component ─────────────────────────────────────────────── */
 
-export default function StatsBar({ metadata, companies }: StatsBarProps) {
-  const formattedDate = metadata.last_updated
+export default function StatsBar({ metadata, companies = [] }: StatsBarProps) {
+  const formattedDate = metadata?.last_updated
     ? new Date(metadata.last_updated).toLocaleDateString("en-US", {
         month: "short",
         day: "numeric",
@@ -56,11 +56,15 @@ export default function StatsBar({ metadata, companies }: StatsBarProps) {
       })
     : "—";
 
-  const completenessPercent = Math.round(metadata.avg_completeness * 100);
-  const tp = metadata.tier_percentages;
+  const completenessPercent = Math.round((metadata?.avg_completeness ?? 0) * 100);
+  const tp = metadata?.tier_percentages ?? { ats_api: 0, html_heuristic: 0, llm_extracted: 0, manual_visit: 0 };
+  const totalCompanies = metadata?.total_companies ?? (companies?.length || 0);
+  const hiringCount = metadata?.hiring_count ?? 0;
 
-  const bySource = companies.reduce((acc: Record<string, number>, c: Company) => {
-    acc[c.source_vc] = (acc[c.source_vc] || 0) + 1;
+  const validCompanies = Array.isArray(companies) ? companies : [];
+  const bySource = validCompanies.reduce((acc: Record<string, number>, c: Company) => {
+    const src = c?.source_vc || "Y Combinator";
+    acc[src] = (acc[src] || 0) + 1;
     return acc;
   }, {});
 
@@ -80,7 +84,7 @@ export default function StatsBar({ metadata, companies }: StatsBarProps) {
         <div className="flex flex-wrap items-center gap-8 text-sm">
           <StatPill
             label="Companies tracked"
-            value={formattedSourceCounts || metadata.total_companies.toLocaleString()}
+            value={formattedSourceCounts || totalCompanies.toLocaleString()}
             icon={<BuildingIcon />}
           />
           <Divider />
@@ -93,7 +97,7 @@ export default function StatsBar({ metadata, companies }: StatsBarProps) {
           <Divider />
           <StatPill
             label="Actively hiring"
-            value={metadata.hiring_count.toLocaleString()}
+            value={hiringCount.toLocaleString()}
             icon={<PulseIcon />}
           />
           <Divider />
@@ -108,20 +112,20 @@ export default function StatsBar({ metadata, companies }: StatsBarProps) {
           <span className="text-[10px] text-[#52525b] uppercase tracking-[0.08em] font-medium mr-2">
             Job data
           </span>
-          <TierBadge label="Verified API" percent={tp.ats_api} tier="ats_api" />
+          <TierBadge label="Verified API" percent={tp?.ats_api} tier="ats_api" />
           <TierBadge
             label="Estimated"
-            percent={tp.html_heuristic}
+            percent={tp?.html_heuristic}
             tier="html_heuristic"
           />
           <TierBadge
             label="AI-extracted"
-            percent={tp.llm_extracted}
+            percent={tp?.llm_extracted}
             tier="llm_extracted"
           />
           <TierBadge
             label="Manual"
-            percent={tp.manual_visit}
+            percent={tp?.manual_visit}
             tier="manual_visit"
           />
         </div>
@@ -166,11 +170,11 @@ function Divider() {
 
 function TierBadge({
   label,
-  percent,
+  percent = 0,
   tier,
 }: {
   label: string;
-  percent: number;
+  percent?: number;
   tier: string;
 }) {
   const colors: Record<string, string> = {
@@ -187,6 +191,8 @@ function TierBadge({
     manual_visit: "bg-zinc-400",
   };
 
+  const val = typeof percent === "number" ? percent : 0;
+
   return (
     <span
       className={`inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full text-[10px] font-normal border ${
@@ -198,7 +204,7 @@ function TierBadge({
           dotColors[tier] || dotColors.manual_visit
         }`}
       />
-      <span className="font-light">{percent.toFixed(1)}%</span>
+      <span className="font-light">{val.toFixed(1)}%</span>
       <span className="opacity-60">{label}</span>
     </span>
   );

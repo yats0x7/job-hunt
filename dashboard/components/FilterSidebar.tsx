@@ -29,7 +29,7 @@ function StarIcon() {
 }
 
 export default function FilterSidebar({
-  companies,
+  companies = [],
   onFilterChange,
 }: FilterSidebarProps) {
   const [selectedBatches, setSelectedBatches] = useState<Set<string>>(
@@ -43,18 +43,19 @@ export default function FilterSidebar({
   const [searchQuery, setSearchQuery] = useState("");
   const [isOpen, setIsOpen] = useState(true);
 
+  const validCompanies = Array.isArray(companies) ? companies : [];
+
   // Extract unique batches and industries
   const batches = [
-    ...new Set(companies.map((c) => c.batch).filter(Boolean) as string[]),
+    ...new Set(validCompanies.map((c) => c?.batch).filter(Boolean) as string[]),
   ].sort((a, b) => {
-    // Sort by year descending
     const yearA = parseInt(a.match(/\d{4}/)?.[0] || "0");
     const yearB = parseInt(b.match(/\d{4}/)?.[0] || "0");
     return yearB - yearA;
   });
 
   const industries = [
-    ...new Set(companies.flatMap((c) => c.industries).filter(Boolean)),
+    ...new Set(validCompanies.flatMap((c) => c?.industries ?? []).filter(Boolean)),
   ].sort();
 
   const applyFilters = (
@@ -64,34 +65,34 @@ export default function FilterSidebar({
     top: boolean,
     query: string
   ) => {
-    let filtered = [...companies];
+    let filtered = [...validCompanies];
 
     if (batchSet.size > 0) {
-      filtered = filtered.filter((c) => c.batch && batchSet.has(c.batch));
+      filtered = filtered.filter((c) => c?.batch && batchSet.has(c.batch));
     }
 
     if (industrySet.size > 0) {
       filtered = filtered.filter((c) =>
-        c.industries.some((ind) => industrySet.has(ind))
+        (c?.industries ?? []).some((ind) => industrySet.has(ind))
       );
     }
 
     if (hiring) {
-      filtered = filtered.filter((c) => c.is_hiring);
+      filtered = filtered.filter((c) => Boolean(c?.is_hiring));
     }
 
     if (top) {
-      filtered = filtered.filter((c) => c.is_top_company);
+      filtered = filtered.filter((c) => Boolean(c?.is_top_company));
     }
 
     if (query.trim()) {
       const q = query.toLowerCase();
       filtered = filtered.filter(
         (c) =>
-          c.name.toLowerCase().includes(q) ||
-          c.description?.toLowerCase().includes(q) ||
-          c.industry?.toLowerCase().includes(q) ||
-          c.location?.toLowerCase().includes(q)
+          c?.name?.toLowerCase().includes(q) ||
+          c?.description?.toLowerCase().includes(q) ||
+          c?.industry?.toLowerCase().includes(q) ||
+          c?.location?.toLowerCase().includes(q)
       );
     }
 
@@ -137,7 +138,7 @@ export default function FilterSidebar({
     setHiringOnly(false);
     setTopOnly(false);
     setSearchQuery("");
-    onFilterChange(companies);
+    onFilterChange(validCompanies);
   };
 
   const hasActiveFilters =

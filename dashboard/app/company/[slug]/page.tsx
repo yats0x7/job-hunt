@@ -1,16 +1,19 @@
 import Link from "next/link";
 import { Company, Founder } from "@/lib/types";
+import { getCompanyData } from "@/lib/data";
 import FounderChip from "@/components/FounderChip";
 import { JobSourceBadge } from "@/components/JobBadge";
 
+export async function generateStaticParams() {
+  const { companies } = await getCompanyData();
+  return (companies ?? []).map((c) => ({
+    slug: c.slug,
+  }));
+}
+
 async function getCompanyBySlug(slug: string): Promise<Company | undefined> {
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000';
-  const res = await fetch(`${baseUrl}/companies.json`, { 
-    next: { revalidate: 3600 } 
-  });
-  const data = await res.json();
-  const companies: Company[] = data.companies || data;
-  return companies.find((c) => c.slug === slug);
+  const { companies } = await getCompanyData();
+  return (companies ?? []).find((c) => c?.slug === slug);
 }
 
 export default async function CompanyDetailPage({
@@ -44,6 +47,11 @@ export default async function CompanyDetailPage({
       </div>
     );
   }
+
+  const founders = company.founders ?? [];
+  const industries = company.industries ?? [];
+  const tags = company.tags ?? [];
+  const regions = company.regions ?? [];
 
   return (
     <div className="min-h-screen">
@@ -80,9 +88,9 @@ export default async function CompanyDetailPage({
         </div>
 
         {/* Founders */}
-        {company.founders.length > 0 && (
+        {founders.length > 0 && (
           <div className="animate-in fade-in slide-in-from-bottom-4 duration-500 delay-100 fill-mode-both">
-            <FoundersSection founders={company.founders} />
+            <FoundersSection founders={founders} />
           </div>
         )}
 
@@ -104,7 +112,12 @@ export default async function CompanyDetailPage({
 
         {/* Details Grid */}
         <div className="animate-in fade-in slide-in-from-bottom-4 duration-500 delay-500 fill-mode-both">
-          <DetailsSection company={company} />
+          <DetailsSection
+            company={company}
+            industries={industries}
+            tags={tags}
+            regions={regions}
+          />
         </div>
       </main>
     </div>
@@ -150,18 +163,20 @@ function HeroSection({ company }: { company: Company }) {
     Acquired: "bg-violet-500/10 text-violet-400/80 border-violet-500/10",
   };
 
+  const dataCompleteness = Math.round((company.data_completeness ?? 0) * 100);
+
   return (
     <div className="flex items-start gap-5 mb-12">
       <div className="w-14 h-14 rounded-2xl bg-[#111111] border border-white/[0.06] flex-shrink-0 overflow-hidden flex items-center justify-center">
         {company.logo_url ? (
           <img
             src={company.logo_url}
-            alt={`${company.name} logo`}
+            alt={`${company.name ?? "Company"} logo`}
             className="w-full h-full object-contain p-2"
           />
         ) : (
           <span className="text-xl font-bold text-white w-full h-full flex items-center justify-center bg-gradient-to-br from-indigo-500/80 to-purple-600/80 rounded-2xl">
-            {company.name.charAt(0)}
+            {(company.name ?? "C").charAt(0)}
           </span>
         )}
       </div>
@@ -169,7 +184,7 @@ function HeroSection({ company }: { company: Company }) {
       <div className="flex-1 min-w-0">
         <div className="flex flex-wrap items-center gap-2.5 mb-2">
           <h1 className="text-xl font-bold text-[#e4e4e7] tracking-tight">
-            {company.name}
+            {company.name ?? "Unknown Company"}
           </h1>
           {company.batch && (
             <span className="px-2 py-0.5 rounded-md text-[11px] font-medium bg-orange-500/10 text-orange-400/80 border border-orange-500/10">
@@ -242,10 +257,10 @@ function HeroSection({ company }: { company: Company }) {
             Data completeness
           </span>
           <div className="flex-1 max-w-[200px] h-1 bg-white/[0.04] rounded-full overflow-hidden">
-            <div className="h-full rounded-full bg-gradient-to-r from-[#f97316] to-[#22c55e]" style={{ width: `${company.data_completeness * 100}%` }} />
+            <div className="h-full rounded-full bg-gradient-to-r from-[#f97316] to-[#22c55e]" style={{ width: `${dataCompleteness}%` }} />
           </div>
           <span className="text-[10px] font-medium text-[#71717a]">
-            {Math.round(company.data_completeness * 100)}%
+            {dataCompleteness}%
           </span>
         </div>
       </div>
@@ -270,7 +285,7 @@ function FoundersSection({ founders }: { founders: Founder[] }) {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-8 h-8 rounded-lg bg-white/[0.04] flex items-center justify-center text-[#52525b] hover:text-[#0a66c2] hover:bg-[#0a66c2]/8 transition-all duration-200"
-                  title={`${founder.name} on LinkedIn`}
+                  title={`${founder.name ?? "Founder"} on LinkedIn`}
                 >
                   <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
@@ -294,7 +309,7 @@ function JobsSection({ company }: { company: Company }) {
         {jb ? (
           <div className="flex flex-wrap items-center justify-between gap-4">
             <div className="flex items-center gap-4">
-              {jb.count !== null ? (
+              {jb.count !== null && jb.count !== undefined ? (
                 <div className="flex items-baseline gap-2">
                   <span className="text-2xl font-bold text-[#e4e4e7] tracking-tight">
                     {jb.count}
@@ -349,14 +364,32 @@ function JobsSection({ company }: { company: Company }) {
   );
 }
 
-function DetailsSection({ company }: { company: Company }) {
+function DetailsSection({
+  company,
+  industries,
+  tags,
+  regions,
+}: {
+  company: Company;
+  industries: string[];
+  tags: string[];
+  regions: string[];
+}) {
+  const lastScrapedText = company.last_scraped
+    ? new Date(company.last_scraped).toLocaleDateString("en-US", {
+        month: "long",
+        day: "numeric",
+        year: "numeric",
+      })
+    : "Recently";
+
   return (
     <Section title="Details">
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-        {company.industries.length > 0 && (
+        {industries.length > 0 && (
           <DetailCard label="Industries">
             <div className="flex flex-wrap gap-1.5">
-              {company.industries.map((ind) => (
+              {industries.map((ind) => (
                 <span
                   key={ind}
                   className="px-2 py-0.5 rounded-md text-[11px] font-normal bg-white/[0.04] text-[#71717a] border border-white/[0.04]"
@@ -368,10 +401,10 @@ function DetailsSection({ company }: { company: Company }) {
           </DetailCard>
         )}
 
-        {company.tags.length > 0 && (
+        {tags.length > 0 && (
           <DetailCard label="Tags">
             <div className="flex flex-wrap gap-1.5">
-              {company.tags.map((tag) => (
+              {tags.map((tag) => (
                 <span
                   key={tag}
                   className="px-2 py-0.5 rounded-md text-[11px] font-normal bg-white/[0.04] text-[#52525b] border border-white/[0.04]"
@@ -383,10 +416,10 @@ function DetailsSection({ company }: { company: Company }) {
           </DetailCard>
         )}
 
-        {company.regions.length > 0 && (
+        {regions.length > 0 && (
           <DetailCard label="Regions">
             <p className="text-[13px] text-[#71717a] font-light">
-              {company.regions.join(", ")}
+              {regions.join(", ")}
             </p>
           </DetailCard>
         )}
@@ -400,16 +433,12 @@ function DetailsSection({ company }: { company: Company }) {
         )}
 
         <DetailCard label="Source">
-          <p className="text-[13px] text-[#71717a] font-light">{company.source_vc}</p>
+          <p className="text-[13px] text-[#71717a] font-light">{company.source_vc ?? "Y Combinator"}</p>
         </DetailCard>
 
         <DetailCard label="Last Updated">
           <p className="text-[13px] text-[#71717a] font-light">
-            {new Date(company.last_scraped).toLocaleDateString("en-US", {
-              month: "long",
-              day: "numeric",
-              year: "numeric",
-            })}
+            {lastScrapedText}
           </p>
         </DetailCard>
       </div>

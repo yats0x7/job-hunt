@@ -3,17 +3,17 @@
 import { JobBoardResult } from "@/lib/types";
 
 interface JobBadgeProps {
-  jobBoard: JobBoardResult | null;
-  isHiring: boolean;
+  jobBoard?: JobBoardResult | null;
+  isHiring?: boolean;
   website?: string | null;
 }
 
-export default function JobBadge({ jobBoard, isHiring, website }: JobBadgeProps) {
-  if (!isHiring && (!jobBoard || jobBoard.count === null)) {
+export default function JobBadge({ jobBoard, isHiring = false, website }: JobBadgeProps) {
+  if (!isHiring && (!jobBoard || jobBoard.count === null || jobBoard.count === undefined)) {
     return null;
   }
 
-  if (jobBoard && jobBoard.count !== null && jobBoard.count > 0) {
+  if (jobBoard && jobBoard.count !== null && jobBoard.count !== undefined && jobBoard.count > 0) {
     return (
       <a
         href={jobBoard.url || "#"}
@@ -34,7 +34,7 @@ export default function JobBadge({ jobBoard, isHiring, website }: JobBadgeProps)
     );
   }
 
-  if (!jobBoard || jobBoard.count === null) {
+  if (!jobBoard || jobBoard.count === null || jobBoard.count === undefined) {
     if (!website) return null;
     return (
       <a
@@ -61,7 +61,7 @@ export default function JobBadge({ jobBoard, isHiring, website }: JobBadgeProps)
 export function JobSourceBadge({
   jobBoard,
 }: {
-  jobBoard: JobBoardResult | null;
+  jobBoard?: JobBoardResult | null;
 }) {
   if (!jobBoard) return null;
 

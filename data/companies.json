@@ -1,24 +1,138 @@
 {
   "metadata": {
-    "exported_at": "2026-08-02T09:57:44.244350",
+    "exported_at": "2026-08-02T11:06:20.707095",
     "total_companies": 276,
-    "avg_completeness": 0.99,
+    "avg_completeness": 0.74,
     "hiring_count": 276,
-    "last_updated": "2026-08-02T09:57:44.226635",
+    "last_updated": "2026-08-02T11:06:20.692387",
     "tier_breakdown": {
-      "ats_api": 45,
-      "html_heuristic": 21,
+      "ats_api": 44,
+      "html_heuristic": 20,
       "llm_extracted": 0,
-      "manual_visit": 210
+      "manual_visit": 212
     },
     "tier_percentages": {
-      "ats_api": 16.3,
-      "html_heuristic": 7.6,
+      "ats_api": 15.9,
+      "html_heuristic": 7.2,
       "llm_extracted": 0.0,
-      "manual_visit": 76.1
+      "manual_visit": 76.8
     }
   },
   "companies": [
+    {
+      "yc_id": 32170,
+      "name": "Gutgutgoose",
+      "slug": "gutgutgoose",
+      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/3b10bdb631232584efc1a8c09e67b74f8b953437.png",
+      "website": "https://gutgutgoose.com/",
+      "location": "San Francisco, CA, USA",
+      "description": "Personalized probiotics, guaranteed to colonize.",
+      "long_description": "Most data companies pay for their data. Ours pays for itself.\r\nCustomers send us a stool sample. We sequence it, build a metabolic model of that gut, and simulate whether each probiotic strain has an open niche it can colonize. We formulate the best candidates, then re-sequence 90 days later to see what actually took hold and what changed. Each cycle gives us the baseline gut, the intervention, and the outcome. At scale, the endgame is models that predict chronic disease years before symptoms.",
+      "industry": "Healthcare",
+      "industries": [
+        "Healthcare"
+      ],
+      "subindustry": "Healthcare",
+      "batch": null,
+      "is_hiring": true,
+      "is_top_company": false,
+      "status": "Active",
+      "stage": "Early",
+      "team_size": 2,
+      "tags": [
+        "Biotech",
+        "Personalization",
+        "Health & Wellness"
+      ],
+      "regions": [
+        "United States of America",
+        "America / Canada"
+      ],
+      "source_vc": "Y Combinator",
+      "founders": [
+        {
+          "name": "Anis Mihrshahi",
+          "college": null,
+          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/5ee2a444b14c5548c9ccc5cd1fe8814527d86097.jpg",
+          "linkedin_url": "https://www.linkedin.com/in/anis-mihrshahi-2a342a336/",
+          "raw_bio": "Youngest Math Olympiad champion in Queensland history. USQ Chancellor's Excellence Scholarship (AI and Data Science). At GutGutGoose, I work operations behind the scenes and co-built the mechanistic algorithm behind our personalised probiotics. Fun Fact: World Catan #1, Australian Powerlifting Champion, State Discus Champion, organised national conferences that brought 2000+ Australians in to think about creating meaningful change in society."
+        },
+        {
+          "name": "Leon Mojarrabi",
+          "college": "University of Cambridge",
+          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/c69cb9d3ddd32f9a50e604a7cee8506f0be7a15d.jpg",
+          "linkedin_url": "https://www.linkedin.com/in/leon-moj",
+          "raw_bio": "started university at 14, spent four years at a yc tech unicorn, then launched a pharmacy that hit $4M in revenue to fund GutGutGoose; strain-level metabolic modelling of the gut to catch disease decades early. I'm unreasonably interested in your poop's data."
+        }
+      ],
+      "job_board": {
+        "count": null,
+        "url": "https://gutgutgoose.com/careers",
+        "source_type": "manual_visit",
+        "ats_platform": null
+      },
+      "last_scraped": "2026-08-02T03:54:42.354830",
+      "data_completeness": 1.0
+    },
+    {
+      "yc_id": 30706,
+      "name": "Solva",
+      "slug": "solva",
+      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/b15b9a0a3aeadaf4902e3ef1a27712b5677c90d6.png",
+      "website": "https://solvatechnology.com",
+      "location": "New York City, NY, USA",
+      "description": "Automates insurance claims and stops incorrect payouts",
+      "long_description": "The domain specific AI for claims that gives leading insurers clarity and speed on the most complex claims",
+      "industry": "Fintech",
+      "industries": [
+        "Fintech",
+        "Insurance"
+      ],
+      "subindustry": "Fintech -> Insurance",
+      "batch": null,
+      "is_hiring": true,
+      "is_top_company": false,
+      "status": "Active",
+      "stage": "Early",
+      "team_size": 15,
+      "tags": [],
+      "regions": [
+        "United States of America",
+        "America / Canada"
+      ],
+      "source_vc": "Y Combinator",
+      "founders": [
+        {
+          "name": "Herman Båverud Olsson",
+          "college": null,
+          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/d5536abbb168e1f63ae5cfd59686528d96262cef.jpg",
+          "linkedin_url": "https://www.linkedin.com/in/hermanbaverudolsson/",
+          "raw_bio": "CEO and Co-founder of Solva. Previously part of building Lassie to $100M ARR with $110M raised, earning recognition from Sifted in 2024 as Europe’s fastest-growing InsurTech. Prior to that, I led AI and machine learning transformations at BCG X across financial services. I also have experience in FinTech and InsurTech from time at Morgan Stanley"
+        },
+        {
+          "name": "Sorena Amini",
+          "college": "New York University",
+          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/401d07d447c497ad57f1c77a25af14d347986df9.jpg",
+          "linkedin_url": "https://www.linkedin.com/in/sorenaamini",
+          "raw_bio": "COO and Co-founder of Solva. Was previously part of building tech-enabled companies in traditional industries, including KeyTo (from $60m to $250m). Before that, I worked at Citi focusing on InsurTech and at Talentech (formerly ReachMee) with growth and product."
+        },
+        {
+          "name": "Linus Malmén",
+          "college": "McGill University",
+          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/2b7cdd7d55cdcd313b5ed61db7489836586f003e.jpg",
+          "linkedin_url": "https://www.linkedin.com/in/linus-malmén-2588406a/",
+          "raw_bio": "CTO and Co-founder of Solva. Before Solva, I Co-founded Zaver (most recently starred in CNBC), a European neobank processing over €1 billion annually under an EBA-CRD license. Clients include Porsche, Volkswagen, and Loewe. I've led AI development for leading tech companies long before AI became the norm and my work has been featured in TechCrunch, Bloomberg and Forbes."
+        }
+      ],
+      "job_board": {
+        "count": null,
+        "url": "https://solvatechnology.com/careers",
+        "source_type": "manual_visit",
+        "ats_platform": null
+      },
+      "last_scraped": "2026-08-02T03:54:42.384247",
+      "data_completeness": 1.0
+    },
     {
       "yc_id": 31098,
       "name": "10x Science",
@@ -81,8 +195,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.211149",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.630384",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 33056,
@@ -143,8 +257,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.195125",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.560165",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31193,
@@ -202,8 +316,8 @@
         "source_type": "ats_api",
         "ats_platform": "ashby"
       },
-      "last_scraped": "2026-08-02T09:57:44.208087",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.625345",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31485,
@@ -247,8 +361,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.199644",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.597373",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31434,
@@ -301,8 +415,8 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.202548",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.604793",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31138,
@@ -352,8 +466,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.210589",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.629256",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 90,
@@ -402,8 +516,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.186930",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.500843",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30837,
@@ -453,8 +567,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.221325",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.682753",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 636,
@@ -513,8 +627,8 @@
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T09:57:44.175899",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.410171",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30895,
@@ -580,8 +694,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.218146",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.669627",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31411,
@@ -635,12 +749,12 @@
       ],
       "job_board": {
         "count": null,
-        "url": "https://www.useandco.com/careers",
+        "url": "http://www.useandco.com/careers",
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.203040",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.617554",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30890,
@@ -692,8 +806,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.218615",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.678345",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30999,
@@ -747,8 +861,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.213626",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.634084",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 72,
@@ -808,12 +922,12 @@
       ],
       "job_board": {
         "count": null,
-        "url": "https://apollographql.com/careers",
+        "url": "http://apollographql.com/careers",
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.191739",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.517989",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 578,
@@ -870,8 +984,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.192782",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.541831",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31458,
@@ -926,8 +1040,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.200674",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.600732",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31475,
@@ -971,8 +1085,51 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.199970",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.598417",
+      "data_completeness": 0.75
+    },
+    {
+      "yc_id": 31535,
+      "name": "Arlo Industries",
+      "slug": "arlo-industries",
+      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/9516f2cea09963c1b9ba307c35589a5d194c61c0.png",
+      "website": "https://arlo1.com/",
+      "location": "San Francisco, CA, USA",
+      "description": "Track drones and missiles without radars - Accurate, Passive, Scalable",
+      "long_description": "Arlo Industries is building a network of sensors that precisely tracks stealthy drones and aerial threats better than radars.\r\n\r\nThis capability does not exist yet because traditional radars are built on past war doctrines designed to protect single, centralised assets. Modern warfare, however, demands wide-area, persistent coverage that is both passive and economically scalable. By utilising a mesh architecture, Arlo Industries unlocks unprecedented asymmetric economics. The network is fundamentally built to scale: the cost of adding sensors grows linearly, but the tracking accuracy increases exponentially, delivering highly resilient, persistent coverage for a fraction of the cost of legacy systems.\r\n\r\nDeo founded Arlo Industries after spending over 6 years in the Israeli defence ecosystem, where he lived through multiple conflicts and experienced the Iron Dome and other systems in action against ICBMs and the infamous Shahed drones. Learning exactly how these defence systems could be improved after a Shahed exploded close to his apartment, he built Arlo Industries around the core philosophy that conflict should be concise & precise.\r\n\r\nThe people behind Arlo1 includes a PhD in drones and autonomy and military experts.\r\n\r\nArlo Industries has actively showcased this technology directly to Ukrainian militaries on the frontlines, as well as to operators across Europe and the USA.",
+      "industry": "Industrials",
+      "industries": [
+        "Industrials",
+        "Defense"
+      ],
+      "subindustry": "Industrials -> Defense",
+      "batch": null,
+      "is_hiring": true,
+      "is_top_company": false,
+      "status": "Active",
+      "stage": "Early",
+      "team_size": 3,
+      "tags": [
+        "Hard Tech",
+        "Hardware",
+        "Defense"
+      ],
+      "regions": [
+        "United States of America",
+        "America / Canada",
+        "Remote",
+        "Partly Remote"
+      ],
+      "source_vc": "Y Combinator",
+      "founders": [],
+      "job_board": {
+        "count": null,
+        "url": "https://arlo1.com/careers",
+        "source_type": "manual_visit",
+        "ats_platform": null
+      },
+      "last_scraped": "2026-08-02T11:06:20.570885",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31511,
@@ -1023,8 +1180,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.199206",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.591749",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31528,
@@ -1074,8 +1231,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.198563",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.587543",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31465,
@@ -1128,8 +1285,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.200494",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.600161",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30943,
@@ -1192,8 +1349,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.215972",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.651504",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31095,
@@ -1239,8 +1396,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.211320",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.630609",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30857,
@@ -1298,8 +1455,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.220419",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.681195",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31534,
@@ -1349,8 +1506,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.198277",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.572589",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30882,
@@ -1410,8 +1567,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.219124",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.679205",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31292,
@@ -1455,8 +1612,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.205830",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.621915",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30799,
@@ -1501,8 +1658,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.222873",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.685685",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31236,
@@ -1560,8 +1717,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.206826",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.623419",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31477,
@@ -1611,8 +1768,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.199774",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.597911",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 960,
@@ -1675,8 +1832,8 @@
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T09:57:44.185797",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.496052",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 32551,
@@ -1725,8 +1882,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.195768",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.561699",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30853,
@@ -1783,8 +1940,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.220650",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.681604",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31242,
@@ -1834,8 +1991,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.206431",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.622822",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 888,
@@ -1882,8 +2039,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.187252",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.502020",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30917,
@@ -1939,8 +2096,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.217664",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.667569",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30835,
@@ -1996,8 +2153,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.221479",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.683868",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30847,
@@ -2048,8 +2205,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.220890",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.682038",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 479,
@@ -2098,8 +2255,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.194260",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.557414",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 32220,
@@ -2163,8 +2320,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.196798",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.563437",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31416,
@@ -2217,8 +2374,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.202858",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.617306",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 583,
@@ -2259,12 +2416,12 @@
       ],
       "job_board": {
         "count": null,
-        "url": "https://www.cambly.com/careers",
+        "url": "http://www.cambly.com/careers",
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.192657",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.534677",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31178,
@@ -2314,8 +2471,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.208874",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.626628",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31311,
@@ -2365,8 +2522,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.205395",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.621302",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31040,
@@ -2417,8 +2574,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.212688",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.632721",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31113,
@@ -2469,8 +2626,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.211038",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.630177",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31513,
@@ -2523,8 +2680,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.199006",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.591104",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31233,
@@ -2574,8 +2731,8 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.206997",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.623705",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 662,
@@ -2634,8 +2791,8 @@
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T09:57:44.178025",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.478060",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 5,
@@ -2687,8 +2844,8 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.193531",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.554939",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31063,
@@ -2742,12 +2899,12 @@
       ],
       "job_board": {
         "count": null,
-        "url": "https://askclara.com/careers",
+        "url": "http://askclara.com/careers",
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.212432",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.632308",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31002,
@@ -2803,8 +2960,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.213293",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.633673",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 1480,
@@ -2854,8 +3011,8 @@
         "source_type": "ats_api",
         "ats_platform": "ashby"
       },
-      "last_scraped": "2026-08-02T09:57:44.178273",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.478834",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31443,
@@ -2915,8 +3072,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.202129",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.602288",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30747,
@@ -2971,8 +3128,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.224945",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.688553",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30878,
@@ -3023,8 +3180,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.219749",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.680151",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31128,
@@ -3070,8 +3227,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.210806",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.629725",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31370,
@@ -3122,8 +3279,8 @@
         "source_type": "ats_api",
         "ats_platform": "ashby"
       },
-      "last_scraped": "2026-08-02T09:57:44.204122",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.619224",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 12064,
@@ -3182,8 +3339,51 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.178489",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.479397",
+      "data_completeness": 0.75
+    },
+    {
+      "yc_id": 977,
+      "name": "Deepgram",
+      "slug": "deepgram",
+      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/e8d9b89a7e8039b79a0d0a37b71313e724036e55.png",
+      "website": "https://www.deepgram.com",
+      "location": "San Francisco, CA, USA; Remote",
+      "description": "Building foundational AI for speech transcription and understanding.",
+      "long_description": "Deepgram is a foundational AI company on a mission to understand human language. We give any developer access to the most advanced speech AI transcription and understanding with just an API call.\r\n\r\nOur models deliver the fastest, most accurate transcription alongside contextual features like summarization, sentiment analysis, and topic detection. Beyond that, developers can:\r\n🔊 Process live-streaming or pre-recorded audio\r\n🌎 Transcribe in dozens of languages\r\n⚙️ Train custom models for unique use cases\r\n🔑 Access deep NLU with a unified API\r\n💻 Build in any programming language with our SDKs\r\n✅ Deploy on-prem or on DG’s managed cloud\r\n📈 Get scalable GPU infra for training and inference\r\n\r\nDeepgram is a proud NVIDIA partner and Y Combinator company, and we recently completed a $72M Series B to define the future of AI Speech Understanding, making us the most-funded speech AI company at its stage.",
+      "industry": "B2B",
+      "industries": [
+        "B2B",
+        "Engineering, Product and Design"
+      ],
+      "subindustry": "B2B -> Engineering, Product and Design",
+      "batch": null,
+      "is_hiring": true,
+      "is_top_company": false,
+      "status": "Active",
+      "stage": "Growth",
+      "team_size": 115,
+      "tags": [
+        "AI-Enhanced Learning",
+        "API",
+        "AI"
+      ],
+      "regions": [
+        "United States of America",
+        "America / Canada",
+        "Remote",
+        "Fully Remote"
+      ],
+      "source_vc": "Y Combinator",
+      "founders": [],
+      "job_board": {
+        "count": null,
+        "url": "https://www.deepgram.com/careers",
+        "source_type": "manual_visit",
+        "ats_platform": null
+      },
+      "last_scraped": "2026-08-02T11:06:20.492252",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30858,
@@ -3233,8 +3433,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.220279",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.680977",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31080,
@@ -3287,8 +3487,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.212052",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.631674",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30816,
@@ -3345,8 +3545,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.222005",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.684476",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30993,
@@ -3401,8 +3601,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.213877",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.634469",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31294,
@@ -3455,8 +3655,8 @@
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T09:57:44.205660",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.621688",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 913,
@@ -3499,12 +3699,12 @@
       ],
       "job_board": {
         "count": null,
-        "url": "https://dripcapital.com/careers",
+        "url": "http://dripcapital.com/careers",
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.186626",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.499584",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31489,
@@ -3555,8 +3755,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.199522",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.596754",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 964,
@@ -3615,12 +3815,12 @@
       ],
       "job_board": {
         "count": null,
-        "url": "https://eightsleep.com/careers",
+        "url": "http://eightsleep.com/careers",
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.185516",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.494987",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 488,
@@ -3666,8 +3866,8 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.193973",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.556433",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30970,
@@ -3711,8 +3911,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.214735",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.635854",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30832,
@@ -3760,8 +3960,8 @@
         "source_type": "ats_api",
         "ats_platform": "ashby"
       },
-      "last_scraped": "2026-08-02T09:57:44.221659",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.684073",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 1543,
@@ -3824,8 +4024,8 @@
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T09:57:44.178748",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.479962",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31187,
@@ -3880,8 +4080,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.208486",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.625964",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30716,
@@ -3945,8 +4145,8 @@
         "source_type": "ats_api",
         "ats_platform": "ashby"
       },
-      "last_scraped": "2026-08-02T09:57:44.226133",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.690457",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30775,
@@ -4002,8 +4202,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.224114",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.687229",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 595,
@@ -4053,8 +4253,8 @@
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T09:57:44.178941",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.480504",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30884,
@@ -4110,8 +4310,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.218839",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.678739",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 1616,
@@ -4168,8 +4368,8 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.179238",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.481032",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30729,
@@ -4225,8 +4425,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.225316",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.689326",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31239,
@@ -4284,8 +4484,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.206703",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.623232",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30802,
@@ -4335,8 +4535,64 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.222428",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.685161",
+      "data_completeness": 0.75
+    },
+    {
+      "yc_id": 168,
+      "name": "GOAT Group",
+      "slug": "goat-group",
+      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/4f3a455935f36a6655742aae286b206df1cd13bd.png",
+      "website": "https://www.goatgroup.com/",
+      "location": "Los Angeles, CA, USA",
+      "description": "Platform for the greatest products from the past, present and future.",
+      "long_description": "GOAT Group represents the leading platforms for authentic sneakers, apparel and accessories. Operating four distinct brands–GOAT, Flight Club, Grailed and alias–GOAT Group has a global community of over 50M members across 170 countries.\r\n\r\nWe are backed by some of the leading names in venture capital including Accel Partners, Andreessen Horowitz, Index Ventures, Matrix Partners, NEA, SV Angel, Upfront Ventures, Webb Investment Network and Y Combinator.",
+      "industry": "Consumer",
+      "industries": [
+        "Consumer",
+        "Apparel and Cosmetics"
+      ],
+      "subindustry": "Consumer -> Apparel and Cosmetics",
+      "batch": null,
+      "is_hiring": true,
+      "is_top_company": true,
+      "status": "Active",
+      "stage": "Growth",
+      "team_size": 1600,
+      "tags": [
+        "Marketplace"
+      ],
+      "regions": [
+        "United States of America",
+        "America / Canada",
+        "Remote",
+        "Partly Remote"
+      ],
+      "source_vc": "Y Combinator",
+      "founders": [
+        {
+          "name": "Eddy Lu",
+          "college": null,
+          "photo_url": null,
+          "linkedin_url": "https://www.linkedin.com/in/eddylu/",
+          "raw_bio": null
+        },
+        {
+          "name": "Daishin Sugano",
+          "college": null,
+          "photo_url": null,
+          "linkedin_url": "https://www.linkedin.com/in/sensugano",
+          "raw_bio": null
+        }
+      ],
+      "job_board": {
+        "count": 24,
+        "url": "https://boards.greenhouse.io/goatgroup",
+        "source_type": "ats_api",
+        "ats_platform": "greenhouse"
+      },
+      "last_scraped": "2026-08-02T11:06:20.482224",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 871,
@@ -4385,8 +4641,8 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.187630",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.503160",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30973,
@@ -4430,8 +4686,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.214458",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.635397",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 914,
@@ -4488,8 +4744,8 @@
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T09:57:44.186489",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.499000",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 811,
@@ -4542,12 +4798,12 @@
       ],
       "job_board": {
         "count": null,
-        "url": "https://giveffect.com/careers",
+        "url": "http://giveffect.com/careers",
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.189315",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.514244",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 944,
@@ -4618,8 +4874,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.179492",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.481582",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31426,
@@ -4679,8 +4935,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.202660",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.605021",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 508,
@@ -4743,8 +4999,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.193061",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.553392",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 24,
@@ -4808,63 +5064,8 @@
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T09:57:44.180153",
-      "data_completeness": 1.0
-    },
-    {
-      "yc_id": 32170,
-      "name": "Gutgutgoose",
-      "slug": "gutgutgoose",
-      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/3b10bdb631232584efc1a8c09e67b74f8b953437.png",
-      "website": "https://gutgutgoose.com/",
-      "location": "San Francisco, CA, USA",
-      "description": "Personalized probiotics, guaranteed to colonize.",
-      "long_description": "Most data companies pay for their data. Ours pays for itself.\r\nCustomers send us a stool sample. We sequence it, build a metabolic model of that gut, and simulate whether each probiotic strain has an open niche it can colonize. We formulate the best candidates, then re-sequence 90 days later to see what actually took hold and what changed. Each cycle gives us the baseline gut, the intervention, and the outcome. At scale, the endgame is models that predict chronic disease years before symptoms.",
-      "industry": "Healthcare",
-      "industries": [
-        "Healthcare"
-      ],
-      "subindustry": "Healthcare",
-      "batch": null,
-      "is_hiring": true,
-      "is_top_company": false,
-      "status": "Active",
-      "stage": "Early",
-      "team_size": 2,
-      "tags": [
-        "Biotech",
-        "Personalization",
-        "Health & Wellness"
-      ],
-      "regions": [
-        "United States of America",
-        "America / Canada"
-      ],
-      "source_vc": "Y Combinator",
-      "founders": [
-        {
-          "name": "Anis Mihrshahi",
-          "college": null,
-          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/5ee2a444b14c5548c9ccc5cd1fe8814527d86097.jpg",
-          "linkedin_url": "https://www.linkedin.com/in/anis-mihrshahi-2a342a336/",
-          "raw_bio": "Youngest Math Olympiad champion in Queensland history. USQ Chancellor's Excellence Scholarship (AI and Data Science). At GutGutGoose, I work operations behind the scenes and co-built the mechanistic algorithm behind our personalised probiotics. Fun Fact: World Catan #1, Australian Powerlifting Champion, State Discus Champion, organised national conferences that brought 2000+ Australians in to think about creating meaningful change in society."
-        },
-        {
-          "name": "Leon Mojarrabi",
-          "college": "University of Cambridge",
-          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/c69cb9d3ddd32f9a50e604a7cee8506f0be7a15d.jpg",
-          "linkedin_url": "https://www.linkedin.com/in/leon-moj",
-          "raw_bio": "started university at 14, spent four years at a yc tech unicorn, then launched a pharmacy that hit $4M in revenue to fund GutGutGoose; strain-level metabolic modelling of the gut to catch disease decades early. I'm unreasonably interested in your poop's data."
-        }
-      ],
-      "job_board": {
-        "count": null,
-        "url": "https://gutgutgoose.com/careers",
-        "source_type": "manual_visit",
-        "ats_platform": null
-      },
-      "last_scraped": "2026-08-02T03:54:42.354830",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.482817",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 73,
@@ -4918,8 +5119,8 @@
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T09:57:44.191575",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.517314",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31323,
@@ -4975,8 +5176,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.205248",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.621104",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30758,
@@ -5027,8 +5228,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.224634",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.688079",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 714,
@@ -5086,8 +5287,8 @@
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T09:57:44.191894",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.519262",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31375,
@@ -5146,8 +5347,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.203822",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.618813",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31205,
@@ -5212,8 +5413,8 @@
         "source_type": "ats_api",
         "ats_platform": "ashby"
       },
-      "last_scraped": "2026-08-02T09:57:44.207756",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.624870",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 967,
@@ -5272,8 +5473,8 @@
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T09:57:44.185380",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.494434",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31564,
@@ -5326,8 +5527,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.197843",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.566037",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30879,
@@ -5377,8 +5578,8 @@
         "source_type": "ats_api",
         "ats_platform": "ashby"
       },
-      "last_scraped": "2026-08-02T09:57:44.219600",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.679912",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30854,
@@ -5436,8 +5637,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.220534",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.681382",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30965,
@@ -5485,8 +5686,8 @@
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T09:57:44.214993",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.636301",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30730,
@@ -5546,8 +5747,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.225206",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.689141",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30938,
@@ -5603,8 +5804,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.216269",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.652073",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31076,
@@ -5654,8 +5855,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.212192",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.631888",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 490,
@@ -5706,8 +5907,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.193847",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.555934",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 963,
@@ -5755,8 +5956,8 @@
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T09:57:44.185660",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.495557",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31560,
@@ -5807,8 +6008,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.197981",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.566841",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30789,
@@ -5856,8 +6057,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.223685",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.686568",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 866,
@@ -5902,12 +6103,12 @@
       ],
       "job_board": {
         "count": null,
-        "url": "https://ironcladapp.com/careers",
+        "url": "http://ironcladapp.com/careers",
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.188015",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.510003",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30972,
@@ -5964,8 +6165,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.214564",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.635608",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31383,
@@ -6016,8 +6217,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.203452",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.618429",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30769,
@@ -6062,8 +6263,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.224420",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.687691",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30959,
@@ -6113,8 +6314,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.215367",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.640609",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31393,
@@ -6160,8 +6361,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.203333",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.618235",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31382,
@@ -6219,8 +6420,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.203582",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.618610",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30870,
@@ -6279,8 +6480,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.220013",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.680569",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31473,
@@ -6331,8 +6532,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.200090",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.598895",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 34365,
@@ -6394,8 +6595,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.194505",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.558531",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31089,
@@ -6452,8 +6653,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.211423",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.630811",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 973,
@@ -6508,8 +6709,8 @@
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T09:57:44.184948",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.493232",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30932,
@@ -6566,8 +6767,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.217381",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.666947",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30987,
@@ -6631,8 +6832,8 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.214038",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.634731",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31360,
@@ -6690,8 +6891,49 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.204378",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.619657",
+      "data_completeness": 0.75
+    },
+    {
+      "yc_id": 552,
+      "name": "Lob",
+      "slug": "lob",
+      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/400c96e59ec9e937535827fdd7b324a248dec955.png",
+      "website": "http://lob.com",
+      "location": "New York City, NY, USA; San Francisco, CA, USA",
+      "description": "Lob is the only automation platform that transforms direct mail into…",
+      "long_description": "Lob provides the building blocks for developers to automate the offline world. Enterprise companies use Lob’s suite of APIs to mail fully dynamic and personalized customer communications with print media. We provide insight into deliverability with piece-by-piece tracing and utilize our proprietary Print Delivery Network to streamline production across fully redundant nodes all over the country. \r\n\r\nFounded in 2013 and based in San Francisco, Lob is venture backed by Y Combinator, Polaris Partners, Floodgate, and First Round Capital.\r\n\r\nFind out more about Lob and what we’re up to by following our blog: https://lob.com/blog or visiting our website: https://lob.com.",
+      "industry": "B2B",
+      "industries": [
+        "B2B",
+        "Marketing"
+      ],
+      "subindustry": "B2B -> Marketing",
+      "batch": null,
+      "is_hiring": true,
+      "is_top_company": false,
+      "status": "Active",
+      "stage": "Growth",
+      "team_size": 150,
+      "tags": [
+        "Automation"
+      ],
+      "regions": [
+        "United States of America",
+        "America / Canada",
+        "Remote",
+        "Partly Remote"
+      ],
+      "source_vc": "Y Combinator",
+      "founders": [],
+      "job_board": {
+        "count": 6,
+        "url": "https://boards.greenhouse.io/lob",
+        "source_type": "ats_api",
+        "ats_platform": "greenhouse"
+      },
+      "last_scraped": "2026-08-02T11:06:20.552795",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30754,
@@ -6742,8 +6984,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.224788",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.688312",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 33283,
@@ -6789,8 +7031,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.194797",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.559626",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30948,
@@ -6842,8 +7084,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.215502",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.642618",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 861,
@@ -6894,12 +7136,54 @@
       ],
       "job_board": {
         "count": null,
-        "url": "https://lugg.com/careers",
+        "url": "http://lugg.com/careers",
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.188152",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.510625",
+      "data_completeness": 0.75
+    },
+    {
+      "yc_id": 30804,
+      "name": "Luminal",
+      "slug": "luminal",
+      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/200fe1fa3e40bd9aed419582490f17ed6cf00c37.png",
+      "website": "https://luminal.com",
+      "location": "San Francisco, CA, USA",
+      "description": "Making AI run fast on any hardware.",
+      "long_description": "Luminal builds an ML framework and compiler that generates GPU code.\r\nOur stack 10x's model speed while simplifying deployment and cutting idle GPU costs\r\n\r\nGithub: https://github.com/luminal-ai/luminal\r\nDiscord: https://discord.gg/APjuwHAbGy",
+      "industry": "B2B",
+      "industries": [
+        "B2B",
+        "Infrastructure"
+      ],
+      "subindustry": "B2B -> Infrastructure",
+      "batch": null,
+      "is_hiring": true,
+      "is_top_company": false,
+      "status": "Active",
+      "stage": "Early",
+      "team_size": 5,
+      "tags": [
+        "AIOps",
+        "Developer Tools",
+        "Cloud Computing",
+        "AI"
+      ],
+      "regions": [
+        "United States of America",
+        "America / Canada"
+      ],
+      "source_vc": "Y Combinator",
+      "founders": [],
+      "job_board": {
+        "count": null,
+        "url": "https://luminal.com/careers",
+        "source_type": "manual_visit",
+        "ats_platform": null
+      },
+      "last_scraped": "2026-08-02T11:06:20.684951",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31435,
@@ -6950,8 +7234,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.202401",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.604415",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 751,
@@ -7027,8 +7311,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.189807",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.516035",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30776,
@@ -7079,8 +7363,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.223943",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.686983",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31531,
@@ -7133,8 +7417,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.198423",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.573200",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31036,
@@ -7178,8 +7462,8 @@
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T09:57:44.212867",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.632950",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30710,
@@ -7236,8 +7520,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.226396",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.691881",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 856,
@@ -7296,8 +7580,8 @@
         "source_type": "ats_api",
         "ats_platform": "lever"
       },
-      "last_scraped": "2026-08-02T09:57:44.188411",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.511221",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 991,
@@ -7342,12 +7626,12 @@
       ],
       "job_board": {
         "count": null,
-        "url": "https://www.bymason.com/careers",
+        "url": "http://www.bymason.com/careers",
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.183612",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.490502",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31188,
@@ -7407,8 +7691,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.208316",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.625717",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30960,
@@ -7453,8 +7737,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.215261",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.640388",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31453,
@@ -7507,8 +7791,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.200863",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.601292",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30723,
@@ -7559,8 +7843,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.225870",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.690027",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31269,
@@ -7611,8 +7895,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.206154",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.622383",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31146,
@@ -7661,12 +7945,12 @@
       ],
       "job_board": {
         "count": null,
-        "url": "https://moritzlegal.com/careers",
+        "url": "http://moritzlegal.com/careers",
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.210374",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.628885",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31008,
@@ -7722,8 +8006,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.213129",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.633416",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30896,
@@ -7767,8 +8051,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.217970",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.669390",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 972,
@@ -7835,12 +8119,12 @@
       ],
       "job_board": {
         "count": null,
-        "url": "https://mux.com/careers",
+        "url": "http://mux.com/careers",
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.185083",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.493841",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30795,
@@ -7892,8 +8176,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.223355",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.686136",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30733,
@@ -7944,8 +8228,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.225098",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.688770",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30880,
@@ -7995,8 +8279,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.219452",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.679695",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 869,
@@ -8052,8 +8336,8 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.187777",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.509187",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31366,
@@ -8108,8 +8392,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.204242",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.619407",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 585,
@@ -8152,12 +8436,12 @@
       ],
       "job_board": {
         "count": null,
-        "url": "https://noorahealth.org/careers",
+        "url": "http://noorahealth.org/careers",
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.192474",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.534071",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30709,
@@ -8200,8 +8484,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.226533",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.692184",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30818,
@@ -8247,8 +8531,8 @@
         "source_type": "ats_api",
         "ats_platform": "ashby"
       },
-      "last_scraped": "2026-08-02T09:57:44.221851",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.684282",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30728,
@@ -8304,8 +8588,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.225476",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.689561",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 12565,
@@ -8353,8 +8637,8 @@
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T09:57:44.180428",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.483488",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31081,
@@ -8405,8 +8689,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.211903",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.631486",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 76,
@@ -8465,8 +8749,8 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.189599",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.515370",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 32554,
@@ -8514,8 +8798,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.195614",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.561207",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31505,
@@ -8559,8 +8843,8 @@
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T09:57:44.199400",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.592396",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 33013,
@@ -8607,8 +8891,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.195476",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.560679",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 481,
@@ -8657,8 +8941,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.194096",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.556904",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31174,
@@ -8716,8 +9000,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.209380",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.627342",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 32134,
@@ -8765,8 +9049,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.197330",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.564623",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30848,
@@ -8826,8 +9110,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.220771",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.681829",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31175,
@@ -8878,8 +9162,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.209227",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.627108",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31066,
@@ -8929,8 +9213,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.212301",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.632085",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31333,
@@ -8980,8 +9264,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.204909",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.620617",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30708,
@@ -9032,8 +9316,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.226635",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.692387",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30778,
@@ -9084,13 +9368,13 @@
         }
       ],
       "job_board": {
-        "count": 2,
-        "url": "https://www.perspectiveshealth.ai/careers",
-        "source_type": "html_heuristic",
+        "count": null,
+        "url": "https://perspectiveshealth.ai/careers",
+        "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.223807",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.686761",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 695,
@@ -9148,8 +9432,8 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.192047",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.532199",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 613,
@@ -9204,8 +9488,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.192321",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.533569",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31114,
@@ -9261,8 +9545,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.210927",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.629927",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31041,
@@ -9307,8 +9591,8 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.212581",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.632526",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31214,
@@ -9360,8 +9644,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.207434",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.624414",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 1042,
@@ -9419,8 +9703,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.181083",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.484089",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31217,
@@ -9470,8 +9754,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.207322",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.624206",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30719,
@@ -9527,8 +9811,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.226018",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.690232",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31436,
@@ -9579,8 +9863,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.202288",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.602739",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31169,
@@ -9631,8 +9915,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.209555",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.627583",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 85,
@@ -9689,8 +9973,8 @@
         "source_type": "ats_api",
         "ats_platform": "lever"
       },
-      "last_scraped": "2026-08-02T09:57:44.188581",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.511781",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 740,
@@ -9748,8 +10032,8 @@
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T09:57:44.191251",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.516698",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 493,
@@ -9798,8 +10082,8 @@
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T09:57:44.193676",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.555410",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31145,
@@ -9855,8 +10139,8 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.210480",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.629072",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 1103,
@@ -9916,12 +10200,12 @@
       ],
       "job_board": {
         "count": null,
-        "url": "https://www.rappi.com/careers",
+        "url": "http://www.rappi.com/careers",
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.181335",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.484730",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 827,
@@ -9979,8 +10263,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.181497",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.485226",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 898,
@@ -10029,8 +10313,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.187118",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.501410",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30761,
@@ -10087,8 +10371,8 @@
         "source_type": "ats_api",
         "ats_platform": "ashby"
       },
-      "last_scraped": "2026-08-02T09:57:44.224525",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.687880",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30712,
@@ -10142,8 +10426,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.226250",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.691640",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31345,
@@ -10194,8 +10478,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.204674",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.620162",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31189,
@@ -10250,8 +10534,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.208205",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.625535",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31176,
@@ -10296,8 +10580,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.209055",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.626878",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 1451,
@@ -10348,12 +10632,12 @@
       ],
       "job_board": {
         "count": null,
-        "url": "https://rippling.com/careers",
+        "url": "http://rippling.com/careers",
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.181855",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.485917",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 32192,
@@ -10417,8 +10701,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.197028",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.563997",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31450,
@@ -10468,8 +10752,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.201001",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.601766",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30977,
@@ -10525,8 +10809,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.214281",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.635184",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31346,
@@ -10573,12 +10857,12 @@
       ],
       "job_board": {
         "count": null,
-        "url": "https://rudus.ai/careers",
+        "url": "http://rudus.ai/careers",
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.204561",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.619948",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31085,
@@ -10628,8 +10912,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.211736",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.631265",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31088,
@@ -10680,8 +10964,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.211576",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.631040",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31518,
@@ -10732,8 +11016,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.198875",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.589036",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 974,
@@ -10782,12 +11066,12 @@
       ],
       "job_board": {
         "count": null,
-        "url": "https://soundboks.com/careers",
+        "url": "http://soundboks.com/careers",
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.184378",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.492756",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31147,
@@ -10837,8 +11121,8 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.210233",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.628690",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30964,
@@ -10888,8 +11172,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.215105",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.640187",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 1294,
@@ -10938,8 +11222,8 @@
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T09:57:44.182086",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.486460",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30942,
@@ -10989,8 +11273,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.216121",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.651797",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31180,
@@ -11048,8 +11332,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.208637",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.626218",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30885,
@@ -11102,8 +11386,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.218727",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.678536",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 936,
@@ -11160,8 +11444,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.186233",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.497338",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 705,
@@ -11213,12 +11497,12 @@
       ],
       "job_board": {
         "count": null,
-        "url": "https://shipbob.com/careers",
+        "url": "http://shipbob.com/careers",
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.182243",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.487022",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 33838,
@@ -11275,8 +11559,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.194661",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.559098",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 500,
@@ -11318,12 +11602,12 @@
       ],
       "job_board": {
         "count": null,
-        "url": "https://simplyinsured.com/careers",
+        "url": "http://simplyinsured.com/careers",
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.193396",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.554449",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31203,
@@ -11378,8 +11662,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.207919",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.625129",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 414,
@@ -11428,8 +11712,8 @@
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T09:57:44.182407",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.487571",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 878,
@@ -11480,8 +11764,8 @@
         "source_type": "ats_api",
         "ats_platform": "ashby"
       },
-      "last_scraped": "2026-08-02T09:57:44.187382",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.502570",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30726,
@@ -11532,67 +11816,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.225705",
-      "data_completeness": 1.0
-    },
-    {
-      "yc_id": 30706,
-      "name": "Solva",
-      "slug": "solva",
-      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/b15b9a0a3aeadaf4902e3ef1a27712b5677c90d6.png",
-      "website": "https://solvatechnology.com",
-      "location": "New York City, NY, USA",
-      "description": "Automates insurance claims and stops incorrect payouts",
-      "long_description": "The domain specific AI for claims that gives leading insurers clarity and speed on the most complex claims",
-      "industry": "Fintech",
-      "industries": [
-        "Fintech",
-        "Insurance"
-      ],
-      "subindustry": "Fintech -> Insurance",
-      "batch": null,
-      "is_hiring": true,
-      "is_top_company": false,
-      "status": "Active",
-      "stage": "Early",
-      "team_size": 15,
-      "tags": [],
-      "regions": [
-        "United States of America",
-        "America / Canada"
-      ],
-      "source_vc": "Y Combinator",
-      "founders": [
-        {
-          "name": "Herman Båverud Olsson",
-          "college": null,
-          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/d5536abbb168e1f63ae5cfd59686528d96262cef.jpg",
-          "linkedin_url": "https://www.linkedin.com/in/hermanbaverudolsson/",
-          "raw_bio": "CEO and Co-founder of Solva. Previously part of building Lassie to $100M ARR with $110M raised, earning recognition from Sifted in 2024 as Europe’s fastest-growing InsurTech. Prior to that, I led AI and machine learning transformations at BCG X across financial services. I also have experience in FinTech and InsurTech from time at Morgan Stanley"
-        },
-        {
-          "name": "Sorena Amini",
-          "college": "New York University",
-          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/401d07d447c497ad57f1c77a25af14d347986df9.jpg",
-          "linkedin_url": "https://www.linkedin.com/in/sorenaamini",
-          "raw_bio": "COO and Co-founder of Solva. Was previously part of building tech-enabled companies in traditional industries, including KeyTo (from $60m to $250m). Before that, I worked at Citi focusing on InsurTech and at Talentech (formerly ReachMee) with growth and product."
-        },
-        {
-          "name": "Linus Malmén",
-          "college": "McGill University",
-          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/2b7cdd7d55cdcd313b5ed61db7489836586f003e.jpg",
-          "linkedin_url": "https://www.linkedin.com/in/linus-malmén-2588406a/",
-          "raw_bio": "CTO and Co-founder of Solva. Before Solva, I Co-founded Zaver (most recently starred in CNBC), a European neobank processing over €1 billion annually under an EBA-CRD license. Clients include Porsche, Volkswagen, and Loewe. I've led AI development for leading tech companies long before AI became the norm and my work has been featured in TechCrunch, Bloomberg and Forbes."
-        }
-      ],
-      "job_board": {
-        "count": null,
-        "url": "https://solvatechnology.com/careers",
-        "source_type": "manual_visit",
-        "ats_platform": null
-      },
-      "last_scraped": "2026-08-02T03:54:42.384247",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.689803",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30867,
@@ -11640,8 +11865,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.220158",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.680774",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30946,
@@ -11696,8 +11921,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.215665",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.642909",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31151,
@@ -11741,8 +11966,8 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.210128",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.628493",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31402,
@@ -11793,8 +12018,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.203211",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.618042",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31167,
@@ -11858,8 +12083,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.209700",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.627804",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 82,
@@ -11903,12 +12128,12 @@
       ],
       "job_board": {
         "count": null,
-        "url": "https://streak.com/careers",
+        "url": "http://streak.com/careers",
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.189175",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.513726",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 240,
@@ -11964,8 +12189,8 @@
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T09:57:44.182794",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.488176",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30845,
@@ -12028,8 +12253,8 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.220995",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.682244",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30914,
@@ -12074,8 +12299,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.217827",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.667808",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31222,
@@ -12139,8 +12364,8 @@
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T09:57:44.207162",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.623951",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 833,
@@ -12190,8 +12415,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.188972",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.513000",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 848,
@@ -12246,12 +12471,12 @@
       ],
       "job_board": {
         "count": null,
-        "url": "https://www.tara.ai/careers",
+        "url": "http://www.tara.ai/careers",
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.188786",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.512439",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31470,
@@ -12304,8 +12529,8 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.200289",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.599546",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 789,
@@ -12356,13 +12581,13 @@
         }
       ],
       "job_board": {
-        "count": 3,
-        "url": "https://boards.greenhouse.io/tempo",
-        "source_type": "ats_api",
-        "ats_platform": "greenhouse"
+        "count": null,
+        "url": "https://tempo.fit/careers",
+        "source_type": "manual_visit",
+        "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.189451",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.514816",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31158,
@@ -12413,8 +12638,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.209870",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.628042",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31371,
@@ -12457,8 +12682,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.204006",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.619025",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30986,
@@ -12502,8 +12727,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.214169",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.634968",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30928,
@@ -12558,8 +12783,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.217542",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.667329",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31858,
@@ -12615,8 +12840,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.197474",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.565245",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31344,
@@ -12667,8 +12892,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.204788",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.620384",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 989,
@@ -12716,8 +12941,8 @@
         "source_type": "ats_api",
         "ats_platform": "lever"
       },
-      "last_scraped": "2026-08-02T09:57:44.183827",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.491157",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 32418,
@@ -12776,8 +13001,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.195909",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.562255",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30877,
@@ -12833,8 +13058,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.219906",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.680373",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30894,
@@ -12889,8 +13114,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.218297",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.677646",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30844,
@@ -12954,8 +13179,8 @@
         "source_type": "ats_api",
         "ats_platform": "ashby"
       },
-      "last_scraped": "2026-08-02T09:57:44.221158",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.682494",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30806,
@@ -13010,8 +13235,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.222163",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.684716",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31271,
@@ -13061,8 +13286,8 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.205981",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.622150",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31000,
@@ -13113,8 +13338,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.213495",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.633859",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31264,
@@ -13164,8 +13389,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.206300",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.622625",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30995,
@@ -13220,8 +13445,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.213766",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.634290",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31156,
@@ -13271,8 +13496,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.210023",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.628287",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 902,
@@ -13318,8 +13543,8 @@
         "source_type": "ats_api",
         "ats_platform": "ashby"
       },
-      "last_scraped": "2026-08-02T09:57:44.186757",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.500198",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30797,
@@ -13383,8 +13608,8 @@
         "source_type": "ats_api",
         "ats_platform": "ashby"
       },
-      "last_scraped": "2026-08-02T09:57:44.223043",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.685938",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30794,
@@ -13442,8 +13667,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.223485",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.686331",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30881,
@@ -13500,8 +13725,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.219297",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.679451",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31299,
@@ -13545,8 +13770,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.205551",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.621484",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 566,
@@ -13603,8 +13828,8 @@
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T09:57:44.183095",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.488748",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 503,
@@ -13654,12 +13879,12 @@
       ],
       "job_board": {
         "count": null,
-        "url": "https://wefunder.com/careers",
+        "url": "http://wefunder.com/careers",
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.193231",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.553942",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 13208,
@@ -13714,8 +13939,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.183240",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.489354",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 938,
@@ -13778,8 +14003,8 @@
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T09:57:44.186006",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.496680",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30945,
@@ -13830,8 +14055,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.215818",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.648537",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 442,
@@ -13877,12 +14102,12 @@
       ],
       "job_board": {
         "count": null,
-        "url": "https://zapier.com/careers",
+        "url": "http://zapier.com/careers",
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.183459",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.489974",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 409,
@@ -13929,8 +14154,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.194380",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.557975",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30801,
@@ -13992,8 +14217,8 @@
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T09:57:44.222672",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.685423",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30883,
@@ -14039,8 +14264,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.219016",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.678969",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 988,
@@ -14086,12 +14311,12 @@
       ],
       "job_board": {
         "count": null,
-        "url": "https://www.isonohealth.com/careers",
+        "url": "http://www.isonohealth.com/careers",
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.183980",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.491749",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31018,
@@ -14147,8 +14372,8 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.212974",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.633183",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31329,
@@ -14192,8 +14417,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.205091",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.620908",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 32259,
@@ -14245,8 +14470,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.196139",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-02T11:06:20.562877",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31524,
@@ -14296,51 +14521,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.198745",
-      "data_completeness": 0.75
-    },
-    {
-      "yc_id": 31535,
-      "name": "Arlo Industries",
-      "slug": "arlo-industries",
-      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/9516f2cea09963c1b9ba307c35589a5d194c61c0.png",
-      "website": "https://arlo1.com/",
-      "location": "San Francisco, CA, USA",
-      "description": "Track drones and missiles without radars - Accurate, Passive, Scalable",
-      "long_description": "Arlo Industries is building a network of sensors that precisely tracks stealthy drones and aerial threats better than radars.\r\n\r\nThis capability does not exist yet because traditional radars are built on past war doctrines designed to protect single, centralised assets. Modern warfare, however, demands wide-area, persistent coverage that is both passive and economically scalable. By utilising a mesh architecture, Arlo Industries unlocks unprecedented asymmetric economics. The network is fundamentally built to scale: the cost of adding sensors grows linearly, but the tracking accuracy increases exponentially, delivering highly resilient, persistent coverage for a fraction of the cost of legacy systems.\r\n\r\nDeo founded Arlo Industries after spending over 6 years in the Israeli defence ecosystem, where he lived through multiple conflicts and experienced the Iron Dome and other systems in action against ICBMs and the infamous Shahed drones. Learning exactly how these defence systems could be improved after a Shahed exploded close to his apartment, he built Arlo Industries around the core philosophy that conflict should be concise & precise.\r\n\r\nThe people behind Arlo1 includes a PhD in drones and autonomy and military experts.\r\n\r\nArlo Industries has actively showcased this technology directly to Ukrainian militaries on the frontlines, as well as to operators across Europe and the USA.",
-      "industry": "Industrials",
-      "industries": [
-        "Industrials",
-        "Defense"
-      ],
-      "subindustry": "Industrials -> Defense",
-      "batch": null,
-      "is_hiring": true,
-      "is_top_company": false,
-      "status": "Active",
-      "stage": "Early",
-      "team_size": 3,
-      "tags": [
-        "Hard Tech",
-        "Hardware",
-        "Defense"
-      ],
-      "regions": [
-        "United States of America",
-        "America / Canada",
-        "Remote",
-        "Partly Remote"
-      ],
-      "source_vc": "Y Combinator",
-      "founders": [],
-      "job_board": {
-        "count": null,
-        "url": "https://arlo1.com/careers",
-        "source_type": "manual_visit",
-        "ats_platform": null
-      },
-      "last_scraped": "2026-08-02T09:57:44.198154",
-      "data_completeness": 0.75
+      "last_scraped": "2026-08-02T11:06:20.588199",
+      "data_completeness": 0.5
     },
     {
       "yc_id": 31130,
@@ -14383,8 +14565,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.210694",
-      "data_completeness": 0.75
+      "last_scraped": "2026-08-02T11:06:20.629435",
+      "data_completeness": 0.5
     },
     {
       "yc_id": 915,
@@ -14438,107 +14620,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.186357",
-      "data_completeness": 0.75
-    },
-    {
-      "yc_id": 977,
-      "name": "Deepgram",
-      "slug": "deepgram",
-      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/e8d9b89a7e8039b79a0d0a37b71313e724036e55.png",
-      "website": "https://www.deepgram.com",
-      "location": "San Francisco, CA, USA; Remote",
-      "description": "Building foundational AI for speech transcription and understanding.",
-      "long_description": "Deepgram is a foundational AI company on a mission to understand human language. We give any developer access to the most advanced speech AI transcription and understanding with just an API call.\r\n\r\nOur models deliver the fastest, most accurate transcription alongside contextual features like summarization, sentiment analysis, and topic detection. Beyond that, developers can:\r\n🔊 Process live-streaming or pre-recorded audio\r\n🌎 Transcribe in dozens of languages\r\n⚙️ Train custom models for unique use cases\r\n🔑 Access deep NLU with a unified API\r\n💻 Build in any programming language with our SDKs\r\n✅ Deploy on-prem or on DG’s managed cloud\r\n📈 Get scalable GPU infra for training and inference\r\n\r\nDeepgram is a proud NVIDIA partner and Y Combinator company, and we recently completed a $72M Series B to define the future of AI Speech Understanding, making us the most-funded speech AI company at its stage.",
-      "industry": "B2B",
-      "industries": [
-        "B2B",
-        "Engineering, Product and Design"
-      ],
-      "subindustry": "B2B -> Engineering, Product and Design",
-      "batch": null,
-      "is_hiring": true,
-      "is_top_company": false,
-      "status": "Active",
-      "stage": "Growth",
-      "team_size": 115,
-      "tags": [
-        "AI-Enhanced Learning",
-        "API",
-        "AI"
-      ],
-      "regions": [
-        "United States of America",
-        "America / Canada",
-        "Remote",
-        "Fully Remote"
-      ],
-      "source_vc": "Y Combinator",
-      "founders": [],
-      "job_board": {
-        "count": null,
-        "url": "https://www.deepgram.com/careers",
-        "source_type": "manual_visit",
-        "ats_platform": null
-      },
-      "last_scraped": "2026-08-02T09:57:44.184229",
-      "data_completeness": 0.75
-    },
-    {
-      "yc_id": 168,
-      "name": "GOAT Group",
-      "slug": "goat-group",
-      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/4f3a455935f36a6655742aae286b206df1cd13bd.png",
-      "website": "https://www.goatgroup.com/",
-      "location": "Los Angeles, CA, USA",
-      "description": "Platform for the greatest products from the past, present and future.",
-      "long_description": "GOAT Group represents the leading platforms for authentic sneakers, apparel and accessories. Operating four distinct brands–GOAT, Flight Club, Grailed and alias–GOAT Group has a global community of over 50M members across 170 countries.\r\n\r\nWe are backed by some of the leading names in venture capital including Accel Partners, Andreessen Horowitz, Index Ventures, Matrix Partners, NEA, SV Angel, Upfront Ventures, Webb Investment Network and Y Combinator.",
-      "industry": "Consumer",
-      "industries": [
-        "Consumer",
-        "Apparel and Cosmetics"
-      ],
-      "subindustry": "Consumer -> Apparel and Cosmetics",
-      "batch": null,
-      "is_hiring": true,
-      "is_top_company": true,
-      "status": "Active",
-      "stage": "Growth",
-      "team_size": 1600,
-      "tags": [
-        "Marketplace"
-      ],
-      "regions": [
-        "United States of America",
-        "America / Canada",
-        "Remote",
-        "Partly Remote"
-      ],
-      "source_vc": "Y Combinator",
-      "founders": [
-        {
-          "name": "Eddy Lu",
-          "college": null,
-          "photo_url": null,
-          "linkedin_url": "https://www.linkedin.com/in/eddylu/",
-          "raw_bio": null
-        },
-        {
-          "name": "Daishin Sugano",
-          "college": null,
-          "photo_url": null,
-          "linkedin_url": "https://www.linkedin.com/in/sensugano",
-          "raw_bio": null
-        }
-      ],
-      "job_board": {
-        "count": 24,
-        "url": "https://boards.greenhouse.io/goatgroup",
-        "source_type": "ats_api",
-        "ats_platform": "greenhouse"
-      },
-      "last_scraped": "2026-08-02T09:57:44.179925",
-      "data_completeness": 0.75
+      "last_scraped": "2026-08-02T11:06:20.497995",
+      "data_completeness": 0.5
     },
     {
       "yc_id": 31240,
@@ -14588,8 +14671,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.206568",
-      "data_completeness": 0.75
+      "last_scraped": "2026-08-02T11:06:20.623018",
+      "data_completeness": 0.5
     },
     {
       "yc_id": 31179,
@@ -14639,8 +14722,8 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.208752",
-      "data_completeness": 0.75
+      "last_scraped": "2026-08-02T11:06:20.626409",
+      "data_completeness": 0.5
     },
     {
       "yc_id": 30966,
@@ -14690,91 +14773,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.214878",
-      "data_completeness": 0.75
-    },
-    {
-      "yc_id": 552,
-      "name": "Lob",
-      "slug": "lob",
-      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/400c96e59ec9e937535827fdd7b324a248dec955.png",
-      "website": "http://lob.com",
-      "location": "New York City, NY, USA; San Francisco, CA, USA",
-      "description": "Lob is the only automation platform that transforms direct mail into…",
-      "long_description": "Lob provides the building blocks for developers to automate the offline world. Enterprise companies use Lob’s suite of APIs to mail fully dynamic and personalized customer communications with print media. We provide insight into deliverability with piece-by-piece tracing and utilize our proprietary Print Delivery Network to streamline production across fully redundant nodes all over the country. \r\n\r\nFounded in 2013 and based in San Francisco, Lob is venture backed by Y Combinator, Polaris Partners, Floodgate, and First Round Capital.\r\n\r\nFind out more about Lob and what we’re up to by following our blog: https://lob.com/blog or visiting our website: https://lob.com.",
-      "industry": "B2B",
-      "industries": [
-        "B2B",
-        "Marketing"
-      ],
-      "subindustry": "B2B -> Marketing",
-      "batch": null,
-      "is_hiring": true,
-      "is_top_company": false,
-      "status": "Active",
-      "stage": "Growth",
-      "team_size": 150,
-      "tags": [
-        "Automation"
-      ],
-      "regions": [
-        "United States of America",
-        "America / Canada",
-        "Remote",
-        "Partly Remote"
-      ],
-      "source_vc": "Y Combinator",
-      "founders": [],
-      "job_board": {
-        "count": 6,
-        "url": "https://boards.greenhouse.io/lob",
-        "source_type": "ats_api",
-        "ats_platform": "greenhouse"
-      },
-      "last_scraped": "2026-08-02T09:57:44.192919",
-      "data_completeness": 0.75
-    },
-    {
-      "yc_id": 30804,
-      "name": "Luminal",
-      "slug": "luminal",
-      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/200fe1fa3e40bd9aed419582490f17ed6cf00c37.png",
-      "website": "https://luminal.com",
-      "location": "San Francisco, CA, USA",
-      "description": "Making AI run fast on any hardware.",
-      "long_description": "Luminal builds an ML framework and compiler that generates GPU code.\r\nOur stack 10x's model speed while simplifying deployment and cutting idle GPU costs\r\n\r\nGithub: https://github.com/luminal-ai/luminal\r\nDiscord: https://discord.gg/APjuwHAbGy",
-      "industry": "B2B",
-      "industries": [
-        "B2B",
-        "Infrastructure"
-      ],
-      "subindustry": "B2B -> Infrastructure",
-      "batch": null,
-      "is_hiring": true,
-      "is_top_company": false,
-      "status": "Active",
-      "stage": "Early",
-      "team_size": 5,
-      "tags": [
-        "AIOps",
-        "Developer Tools",
-        "Cloud Computing",
-        "AI"
-      ],
-      "regions": [
-        "United States of America",
-        "America / Canada"
-      ],
-      "source_vc": "Y Combinator",
-      "founders": [],
-      "job_board": {
-        "count": null,
-        "url": "https://luminal.com/careers",
-        "source_type": "manual_visit",
-        "ats_platform": null
-      },
-      "last_scraped": "2026-08-02T09:57:44.222315",
-      "data_completeness": 0.75
+      "last_scraped": "2026-08-02T11:06:20.636077",
+      "data_completeness": 0.5
     },
     {
       "yc_id": 30891,
@@ -14831,8 +14831,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.218452",
-      "data_completeness": 0.75
+      "last_scraped": "2026-08-02T11:06:20.678080",
+      "data_completeness": 0.5
     },
     {
       "yc_id": 31206,
@@ -14889,8 +14889,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.207590",
-      "data_completeness": 0.75
+      "last_scraped": "2026-08-02T11:06:20.624635",
+      "data_completeness": 0.5
     },
     {
       "yc_id": 64,
@@ -14933,8 +14933,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.192183",
-      "data_completeness": 0.75
+      "last_scraped": "2026-08-02T11:06:20.532950",
+      "data_completeness": 0.5
     },
     {
       "yc_id": 30772,
@@ -14984,8 +14984,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T09:57:44.224262",
-      "data_completeness": 0.75
+      "last_scraped": "2026-08-02T11:06:20.687460",
+      "data_completeness": 0.5
     }
   ]
 }

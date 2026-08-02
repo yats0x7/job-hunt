@@ -9,6 +9,25 @@ interface FilterSidebarProps {
   onFilterChange: (filtered: Company[]) => void;
 }
 
+/* ─── SVG Icons ──────────────────────────────────────────────────── */
+
+function HiringIcon() {
+  return (
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="flex-shrink-0">
+      <circle cx="12" cy="12" r="10"/>
+      <path d="M8 12l2.5 2.5L16 9"/>
+    </svg>
+  );
+}
+
+function StarIcon() {
+  return (
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="flex-shrink-0">
+      <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+    </svg>
+  );
+}
+
 export default function FilterSidebar({
   companies,
   onFilterChange,
@@ -133,10 +152,10 @@ export default function FilterSidebar({
       {/* Mobile toggle */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="lg:hidden fixed bottom-6 right-6 z-40 w-12 h-12 rounded-full bg-[#f97316] text-white shadow-lg shadow-orange-500/25 flex items-center justify-center hover:bg-[#ea580c] transition-colors"
+        className="lg:hidden fixed bottom-6 right-6 z-40 w-12 h-12 rounded-full bg-[#f97316] text-white shadow-lg shadow-orange-500/20 flex items-center justify-center hover:bg-[#ea580c] transition-all duration-200"
         id="filter-toggle"
       >
-        <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+        <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
           <path strokeLinecap="round" strokeLinejoin="round" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z" />
         </svg>
         {hasActiveFilters && (
@@ -153,19 +172,19 @@ export default function FilterSidebar({
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: -20 }}
             transition={{ duration: 0.2 }}
-            className="w-64 flex-shrink-0 sticky top-[120px] self-start hidden lg:block"
+            className="w-60 flex-shrink-0 sticky top-[120px] self-start hidden lg:block"
             id="filter-sidebar"
           >
-            <div className="bg-[#18181b] border border-[#27272a] rounded-xl p-4 space-y-5">
+            <div className="bg-[#111111] border border-white/[0.06] rounded-xl p-4 space-y-5">
               {/* Search */}
               <div>
                 <div className="relative">
                   <svg
-                    className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-[#52525b]"
+                    className="absolute left-3 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-[#3f3f46]"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
-                    strokeWidth={2}
+                    strokeWidth={1.5}
                   >
                     <path
                       strokeLinecap="round"
@@ -178,7 +197,7 @@ export default function FilterSidebar({
                     placeholder="Search companies..."
                     value={searchQuery}
                     onChange={(e) => handleSearch(e.target.value)}
-                    className="w-full pl-9 pr-3 py-2 bg-[#09090b] border border-[#27272a] rounded-lg text-sm text-[#fafafa] placeholder-[#52525b] focus:outline-none focus:border-[#f97316]/50 focus:ring-1 focus:ring-[#f97316]/20 transition-all"
+                    className="w-full pl-9 pr-3 py-2 bg-[#0a0a0a] border border-white/[0.06] rounded-lg text-[13px] text-[#e4e4e7] placeholder-[#3f3f46] focus:outline-none focus:border-[#f97316]/40 focus:ring-1 focus:ring-[#f97316]/10 transition-all duration-200 font-light"
                     id="search-input"
                   />
                 </div>
@@ -189,14 +208,14 @@ export default function FilterSidebar({
                 <ToggleFilter
                   id="hiring-toggle"
                   label="Hiring only"
-                  emoji="🟢"
+                  icon={<HiringIcon />}
                   checked={hiringOnly}
                   onChange={toggleHiring}
                 />
                 <ToggleFilter
                   id="top-toggle"
                   label="Top companies"
-                  emoji="⭐"
+                  icon={<StarIcon />}
                   checked={topOnly}
                   onChange={toggleTop}
                 />
@@ -204,7 +223,7 @@ export default function FilterSidebar({
 
               {/* Batch multi-select */}
               <FilterSection title="Batch" count={selectedBatches.size}>
-                <div className="space-y-1 max-h-40 overflow-y-auto pr-1">
+                <div className="space-y-0.5 max-h-40 overflow-y-auto pr-1">
                   {batches.slice(0, 12).map((batch) => (
                     <CheckboxFilter
                       key={batch}
@@ -218,7 +237,7 @@ export default function FilterSidebar({
 
               {/* Industry multi-select */}
               <FilterSection title="Industry" count={selectedIndustries.size}>
-                <div className="space-y-1 max-h-40 overflow-y-auto pr-1">
+                <div className="space-y-0.5 max-h-40 overflow-y-auto pr-1">
                   {industries.slice(0, 15).map((ind) => (
                     <CheckboxFilter
                       key={ind}
@@ -234,7 +253,7 @@ export default function FilterSidebar({
               {hasActiveFilters && (
                 <button
                   onClick={clearAll}
-                  className="w-full py-2 text-xs font-medium text-[#f97316] hover:text-[#fb923c] transition-colors"
+                  className="w-full py-2 text-[11px] font-medium text-[#f97316]/80 hover:text-[#f97316] transition-colors duration-200 tracking-wide"
                   id="clear-filters"
                 >
                   Clear all filters
@@ -248,6 +267,8 @@ export default function FilterSidebar({
   );
 }
 
+/* ─── Sub-components ─────────────────────────────────────────────── */
+
 function FilterSection({
   title,
   count,
@@ -260,11 +281,11 @@ function FilterSection({
   return (
     <div>
       <div className="flex items-center justify-between mb-2">
-        <h4 className="text-xs font-semibold text-[#a1a1aa] uppercase tracking-wider">
+        <h4 className="text-[10px] font-semibold text-[#52525b] uppercase tracking-[0.08em]">
           {title}
         </h4>
         {count > 0 && (
-          <span className="text-[10px] font-medium text-[#f97316] bg-[#f97316]/10 px-1.5 py-0.5 rounded-full">
+          <span className="text-[10px] font-medium text-[#f97316]/80 bg-[#f97316]/8 px-1.5 py-0.5 rounded-full">
             {count}
           </span>
         )}
@@ -277,13 +298,13 @@ function FilterSection({
 function ToggleFilter({
   id,
   label,
-  emoji,
+  icon,
   checked,
   onChange,
 }: {
   id: string;
   label: string;
-  emoji: string;
+  icon: React.ReactNode;
   checked: boolean;
   onChange: () => void;
 }) {
@@ -291,23 +312,23 @@ function ToggleFilter({
     <button
       id={id}
       onClick={onChange}
-      className={`w-full flex items-center justify-between px-3 py-2 rounded-lg text-sm transition-all duration-200 ${
+      className={`w-full flex items-center justify-between px-3 py-2 rounded-lg text-[13px] transition-all duration-200 ${
         checked
-          ? "bg-[#f97316]/10 border border-[#f97316]/30 text-[#fafafa]"
-          : "bg-[#09090b] border border-[#27272a] text-[#a1a1aa] hover:border-[#3f3f46]"
+          ? "bg-[#f97316]/8 border border-[#f97316]/20 text-[#e4e4e7]"
+          : "bg-[#0a0a0a] border border-white/[0.06] text-[#71717a] hover:border-white/[0.1]"
       }`}
     >
-      <span className="flex items-center gap-2">
-        <span>{emoji}</span>
+      <span className="flex items-center gap-2 font-light">
+        {icon}
         {label}
       </span>
       <div
         className={`w-8 h-4.5 rounded-full transition-colors duration-200 relative ${
-          checked ? "bg-[#f97316]" : "bg-[#3f3f46]"
+          checked ? "bg-[#f97316]" : "bg-[#27272a]"
         }`}
       >
         <div
-          className={`absolute top-0.5 w-3.5 h-3.5 rounded-full bg-white shadow transition-transform duration-200 ${
+          className={`absolute top-0.5 w-3.5 h-3.5 rounded-full bg-white shadow-sm transition-transform duration-200 ${
             checked ? "translate-x-4" : "translate-x-0.5"
           }`}
         />
@@ -328,17 +349,17 @@ function CheckboxFilter({
   return (
     <button
       onClick={onChange}
-      className={`w-full flex items-center gap-2 px-2 py-1.5 rounded-md text-xs transition-all duration-150 ${
+      className={`w-full flex items-center gap-2 px-2 py-1.5 rounded-md text-[12px] transition-all duration-200 ${
         checked
-          ? "text-[#fafafa] bg-[#f97316]/10"
-          : "text-[#a1a1aa] hover:text-[#d4d4d8] hover:bg-[#27272a]/50"
+          ? "text-[#e4e4e7] bg-[#f97316]/8"
+          : "text-[#71717a] hover:text-[#a1a1aa] hover:bg-white/[0.03]"
       }`}
     >
       <div
-        className={`w-3.5 h-3.5 rounded border flex-shrink-0 flex items-center justify-center transition-all ${
+        className={`w-3.5 h-3.5 rounded border flex-shrink-0 flex items-center justify-center transition-all duration-200 ${
           checked
             ? "bg-[#f97316] border-[#f97316]"
-            : "border-[#3f3f46] bg-transparent"
+            : "border-white/[0.1] bg-transparent"
         }`}
       >
         {checked && (
@@ -347,7 +368,7 @@ function CheckboxFilter({
           </svg>
         )}
       </div>
-      <span className="truncate">{label}</span>
+      <span className="truncate font-light">{label}</span>
     </button>
   );
 }

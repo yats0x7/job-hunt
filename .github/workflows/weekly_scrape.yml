@@ -16,6 +16,8 @@ on:
 jobs:
   scrape:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     timeout-minutes: 60    # Kill if takes longer than 1 hour (something broke)
 
     steps:
@@ -43,14 +45,13 @@ jobs:
           cd pipeline
           python -m playwright install chromium --with-deps
 
-      - name: Run pipeline (hiring companies only, no LLM in CI)
-        run: |
-          cd /home/runner/work/${{ github.event.repository.name }}/${{ github.event.repository.name }}
-          python3 -m pipeline --source yc --hiring-only --no-llm
-        env:
-          PYTHONPATH: .
+      - name: Set up pipeline path
+        run: echo "PYTHONPATH=$GITHUB_WORKSPACE" >> $GITHUB_ENV
 
-      - name: Copy data to dashboard public folder
+      - name: Run pipeline
+        run: python3 -m pipeline --source yc --hiring-only --no-llm --no-founders
+
+      - name: Copy data to dashboard
         run: cp data/companies.json dashboard/public/companies.json
 
       - name: Commit and push fresh data

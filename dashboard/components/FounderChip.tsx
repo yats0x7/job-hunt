@@ -18,25 +18,25 @@ export default function FounderChip({ founder, size = "sm" }: FounderChipProps) 
     .toUpperCase();
 
   const colors = [
-    "from-red-500 to-red-700",
-    "from-orange-500 to-orange-700",
-    "from-amber-500 to-amber-700",
-    "from-emerald-500 to-emerald-700",
-    "from-cyan-500 to-cyan-700",
-    "from-blue-500 to-blue-700",
-    "from-indigo-500 to-indigo-700",
-    "from-violet-500 to-violet-700",
+    "from-red-500/80 to-red-700/80",
+    "from-orange-500/80 to-orange-700/80",
+    "from-amber-500/80 to-amber-700/80",
+    "from-emerald-500/80 to-emerald-700/80",
+    "from-cyan-500/80 to-cyan-700/80",
+    "from-blue-500/80 to-blue-700/80",
+    "from-indigo-500/80 to-indigo-700/80",
+    "from-violet-500/80 to-violet-700/80",
   ];
   const hash = founder.name.split("").reduce((acc, char) => acc + char.charCodeAt(0), 0);
   const colorClass = colors[hash % colors.length];
 
   return (
-    <div className="flex items-center gap-2 group" title={founder.name}>
+    <div className="flex items-center gap-2.5 group" title={founder.name}>
       {founder.photo_url ? (
         <img
           src={founder.photo_url}
           alt={founder.name}
-          className={`${sizeClasses} rounded-full object-cover ring-2 ring-[#27272a] group-hover:ring-[#f97316]/50 transition-all duration-200`}
+          className={`${sizeClasses} rounded-full object-cover ring-1 ring-white/[0.06] group-hover:ring-[#f97316]/30 transition-all duration-200`}
           onError={(e) => {
             // Fallback to initials on image load error
             const target = e.target as HTMLImageElement;
@@ -47,7 +47,7 @@ export default function FounderChip({ founder, size = "sm" }: FounderChipProps) 
         />
       ) : null}
       <div
-        className={`${sizeClasses} rounded-full bg-gradient-to-br ${colorClass} flex items-center justify-center ${textSize} font-semibold text-white ring-2 ring-[#27272a] group-hover:ring-white/30 transition-all duration-200 ${
+        className={`${sizeClasses} rounded-full bg-gradient-to-br ${colorClass} flex items-center justify-center ${textSize} font-medium text-white ring-1 ring-white/[0.06] group-hover:ring-white/[0.15] transition-all duration-200 ${
           founder.photo_url ? "hidden" : ""
         }`}
       >
@@ -55,13 +55,13 @@ export default function FounderChip({ founder, size = "sm" }: FounderChipProps) 
       </div>
       {size === "md" && (
         <div className="flex flex-col">
-          <span className="text-sm font-medium text-[#fafafa]">
+          <span className="text-[13px] font-medium text-[#e4e4e7]">
             {founder.name}
           </span>
           {founder.college ? (
-            <span className="text-xs text-[#71717a]">{founder.college}</span>
+            <span className="text-[11px] text-[#52525b] font-light">{founder.college}</span>
           ) : (
-            <span className="text-xs text-[#71717a]">Unknown</span>
+            <span className="text-[11px] text-[#3f3f46] font-light">Unknown</span>
           )}
         </div>
       )}
@@ -91,12 +91,12 @@ export function FounderAvatarStack({
         ))}
       </div>
       {remaining > 0 && (
-        <span className="text-[11px] text-[#71717a] ml-2">
+        <span className="text-[11px] text-[#52525b] ml-2 font-light">
           & {remaining} more
         </span>
       )}
       {founders.length > 0 && founders.length <= maxDisplay && (
-        <span className="text-[11px] text-[#71717a] ml-2 truncate max-w-[120px]">
+        <span className="text-[11px] text-[#52525b] ml-2 truncate max-w-[120px] font-light">
           {founders[0]?.name}
           {founders.length > 1 ? ` +${founders.length - 1}` : ""}
         </span>

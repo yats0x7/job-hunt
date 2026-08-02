@@ -19,17 +19,17 @@ export default function JobBadge({ jobBoard, isHiring, website }: JobBadgeProps)
         href={jobBoard.url || "#"}
         target="_blank"
         rel="noopener noreferrer"
-        className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium
-          bg-emerald-500/10 text-emerald-400 border border-emerald-500/20
-          hover:bg-emerald-500/20 hover:border-emerald-500/30
+        className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-medium
+          bg-emerald-500/8 text-emerald-400/90 border border-emerald-500/10
+          hover:bg-emerald-500/15 hover:border-emerald-500/20
           transition-all duration-200 group"
         onClick={(e) => e.stopPropagation()}
       >
-        <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
+        <span className="w-1 h-1 rounded-full bg-emerald-400 animate-pulse" />
         {jobBoard.count} open role{jobBoard.count !== 1 ? "s" : ""}
-        <span className="text-emerald-500 group-hover:translate-x-0.5 transition-transform duration-200">
-          →
-        </span>
+        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-emerald-500/60 group-hover:translate-x-0.5 transition-transform duration-200">
+          <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
+        </svg>
       </a>
     );
   }
@@ -41,16 +41,16 @@ export default function JobBadge({ jobBoard, isHiring, website }: JobBadgeProps)
         href={`${website}/careers`}
         target="_blank"
         rel="noopener noreferrer"
-        className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium
-          bg-[#27272a]/50 text-[#a1a1aa] border border-[#3f3f46]
-          hover:bg-[#3f3f46] hover:text-[#d4d4d8]
+        className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-normal
+          bg-white/[0.03] text-[#71717a] border border-white/[0.06]
+          hover:bg-white/[0.06] hover:text-[#a1a1aa]
           transition-all duration-200 group"
         onClick={(e) => e.stopPropagation()}
       >
         Visit careers
-        <span className="text-[#71717a] group-hover:translate-x-0.5 transition-transform duration-200">
-          →
-        </span>
+        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-[#52525b] group-hover:translate-x-0.5 transition-transform duration-200">
+          <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
+        </svg>
       </a>
     );
   }
@@ -72,22 +72,22 @@ export function JobSourceBadge({
     ats_api: {
       label: "Verified",
       dot: "bg-emerald-400",
-      classes: "text-emerald-400",
+      classes: "text-emerald-400/80",
     },
     html_heuristic: {
       label: "Estimated",
       dot: "bg-blue-400",
-      classes: "text-blue-400",
+      classes: "text-blue-400/80",
     },
     llm_extracted: {
       label: "AI-extracted",
       dot: "bg-violet-400",
-      classes: "text-violet-400",
+      classes: "text-violet-400/80",
     },
     manual_visit: {
       label: "Manual",
       dot: "bg-zinc-400",
-      classes: "text-zinc-400",
+      classes: "text-zinc-400/80",
     },
   };
 
@@ -95,12 +95,12 @@ export function JobSourceBadge({
 
   return (
     <span
-      className={`inline-flex items-center gap-1.5 text-[11px] font-medium ${tier.classes}`}
+      className={`inline-flex items-center gap-1.5 text-[11px] font-normal ${tier.classes}`}
     >
-      <span className={`w-1.5 h-1.5 rounded-full ${tier.dot}`} />
+      <span className={`w-1 h-1 rounded-full ${tier.dot}`} />
       {tier.label}
       {jobBoard.ats_platform && (
-        <span className="text-[#52525b]">via {jobBoard.ats_platform}</span>
+        <span className="text-[#3f3f46] font-light">via {jobBoard.ats_platform}</span>
       )}
     </span>
   );

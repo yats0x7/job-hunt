@@ -72,6 +72,7 @@ export default function CompanyCard({ company, index }: CompanyCardProps) {
                 <img
                   src={company.logo_url}
                   alt={`${name} logo`}
+                  referrerPolicy="no-referrer"
                   className="w-full h-full object-contain p-1"
                   onError={(e) => {
                     const target = e.target as HTMLImageElement;

@@ -172,6 +172,7 @@ function HeroSection({ company }: { company: Company }) {
           <img
             src={company.logo_url}
             alt={`${company.name ?? "Company"} logo`}
+            referrerPolicy="no-referrer"
             className="w-full h-full object-contain p-2"
           />
         ) : (

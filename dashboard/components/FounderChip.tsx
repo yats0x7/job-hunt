@@ -39,6 +39,7 @@ export default function FounderChip({ founder, size = "sm" }: FounderChipProps) 
         <img
           src={founder.photo_url}
           alt={name}
+          referrerPolicy="no-referrer"
           className={`${sizeClasses} rounded-full object-cover ring-1 ring-white/[0.06] group-hover:ring-[#f97316]/30 transition-all duration-200`}
           onError={(e) => {
             const target = e.target as HTMLImageElement;

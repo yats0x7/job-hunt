@@ -1,76 +1,122 @@
 # Startup Discovery Platform
 
-Automated pipeline that discovers startups from VC portfolios, enriches with
-founder and hiring data, and presents everything through a polished dashboard.
+Automated pipeline that discovers YC startups, enriches them with founder and hiring data, and presents everything in a filterable dashboard.
 
+**Live demo:** [https://job-hunt-self.vercel.app/](https://job-hunt-self.vercel.app/)
 
+![Dashboard](dashboard/dashboard_real.png)
 
 ---
 
 ## What This Is
 
-A pipeline + dashboard that tracks **4200+ YC-backed companies**, their founders,
-open jobs, and funding data. The pipeline refreshes weekly via GitHub Actions;
-the dashboard reads the resulting JSON and renders a filterable, searchable grid
-with company detail pages.
+A **pipeline + dashboard** for job hunting among Y Combinator companies:
+
+| Layer | Role |
+|-------|------|
+| **Pipeline** | Scrapes YC data, resolves open jobs, enriches founders, exports JSON |
+| **Dashboard** | Next.js app that reads static JSON — no backend API required |
+| **CI/CD** | Weekly GitHub Actions refresh + deploy on Vercel from `main` |
+
+### Current dataset (as of latest export)
+
+| Metric | Value |
+|--------|-------|
+| Companies tracked | **~276** (hiring-only YC set in the dashboard) |
+| Algolia universe | **4000+** active YC companies scraped before hiring filter |
+| Hiring companies | **~276** (what the live site shows) |
+| Data source | Y Combinator (Algolia + company pages) |
+| Refresh cadence | Weekly (Monday 09:00 UTC) or manual workflow dispatch |
+| Deployed site | [job-hunt-self.vercel.app](https://job-hunt-self.vercel.app/) |
+
+> Counts move with each pipeline run; dashboard numbers match `data/companies.json` / `dashboard/public/companies.json`.
+
+---
 
 ## How It Works
 
-1. **Fetch** — paginate YC's Algolia search index to pull every active company.
-2. **Resolve jobs** — 4-tier cascade determines each company's open-role count:
-   | Tier | Method | Latency | Coverage |
-   |------|--------|---------|----------|
-   | 1 | ATS API (Greenhouse, Lever, Ashby …) | <200 ms | ~82% |
-   | 2 | HTML heuristics (CSS selectors) | <50 ms | ~11% |
-   | 3 | LLM extraction (Ollama llama3.2:1b) | <10 s | ~5% |
-   | 4 | Graceful fallback (manual-visit link) | instant | ~2% |
-3. **Enrich founders** — Playwright scrapes founder photos & details from YC profiles.
-4. **LLM enrichment** — local Ollama extracts college info from unstructured bios.
-5. **Store & export** — SQLite (with 7-day founder cache) → `data/companies.json`.
-6. **Dashboard** — Next.js reads the JSON at build time; no API server needed.
+1. **Fetch** — paginate YC’s Algolia index for active companies.
+2. **Resolve jobs** — 4-tier cascade for open-role count + **public** job board URL:
+   | Tier | Method | Notes |
+   |------|--------|--------|
+   | 1 | ATS API (Greenhouse, Lever, Ashby, Workable, SmartRecruiters) | Count via API; **clickable URL is the public board**, not the JSON API |
+   | 2 | HTML heuristics on careers pages | CSS / link patterns |
+   | 3 | LLM extraction (local Ollama) | Optional; skipped in CI |
+   | 4 | Manual-visit fallback | Links to `/careers` when unresolved |
+3. **Enrich founders** — Playwright scrapes YC company pages (photos, bios, LinkedIn).
+4. **Normalize URLs** — strip expiring S3 presign query params on founder photos; map ATS API slugs to human-visitable boards.
+5. **Store & export** — SQLite → `data/companies.json` → `dashboard/public/companies.json`.
+6. **Dashboard** — Next.js reads JSON at build time; filters and detail pages run in the browser.
+
+---
+
+## Live site
+
+| | |
+|--|--|
+| **Production** | [https://job-hunt-self.vercel.app/](https://job-hunt-self.vercel.app/) |
+| **Hosting** | Vercel (dashboard Next.js app) |
+| **Repo** | [github.com/yats0x7/job-hunt](https://github.com/yats0x7/job-hunt) |
+
+After a weekly scrape commits updated JSON to `main`, Vercel rebuilds automatically so the live site stays in sync.
+
+---
 
 ## Running the Pipeline
 
 ```bash
-# Quick smoke test (5 companies, no AI, no founder scraping):
-python3 -m pipeline --source yc --limit 5 --hiring-only --no-llm --no-founders
+# From repo root — install deps once
+pip install -r pipeline/requirements.txt
+# Optional: founder scraping needs browsers
+# playwright install chromium
 
-# Full run (all hiring companies, with AI enrichment):
-python3 -m pipeline --source yc --hiring-only
+# Smoke test (5 companies, no AI, no founder scraping)
+PYTHONPATH=. python3 -m pipeline --source yc --limit 5 --hiring-only --no-llm --no-founders
+
+# Full local run (hiring companies + founders + optional Ollama)
+PYTHONPATH=. python3 -m pipeline --source yc --hiring-only
+
+# Sync JSON into the dashboard public folder
+cp data/companies.json dashboard/public/companies.json
+# or: (cd dashboard && npm run sync-data)
 ```
 
-### CLI Flags
+### CLI flags
 
 | Flag | Effect |
 |------|--------|
-| `--source <slug>` | VC adapter to use (`yc`, `antler`, …) |
-| `--hiring-only` | Exclude companies not currently hiring |
-| `--limit N` | Process only the first N companies |
-| `--no-founders` | Skip Playwright founder scraping |
-| `--no-llm` | Disable all Ollama calls |
+| `--source <slug>` | VC adapter (`yc`, `antler`, …) |
+| `--hiring-only` | Only companies currently marked hiring |
+| `--limit N` | Process first N companies |
+| `--no-founders` | Skip Playwright founder scrape (used in CI) |
+| `--no-llm` | Disable Ollama (used in CI) |
+
+---
 
 ## Running the Dashboard
 
 ```bash
 cd dashboard
 npm install
-npm run sync-data   # copies data/companies.json → public/
-npm run dev          # → http://localhost:3000
+npm run sync-data   # data/companies.json → public/companies.json
+npm run dev         # http://localhost:3000
+npm run build       # production build (same path Vercel uses)
 ```
 
-### Dashboard Features
+### Dashboard features
 
-- **Stats bar** — live counts for companies tracked, data completeness %, hiring count, and job-resolution tier breakdown.
-- **Filter sidebar** — search, hiring-only toggle, top-company toggle, batch & industry multi-select.
-- **Company cards** — logo, description, industry tags, location, founder avatars, and a job-count badge linking to the careers page.
-- **Company detail pages** — `/company/[slug]` with full founder profiles, job board embed, and metadata.
-- **Responsive** — mobile filter FAB, fluid grid from 1→3 columns.
+- **Stats bar** — companies tracked, completeness, hiring count, job-data tier mix  
+- **Filters** — search, top companies, batch & industry multi-select (mobile drawer)  
+- **Company cards** — logo, one-liner, tags, location, founder avatars, open-roles badge  
+- **Detail pages** — `/company/[slug]` founders, job board link, about & metadata  
+- **URL hardening** — build-time rewrite of signed photo URLs and broken ATS API links  
 
-## Adding a New VC (Plugin Architecture)
+---
 
-The platform uses a plugin-based source system. Adding a new VC takes two steps:
+## Adding a New VC (plugin)
 
-**Step 1** — Create `pipeline/scrapers/<slug>/source.py`:
+**1.** Create `pipeline/scrapers/<slug>/source.py` implementing `VCSource`:
+
 ```python
 class LightspeedSource(VCSource):
     name = "Lightspeed"
@@ -78,93 +124,118 @@ class LightspeedSource(VCSource):
 
     async def list_companies_raw(self): ...
     def parse_company(self, raw): ...
-    async def get_founders(self, company): ...
 ```
 
-**Step 2** — Register in `pipeline/scrapers/registry.py`:
+**2.** Register in `pipeline/scrapers/registry.py`:
+
 ```python
 "lightspeed": LightspeedSource,
 ```
 
-Run with:
 ```bash
-python3 -m pipeline --source lightspeed
+PYTHONPATH=. python3 -m pipeline --source lightspeed
 ```
 
-The job resolver, founder enricher, storage layer, and dashboard all work
-automatically — zero changes needed.
+Job resolver, storage, export, and dashboard pick up the new source without further changes.
+
+---
 
 ## Architecture
 
 ```text
 pipeline/
-  __main__.py              ← entry point (python -m pipeline)
+  __main__.py                 # python -m pipeline
   scrapers/
-    base.py                ← VCSource abstract interface
-    registry.py            ← maps --source slug → class
-    yc/                    ← YC adapter (Algolia + Playwright)
-    antler/                ← Antler adapter (extensibility demo)
+    base.py                   # VCSource interface
+    registry.py               # --source slug → class
+    yc/                       # Algolia + page parsers
+    antler/                   # extensibility demo
   enrichment/
-    job_resolver.py        ← 4-tier job-counting cascade
-    founder_enricher.py    ← Playwright founder extraction
-    llm_fallback.py        ← Ollama integration
-    photo_url.py           ← S3 signed-URL normalizer
+    job_resolver.py           # 4-tier job cascade + public ATS URLs
+    founder_enricher.py       # Playwright founders
+    llm_fallback.py           # optional Ollama
+    photo_url.py              # durable avatar URLs
   storage/
-    db.py                  ← SQLite with 7-day founder cache
-    models.py              ← Pydantic v2 schemas (Company, Founder, JobBoardResult)
-    export.py              ← SQLite → companies.json
-  pipeline/
-    run.py                 ← async orchestrator with CLI arg parsing
+    db.py                     # SQLite + founder cache
+    models.py                 # Pydantic models
+    export.py                 # → companies.json
+  pipeline/run.py             # async orchestrator
 
-dashboard/                 ← Next.js 16 app
-  app/
-    page.tsx               ← main grid page (server component)
-    company/[slug]/page.tsx← company detail page
-    globals.css            ← global styles
-    layout.tsx             ← root layout with metadata
-  components/
-    DashboardClient.tsx    ← client shell (header, grid, footer)
-    StatsBar.tsx           ← live stats + tier badges
-    FilterSidebar.tsx      ← search, toggles, batch/industry filters
-    CompanyCard.tsx         ← card with logo, founders, job badge
-    FounderChip.tsx        ← avatar + name chip
-    JobBadge.tsx           ← animated open-roles link
-  lib/
-    data.ts                ← reads & parses companies.json
-    types.ts               ← TypeScript interfaces
+dashboard/                    # Next.js 16 (App Router)
+  app/                        # pages + layout
+  components/                 # cards, filters, stats, jobs, founders
+  lib/data.ts                 # load + normalize companies.json
+  public/companies.json       # static data baked into deploy
 
 data/
-  companies.json           ← pipeline output (git-tracked)
+  companies.json              # canonical export (git-tracked)
+  startups.db                 # local SQLite
 
 .github/workflows/
-  weekly_scrape.yml        ← Monday 09:00 UTC cron (or manual dispatch)
-  ci.yml                   ← pipeline import check + dashboard build
+  weekly_scrape.yml           # Mon 09:00 UTC + workflow_dispatch
+  ci.yml                      # imports + dashboard build on push/PR
 ```
+
+---
 
 ## Data Completeness Score
 
-Each company gets a score from 0.0 → 1.0 across 4 dimensions (0.25 each):
+Each company scores **0.0 → 1.0** (0.25 per dimension):
 
 | Dimension | Requirement |
 |-----------|-------------|
-| Company Identity | Name + logo both present |
-| Founder Data | ≥1 founder with photo |
-| Job Data | Job count + authoritative URL resolved |
-| Location & Industry | Both location and industry present |
+| Company identity | Name + logo |
+| Founder data | ≥1 founder with photo |
+| Job data | Count + public board/careers URL |
+| Location & industry | Both present |
+
+---
 
 ## CI / CD
 
-| Workflow | Trigger | What it does |
-|----------|---------|--------------|
-| **CI** | Push / PR to `main` | Verifies pipeline imports, runs public-URL unit tests, typechecks + builds dashboard |
-| **Weekly Scrape** | `cron 0 9 * * 1` / manual | Full pipeline run (`--no-llm --no-founders`), commits updated JSON, pushes with retry logic |
+| Workflow | Trigger | Behavior |
+|----------|---------|----------|
+| **CI** | Push / PR to `main` | Pipeline import + URL helper checks; `npm run build` in `dashboard/` |
+| **Weekly Scrape** | Cron Monday 09:00 UTC or **Actions → Run workflow** | `python -m pipeline --source yc --hiring-only --no-llm --no-founders`, copy JSON, commit, push onto latest `main` (race-safe) |
+
+**Deploy:** Vercel watches `main` and rebuilds [job-hunt-self.vercel.app](https://job-hunt-self.vercel.app/) when `dashboard/public/companies.json` (or app code) changes.
+
+> Prefer **Run workflow** on the latest `main` over “Re-run failed jobs” on old runs — re-runs use the workflow file from the original commit.
+
+---
 
 ## Tech Stack
 
-- **Pipeline**: Python 3.11+, httpx, beautifulsoup4, pydantic v2, tenacity, playwright, lxml
-- **Dashboard**: Next.js 16, React 19, TypeScript, Tailwind CSS v4, Framer Motion
-- **Storage**: SQLite (stdlib) → JSON export
-- **Scheduling**: GitHub Actions (weekly cron)
-- **LLM**: Ollama (local, optional — `llama3.2:1b`)
+| Area | Stack |
+|------|--------|
+| Pipeline | Python 3.11+, httpx, BeautifulSoup, Pydantic v2, Playwright, tenacity |
+| Dashboard | Next.js 16, React 19, TypeScript, Tailwind CSS v4, Framer Motion |
+| Storage | SQLite → static JSON |
+| Hosting | Vercel |
+| Automation | GitHub Actions |
+| LLM (optional) | Ollama `llama3.2:1b` (local only) |
 
+---
 
+## Project layout (quick start)
+
+```bash
+git clone https://github.com/yats0x7/job-hunt.git
+cd job-hunt
+
+# Pipeline
+pip install -r pipeline/requirements.txt
+PYTHONPATH=. python3 -m pipeline --source yc --hiring-only --no-llm --no-founders --limit 10
+
+# Dashboard
+cd dashboard && npm install && npm run sync-data && npm run dev
+```
+
+Open local: [http://localhost:3000](http://localhost:3000)  
+Open production: [https://job-hunt-self.vercel.app/](https://job-hunt-self.vercel.app/)
+
+---
+
+## License
+
+MIT

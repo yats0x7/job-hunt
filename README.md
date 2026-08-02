@@ -196,7 +196,7 @@ Each company scores **0.0 → 1.0** (0.25 per dimension):
 | Workflow | Trigger | Behavior |
 |----------|---------|----------|
 | **CI** | Push / PR to `main` | Pipeline import + URL helper checks; `npm run build` in `dashboard/` |
-| **Weekly Scrape** | Cron Monday 09:00 UTC or **Actions → Run workflow** | `python -m pipeline --source yc --hiring-only --no-llm --no-founders`, copy JSON, commit, push onto latest `main` (race-safe) |
+| **Weekly Scrape** | Cron Monday 14:30 IST or **Actions → Run workflow** | `python -m pipeline --source yc --hiring-only --no-llm --no-founders`, copy JSON, commit, push onto latest `main` (race-safe) |
 
 **Deploy:** Vercel watches `main` and rebuilds [job-hunt-self.vercel.app](https://job-hunt-self.vercel.app/) when `dashboard/public/companies.json` (or app code) changes.
 
@@ -236,6 +236,3 @@ Open production: [https://job-hunt-self.vercel.app/](https://job-hunt-self.verce
 
 ---
 
-## License
-
-MIT

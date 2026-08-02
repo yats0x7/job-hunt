@@ -11,15 +11,6 @@ interface FilterSidebarProps {
 
 /* ─── SVG Icons ──────────────────────────────────────────────────── */
 
-function HiringIcon() {
-  return (
-    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="flex-shrink-0">
-      <circle cx="12" cy="12" r="10"/>
-      <path d="M8 12l2.5 2.5L16 9"/>
-    </svg>
-  );
-}
-
 function StarIcon() {
   return (
     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="flex-shrink-0">
@@ -38,7 +29,7 @@ export default function FilterSidebar({
   const [selectedIndustries, setSelectedIndustries] = useState<Set<string>>(
     new Set()
   );
-  const [hiringOnly, setHiringOnly] = useState(false);
+
   const [topOnly, setTopOnly] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
   const [isOpen, setIsOpen] = useState(true);
@@ -61,7 +52,6 @@ export default function FilterSidebar({
   const applyFilters = (
     batchSet: Set<string>,
     industrySet: Set<string>,
-    hiring: boolean,
     top: boolean,
     query: string
   ) => {
@@ -77,9 +67,7 @@ export default function FilterSidebar({
       );
     }
 
-    if (hiring) {
-      filtered = filtered.filter((c) => Boolean(c?.is_hiring));
-    }
+
 
     if (top) {
       filtered = filtered.filter((c) => Boolean(c?.is_top_company));
@@ -104,7 +92,7 @@ export default function FilterSidebar({
     if (next.has(batch)) next.delete(batch);
     else next.add(batch);
     setSelectedBatches(next);
-    applyFilters(next, selectedIndustries, hiringOnly, topOnly, searchQuery);
+    applyFilters(next, selectedIndustries, topOnly, searchQuery);
   };
 
   const toggleIndustry = (industry: string) => {
@@ -112,30 +100,25 @@ export default function FilterSidebar({
     if (next.has(industry)) next.delete(industry);
     else next.add(industry);
     setSelectedIndustries(next);
-    applyFilters(selectedBatches, next, hiringOnly, topOnly, searchQuery);
+    applyFilters(selectedBatches, next, topOnly, searchQuery);
   };
 
-  const toggleHiring = () => {
-    const next = !hiringOnly;
-    setHiringOnly(next);
-    applyFilters(selectedBatches, selectedIndustries, next, topOnly, searchQuery);
-  };
+
 
   const toggleTop = () => {
     const next = !topOnly;
     setTopOnly(next);
-    applyFilters(selectedBatches, selectedIndustries, hiringOnly, next, searchQuery);
+    applyFilters(selectedBatches, selectedIndustries, next, searchQuery);
   };
 
   const handleSearch = (query: string) => {
     setSearchQuery(query);
-    applyFilters(selectedBatches, selectedIndustries, hiringOnly, topOnly, query);
+    applyFilters(selectedBatches, selectedIndustries, topOnly, query);
   };
 
   const clearAll = () => {
     setSelectedBatches(new Set());
     setSelectedIndustries(new Set());
-    setHiringOnly(false);
     setTopOnly(false);
     setSearchQuery("");
     onFilterChange(validCompanies);
@@ -144,7 +127,6 @@ export default function FilterSidebar({
   const hasActiveFilters =
     selectedBatches.size > 0 ||
     selectedIndustries.size > 0 ||
-    hiringOnly ||
     topOnly ||
     searchQuery.trim() !== "";
 
@@ -206,13 +188,6 @@ export default function FilterSidebar({
 
               {/* Toggles */}
               <div className="space-y-2">
-                <ToggleFilter
-                  id="hiring-toggle"
-                  label="Hiring only"
-                  icon={<HiringIcon />}
-                  checked={hiringOnly}
-                  onChange={toggleHiring}
-                />
                 <ToggleFilter
                   id="top-toggle"
                   label="Top companies"

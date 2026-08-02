@@ -1,20 +1,17 @@
-# WHY --no-llm in CI:
-# Ollama (local AI) cannot run on GitHub's free servers.
-# College extraction via LLM is skipped in CI runs.
-# To get LLM-enriched data, run locally:
-#   python3 -m pipeline --source yc --hiring-only
-# The pipeline degrades gracefully — college field = null in CI runs,
-# all other fields (jobs, founders, company data) work fully.
+# Weekly / manual startup data refresh.
 #
-# --no-founders in CI: Playwright browser scraping is slow/flaky on runners.
-# Founder photos stay in SQLite from previous local runs when present.
+# CI notes:
+# - Ollama is not available on GitHub runners → --no-llm
+# - Playwright founder scrape is slow/flaky → --no-founders
+# - Push strategy: re-base working tree onto latest origin/main BEFORE commit
+#   so non-fast-forward rejections never happen (main moves during long scrapes).
 
 name: Weekly Startup Data Refresh
 
 on:
   schedule:
-    - cron: "0 9 * * 1" # Every Monday at 9am UTC
-  workflow_dispatch: # Manual trigger from GitHub UI
+    - cron: "0 9 * * 1"
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -26,15 +23,16 @@ concurrency:
 jobs:
   scrape:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 90
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          # Required so subsequent git push can update the default branch
           token: ${{ secrets.GITHUB_TOKEN }}
           persist-credentials: true
+          # Always start from the tip of the branch being built
+          ref: ${{ github.ref_name }}
           fetch-depth: 0
 
       - name: Set up Python 3.11
@@ -47,13 +45,13 @@ jobs:
         with:
           path: ~/.cache/pip
           key: ${{ runner.os }}-pip-${{ hashFiles('pipeline/requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
 
       - name: Install Python dependencies
         run: |
           python -m pip install --upgrade pip
           pip install -r pipeline/requirements.txt
-
-      # Playwright not installed in CI: --no-founders skips browser enrichment.
 
       - name: Run pipeline
         env:
@@ -63,9 +61,9 @@ jobs:
 
       - name: Copy data to dashboard
         run: |
+          set -euo pipefail
           test -f data/companies.json
           cp data/companies.json dashboard/public/companies.json
-          # Sanity: file non-empty and valid JSON with companies
           python - <<'PY'
           import json, pathlib, sys
           p = pathlib.Path("dashboard/public/companies.json")
@@ -77,28 +75,67 @@ jobs:
           print(f"OK: {len(companies)} companies, {p.stat().st_size} bytes")
           PY
 
-      - name: Commit and push fresh data
+      # Keep refreshed JSON outside the git worktree so we can hard-reset to latest main
+      - name: Snapshot refreshed data files
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/job-hunt-data
+          cp data/companies.json /tmp/job-hunt-data/companies.json
+          cp dashboard/public/companies.json /tmp/job-hunt-data/public-companies.json
+          ls -la /tmp/job-hunt-data
+
+      - name: Commit and push onto latest main
         env:
-          # Use the Actions token for authenticated pushes
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           set -euo pipefail
 
+          BRANCH="${{ github.ref_name }}"
+          REPO="${{ github.repository }}"
+
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git remote set-url origin "https://x-access-token:${GH_TOKEN}@github.com/${REPO}.git"
 
-          # Ensure we push with the job token (handles remotes without credentials)
-          git remote set-url origin "https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}.git"
+          # Critical: sync to remote tip AFTER scrape so push is always fast-forward
+          git fetch origin "${BRANCH}"
+          git checkout -B "${BRANCH}" "origin/${BRANCH}"
+
+          # Restore the fresh scrape on top of latest main
+          mkdir -p data dashboard/public
+          cp /tmp/job-hunt-data/companies.json data/companies.json
+          cp /tmp/job-hunt-data/public-companies.json dashboard/public/companies.json
 
           git add data/companies.json dashboard/public/companies.json
 
           if git diff --staged --quiet; then
-            echo "No data changes to commit."
+            echo "No data changes vs origin/${BRANCH} — nothing to commit."
             exit 0
           fi
 
           git commit -m "chore: weekly data refresh $(date -u '+%Y-%m-%d')"
 
-          # Rebase onto latest main in case other commits landed during the scrape
-          git pull --rebase origin "${{ github.ref_name }}"
-          git push origin "HEAD:${{ github.ref_name }}"
+          # Retry push a few times in case something else lands mid-push
+          for attempt in 1 2 3; do
+            echo "Push attempt ${attempt}..."
+            if git push origin "HEAD:${BRANCH}"; then
+              echo "Push succeeded."
+              exit 0
+            fi
+            echo "Push rejected; re-syncing onto latest ${BRANCH}..."
+            git fetch origin "${BRANCH}"
+            # Rebuild commit on newest tip with same data files
+            git reset --hard "origin/${BRANCH}"
+            cp /tmp/job-hunt-data/companies.json data/companies.json
+            cp /tmp/job-hunt-data/public-companies.json dashboard/public/companies.json
+            git add data/companies.json dashboard/public/companies.json
+            if git diff --staged --quiet; then
+              echo "Remote already has identical data."
+              exit 0
+            fi
+            git commit -m "chore: weekly data refresh $(date -u '+%Y-%m-%d')"
+            sleep $((attempt * 2))
+          done
+
+          echo "ERROR: failed to push after 3 attempts" >&2
+          exit 1

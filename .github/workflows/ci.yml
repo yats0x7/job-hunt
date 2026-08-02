@@ -1,0 +1,62 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  pipeline-import:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install pipeline deps (no playwright browsers)
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r pipeline/requirements.txt
+
+      - name: Verify pipeline imports & public URL helper
+        env:
+          PYTHONPATH: ${{ github.workspace }}
+        run: |
+          python - <<'PY'
+          from pipeline.enrichment.job_resolver import _to_public_url, JobResolver, CAREER_URL_PATHS
+          assert _to_public_url("greenhouse", "algolia") == "https://boards.greenhouse.io/algolia"
+          assert _to_public_url("ashby", "9-mothers") == "https://jobs.ashbyhq.com/9-mothers"
+          assert CAREER_URL_PATHS
+          from pipeline.enrichment.photo_url import normalize_photo_url
+          signed = "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/x.jpg?X-Amz-Expires=3600"
+          assert normalize_photo_url(signed) == "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/x.jpg"
+          print("pipeline checks OK")
+          PY
+
+  dashboard-build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    defaults:
+      run:
+        working-directory: dashboard
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+          cache-dependency-path: dashboard/package-lock.json
+
+      - name: Install
+        run: npm ci
+
+      - name: Typecheck / build
+        run: npm run build

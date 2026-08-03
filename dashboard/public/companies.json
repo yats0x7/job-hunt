@@ -1,24 +1,292 @@
 {
   "metadata": {
-    "exported_at": "2026-08-02T11:14:13.521868",
-    "total_companies": 276,
-    "avg_completeness": 0.99,
-    "hiring_count": 276,
-    "last_updated": "2026-08-02T11:14:13.511361",
+    "exported_at": "2026-08-03T12:20:38.687936",
+    "total_companies": 278,
+    "avg_completeness": 0.75,
+    "hiring_count": 278,
+    "last_updated": "2026-08-03T12:20:38.672169",
     "tier_breakdown": {
       "ats_api": 45,
-      "html_heuristic": 22,
-      "llm_extracted": 42,
-      "manual_visit": 167
+      "html_heuristic": 20,
+      "llm_extracted": 0,
+      "manual_visit": 213
     },
     "tier_percentages": {
-      "ats_api": 16.3,
-      "html_heuristic": 8.0,
-      "llm_extracted": 15.2,
-      "manual_visit": 60.5
+      "ats_api": 16.2,
+      "html_heuristic": 7.2,
+      "llm_extracted": 0.0,
+      "manual_visit": 76.6
     }
   },
   "companies": [
+    {
+      "yc_id": 32170,
+      "name": "Gutgutgoose",
+      "slug": "gutgutgoose",
+      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/3b10bdb631232584efc1a8c09e67b74f8b953437.png",
+      "website": "https://gutgutgoose.com/",
+      "location": "San Francisco, CA, USA",
+      "description": "Personalized probiotics, guaranteed to colonize.",
+      "long_description": "Most data companies pay for their data. Ours pays for itself.\r\nCustomers send us a stool sample. We sequence it, build a metabolic model of that gut, and simulate whether each probiotic strain has an open niche it can colonize. We formulate the best candidates, then re-sequence 90 days later to see what actually took hold and what changed. Each cycle gives us the baseline gut, the intervention, and the outcome. At scale, the endgame is models that predict chronic disease years before symptoms.",
+      "industry": "Healthcare",
+      "industries": [
+        "Healthcare"
+      ],
+      "subindustry": "Healthcare",
+      "batch": null,
+      "is_hiring": true,
+      "is_top_company": false,
+      "status": "Active",
+      "stage": "Early",
+      "team_size": 2,
+      "tags": [
+        "Biotech",
+        "Personalization",
+        "Health & Wellness"
+      ],
+      "regions": [
+        "United States of America",
+        "America / Canada"
+      ],
+      "source_vc": "Y Combinator",
+      "founders": [
+        {
+          "name": "Anis Mihrshahi",
+          "college": null,
+          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/5ee2a444b14c5548c9ccc5cd1fe8814527d86097.jpg",
+          "linkedin_url": "https://www.linkedin.com/in/anis-mihrshahi-2a342a336/",
+          "raw_bio": "Youngest Math Olympiad champion in Queensland history. USQ Chancellor's Excellence Scholarship (AI and Data Science). At GutGutGoose, I work operations behind the scenes and co-built the mechanistic algorithm behind our personalised probiotics. Fun Fact: World Catan #1, Australian Powerlifting Champion, State Discus Champion, organised national conferences that brought 2000+ Australians in to think about creating meaningful change in society."
+        },
+        {
+          "name": "Leon Mojarrabi",
+          "college": "University of Cambridge",
+          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/c69cb9d3ddd32f9a50e604a7cee8506f0be7a15d.jpg",
+          "linkedin_url": "https://www.linkedin.com/in/leon-moj",
+          "raw_bio": "started university at 14, spent four years at a yc tech unicorn, then launched a pharmacy that hit $4M in revenue to fund GutGutGoose; strain-level metabolic modelling of the gut to catch disease decades early. I'm unreasonably interested in your poop's data."
+        }
+      ],
+      "job_board": {
+        "count": null,
+        "url": "https://gutgutgoose.com/careers",
+        "source_type": "manual_visit",
+        "ats_platform": null
+      },
+      "last_scraped": "2026-08-02T03:54:42.354830",
+      "data_completeness": 1.0
+    },
+    {
+      "yc_id": 30710,
+      "name": "Manufact",
+      "slug": "manufact",
+      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/3838f80b214ed1fcda53a2778860e8be11cfdb0d.png",
+      "website": "https://manufact.com",
+      "location": "San Francisco, CA, USA",
+      "description": "Cloud infrastructure for MCP servers and Claude / ChatGPT apps.",
+      "long_description": "Manufact is the MCP cloud platform to get your product ready for Claude Connectors marketplace, ChatGPT / Codex plugins store and any AI agent that supports MCP.\r\nWe're the team behind mcp-use SDK, the open-source framework for building MCP Apps with 10k github stars and 8M+ downloads across python and typescript.\r\n\r\nIt's the fastest and most complete solution for production-ready MCP servers.",
+      "industry": "B2B",
+      "industries": [
+        "B2B",
+        "Infrastructure"
+      ],
+      "subindustry": "B2B -> Infrastructure",
+      "batch": null,
+      "is_hiring": true,
+      "is_top_company": false,
+      "status": "Active",
+      "stage": "Early",
+      "team_size": 5,
+      "tags": [
+        "Artificial Intelligence",
+        "Developer Tools",
+        "B2B",
+        "Open Source",
+        "Infrastructure"
+      ],
+      "regions": [
+        "United States of America",
+        "America / Canada"
+      ],
+      "source_vc": "Y Combinator",
+      "founders": [
+        {
+          "name": "Pietro Zullo",
+          "college": "University of Delaware",
+          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/20b195400b407be674253b1353993e19ad6323b2.jpg",
+          "linkedin_url": "https://linkedin.com/in/pietrozullo",
+          "raw_bio": "Building Manufact (formerly mcp-use) (S25)."
+        },
+        {
+          "name": "Luigi Pederzani",
+          "college": "POLIMI",
+          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/052187b02cbea99b02766098b2c86fcf33610ec4.jpg",
+          "linkedin_url": "https://www.linkedin.com/in/luigipederzani",
+          "raw_bio": "Co-founder @ Manufact (fka mcp-use). Prev. Founding eng. @ Morgen (ETH spin-off AI startup used by teams at Spotify, GitHub, Linear, and Canva). Led a 12-engineer team to deliver $XXM projects @ Accenture Switzerland. MSc in Computer Science and Engineering from POLIMI (QS #1 IT, #5 EU, #13 World). Former YouTube creator (150k subs, 15M+ views)."
+        }
+      ],
+      "job_board": {
+        "count": null,
+        "url": "https://manufact.com/careers",
+        "source_type": "manual_visit",
+        "ats_platform": null
+      },
+      "last_scraped": "2026-08-02T11:14:13.511142",
+      "data_completeness": 1.0
+    },
+    {
+      "yc_id": 30709,
+      "name": "Novaflow",
+      "slug": "novaflow",
+      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/284bcf8fd014c43e486fa3243ceddc4a1b5a8484.png",
+      "website": "https://www.novaflowapp.com/",
+      "location": "San Francisco, CA, USA",
+      "description": "The AI data analyst for biology labs",
+      "long_description": "Novaflow is the AI data analyst for biology labs. \r\n--\r\nBioinformatics data analysis is a time-consuming and expensive process for scientists. With Novaflow, life scientists can upload experimental data, ask questions in plain English, and get instant, publication-ready plots, giving them results in minutes instead of months.\r\n\r\nResearchers at leading institutions like UCSF, Mount Sinai, UC Berkeley, and Harvard are already using Novaflow in their labs.",
+      "industry": "Healthcare",
+      "industries": [
+        "Healthcare"
+      ],
+      "subindustry": "Healthcare",
+      "batch": null,
+      "is_hiring": true,
+      "is_top_company": false,
+      "status": "Active",
+      "stage": "Early",
+      "team_size": 5,
+      "tags": [],
+      "regions": [
+        "United States of America",
+        "America / Canada"
+      ],
+      "source_vc": "Y Combinator",
+      "founders": [
+        {
+          "name": "Amulya Balakrishnan",
+          "college": "USC",
+          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/ebc822f5be4ff922ad9648042b386fef18b0d86e.jpg",
+          "linkedin_url": "https://linkedin.com/in/amulya-balakrishnan",
+          "raw_bio": "Former software engineer at Zoom. Studied computer science and business at USC (fight on!)."
+        }
+      ],
+      "job_board": {
+        "count": null,
+        "url": "https://www.novaflowapp.com/careers",
+        "source_type": "manual_visit",
+        "ats_platform": null
+      },
+      "last_scraped": "2026-08-02T11:14:13.511270",
+      "data_completeness": 1.0
+    },
+    {
+      "yc_id": 30708,
+      "name": "Perseus Defense",
+      "slug": "perseus-defense",
+      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/5cdd4deac94e3261e5048ff6c4ffdd39942a5840.png",
+      "website": "https://perseusdefense.com",
+      "location": "Austin, TX, USA",
+      "description": "America's Golden Dome for Drones",
+      "long_description": "Perseus Defense is building a mass-manufactured Counter UAS solution for the Department of Defense and Department of Homeland Security. Current solutions are one-to-one, too dangerous for use on U.S. soil, and orders of magntiude more expensive than the threats they defeat. Our self-guided missile platform is man-portable and multi-domain capable. It senses, engages, and eliminates threats with drastically reduced cost per engagement over existing kinetic solutions. \r\n\r\nSolving this critical national security problem requires understanding complex DoD needs along with actual rocket science including aerodynamics, guidance, navigation, control, and much more. Jason and Steve met at Penn State while they pursued their PhD and MS in aerospace engineering, respectively. Their past experiences designing space helicopters for NASA, making Boeing airliners land autonomously, controlling swarms of unmanned autonomous systems, teaching aerospace engineering at Stanford, winning multiple ONR and DOE engineering competitions, and founding an international drone competition makes them the perfect team to create transformative solutions protecting our service members. \r\n\r\n\"If you build this, it will be mandatory equipment for every truck, boat, and convoy in the U.S. Military. We're talking thousands of units.\" - Former DoD Procurement Officer\r\n\r\nThe White House just released Executive Order, \"Unleashing American Drone Dominance\" which adds billions of dollars, government support, and streamlined regulations to enable the development of our product. \r\n\r\nTraction: \r\nJason and Steve used more than 100 end-user interviews across the DoD and DHS to shape the product to something of critical need to both boots on the ground and DoD purchasers. In 8 short weeks following a strict 2-week design-build-test cycle, the team has gone through 4 major guided missile iterations with over 30 live-fire flight tests. They were invited to Ft. Hood to present their platform to the 1st Cavalry Division, and also briefed the Pentagon and U.S. congressmen on current U.S. vulnerabilities to advanced drone technology.  Perseus Defense is actively standing up cooperative research agreements with U.S. Army DEVCOM's Applied Research Laboratory, Aviation and Missile Center, Armaments Center, and High Performance Computing Modernization Program. ",
+      "industry": "Industrials",
+      "industries": [
+        "Industrials",
+        "Defense"
+      ],
+      "subindustry": "Industrials -> Defense",
+      "batch": null,
+      "is_hiring": true,
+      "is_top_company": false,
+      "status": "Active",
+      "stage": "Early",
+      "team_size": 3,
+      "tags": [],
+      "regions": [
+        "United States of America",
+        "America / Canada"
+      ],
+      "source_vc": "Y Combinator",
+      "founders": [
+        {
+          "name": "Jason Cornelius",
+          "college": null,
+          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/77a5c1afba2128c3f34c458562bb573be7104125.jpg",
+          "linkedin_url": "https://www.linkedin.com/in/jason-k-cornelius/",
+          "raw_bio": "Co-founder & CEO of Perseus Defense. I helped lead major parts of the NASA Titan Dragonfly space helicopter. I also secured half a million of NASA HQ funding to lead an advanced concepts team using AI/ML/supercomputing to design next generation Mars helicopters. I teach aerospace engineering at Stanford, fly airplanes, have 7 scuba certifications, and speak four languages. I wrote a book in four months last fall, \"Dare to Dream: A Small-town Kid's Journey to NASA.\""
+        },
+        {
+          "name": "Steve Messinger",
+          "college": null,
+          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/48593581a5d8a465811da0a742bcbe6d039823d7.jpg",
+          "linkedin_url": "https://www.linkedin.com/in/steve-messinger-a32680155/",
+          "raw_bio": "Co-founder & CTO of Perseus Defense. Swarm robotics researcher focused on building and deploying real-world autonomy. I’ve won swarm robotics competitions, built autonomy that allows Boeing aircraft to land themselves, and developed collaborative behaviors for unmanned boats."
+        }
+      ],
+      "job_board": {
+        "count": null,
+        "url": "https://perseusdefense.com/careers",
+        "source_type": "manual_visit",
+        "ats_platform": null
+      },
+      "last_scraped": "2026-08-02T11:14:13.511361",
+      "data_completeness": 1.0
+    },
+    {
+      "yc_id": 30706,
+      "name": "Solva",
+      "slug": "solva",
+      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/b15b9a0a3aeadaf4902e3ef1a27712b5677c90d6.png",
+      "website": "https://solvatechnology.com",
+      "location": "New York City, NY, USA",
+      "description": "Automates insurance claims and stops incorrect payouts",
+      "long_description": "The domain specific AI for claims that gives leading insurers clarity and speed on the most complex claims",
+      "industry": "Fintech",
+      "industries": [
+        "Fintech",
+        "Insurance"
+      ],
+      "subindustry": "Fintech -> Insurance",
+      "batch": null,
+      "is_hiring": true,
+      "is_top_company": false,
+      "status": "Active",
+      "stage": "Early",
+      "team_size": 15,
+      "tags": [],
+      "regions": [
+        "United States of America",
+        "America / Canada"
+      ],
+      "source_vc": "Y Combinator",
+      "founders": [
+        {
+          "name": "Herman Båverud Olsson",
+          "college": null,
+          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/d5536abbb168e1f63ae5cfd59686528d96262cef.jpg",
+          "linkedin_url": "https://www.linkedin.com/in/hermanbaverudolsson/",
+          "raw_bio": "CEO and Co-founder of Solva. Previously part of building Lassie to $100M ARR with $110M raised, earning recognition from Sifted in 2024 as Europe’s fastest-growing InsurTech. Prior to that, I led AI and machine learning transformations at BCG X across financial services. I also have experience in FinTech and InsurTech from time at Morgan Stanley"
+        },
+        {
+          "name": "Sorena Amini",
+          "college": "New York University",
+          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/401d07d447c497ad57f1c77a25af14d347986df9.jpg",
+          "linkedin_url": "https://www.linkedin.com/in/sorenaamini",
+          "raw_bio": "COO and Co-founder of Solva. Was previously part of building tech-enabled companies in traditional industries, including KeyTo (from $60m to $250m). Before that, I worked at Citi focusing on InsurTech and at Talentech (formerly ReachMee) with growth and product."
+        },
+        {
+          "name": "Linus Malmén",
+          "college": "McGill University",
+          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/2b7cdd7d55cdcd313b5ed61db7489836586f003e.jpg",
+          "linkedin_url": "https://www.linkedin.com/in/linus-malmén-2588406a/",
+          "raw_bio": "CTO and Co-founder of Solva. Before Solva, I Co-founded Zaver (most recently starred in CNBC), a European neobank processing over €1 billion annually under an EBA-CRD license. Clients include Porsche, Volkswagen, and Loewe. I've led AI development for leading tech companies long before AI became the norm and my work has been featured in TechCrunch, Bloomberg and Forbes."
+        }
+      ],
+      "job_board": {
+        "count": null,
+        "url": "https://solvatechnology.com/careers",
+        "source_type": "manual_visit",
+        "ats_platform": null
+      },
+      "last_scraped": "2026-08-02T03:54:42.384247",
+      "data_completeness": 1.0
+    },
     {
       "yc_id": 31098,
       "name": "10x Science",
@@ -81,8 +349,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.497686",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.648280",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 33056,
@@ -143,8 +411,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.482421",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.607565",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31193,
@@ -202,8 +470,8 @@
         "source_type": "ats_api",
         "ats_platform": "ashby"
       },
-      "last_scraped": "2026-08-02T11:14:13.494658",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.643343",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31485,
@@ -247,8 +515,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.486373",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.624276",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31434,
@@ -301,8 +569,8 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.488218",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.634139",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31138,
@@ -352,8 +620,60 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.497120",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.647325",
+      "data_completeness": 0.75
+    },
+    {
+      "yc_id": 31524,
+      "name": "AgentPhone",
+      "slug": "agentphone",
+      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/3cd0619758d7e852f6674fba763a0d1167fa4a69.png",
+      "website": "https://agentphone.ai/",
+      "location": "San Francisco, CA, USA",
+      "description": "Phone Numbers for AI Agents",
+      "long_description": "The $2T global telecom industry was built for humans. Agents can't act in the real world today because without a phone number, they lack identity. AgentPhone gives every AI agent its own phone number to reach people and businesses through messages and calls.",
+      "industry": "B2B",
+      "industries": [
+        "B2B",
+        "Infrastructure"
+      ],
+      "subindustry": "B2B -> Infrastructure",
+      "batch": null,
+      "is_hiring": true,
+      "is_top_company": false,
+      "status": "Active",
+      "stage": "Early",
+      "team_size": 2,
+      "tags": [],
+      "regions": [
+        "United States of America",
+        "America / Canada"
+      ],
+      "source_vc": "Y Combinator",
+      "founders": [
+        {
+          "name": "Manav Modi",
+          "college": "University of Illinois at Urbana-Champaign",
+          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/e1e12722dbfef97063b9e315c895735a9ea0f7af.jpg",
+          "linkedin_url": "https://www.linkedin.com/in/manav2modi/",
+          "raw_bio": "Co-founder at AgentPhone. Helped drive the Vogue app revamp and grew usage from ~100k to over 1M users. BS Computer Engineering from UIUC."
+        },
+        {
+          "name": "Meet Modi",
+          "college": "UCLA",
+          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/1fcfed7410cdbdfff378e20cd29a053029bea75c.jpg",
+          "linkedin_url": "https://www.linkedin.com/in/meetmodi-/",
+          "raw_bio": "Co-founder at AgentPhone. Previously built AI Agent infrastructure on WhatsApp for 280+ million businesses at Meta. Bachelor's in Computer Science & Linguistics from UCLA."
+        }
+      ],
+      "job_board": {
+        "count": null,
+        "url": "https://agentphone.ai/careers",
+        "source_type": "manual_visit",
+        "ats_platform": null
+      },
+      "last_scraped": "2026-08-03T12:20:38.619573",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 90,
@@ -402,8 +722,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.474694",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.576439",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30837,
@@ -453,8 +773,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.507004",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.665213",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 636,
@@ -513,8 +833,8 @@
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T11:14:13.466695",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.526777",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30895,
@@ -580,8 +900,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.503152",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.659841",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31411,
@@ -639,8 +959,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.490154",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.635455",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30890,
@@ -692,8 +1012,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.504546",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.660671",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30999,
@@ -747,8 +1067,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.499920",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.652226",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 72,
@@ -807,13 +1127,13 @@
         }
       ],
       "job_board": {
-        "count": 12,
+        "count": null,
         "url": "http://apollographql.com/careers",
-        "source_type": "llm_extracted",
+        "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.477795",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.591268",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 578,
@@ -870,8 +1190,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.478897",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.596553",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31458,
@@ -926,8 +1246,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.487371",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.628827",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31475,
@@ -971,8 +1291,51 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.486629",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.625684",
+      "data_completeness": 0.75
+    },
+    {
+      "yc_id": 31535,
+      "name": "Arlo Industries",
+      "slug": "arlo-industries",
+      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/9516f2cea09963c1b9ba307c35589a5d194c61c0.png",
+      "website": "https://arlo1.com/",
+      "location": "San Francisco, CA, USA",
+      "description": "Track drones and missiles without radars - Accurate, Passive, Scalable",
+      "long_description": "Arlo Industries is building a network of sensors that precisely tracks stealthy drones and aerial threats better than radars.\r\n\r\nThis capability does not exist yet because traditional radars are built on past war doctrines designed to protect single, centralised assets. Modern warfare, however, demands wide-area, persistent coverage that is both passive and economically scalable. By utilising a mesh architecture, Arlo Industries unlocks unprecedented asymmetric economics. The network is fundamentally built to scale: the cost of adding sensors grows linearly, but the tracking accuracy increases exponentially, delivering highly resilient, persistent coverage for a fraction of the cost of legacy systems.\r\n\r\nDeo founded Arlo Industries after spending over 6 years in the Israeli defence ecosystem, where he lived through multiple conflicts and experienced the Iron Dome and other systems in action against ICBMs and the infamous Shahed drones. Learning exactly how these defence systems could be improved after a Shahed exploded close to his apartment, he built Arlo Industries around the core philosophy that conflict should be concise & precise.\r\n\r\nThe people behind Arlo1 includes a PhD in drones and autonomy and military experts.\r\n\r\nArlo Industries has actively showcased this technology directly to Ukrainian militaries on the frontlines, as well as to operators across Europe and the USA.",
+      "industry": "Industrials",
+      "industries": [
+        "Industrials",
+        "Defense"
+      ],
+      "subindustry": "Industrials -> Defense",
+      "batch": null,
+      "is_hiring": true,
+      "is_top_company": false,
+      "status": "Active",
+      "stage": "Early",
+      "team_size": 3,
+      "tags": [
+        "Hard Tech",
+        "Hardware",
+        "Defense"
+      ],
+      "regions": [
+        "United States of America",
+        "America / Canada",
+        "Remote",
+        "Partly Remote"
+      ],
+      "source_vc": "Y Combinator",
+      "founders": [],
+      "job_board": {
+        "count": null,
+        "url": "https://arlo1.com/careers",
+        "source_type": "manual_visit",
+        "ats_platform": null
+      },
+      "last_scraped": "2026-08-03T12:20:38.616759",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31511,
@@ -1023,8 +1386,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.485870",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.621663",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31528,
@@ -1069,13 +1432,13 @@
         }
       ],
       "job_board": {
-        "count": 0,
+        "count": null,
         "url": "https://asendia.ai/careers",
-        "source_type": "llm_extracted",
+        "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.485204",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.618837",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31465,
@@ -1128,8 +1491,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.487178",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.628071",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30943,
@@ -1192,8 +1555,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.502055",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.655817",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31095,
@@ -1239,8 +1602,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.497870",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.648506",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30857,
@@ -1298,8 +1661,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.506169",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.663637",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31534,
@@ -1349,8 +1712,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.484891",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.617427",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30882,
@@ -1410,8 +1773,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.505012",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.661465",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31292,
@@ -1450,13 +1813,13 @@
         }
       ],
       "job_board": {
-        "count": 1,
+        "count": null,
         "url": "https://aurorincad.com/careers",
-        "source_type": "llm_extracted",
+        "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.492575",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.639780",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30799,
@@ -1496,13 +1859,13 @@
         }
       ],
       "job_board": {
-        "count": 1,
+        "count": null,
         "url": "https://www.aventindustrial.com/careers",
-        "source_type": "llm_extracted",
+        "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.508214",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.667193",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31236,
@@ -1560,8 +1923,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.493501",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.641437",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31477,
@@ -1611,8 +1974,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.486494",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.624994",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 960,
@@ -1675,8 +2038,8 @@
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T11:14:13.473658",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.571237",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 32551,
@@ -1725,8 +2088,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.482941",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.609977",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30853,
@@ -1783,8 +2146,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.506380",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.664131",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31242,
@@ -1834,8 +2197,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.493178",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.640805",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 888,
@@ -1882,8 +2245,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.474949",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.578010",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30917,
@@ -1939,8 +2302,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.502707",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.658726",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30835,
@@ -1996,8 +2359,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.507155",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.665459",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30847,
@@ -2048,8 +2411,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.506595",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.664530",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 479,
@@ -2098,8 +2461,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.481572",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.603815",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 32220,
@@ -2163,8 +2526,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.483456",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.612199",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31416,
@@ -2217,8 +2580,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.489958",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.635112",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 583,
@@ -2263,8 +2626,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.478762",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.595833",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31178,
@@ -2285,7 +2648,7 @@
       "is_top_company": false,
       "status": "Active",
       "stage": "Early",
-      "team_size": 4,
+      "team_size": 5,
       "tags": [],
       "regions": [
         "United States of America",
@@ -2309,13 +2672,13 @@
         }
       ],
       "job_board": {
-        "count": 3,
+        "count": null,
         "url": "https://usecardboard.com/careers",
-        "source_type": "llm_extracted",
+        "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.495394",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.644579",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31311,
@@ -2365,8 +2728,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.492148",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.639135",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31040,
@@ -2417,8 +2780,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.499175",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.650694",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31113,
@@ -2469,8 +2832,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.497547",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.648085",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31513,
@@ -2523,8 +2886,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.485672",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.620899",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31233,
@@ -2574,8 +2937,8 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.493647",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.641702",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 662,
@@ -2634,8 +2997,8 @@
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T11:14:13.467897",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.531458",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 5,
@@ -2687,8 +3050,8 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.479712",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.600264",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31063,
@@ -2746,8 +3109,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.498925",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.650262",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31002,
@@ -2803,8 +3166,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.499715",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.651822",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 1480,
@@ -2854,8 +3217,8 @@
         "source_type": "ats_api",
         "ats_platform": "ashby"
       },
-      "last_scraped": "2026-08-02T11:14:13.468125",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.534632",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31443,
@@ -2910,13 +3273,13 @@
         }
       ],
       "job_board": {
-        "count": 5,
+        "count": null,
         "url": "https://complir.io/careers",
-        "source_type": "llm_extracted",
+        "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.487823",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.631023",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30747,
@@ -2971,8 +3334,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.509891",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.670160",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30878,
@@ -3023,8 +3386,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.505593",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.662342",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31128,
@@ -3070,8 +3433,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.497333",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.647697",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31370,
@@ -3122,8 +3485,8 @@
         "source_type": "ats_api",
         "ats_platform": "ashby"
       },
-      "last_scraped": "2026-08-02T11:14:13.491002",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.637148",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 12064,
@@ -3177,13 +3540,56 @@
         }
       ],
       "job_board": {
-        "count": 234,
+        "count": null,
         "url": "https://www.deel.com/careers",
-        "source_type": "llm_extracted",
+        "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.468343",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.535549",
+      "data_completeness": 0.75
+    },
+    {
+      "yc_id": 977,
+      "name": "Deepgram",
+      "slug": "deepgram",
+      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/e8d9b89a7e8039b79a0d0a37b71313e724036e55.png",
+      "website": "https://www.deepgram.com",
+      "location": "San Francisco, CA, USA; Remote",
+      "description": "Building foundational AI for speech transcription and understanding.",
+      "long_description": "Deepgram is a foundational AI company on a mission to understand human language. We give any developer access to the most advanced speech AI transcription and understanding with just an API call.\r\n\r\nOur models deliver the fastest, most accurate transcription alongside contextual features like summarization, sentiment analysis, and topic detection. Beyond that, developers can:\r\n🔊 Process live-streaming or pre-recorded audio\r\n🌎 Transcribe in dozens of languages\r\n⚙️ Train custom models for unique use cases\r\n🔑 Access deep NLU with a unified API\r\n💻 Build in any programming language with our SDKs\r\n✅ Deploy on-prem or on DG’s managed cloud\r\n📈 Get scalable GPU infra for training and inference\r\n\r\nDeepgram is a proud NVIDIA partner and Y Combinator company, and we recently completed a $72M Series B to define the future of AI Speech Understanding, making us the most-funded speech AI company at its stage.",
+      "industry": "B2B",
+      "industries": [
+        "B2B",
+        "Engineering, Product and Design"
+      ],
+      "subindustry": "B2B -> Engineering, Product and Design",
+      "batch": null,
+      "is_hiring": true,
+      "is_top_company": false,
+      "status": "Active",
+      "stage": "Growth",
+      "team_size": 115,
+      "tags": [
+        "AI-Enhanced Learning",
+        "API",
+        "AI"
+      ],
+      "regions": [
+        "United States of America",
+        "America / Canada",
+        "Remote",
+        "Fully Remote"
+      ],
+      "source_vc": "Y Combinator",
+      "founders": [],
+      "job_board": {
+        "count": null,
+        "url": "https://www.deepgram.com/careers",
+        "source_type": "manual_visit",
+        "ats_platform": null
+      },
+      "last_scraped": "2026-08-03T12:20:38.565744",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30858,
@@ -3233,8 +3639,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.506064",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.663448",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31080,
@@ -3287,8 +3693,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.498560",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.649583",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30816,
@@ -3345,8 +3751,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.507490",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.666084",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30993,
@@ -3401,8 +3807,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.500151",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.652610",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31294,
@@ -3455,8 +3861,8 @@
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T11:14:13.492408",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.639550",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 913,
@@ -3498,13 +3904,13 @@
         }
       ],
       "job_board": {
-        "count": 1,
+        "count": null,
         "url": "http://dripcapital.com/careers",
-        "source_type": "llm_extracted",
+        "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.474400",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.574732",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31489,
@@ -3555,8 +3961,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.486181",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.623365",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 964,
@@ -3614,13 +4020,13 @@
         }
       ],
       "job_board": {
-        "count": 4,
+        "count": null,
         "url": "http://eightsleep.com/careers",
-        "source_type": "llm_extracted",
+        "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.473409",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.569859",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 488,
@@ -3666,8 +4072,8 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.480112",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.602370",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30970,
@@ -3706,13 +4112,13 @@
         }
       ],
       "job_board": {
-        "count": 0,
+        "count": null,
         "url": "https://exonic.ai/careers",
-        "source_type": "llm_extracted",
+        "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.500900",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.653927",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30832,
@@ -3760,8 +4166,8 @@
         "source_type": "ats_api",
         "ats_platform": "ashby"
       },
-      "last_scraped": "2026-08-02T11:14:13.507261",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.665667",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 1543,
@@ -3824,8 +4230,8 @@
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T11:14:13.468559",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.537404",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31187,
@@ -3880,8 +4286,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.495031",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.643963",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30716,
@@ -3945,8 +4351,8 @@
         "source_type": "ats_api",
         "ats_platform": "ashby"
       },
-      "last_scraped": "2026-08-02T11:14:13.510898",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.671950",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30775,
@@ -3997,13 +4403,13 @@
         }
       ],
       "job_board": {
-        "count": 23,
+        "count": null,
         "url": "https://fleetline.ai/careers",
-        "source_type": "llm_extracted",
+        "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.509110",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.668702",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 595,
@@ -4048,13 +4454,13 @@
         }
       ],
       "job_board": {
-        "count": 152,
+        "count": 153,
         "url": "https://boards.greenhouse.io/flexport",
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T11:14:13.468786",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.539605",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30884,
@@ -4110,8 +4516,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.504757",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.661033",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 1616,
@@ -4168,8 +4574,8 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.469027",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.540474",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30729,
@@ -4220,13 +4626,13 @@
         }
       ],
       "job_board": {
-        "count": 1,
+        "count": null,
         "url": "https://floot.com/careers",
-        "source_type": "llm_extracted",
+        "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.510246",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.670814",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31239,
@@ -4284,8 +4690,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.493388",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.641229",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30802,
@@ -4335,8 +4741,64 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.507894",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.666734",
+      "data_completeness": 0.75
+    },
+    {
+      "yc_id": 168,
+      "name": "GOAT Group",
+      "slug": "goat-group",
+      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/4f3a455935f36a6655742aae286b206df1cd13bd.png",
+      "website": "https://www.goatgroup.com/",
+      "location": "Los Angeles, CA, USA",
+      "description": "Platform for the greatest products from the past, present and future.",
+      "long_description": "GOAT Group represents the leading platforms for authentic sneakers, apparel and accessories. Operating four distinct brands–GOAT, Flight Club, Grailed and alias–GOAT Group has a global community of over 50M members across 170 countries.\r\n\r\nWe are backed by some of the leading names in venture capital including Accel Partners, Andreessen Horowitz, Index Ventures, Matrix Partners, NEA, SV Angel, Upfront Ventures, Webb Investment Network and Y Combinator.",
+      "industry": "Consumer",
+      "industries": [
+        "Consumer",
+        "Apparel and Cosmetics"
+      ],
+      "subindustry": "Consumer -> Apparel and Cosmetics",
+      "batch": null,
+      "is_hiring": true,
+      "is_top_company": true,
+      "status": "Active",
+      "stage": "Growth",
+      "team_size": 1600,
+      "tags": [
+        "Marketplace"
+      ],
+      "regions": [
+        "United States of America",
+        "America / Canada",
+        "Remote",
+        "Partly Remote"
+      ],
+      "source_vc": "Y Combinator",
+      "founders": [
+        {
+          "name": "Eddy Lu",
+          "college": null,
+          "photo_url": null,
+          "linkedin_url": "https://www.linkedin.com/in/eddylu/",
+          "raw_bio": null
+        },
+        {
+          "name": "Daishin Sugano",
+          "college": null,
+          "photo_url": null,
+          "linkedin_url": "https://www.linkedin.com/in/sensugano",
+          "raw_bio": null
+        }
+      ],
+      "job_board": {
+        "count": 24,
+        "url": "https://boards.greenhouse.io/goatgroup",
+        "source_type": "ats_api",
+        "ats_platform": "greenhouse"
+      },
+      "last_scraped": "2026-08-03T12:20:38.545340",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 871,
@@ -4385,8 +4847,8 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.475181",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.579440",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30973,
@@ -4430,8 +4892,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.500664",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.653485",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 914,
@@ -4488,8 +4950,8 @@
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T11:14:13.474274",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.573973",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 811,
@@ -4541,13 +5003,13 @@
         }
       ],
       "job_board": {
-        "count": 3,
+        "count": null,
         "url": "http://giveffect.com/careers",
-        "source_type": "llm_extracted",
+        "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.476474",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.586242",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 944,
@@ -4613,13 +5075,13 @@
         }
       ],
       "job_board": {
-        "count": 1,
+        "count": null,
         "url": "https://go1.com/careers",
-        "source_type": "llm_extracted",
+        "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.469181",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.542366",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31426,
@@ -4679,8 +5141,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.488340",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.634536",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 508,
@@ -4743,8 +5205,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.479285",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.598070",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 24,
@@ -4808,63 +5270,8 @@
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T11:14:13.469597",
-      "data_completeness": 1.0
-    },
-    {
-      "yc_id": 32170,
-      "name": "Gutgutgoose",
-      "slug": "gutgutgoose",
-      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/3b10bdb631232584efc1a8c09e67b74f8b953437.png",
-      "website": "https://gutgutgoose.com/",
-      "location": "San Francisco, CA, USA",
-      "description": "Personalized probiotics, guaranteed to colonize.",
-      "long_description": "Most data companies pay for their data. Ours pays for itself.\r\nCustomers send us a stool sample. We sequence it, build a metabolic model of that gut, and simulate whether each probiotic strain has an open niche it can colonize. We formulate the best candidates, then re-sequence 90 days later to see what actually took hold and what changed. Each cycle gives us the baseline gut, the intervention, and the outcome. At scale, the endgame is models that predict chronic disease years before symptoms.",
-      "industry": "Healthcare",
-      "industries": [
-        "Healthcare"
-      ],
-      "subindustry": "Healthcare",
-      "batch": null,
-      "is_hiring": true,
-      "is_top_company": false,
-      "status": "Active",
-      "stage": "Early",
-      "team_size": 2,
-      "tags": [
-        "Biotech",
-        "Personalization",
-        "Health & Wellness"
-      ],
-      "regions": [
-        "United States of America",
-        "America / Canada"
-      ],
-      "source_vc": "Y Combinator",
-      "founders": [
-        {
-          "name": "Anis Mihrshahi",
-          "college": null,
-          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/5ee2a444b14c5548c9ccc5cd1fe8814527d86097.jpg",
-          "linkedin_url": "https://www.linkedin.com/in/anis-mihrshahi-2a342a336/",
-          "raw_bio": "Youngest Math Olympiad champion in Queensland history. USQ Chancellor's Excellence Scholarship (AI and Data Science). At GutGutGoose, I work operations behind the scenes and co-built the mechanistic algorithm behind our personalised probiotics. Fun Fact: World Catan #1, Australian Powerlifting Champion, State Discus Champion, organised national conferences that brought 2000+ Australians in to think about creating meaningful change in society."
-        },
-        {
-          "name": "Leon Mojarrabi",
-          "college": "University of Cambridge",
-          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/c69cb9d3ddd32f9a50e604a7cee8506f0be7a15d.jpg",
-          "linkedin_url": "https://www.linkedin.com/in/leon-moj",
-          "raw_bio": "started university at 14, spent four years at a yc tech unicorn, then launched a pharmacy that hit $4M in revenue to fund GutGutGoose; strain-level metabolic modelling of the gut to catch disease decades early. I'm unreasonably interested in your poop's data."
-        }
-      ],
-      "job_board": {
-        "count": null,
-        "url": "https://gutgutgoose.com/careers",
-        "source_type": "manual_visit",
-        "ats_platform": null
-      },
-      "last_scraped": "2026-08-02T03:54:42.354830",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.547345",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 73,
@@ -4913,13 +5320,13 @@
         }
       ],
       "job_board": {
-        "count": 33,
+        "count": 32,
         "url": "https://boards.greenhouse.io/hackerrank",
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T11:14:13.477593",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.590516",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31323,
@@ -4975,8 +5382,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.492036",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.638945",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30758,
@@ -5027,8 +5434,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.509595",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.669662",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 714,
@@ -5086,8 +5493,8 @@
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T11:14:13.477954",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.592189",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31375,
@@ -5141,13 +5548,13 @@
         }
       ],
       "job_board": {
-        "count": 21,
+        "count": null,
         "url": "https://hub.xyz/careers",
-        "source_type": "llm_extracted",
+        "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.490756",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.636721",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31205,
@@ -5212,8 +5619,8 @@
         "source_type": "ats_api",
         "ats_platform": "ashby"
       },
-      "last_scraped": "2026-08-02T11:14:13.494349",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.642796",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 967,
@@ -5272,8 +5679,8 @@
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T11:14:13.473260",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.569106",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31564,
@@ -5326,8 +5733,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.484468",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.615312",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30879,
@@ -5377,8 +5784,8 @@
         "source_type": "ats_api",
         "ats_platform": "ashby"
       },
-      "last_scraped": "2026-08-02T11:14:13.505443",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.662124",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30854,
@@ -5436,8 +5843,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.506274",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.663922",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30965,
@@ -5485,8 +5892,8 @@
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T11:14:13.501102",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.654316",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30730,
@@ -5546,8 +5953,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.510141",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.670614",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30938,
@@ -5603,8 +6010,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.502352",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.656283",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31076,
@@ -5654,8 +6061,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.498670",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.649784",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 490,
@@ -5701,13 +6108,13 @@
         }
       ],
       "job_board": {
-        "count": 10,
+        "count": null,
         "url": "https://influxdata.com/careers",
-        "source_type": "llm_extracted",
+        "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.479980",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.601649",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 963,
@@ -5750,13 +6157,13 @@
         }
       ],
       "job_board": {
-        "count": 47,
+        "count": 48,
         "url": "https://boards.greenhouse.io/instawork",
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T11:14:13.473536",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.570502",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31560,
@@ -5807,8 +6214,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.484600",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.616011",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30789,
@@ -5856,8 +6263,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.508729",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.668101",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 866,
@@ -5901,13 +6308,13 @@
         }
       ],
       "job_board": {
-        "count": 6,
+        "count": null,
         "url": "http://ironcladapp.com/careers",
-        "source_type": "llm_extracted",
+        "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.475452",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.580948",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30972,
@@ -5964,8 +6371,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.500766",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.653676",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31383,
@@ -6016,8 +6423,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.490533",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.636112",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30769,
@@ -6062,8 +6469,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.509393",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.669234",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30959,
@@ -6113,8 +6520,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.501460",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.654859",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31393,
@@ -6160,8 +6567,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.490427",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.635861",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31382,
@@ -6214,13 +6621,13 @@
         }
       ],
       "job_board": {
-        "count": 4,
+        "count": null,
         "url": "https://www.kinro.com/careers",
-        "source_type": "llm_extracted",
+        "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.490643",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.636511",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30870,
@@ -6279,8 +6686,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.505836",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.662788",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31473,
@@ -6331,8 +6738,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.486758",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.626420",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 34365,
@@ -6389,13 +6796,13 @@
         }
       ],
       "job_board": {
-        "count": 6,
+        "count": null,
         "url": "https://lambdarobotics.ai/careers",
-        "source_type": "llm_extracted",
+        "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.481930",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.605126",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31089,
@@ -6452,8 +6859,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.497975",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.648701",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 973,
@@ -6508,8 +6915,8 @@
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T11:14:13.472660",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.567495",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30932,
@@ -6566,8 +6973,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.502498",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.658142",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30987,
@@ -6631,8 +7038,8 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.500297",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.652827",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31360,
@@ -6690,8 +7097,49 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.491220",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.637547",
+      "data_completeness": 0.75
+    },
+    {
+      "yc_id": 552,
+      "name": "Lob",
+      "slug": "lob",
+      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/400c96e59ec9e937535827fdd7b324a248dec955.png",
+      "website": "http://lob.com",
+      "location": "New York City, NY, USA; San Francisco, CA, USA",
+      "description": "Lob is the only automation platform that transforms direct mail into…",
+      "long_description": "Lob provides the building blocks for developers to automate the offline world. Enterprise companies use Lob’s suite of APIs to mail fully dynamic and personalized customer communications with print media. We provide insight into deliverability with piece-by-piece tracing and utilize our proprietary Print Delivery Network to streamline production across fully redundant nodes all over the country. \r\n\r\nFounded in 2013 and based in San Francisco, Lob is venture backed by Y Combinator, Polaris Partners, Floodgate, and First Round Capital.\r\n\r\nFind out more about Lob and what we’re up to by following our blog: https://lob.com/blog or visiting our website: https://lob.com.",
+      "industry": "B2B",
+      "industries": [
+        "B2B",
+        "Marketing"
+      ],
+      "subindustry": "B2B -> Marketing",
+      "batch": null,
+      "is_hiring": true,
+      "is_top_company": false,
+      "status": "Active",
+      "stage": "Growth",
+      "team_size": 150,
+      "tags": [
+        "Automation"
+      ],
+      "regions": [
+        "United States of America",
+        "America / Canada",
+        "Remote",
+        "Partly Remote"
+      ],
+      "source_vc": "Y Combinator",
+      "founders": [],
+      "job_board": {
+        "count": 6,
+        "url": "https://boards.greenhouse.io/lob",
+        "source_type": "ats_api",
+        "ats_platform": "greenhouse"
+      },
+      "last_scraped": "2026-08-03T12:20:38.597293",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30754,
@@ -6742,8 +7190,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.509748",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.669917",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 33283,
@@ -6789,8 +7237,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.482281",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.606656",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30948,
@@ -6842,8 +7290,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.501590",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.655113",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 861,
@@ -6898,8 +7346,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.475572",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.581733",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30804,
@@ -6948,8 +7396,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.507786",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.666543",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31435,
@@ -7000,8 +7448,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.488085",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.632446",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 751,
@@ -7072,13 +7520,13 @@
         }
       ],
       "job_board": {
-        "count": 5,
+        "count": null,
         "url": "https://getmagic.com/careers",
-        "source_type": "llm_extracted",
+        "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.476872",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.588427",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30776,
@@ -7129,8 +7577,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.508952",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.668480",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31531,
@@ -7183,8 +7631,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.485025",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.618189",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31036,
@@ -7228,66 +7676,8 @@
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T11:14:13.499319",
-      "data_completeness": 1.0
-    },
-    {
-      "yc_id": 30710,
-      "name": "Manufact",
-      "slug": "manufact",
-      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/3838f80b214ed1fcda53a2778860e8be11cfdb0d.png",
-      "website": "https://manufact.com",
-      "location": "San Francisco, CA, USA",
-      "description": "Cloud infrastructure for MCP servers and Claude / ChatGPT apps.",
-      "long_description": "Manufact is the MCP cloud platform to get your product ready for Claude Connectors marketplace, ChatGPT / Codex plugins store and any AI agent that supports MCP.\r\nWe're the team behind mcp-use SDK, the open-source framework for building MCP Apps with 10k github stars and 8M+ downloads across python and typescript.\r\n\r\nIt's the fastest and most complete solution for production-ready MCP servers.",
-      "industry": "B2B",
-      "industries": [
-        "B2B",
-        "Infrastructure"
-      ],
-      "subindustry": "B2B -> Infrastructure",
-      "batch": null,
-      "is_hiring": true,
-      "is_top_company": false,
-      "status": "Active",
-      "stage": "Early",
-      "team_size": 5,
-      "tags": [
-        "Artificial Intelligence",
-        "Developer Tools",
-        "B2B",
-        "Open Source",
-        "Infrastructure"
-      ],
-      "regions": [
-        "United States of America",
-        "America / Canada"
-      ],
-      "source_vc": "Y Combinator",
-      "founders": [
-        {
-          "name": "Pietro Zullo",
-          "college": "University of Delaware",
-          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/20b195400b407be674253b1353993e19ad6323b2.jpg",
-          "linkedin_url": "https://linkedin.com/in/pietrozullo",
-          "raw_bio": "Building Manufact (formerly mcp-use) (S25)."
-        },
-        {
-          "name": "Luigi Pederzani",
-          "college": "POLIMI",
-          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/052187b02cbea99b02766098b2c86fcf33610ec4.jpg",
-          "linkedin_url": "https://www.linkedin.com/in/luigipederzani",
-          "raw_bio": "Co-founder @ Manufact (fka mcp-use). Prev. Founding eng. @ Morgen (ETH spin-off AI startup used by teams at Spotify, GitHub, Linear, and Canva). Led a 12-engineer team to deliver $XXM projects @ Accenture Switzerland. MSc in Computer Science and Engineering from POLIMI (QS #1 IT, #5 EU, #13 World). Former YouTube creator (150k subs, 15M+ views)."
-        }
-      ],
-      "job_board": {
-        "count": null,
-        "url": "https://manufact.com/careers",
-        "source_type": "manual_visit",
-        "ats_platform": null
-      },
-      "last_scraped": "2026-08-02T11:14:13.511142",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.650921",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 856,
@@ -7346,8 +7736,8 @@
         "source_type": "ats_api",
         "ats_platform": "lever"
       },
-      "last_scraped": "2026-08-02T11:14:13.475736",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.582504",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 991,
@@ -7396,8 +7786,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.471834",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.563102",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31188,
@@ -7457,8 +7847,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.494877",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.643732",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30960,
@@ -7503,8 +7893,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.501316",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.654676",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31453,
@@ -7552,13 +7942,13 @@
         }
       ],
       "job_board": {
-        "count": 1,
+        "count": null,
         "url": "https://minicor.com/careers",
-        "source_type": "llm_extracted",
+        "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.487565",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.629561",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30723,
@@ -7609,8 +7999,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.510680",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.671533",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31269,
@@ -7661,8 +8051,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.492884",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.640278",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31146,
@@ -7715,8 +8105,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.496900",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.646940",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31008,
@@ -7772,8 +8162,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.499568",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.651364",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30896,
@@ -7817,8 +8207,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.502997",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.659602",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 972,
@@ -7884,13 +8274,13 @@
         }
       ],
       "job_board": {
-        "count": 11,
+        "count": null,
         "url": "http://mux.com/careers",
-        "source_type": "llm_extracted",
+        "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.472804",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.568355",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30795,
@@ -7942,8 +8332,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.508472",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.667608",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30733,
@@ -7994,8 +8384,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.510037",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.670397",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30880,
@@ -8045,8 +8435,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.505300",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.661904",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 869,
@@ -8102,8 +8492,8 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.475301",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.580192",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31366,
@@ -8158,8 +8548,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.491111",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.637353",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 585,
@@ -8201,57 +8591,13 @@
         }
       ],
       "job_board": {
-        "count": 0,
-        "url": "http://noorahealth.org/careers",
-        "source_type": "llm_extracted",
-        "ats_platform": null
-      },
-      "last_scraped": "2026-08-02T11:14:13.478514",
-      "data_completeness": 1.0
-    },
-    {
-      "yc_id": 30709,
-      "name": "Novaflow",
-      "slug": "novaflow",
-      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/284bcf8fd014c43e486fa3243ceddc4a1b5a8484.png",
-      "website": "https://www.novaflowapp.com/",
-      "location": "San Francisco, CA, USA",
-      "description": "The AI data analyst for biology labs",
-      "long_description": "Novaflow is the AI data analyst for biology labs. \r\n--\r\nBioinformatics data analysis is a time-consuming and expensive process for scientists. With Novaflow, life scientists can upload experimental data, ask questions in plain English, and get instant, publication-ready plots, giving them results in minutes instead of months.\r\n\r\nResearchers at leading institutions like UCSF, Mount Sinai, UC Berkeley, and Harvard are already using Novaflow in their labs.",
-      "industry": "Healthcare",
-      "industries": [
-        "Healthcare"
-      ],
-      "subindustry": "Healthcare",
-      "batch": null,
-      "is_hiring": true,
-      "is_top_company": false,
-      "status": "Active",
-      "stage": "Early",
-      "team_size": 5,
-      "tags": [],
-      "regions": [
-        "United States of America",
-        "America / Canada"
-      ],
-      "source_vc": "Y Combinator",
-      "founders": [
-        {
-          "name": "Amulya Balakrishnan",
-          "college": "USC",
-          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/ebc822f5be4ff922ad9648042b386fef18b0d86e.jpg",
-          "linkedin_url": "https://linkedin.com/in/amulya-balakrishnan",
-          "raw_bio": "Former software engineer at Zoom. Studied computer science and business at USC (fight on!)."
-        }
-      ],
-      "job_board": {
         "count": null,
-        "url": "https://www.novaflowapp.com/careers",
+        "url": "http://noorahealth.org/careers",
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.511270",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.595086",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30818,
@@ -8292,13 +8638,13 @@
         }
       ],
       "job_board": {
-        "count": 13,
+        "count": 15,
         "url": "https://jobs.ashbyhq.com/nox-metals",
         "source_type": "ats_api",
         "ats_platform": "ashby"
       },
-      "last_scraped": "2026-08-02T11:14:13.507367",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.665855",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30728,
@@ -8354,8 +8700,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.510398",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.671067",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 12565,
@@ -8403,8 +8749,8 @@
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T11:14:13.469742",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.548592",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31081,
@@ -8455,8 +8801,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.498453",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.649369",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 76,
@@ -8515,8 +8861,8 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.476718",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.587584",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 32554,
@@ -8559,13 +8905,13 @@
         }
       ],
       "job_board": {
-        "count": 1,
+        "count": null,
         "url": "https://ooakdata.com/careers",
-        "source_type": "llm_extracted",
+        "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.482802",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.609152",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31505,
@@ -8609,8 +8955,8 @@
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T11:14:13.486061",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.622681",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 33013,
@@ -8652,13 +8998,13 @@
         }
       ],
       "job_board": {
-        "count": 2,
+        "count": null,
         "url": "https://operonsolutions.com/en/careers",
-        "source_type": "llm_extracted",
+        "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.482607",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.608468",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 481,
@@ -8707,8 +9053,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.480259",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.603079",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31174,
@@ -8766,8 +9112,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.495840",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.645315",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 32134,
@@ -8815,8 +9161,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.483831",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.613893",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30848,
@@ -8871,13 +9217,13 @@
         }
       ],
       "job_board": {
-        "count": 3,
+        "count": null,
         "url": "https://parrotapp.com/careers",
-        "source_type": "llm_extracted",
+        "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.506485",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.664332",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31175,
@@ -8928,8 +9274,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.495692",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.645077",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31066,
@@ -8979,8 +9325,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.498777",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.649995",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31333,
@@ -9030,60 +9376,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.491779",
-      "data_completeness": 1.0
-    },
-    {
-      "yc_id": 30708,
-      "name": "Perseus Defense",
-      "slug": "perseus-defense",
-      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/5cdd4deac94e3261e5048ff6c4ffdd39942a5840.png",
-      "website": "https://perseusdefense.com",
-      "location": "Austin, TX, USA",
-      "description": "America's Golden Dome for Drones",
-      "long_description": "Perseus Defense is building a mass-manufactured Counter UAS solution for the Department of Defense and Department of Homeland Security. Current solutions are one-to-one, too dangerous for use on U.S. soil, and orders of magntiude more expensive than the threats they defeat. Our self-guided missile platform is man-portable and multi-domain capable. It senses, engages, and eliminates threats with drastically reduced cost per engagement over existing kinetic solutions. \r\n\r\nSolving this critical national security problem requires understanding complex DoD needs along with actual rocket science including aerodynamics, guidance, navigation, control, and much more. Jason and Steve met at Penn State while they pursued their PhD and MS in aerospace engineering, respectively. Their past experiences designing space helicopters for NASA, making Boeing airliners land autonomously, controlling swarms of unmanned autonomous systems, teaching aerospace engineering at Stanford, winning multiple ONR and DOE engineering competitions, and founding an international drone competition makes them the perfect team to create transformative solutions protecting our service members. \r\n\r\n\"If you build this, it will be mandatory equipment for every truck, boat, and convoy in the U.S. Military. We're talking thousands of units.\" - Former DoD Procurement Officer\r\n\r\nThe White House just released Executive Order, \"Unleashing American Drone Dominance\" which adds billions of dollars, government support, and streamlined regulations to enable the development of our product. \r\n\r\nTraction: \r\nJason and Steve used more than 100 end-user interviews across the DoD and DHS to shape the product to something of critical need to both boots on the ground and DoD purchasers. In 8 short weeks following a strict 2-week design-build-test cycle, the team has gone through 4 major guided missile iterations with over 30 live-fire flight tests. They were invited to Ft. Hood to present their platform to the 1st Cavalry Division, and also briefed the Pentagon and U.S. congressmen on current U.S. vulnerabilities to advanced drone technology.  Perseus Defense is actively standing up cooperative research agreements with U.S. Army DEVCOM's Applied Research Laboratory, Aviation and Missile Center, Armaments Center, and High Performance Computing Modernization Program. ",
-      "industry": "Industrials",
-      "industries": [
-        "Industrials",
-        "Defense"
-      ],
-      "subindustry": "Industrials -> Defense",
-      "batch": null,
-      "is_hiring": true,
-      "is_top_company": false,
-      "status": "Active",
-      "stage": "Early",
-      "team_size": 3,
-      "tags": [],
-      "regions": [
-        "United States of America",
-        "America / Canada"
-      ],
-      "source_vc": "Y Combinator",
-      "founders": [
-        {
-          "name": "Jason Cornelius",
-          "college": null,
-          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/77a5c1afba2128c3f34c458562bb573be7104125.jpg",
-          "linkedin_url": "https://www.linkedin.com/in/jason-k-cornelius/",
-          "raw_bio": "Co-founder & CEO of Perseus Defense. I helped lead major parts of the NASA Titan Dragonfly space helicopter. I also secured half a million of NASA HQ funding to lead an advanced concepts team using AI/ML/supercomputing to design next generation Mars helicopters. I teach aerospace engineering at Stanford, fly airplanes, have 7 scuba certifications, and speak four languages. I wrote a book in four months last fall, \"Dare to Dream: A Small-town Kid's Journey to NASA.\""
-        },
-        {
-          "name": "Steve Messinger",
-          "college": null,
-          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/48593581a5d8a465811da0a742bcbe6d039823d7.jpg",
-          "linkedin_url": "https://www.linkedin.com/in/steve-messinger-a32680155/",
-          "raw_bio": "Co-founder & CTO of Perseus Defense. Swarm robotics researcher focused on building and deploying real-world autonomy. I’ve won swarm robotics competitions, built autonomy that allows Boeing aircraft to land themselves, and developed collaborative behaviors for unmanned boats."
-        }
-      ],
-      "job_board": {
-        "count": null,
-        "url": "https://perseusdefense.com/careers",
-        "source_type": "manual_visit",
-        "ats_platform": null
-      },
-      "last_scraped": "2026-08-02T11:14:13.511361",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.638483",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30778,
@@ -9134,13 +9428,13 @@
         }
       ],
       "job_board": {
-        "count": 2,
-        "url": "https://www.perspectiveshealth.ai/careers",
-        "source_type": "html_heuristic",
+        "count": null,
+        "url": "https://perspectiveshealth.ai/careers",
+        "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.508830",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.668281",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 695,
@@ -9198,8 +9492,8 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.478090",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.592891",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 613,
@@ -9254,8 +9548,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.478356",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.594362",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31114,
@@ -9311,8 +9605,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.497437",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.647885",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31041,
@@ -9357,8 +9651,8 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.499074",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.650489",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31214,
@@ -9410,8 +9704,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.494058",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.642340",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 1042,
@@ -9469,8 +9763,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.469943",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.550403",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31217,
@@ -9520,8 +9814,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.493955",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.642163",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30719,
@@ -9577,8 +9871,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.510779",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.671717",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31436,
@@ -9629,8 +9923,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.487959",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.631688",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31169,
@@ -9681,8 +9975,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.496018",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.645545",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 85,
@@ -9739,8 +10033,8 @@
         "source_type": "ats_api",
         "ats_platform": "lever"
       },
-      "last_scraped": "2026-08-02T11:14:13.475858",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.583226",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 740,
@@ -9798,8 +10092,8 @@
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T11:14:13.477064",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.589065",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 493,
@@ -9848,8 +10142,8 @@
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T11:14:13.479852",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.600896",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31145,
@@ -9905,8 +10199,8 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.497010",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.647129",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 1103,
@@ -9965,13 +10259,13 @@
         }
       ],
       "job_board": {
-        "count": 19,
+        "count": null,
         "url": "http://www.rappi.com/careers",
-        "source_type": "llm_extracted",
+        "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.470144",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.552605",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 827,
@@ -10024,13 +10318,13 @@
         }
       ],
       "job_board": {
-        "count": 2,
-        "url": "https://razorpay.com/careers/",
-        "source_type": "html_heuristic",
+        "count": null,
+        "url": "https://razorpay.com/careers",
+        "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.470326",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.554405",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 898,
@@ -10079,8 +10373,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.474828",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.577207",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30761,
@@ -10137,8 +10431,8 @@
         "source_type": "ats_api",
         "ats_platform": "ashby"
       },
-      "last_scraped": "2026-08-02T11:14:13.509492",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.669446",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30712,
@@ -10192,8 +10486,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.511042",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.672169",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31345,
@@ -10244,8 +10538,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.491495",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.638013",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31189,
@@ -10295,13 +10589,13 @@
         }
       ],
       "job_board": {
-        "count": 3,
+        "count": null,
         "url": "https://revion.inc/careers",
-        "source_type": "llm_extracted",
+        "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.494770",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.643543",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31176,
@@ -10346,8 +10640,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.495551",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.644817",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 1451,
@@ -10402,8 +10696,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.470568",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.556297",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 32192,
@@ -10467,8 +10761,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.483651",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.613022",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31450,
@@ -10518,8 +10812,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.487697",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.630295",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30977,
@@ -10575,8 +10869,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.500553",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.653289",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31346,
@@ -10627,8 +10921,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.491377",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.637777",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31085,
@@ -10678,8 +10972,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.498300",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.649144",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31088,
@@ -10730,8 +11024,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.498151",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.648928",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31518,
@@ -10782,8 +11076,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.485542",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.620286",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 974,
@@ -10836,8 +11130,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.472506",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.566542",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31147,
@@ -10887,8 +11181,8 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.496782",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.646743",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30964,
@@ -10938,8 +11232,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.501205",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.654501",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 1294,
@@ -10988,8 +11282,8 @@
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T11:14:13.470695",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.557686",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30942,
@@ -11039,8 +11333,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.502206",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.656030",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31180,
@@ -11098,8 +11392,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.495174",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.644188",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30885,
@@ -11152,8 +11446,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.504655",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.660858",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 936,
@@ -11210,8 +11504,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.474024",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.572609",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 705,
@@ -11262,13 +11556,13 @@
         }
       ],
       "job_board": {
-        "count": 23,
+        "count": null,
         "url": "http://shipbob.com/careers",
-        "source_type": "llm_extracted",
+        "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.470862",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.558334",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 33838,
@@ -11325,8 +11619,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.482137",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.605839",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 500,
@@ -11367,13 +11661,13 @@
         }
       ],
       "job_board": {
-        "count": 12,
+        "count": null,
         "url": "http://simplyinsured.com/careers",
-        "source_type": "llm_extracted",
+        "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.479580",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.599448",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31203,
@@ -11428,8 +11722,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.494511",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.643105",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 414,
@@ -11478,8 +11772,8 @@
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T11:14:13.471021",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.559190",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 878,
@@ -11530,8 +11824,8 @@
         "source_type": "ats_api",
         "ats_platform": "ashby"
       },
-      "last_scraped": "2026-08-02T11:14:13.475062",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.578687",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30726,
@@ -11582,67 +11876,50 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.510538",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.671280",
+      "data_completeness": 0.75
     },
     {
-      "yc_id": 30706,
-      "name": "Solva",
-      "slug": "solva",
-      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/b15b9a0a3aeadaf4902e3ef1a27712b5677c90d6.png",
-      "website": "https://solvatechnology.com",
-      "location": "New York City, NY, USA",
-      "description": "Automates insurance claims and stops incorrect payouts",
-      "long_description": "The domain specific AI for claims that gives leading insurers clarity and speed on the most complex claims",
-      "industry": "Fintech",
+      "yc_id": 30862,
+      "name": "Sorce",
+      "slug": "sorce",
+      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/8b7d8d3ea28624898e277427bd19760e45bd0535.png",
+      "website": "https://sorce.jobs",
+      "location": "San Francisco, CA, USA",
+      "description": "Tinder for jobs",
+      "long_description": "Tinder for Jobs. Swipe right, AI applies on your behalf.",
+      "industry": "B2B",
       "industries": [
-        "Fintech",
-        "Insurance"
+        "B2B",
+        "Human Resources"
       ],
-      "subindustry": "Fintech -> Insurance",
+      "subindustry": "B2B -> Human Resources",
       "batch": null,
       "is_hiring": true,
       "is_top_company": false,
       "status": "Active",
       "stage": "Early",
-      "team_size": 15,
-      "tags": [],
+      "team_size": 6,
+      "tags": [
+        "Marketplace",
+        "Consumer",
+        "Recruiting",
+        "AI"
+      ],
       "regions": [
         "United States of America",
         "America / Canada"
       ],
       "source_vc": "Y Combinator",
-      "founders": [
-        {
-          "name": "Herman Båverud Olsson",
-          "college": null,
-          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/d5536abbb168e1f63ae5cfd59686528d96262cef.jpg",
-          "linkedin_url": "https://www.linkedin.com/in/hermanbaverudolsson/",
-          "raw_bio": "CEO and Co-founder of Solva. Previously part of building Lassie to $100M ARR with $110M raised, earning recognition from Sifted in 2024 as Europe’s fastest-growing InsurTech. Prior to that, I led AI and machine learning transformations at BCG X across financial services. I also have experience in FinTech and InsurTech from time at Morgan Stanley"
-        },
-        {
-          "name": "Sorena Amini",
-          "college": "New York University",
-          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/401d07d447c497ad57f1c77a25af14d347986df9.jpg",
-          "linkedin_url": "https://www.linkedin.com/in/sorenaamini",
-          "raw_bio": "COO and Co-founder of Solva. Was previously part of building tech-enabled companies in traditional industries, including KeyTo (from $60m to $250m). Before that, I worked at Citi focusing on InsurTech and at Talentech (formerly ReachMee) with growth and product."
-        },
-        {
-          "name": "Linus Malmén",
-          "college": "McGill University",
-          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/2b7cdd7d55cdcd313b5ed61db7489836586f003e.jpg",
-          "linkedin_url": "https://www.linkedin.com/in/linus-malmén-2588406a/",
-          "raw_bio": "CTO and Co-founder of Solva. Before Solva, I Co-founded Zaver (most recently starred in CNBC), a European neobank processing over €1 billion annually under an EBA-CRD license. Clients include Porsche, Volkswagen, and Loewe. I've led AI development for leading tech companies long before AI became the norm and my work has been featured in TechCrunch, Bloomberg and Forbes."
-        }
-      ],
+      "founders": [],
       "job_board": {
         "count": null,
-        "url": "https://solvatechnology.com/careers",
+        "url": "https://sorce.jobs/careers",
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T03:54:42.384247",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.663232",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30867,
@@ -11690,8 +11967,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.505962",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.663003",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30946,
@@ -11746,8 +12023,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.501758",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.655363",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31151,
@@ -11791,8 +12068,8 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.496673",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.646537",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31402,
@@ -11843,8 +12120,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.490318",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.635669",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31167,
@@ -11908,8 +12185,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.496173",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.645887",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 82,
@@ -11952,13 +12229,13 @@
         }
       ],
       "job_board": {
-        "count": 1,
+        "count": null,
         "url": "http://streak.com/careers",
-        "source_type": "llm_extracted",
+        "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.476315",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.585519",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 240,
@@ -12009,13 +12286,13 @@
         }
       ],
       "job_board": {
-        "count": 548,
+        "count": 550,
         "url": "https://boards.greenhouse.io/stripe",
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T11:14:13.471214",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.559914",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30845,
@@ -12078,8 +12355,8 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.506703",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.664718",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30914,
@@ -12119,13 +12396,13 @@
         }
       ],
       "job_board": {
-        "count": 10,
+        "count": null,
         "url": "https://sunflowersober.com/careers",
-        "source_type": "llm_extracted",
+        "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.502858",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.659226",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31222,
@@ -12184,13 +12461,13 @@
         }
       ],
       "job_board": {
-        "count": 5,
+        "count": 4,
         "url": "https://boards.greenhouse.io/superset",
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T11:14:13.493808",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.641938",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 833,
@@ -12235,13 +12512,13 @@
         }
       ],
       "job_board": {
-        "count": 6,
+        "count": null,
         "url": "https://www.tab.travel/careers",
-        "source_type": "llm_extracted",
+        "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.476106",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.584666",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 848,
@@ -12300,8 +12577,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.475982",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.584001",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31470,
@@ -12354,8 +12631,8 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.486985",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.627261",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 789,
@@ -12411,8 +12688,8 @@
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T11:14:13.476595",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.586872",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31158,
@@ -12463,8 +12740,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.496386",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.646124",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31371,
@@ -12507,8 +12784,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.490903",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.636944",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30986,
@@ -12552,8 +12829,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.500445",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.653084",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30928,
@@ -12603,13 +12880,13 @@
         }
       ],
       "job_board": {
-        "count": 0,
+        "count": null,
         "url": "https://thesislabs.ai/careers",
-        "source_type": "llm_extracted",
+        "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.502603",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.658523",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31858,
@@ -12665,8 +12942,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.483951",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.614619",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31344,
@@ -12717,8 +12994,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.491606",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.638279",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 989,
@@ -12766,8 +13043,8 @@
         "source_type": "ats_api",
         "ats_platform": "lever"
       },
-      "last_scraped": "2026-08-02T11:14:13.472049",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.564006",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 32418,
@@ -12826,8 +13103,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.483072",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.610675",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30877,
@@ -12883,8 +13160,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.505734",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.662565",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30894,
@@ -12934,13 +13211,13 @@
         }
       ],
       "job_board": {
-        "count": 5,
+        "count": null,
         "url": "https://www.unsiloed.ai/careers",
-        "source_type": "llm_extracted",
+        "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.504226",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.660184",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30844,
@@ -13004,8 +13281,8 @@
         "source_type": "ats_api",
         "ats_platform": "ashby"
       },
-      "last_scraped": "2026-08-02T11:14:13.506854",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.664935",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30806,
@@ -13060,8 +13337,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.507639",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.666317",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31271,
@@ -13111,8 +13388,8 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.492718",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.640002",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31000,
@@ -13163,8 +13440,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.499817",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.652021",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31264,
@@ -13214,8 +13491,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.493051",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.640617",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30995,
@@ -13270,8 +13547,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.500050",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.652428",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31156,
@@ -13321,8 +13598,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.496553",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.646355",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 902,
@@ -13368,8 +13645,8 @@
         "source_type": "ats_api",
         "ats_platform": "ashby"
       },
-      "last_scraped": "2026-08-02T11:14:13.474520",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.575566",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30797,
@@ -13433,8 +13710,8 @@
         "source_type": "ats_api",
         "ats_platform": "ashby"
       },
-      "last_scraped": "2026-08-02T11:14:13.508355",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.667417",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30794,
@@ -13492,8 +13769,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.508575",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.667789",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30881,
@@ -13550,8 +13827,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.505159",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.661695",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31299,
@@ -13595,8 +13872,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.492288",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.639354",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 566,
@@ -13648,13 +13925,13 @@
         }
       ],
       "job_board": {
-        "count": 28,
+        "count": 27,
         "url": "https://boards.greenhouse.io/webflow",
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T11:14:13.471352",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.560787",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 503,
@@ -13708,8 +13985,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.479447",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.598798",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 13208,
@@ -13764,8 +14041,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.471505",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.561572",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 938,
@@ -13828,8 +14105,8 @@
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T11:14:13.473842",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.571878",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30945,
@@ -13880,8 +14157,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.501903",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.655591",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 442,
@@ -13926,13 +14203,53 @@
         }
       ],
       "job_board": {
-        "count": 1,
+        "count": null,
         "url": "http://zapier.com/careers",
-        "source_type": "llm_extracted",
+        "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.471691",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.562437",
+      "data_completeness": 0.75
+    },
+    {
+      "yc_id": 31007,
+      "name": "Zarna",
+      "slug": "zarna",
+      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/d20374e923bd141960c3c8fd2965f8288e95aa58.png",
+      "website": "https://www.zarnaai.com/",
+      "location": "San Francisco, CA, USA",
+      "description": "AI Associates for Private Capital ",
+      "long_description": "Zarna is private equity’s first AI associate class.\r\n\r\nOur agents plug directly into your firm’s data and work like a deal team that never sleeps. Zarna’s agents analyze CIMs, build LBOs, update CRMs, draft IC memos, & act based on decades of proprietary firm knowledge. \r\n\r\nThe result: investors spend less time buried in decks and spreadsheets, and more time on judgment, relationships, and winning deals. \r\n",
+      "industry": "B2B",
+      "industries": [
+        "B2B",
+        "Finance and Accounting"
+      ],
+      "subindustry": "B2B -> Finance and Accounting",
+      "batch": null,
+      "is_hiring": true,
+      "is_top_company": false,
+      "status": "Active",
+      "stage": "Early",
+      "team_size": 4,
+      "tags": [
+        "Investments",
+        "AI"
+      ],
+      "regions": [
+        "United States of America",
+        "America / Canada"
+      ],
+      "source_vc": "Y Combinator",
+      "founders": [],
+      "job_board": {
+        "count": null,
+        "url": "https://www.zarnaai.com/careers",
+        "source_type": "manual_visit",
+        "ats_platform": null
+      },
+      "last_scraped": "2026-08-03T12:20:38.651598",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 409,
@@ -13974,13 +14291,13 @@
         }
       ],
       "job_board": {
-        "count": 10,
+        "count": null,
         "url": "https://zentail.com/careers",
-        "source_type": "llm_extracted",
+        "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.481777",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.604412",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30801,
@@ -14042,8 +14359,8 @@
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-02T11:14:13.508049",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.666955",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 30883,
@@ -14089,8 +14406,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.504909",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.661284",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 988,
@@ -14140,8 +14457,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.472245",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.564799",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31018,
@@ -14197,8 +14514,8 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.499421",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.651105",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 31329,
@@ -14242,8 +14559,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.491930",
-      "data_completeness": 1.0
+      "last_scraped": "2026-08-03T12:20:38.638721",
+      "data_completeness": 0.75
     },
     {
       "yc_id": 32259,
@@ -14290,106 +14607,12 @@
         }
       ],
       "job_board": {
-        "count": 1,
+        "count": null,
         "url": "https://screenpipe.com/careers",
-        "source_type": "llm_extracted",
-        "ats_platform": null
-      },
-      "last_scraped": "2026-08-02T11:14:13.483288",
-      "data_completeness": 1.0
-    },
-    {
-      "yc_id": 31524,
-      "name": "AgentPhone",
-      "slug": "agentphone",
-      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/3cd0619758d7e852f6674fba763a0d1167fa4a69.png",
-      "website": "https://agentphone.ai/",
-      "location": "",
-      "description": "Phone Numbers for AI Agents",
-      "long_description": "The $2T global telecom industry was built for humans. Agents can't act in the real world today because without a phone number, they lack identity. AgentPhone gives every AI agent its own phone number to reach people and businesses through messages and calls.",
-      "industry": "B2B",
-      "industries": [
-        "B2B",
-        "Infrastructure"
-      ],
-      "subindustry": "B2B -> Infrastructure",
-      "batch": null,
-      "is_hiring": true,
-      "is_top_company": false,
-      "status": "Active",
-      "stage": "Early",
-      "team_size": 2,
-      "tags": [],
-      "regions": [
-        "Unspecified"
-      ],
-      "source_vc": "Y Combinator",
-      "founders": [
-        {
-          "name": "Manav Modi",
-          "college": "University of Illinois at Urbana-Champaign",
-          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/e1e12722dbfef97063b9e315c895735a9ea0f7af.jpg",
-          "linkedin_url": "https://www.linkedin.com/in/manav2modi/",
-          "raw_bio": "Co-founder at AgentPhone. Helped drive the Vogue app revamp and grew usage from ~100k to over 1M users. BS Computer Engineering from UIUC."
-        },
-        {
-          "name": "Meet Modi",
-          "college": "UCLA",
-          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/1fcfed7410cdbdfff378e20cd29a053029bea75c.jpg",
-          "linkedin_url": "https://www.linkedin.com/in/meetmodi-/",
-          "raw_bio": "Co-founder at AgentPhone. Previously built AI Agent infrastructure on WhatsApp for 280+ million businesses at Meta. Bachelor's in Computer Science & Linguistics from UCLA."
-        }
-      ],
-      "job_board": {
-        "count": null,
-        "url": "https://agentphone.ai/careers",
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.485412",
-      "data_completeness": 0.75
-    },
-    {
-      "yc_id": 31535,
-      "name": "Arlo Industries",
-      "slug": "arlo-industries",
-      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/9516f2cea09963c1b9ba307c35589a5d194c61c0.png",
-      "website": "https://arlo1.com/",
-      "location": "San Francisco, CA, USA",
-      "description": "Track drones and missiles without radars - Accurate, Passive, Scalable",
-      "long_description": "Arlo Industries is building a network of sensors that precisely tracks stealthy drones and aerial threats better than radars.\r\n\r\nThis capability does not exist yet because traditional radars are built on past war doctrines designed to protect single, centralised assets. Modern warfare, however, demands wide-area, persistent coverage that is both passive and economically scalable. By utilising a mesh architecture, Arlo Industries unlocks unprecedented asymmetric economics. The network is fundamentally built to scale: the cost of adding sensors grows linearly, but the tracking accuracy increases exponentially, delivering highly resilient, persistent coverage for a fraction of the cost of legacy systems.\r\n\r\nDeo founded Arlo Industries after spending over 6 years in the Israeli defence ecosystem, where he lived through multiple conflicts and experienced the Iron Dome and other systems in action against ICBMs and the infamous Shahed drones. Learning exactly how these defence systems could be improved after a Shahed exploded close to his apartment, he built Arlo Industries around the core philosophy that conflict should be concise & precise.\r\n\r\nThe people behind Arlo1 includes a PhD in drones and autonomy and military experts.\r\n\r\nArlo Industries has actively showcased this technology directly to Ukrainian militaries on the frontlines, as well as to operators across Europe and the USA.",
-      "industry": "Industrials",
-      "industries": [
-        "Industrials",
-        "Defense"
-      ],
-      "subindustry": "Industrials -> Defense",
-      "batch": null,
-      "is_hiring": true,
-      "is_top_company": false,
-      "status": "Active",
-      "stage": "Early",
-      "team_size": 3,
-      "tags": [
-        "Hard Tech",
-        "Hardware",
-        "Defense"
-      ],
-      "regions": [
-        "United States of America",
-        "America / Canada",
-        "Remote",
-        "Partly Remote"
-      ],
-      "source_vc": "Y Combinator",
-      "founders": [],
-      "job_board": {
-        "count": null,
-        "url": "https://arlo1.com/careers",
-        "source_type": "manual_visit",
-        "ats_platform": null
-      },
-      "last_scraped": "2026-08-02T11:14:13.484760",
+      "last_scraped": "2026-08-03T12:20:38.611482",
       "data_completeness": 0.75
     },
     {
@@ -14433,8 +14656,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.497229",
-      "data_completeness": 0.75
+      "last_scraped": "2026-08-03T12:20:38.647510",
+      "data_completeness": 0.5
     },
     {
       "yc_id": 915,
@@ -14488,107 +14711,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.474146",
-      "data_completeness": 0.75
-    },
-    {
-      "yc_id": 977,
-      "name": "Deepgram",
-      "slug": "deepgram",
-      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/e8d9b89a7e8039b79a0d0a37b71313e724036e55.png",
-      "website": "https://www.deepgram.com",
-      "location": "San Francisco, CA, USA; Remote",
-      "description": "Building foundational AI for speech transcription and understanding.",
-      "long_description": "Deepgram is a foundational AI company on a mission to understand human language. We give any developer access to the most advanced speech AI transcription and understanding with just an API call.\r\n\r\nOur models deliver the fastest, most accurate transcription alongside contextual features like summarization, sentiment analysis, and topic detection. Beyond that, developers can:\r\n🔊 Process live-streaming or pre-recorded audio\r\n🌎 Transcribe in dozens of languages\r\n⚙️ Train custom models for unique use cases\r\n🔑 Access deep NLU with a unified API\r\n💻 Build in any programming language with our SDKs\r\n✅ Deploy on-prem or on DG’s managed cloud\r\n📈 Get scalable GPU infra for training and inference\r\n\r\nDeepgram is a proud NVIDIA partner and Y Combinator company, and we recently completed a $72M Series B to define the future of AI Speech Understanding, making us the most-funded speech AI company at its stage.",
-      "industry": "B2B",
-      "industries": [
-        "B2B",
-        "Engineering, Product and Design"
-      ],
-      "subindustry": "B2B -> Engineering, Product and Design",
-      "batch": null,
-      "is_hiring": true,
-      "is_top_company": false,
-      "status": "Active",
-      "stage": "Growth",
-      "team_size": 115,
-      "tags": [
-        "AI-Enhanced Learning",
-        "API",
-        "AI"
-      ],
-      "regions": [
-        "United States of America",
-        "America / Canada",
-        "Remote",
-        "Fully Remote"
-      ],
-      "source_vc": "Y Combinator",
-      "founders": [],
-      "job_board": {
-        "count": 1,
-        "url": "https://www.deepgram.com/careers",
-        "source_type": "llm_extracted",
-        "ats_platform": null
-      },
-      "last_scraped": "2026-08-02T11:14:13.472377",
-      "data_completeness": 0.75
-    },
-    {
-      "yc_id": 168,
-      "name": "GOAT Group",
-      "slug": "goat-group",
-      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/4f3a455935f36a6655742aae286b206df1cd13bd.png",
-      "website": "https://www.goatgroup.com/",
-      "location": "Los Angeles, CA, USA",
-      "description": "Platform for the greatest products from the past, present and future.",
-      "long_description": "GOAT Group represents the leading platforms for authentic sneakers, apparel and accessories. Operating four distinct brands–GOAT, Flight Club, Grailed and alias–GOAT Group has a global community of over 50M members across 170 countries.\r\n\r\nWe are backed by some of the leading names in venture capital including Accel Partners, Andreessen Horowitz, Index Ventures, Matrix Partners, NEA, SV Angel, Upfront Ventures, Webb Investment Network and Y Combinator.",
-      "industry": "Consumer",
-      "industries": [
-        "Consumer",
-        "Apparel and Cosmetics"
-      ],
-      "subindustry": "Consumer -> Apparel and Cosmetics",
-      "batch": null,
-      "is_hiring": true,
-      "is_top_company": true,
-      "status": "Active",
-      "stage": "Growth",
-      "team_size": 1600,
-      "tags": [
-        "Marketplace"
-      ],
-      "regions": [
-        "United States of America",
-        "America / Canada",
-        "Remote",
-        "Partly Remote"
-      ],
-      "source_vc": "Y Combinator",
-      "founders": [
-        {
-          "name": "Eddy Lu",
-          "college": null,
-          "photo_url": null,
-          "linkedin_url": "https://www.linkedin.com/in/eddylu/",
-          "raw_bio": null
-        },
-        {
-          "name": "Daishin Sugano",
-          "college": null,
-          "photo_url": null,
-          "linkedin_url": "https://www.linkedin.com/in/sensugano",
-          "raw_bio": null
-        }
-      ],
-      "job_board": {
-        "count": 24,
-        "url": "https://boards.greenhouse.io/goatgroup",
-        "source_type": "ats_api",
-        "ats_platform": "greenhouse"
-      },
-      "last_scraped": "2026-08-02T11:14:13.469423",
-      "data_completeness": 0.75
+      "last_scraped": "2026-08-03T12:20:38.573344",
+      "data_completeness": 0.5
     },
     {
       "yc_id": 31240,
@@ -14638,8 +14762,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.493281",
-      "data_completeness": 0.75
+      "last_scraped": "2026-08-03T12:20:38.641009",
+      "data_completeness": 0.5
     },
     {
       "yc_id": 31179,
@@ -14689,8 +14813,8 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.495287",
-      "data_completeness": 0.75
+      "last_scraped": "2026-08-03T12:20:38.644384",
+      "data_completeness": 0.5
     },
     {
       "yc_id": 30966,
@@ -14740,49 +14864,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.500997",
-      "data_completeness": 0.75
-    },
-    {
-      "yc_id": 552,
-      "name": "Lob",
-      "slug": "lob",
-      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/400c96e59ec9e937535827fdd7b324a248dec955.png",
-      "website": "http://lob.com",
-      "location": "New York City, NY, USA; San Francisco, CA, USA",
-      "description": "Lob is the only automation platform that transforms direct mail into…",
-      "long_description": "Lob provides the building blocks for developers to automate the offline world. Enterprise companies use Lob’s suite of APIs to mail fully dynamic and personalized customer communications with print media. We provide insight into deliverability with piece-by-piece tracing and utilize our proprietary Print Delivery Network to streamline production across fully redundant nodes all over the country. \r\n\r\nFounded in 2013 and based in San Francisco, Lob is venture backed by Y Combinator, Polaris Partners, Floodgate, and First Round Capital.\r\n\r\nFind out more about Lob and what we’re up to by following our blog: https://lob.com/blog or visiting our website: https://lob.com.",
-      "industry": "B2B",
-      "industries": [
-        "B2B",
-        "Marketing"
-      ],
-      "subindustry": "B2B -> Marketing",
-      "batch": null,
-      "is_hiring": true,
-      "is_top_company": false,
-      "status": "Active",
-      "stage": "Growth",
-      "team_size": 150,
-      "tags": [
-        "Automation"
-      ],
-      "regions": [
-        "United States of America",
-        "America / Canada",
-        "Remote",
-        "Partly Remote"
-      ],
-      "source_vc": "Y Combinator",
-      "founders": [],
-      "job_board": {
-        "count": 6,
-        "url": "https://boards.greenhouse.io/lob",
-        "source_type": "ats_api",
-        "ats_platform": "greenhouse"
-      },
-      "last_scraped": "2026-08-02T11:14:13.479159",
-      "data_completeness": 0.75
+      "last_scraped": "2026-08-03T12:20:38.654126",
+      "data_completeness": 0.5
     },
     {
       "yc_id": 30891,
@@ -14839,8 +14922,8 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.504398",
-      "data_completeness": 0.75
+      "last_scraped": "2026-08-03T12:20:38.660410",
+      "data_completeness": 0.5
     },
     {
       "yc_id": 31206,
@@ -14892,13 +14975,13 @@
         }
       ],
       "job_board": {
-        "count": 2,
+        "count": null,
         "url": "https://samora.ai/careers",
-        "source_type": "llm_extracted",
+        "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.494201",
-      "data_completeness": 0.75
+      "last_scraped": "2026-08-03T12:20:38.642571",
+      "data_completeness": 0.5
     },
     {
       "yc_id": 64,
@@ -14936,13 +15019,13 @@
         }
       ],
       "job_board": {
-        "count": 12,
+        "count": null,
         "url": "https://www.ycombinator.com/careers",
-        "source_type": "llm_extracted",
+        "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.478224",
-      "data_completeness": 0.75
+      "last_scraped": "2026-08-03T12:20:38.593521",
+      "data_completeness": 0.5
     },
     {
       "yc_id": 30772,
@@ -14987,13 +15070,13 @@
         }
       ],
       "job_board": {
-        "count": 2,
+        "count": null,
         "url": "https://stagewise.io/careers",
-        "source_type": "llm_extracted",
+        "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-02T11:14:13.509250",
-      "data_completeness": 0.75
+      "last_scraped": "2026-08-03T12:20:38.668997",
+      "data_completeness": 0.5
     }
   ]
 }

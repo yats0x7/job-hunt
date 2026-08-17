@@ -1,24 +1,191 @@
 {
   "metadata": {
-    "exported_at": "2026-08-10T10:14:54.850841",
-    "total_companies": 290,
-    "avg_completeness": 0.76,
-    "hiring_count": 290,
-    "last_updated": "2026-08-10T10:14:54.838048",
+    "exported_at": "2026-08-17T09:37:49.343270",
+    "total_companies": 293,
+    "avg_completeness": 0.77,
+    "hiring_count": 293,
+    "last_updated": "2026-08-17T09:37:49.324345",
     "tier_breakdown": {
       "ats_api": 45,
-      "html_heuristic": 22,
-      "llm_extracted": 1,
+      "html_heuristic": 23,
+      "llm_extracted": 3,
       "manual_visit": 222
     },
     "tier_percentages": {
-      "ats_api": 15.5,
-      "html_heuristic": 7.6,
-      "llm_extracted": 0.3,
-      "manual_visit": 76.6
+      "ats_api": 15.4,
+      "html_heuristic": 7.8,
+      "llm_extracted": 1.0,
+      "manual_visit": 75.8
     }
   },
   "companies": [
+    {
+      "yc_id": 30917,
+      "name": "Bravi",
+      "slug": "bravi",
+      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/f454d5ba03bb70a84b22fc085d9687287771440b.png",
+      "website": "https://www.bravi.app/",
+      "location": "Paris, Île-de-France, France",
+      "description": "The AI operating system powering home services businesses",
+      "long_description": "Bravi is building the AI operating system for home-services businesses, using AI-powered customer communication as the wedge.\r\n\r\nWe replace the front office (calls, chats, follow-ups) with AI agents that never miss a lead, then layer an internal AI copilot that understands products, pricing, and technical documentation.\r\n\r\nWe started with fenestration (shutters, windows, garage doors), a large, complex vertical with no modern software, before expanding to adjacent trades.\r\n\r\nBravi is already live with leading installers and manufacturers across Europe and the US, turning missed demand into revenue.",
+      "industry": "B2B",
+      "industries": [
+        "B2B"
+      ],
+      "subindustry": "B2B",
+      "batch": null,
+      "is_hiring": true,
+      "is_top_company": false,
+      "status": "Active",
+      "stage": "Early",
+      "team_size": 2,
+      "tags": [
+        "B2B",
+        "Manufacturing",
+        "Automation",
+        "Home Services",
+        "AI Assistant"
+      ],
+      "regions": [
+        "France",
+        "Europe"
+      ],
+      "source_vc": "Y Combinator",
+      "founders": [
+        {
+          "name": "Anas Bouassami",
+          "college": "UC Berkeley",
+          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/843c0e7207b31b53a786edabe00362860887c3a1.jpg",
+          "linkedin_url": "https://www.linkedin.com/in/anas-bouassami",
+          "raw_bio": "Co-founder & CEO of Bravi (YC F25), the AI communication platform for home service companies. Alongside Bravi, he also runs Volet Dumont, an online rolling shutter business that serves as a live testing ground for Bravi’s technology and customer workflows. He previously co-founded Snipfeed in 2017, where he scaled the company to 20+ employees before its acquisition in 2024. Anas holds a Master Degree from UC Berkeley and a Bachelor of Science in Mechanical Engineering from EPFL."
+        },
+        {
+          "name": "Pierre-Habte Nouvellon",
+          "college": "Massachusetts Institute of Technology (MIT)",
+          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/ef29a9e4166d4b4e83e3e4bf6f92ae1c5d6a3601.jpg",
+          "linkedin_url": "https://www.linkedin.com/in/pierre-habte-nouvellon/",
+          "raw_bio": "Co-founder and CPTO of Bravi. Previously co-founded and exited Snipfeed ($7M raised, 20+ employees). South American Math Olympiad #1. Trained as a space/aerospace engineer before moving into ML and AI product."
+        }
+      ],
+      "job_board": {
+        "count": null,
+        "url": "https://www.bravi.app/careers",
+        "source_type": "manual_visit",
+        "ats_platform": null
+      },
+      "last_scraped": "2026-08-02T11:14:13.502707",
+      "data_completeness": 1.0
+    },
+    {
+      "yc_id": 30747,
+      "name": "Convexia",
+      "slug": "convexia",
+      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/c68bf871c0fe363c6048343df283d9282ab990f4.png",
+      "website": "https://convexia.bio",
+      "location": "San Francisco, CA, USA",
+      "description": "The world's first AI-maximalist pharma company",
+      "long_description": "An AI-maximalist pharma platform. We use agents to buy drugs, run clinical trials, and sell for a profit. 10x faster and 20x leaner than incumbents.\r\n\r\nSourcing Agent: Mines public/private databases and unstructured global data to surface overlooked preclinical candidates.\r\nScientific Agent: Runs comp bio models (ESM-3, RFdiffusion, Boltz-2, AlphaFold) to assess safety and efficacy in silico.\r\nCommercial Agent: Analyzes FDA incentives, pricing dynamics, TAM, competitive landscape, and payer alignment.\r\nClinical Agent: Runs digital twin simulations, evaluates CRO/CMC risk, and builds trial plans to Phase 1.\r\nPoS Agent: Evaluates the most critical factors that impact the likelihood of clinical trial success. \r\n\r\nBuilt by 2 Stanford CS students who have built 3 startups together before. ",
+      "industry": "Healthcare",
+      "industries": [
+        "Healthcare",
+        "Drug Discovery and Delivery"
+      ],
+      "subindustry": "Healthcare -> Drug Discovery and Delivery",
+      "batch": null,
+      "is_hiring": true,
+      "is_top_company": false,
+      "status": "Active",
+      "stage": "Early",
+      "team_size": 4,
+      "tags": [
+        "AI-powered Drug Discovery",
+        "Biotech",
+        "Drug Delivery"
+      ],
+      "regions": [
+        "United States of America",
+        "America / Canada"
+      ],
+      "source_vc": "Y Combinator",
+      "founders": [
+        {
+          "name": "Ayaan Parikh",
+          "college": "Stanford",
+          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/ae7004ae9a37271f3847d9919c6c0cd92a310ac2.jpg",
+          "linkedin_url": "https://www.linkedin.com/in/ayaan-parikh",
+          "raw_bio": "Building agents to find and acquire early-stage drug assets. Stanford CS + Bio Built 3 healthtech startups (telemedicine, addiction recovery, hydroponic systems). Published 4 papers on molecular dynamics. Biotech VC and consulting experience."
+        },
+        {
+          "name": "Rahul Vijayan",
+          "college": null,
+          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/b62fd8479d819d4020ab4de6ddaa6a655eccfd2a.jpg",
+          "linkedin_url": "https://www.linkedin.com/in/rahulvijayan28/",
+          "raw_bio": "Building agents to find and acquire early-stage drug assets. Stanford CS + Econ Built 3 healthtech startups (telemedicine, gamified recovery, hydroponic systems)."
+        }
+      ],
+      "job_board": {
+        "count": null,
+        "url": "https://convexia.bio/careers",
+        "source_type": "manual_visit",
+        "ats_platform": null
+      },
+      "last_scraped": "2026-08-02T11:14:13.509891",
+      "data_completeness": 1.0
+    },
+    {
+      "yc_id": 31080,
+      "name": "Didit",
+      "slug": "didit",
+      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/202e6cd94d0ec2c8de835c56ce6b880f99f033d5.png",
+      "website": "https://didit.me/",
+      "location": "San Francisco, CA, USA",
+      "description": "Infrastructure for identity and fraud.",
+      "long_description": "One API for KYC, KYB, AML, biometrics, and fraud — powered by 1,000+ data sources, 200+ signals, and in-house AI models. Global coverage. Integrate in minutes, pay as you go, 500 free checks/month. Start free at business.didit.me.",
+      "industry": "B2B",
+      "industries": [
+        "B2B",
+        "Infrastructure"
+      ],
+      "subindustry": "B2B -> Infrastructure",
+      "batch": null,
+      "is_hiring": true,
+      "is_top_company": false,
+      "status": "Active",
+      "stage": "Early",
+      "team_size": 16,
+      "tags": [],
+      "regions": [
+        "United States of America",
+        "America / Canada",
+        "Remote",
+        "Partly Remote"
+      ],
+      "source_vc": "Y Combinator",
+      "founders": [
+        {
+          "name": "Alberto Rosas",
+          "college": null,
+          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/e02a81d1021c405f1e78dadb22d27f80dc4cebdf.jpg",
+          "linkedin_url": "https://www.linkedin.com/in/albertorosasg/",
+          "raw_bio": "CEO of Didit. Solving identity on the internet. Former professional tennis player."
+        },
+        {
+          "name": "Alejandro Rosas",
+          "college": "University of Pennsylvania",
+          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/fd49b0f6acee65e21e16c394677a4f17616e69de.jpg",
+          "linkedin_url": "https://www.linkedin.com/in/alejandrorosasgarcia/",
+          "raw_bio": "CTO. Math, problem solver, obsessive about details and learning by building; architecting Didit’s identity infrastructure from first principles. Former professional tennis player"
+        }
+      ],
+      "job_board": {
+        "count": null,
+        "url": "https://didit.me/careers",
+        "source_type": "manual_visit",
+        "ats_platform": null
+      },
+      "last_scraped": "2026-08-02T11:14:13.498560",
+      "data_completeness": 1.0
+    },
     {
       "yc_id": 30716,
       "name": "Finto",
@@ -85,6 +252,63 @@
       "data_completeness": 1.0
     },
     {
+      "yc_id": 30775,
+      "name": "Fleetline",
+      "slug": "fleetline",
+      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/8008d7d50f1ead47eae177bcede0c9d614312ad4.png",
+      "website": "https://fleetline.ai",
+      "location": "New York City, NY, USA",
+      "description": "Optimizing fleet planning with data driven algorithms",
+      "long_description": "Fleetline is building the first complete-context algorithmic load planner for mid to large-sized trucking fleets. Today’s dispatchers face an overwhelming task: balancing regulations, customer demands, live fleet data, and individual driver needs, all while coordinating across siloed tools and teams. Mistakes run rampant, and each mistake is thousands of dollars. Even the select fleets using algorithms that have fleet-wide context struggle: the outputs are rigid, hard to interpret, and are blind to real-world nuances like driver preferences and schedule exceptions. Fleetline solves this by combining advanced optimization with LLMs that can easily adapt algorithms to each fleet’s needs and capture driver-specific information. The result is smarter planning truly optimized for every fleet and its drivers.",
+      "industry": "B2B",
+      "industries": [
+        "B2B",
+        "Supply Chain and Logistics"
+      ],
+      "subindustry": "B2B -> Supply Chain and Logistics",
+      "batch": null,
+      "is_hiring": true,
+      "is_top_company": false,
+      "status": "Active",
+      "stage": "Early",
+      "team_size": 11,
+      "tags": [
+        "Artificial Intelligence",
+        "Logistics",
+        "Supply Chain",
+        "Data Science"
+      ],
+      "regions": [
+        "United States of America",
+        "America / Canada"
+      ],
+      "source_vc": "Y Combinator",
+      "founders": [
+        {
+          "name": "Saurav Kumar",
+          "college": "University of Sheffield",
+          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/39edd7839bf52e30dab32c05a547013c48aff70d.jpg",
+          "linkedin_url": "https://linkedin.com/in/sauravml",
+          "raw_bio": "Optimizing and automating dispatch ops @ Fleetline"
+        },
+        {
+          "name": "Veer Juneja",
+          "college": "University of Southern California (USC)",
+          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/fdc7a7c95b217654e469b590c4c9bbc9f06ba6a4.jpg",
+          "linkedin_url": "https://www.linkedin.com/in/veer-juneja-67255417a/",
+          "raw_bio": "Combining LLMs with traditional advanced optimization techniques to automate trucking dispatch operations. I studied philosophy @ USC."
+        }
+      ],
+      "job_board": {
+        "count": 23,
+        "url": "https://fleetline.ai/careers",
+        "source_type": "llm_extracted",
+        "ats_platform": null
+      },
+      "last_scraped": "2026-08-02T11:14:13.509110",
+      "data_completeness": 1.0
+    },
+    {
       "yc_id": 30729,
       "name": "Floot",
       "slug": "floot",
@@ -139,6 +363,58 @@
         "ats_platform": null
       },
       "last_scraped": "2026-08-02T11:14:13.510246",
+      "data_completeness": 1.0
+    },
+    {
+      "yc_id": 30758,
+      "name": "Hera",
+      "slug": "hera-video",
+      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/74b33eae20672c87a08f3ca790501128e2c07280.png",
+      "website": "https://hera.video/",
+      "location": "Berlin, Berlin, Germany",
+      "description": "AI Motion Designer",
+      "long_description": "Hera is an AI motion designer that turns 5-hour projects into 5-minute tasks. \r\n\r\nWhen you're a YouTuber making an infographic animation, instead of spending hours manually clicking buttons in Adobe After Effects, you can create the same animation in minutes in Hera. \r\n\r\nThrough talking to our users, we realized that 95% of time spent on motion graphics is manual button clicking, not creative work. This insight led us to focus on automating the tedious parts while giving the user all creative control.\r\n\r\nWe launched in May 2025, got 100k waitlist signups in 8 weeks, and we're doubling revenue monthly.",
+      "industry": "B2B",
+      "industries": [
+        "B2B",
+        "Engineering, Product and Design"
+      ],
+      "subindustry": "B2B -> Engineering, Product and Design",
+      "batch": null,
+      "is_hiring": true,
+      "is_top_company": false,
+      "status": "Active",
+      "stage": "Early",
+      "team_size": 5,
+      "tags": [],
+      "regions": [
+        "Germany",
+        "Europe"
+      ],
+      "source_vc": "Y Combinator",
+      "founders": [
+        {
+          "name": "Peter Tribelhorn",
+          "college": "Massachusetts Institute of Technology",
+          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/f387aee6f30b9154581e710224ec49db7f10e983.jpg",
+          "linkedin_url": "https://www.linkedin.com/in/peter-tribelhorn-36a967142/",
+          "raw_bio": "Building Hera to make motion design radically faster and easier. Previously acquired and managed big YouTube channels with +30m subs (e.g., Economics Explained, The Game Theorists)."
+        },
+        {
+          "name": "Chia-Lun Wu",
+          "college": "National Taiwan University",
+          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/69a1880f53fad66c9e27c12915a45ec3fce99fd2.jpg",
+          "linkedin_url": "https://www.linkedin.com/in/chialunwu/",
+          "raw_bio": "Building Hera, an AI motion designer. I was the first engineer/employee at Flagright (YC W22), where I built and led core infrastructure from the ground up and scaled it. I was also an early engineer at Vyond, where I built Vyond Studio, an online video editor used by 20,000 businesses today. I hold an MS in Computer Science from National Taiwan University (NTU) and have been working in software engineering since 2016."
+        }
+      ],
+      "job_board": {
+        "count": null,
+        "url": "https://hera.video/careers",
+        "source_type": "manual_visit",
+        "ats_platform": null
+      },
+      "last_scraped": "2026-08-02T11:14:13.509595",
       "data_completeness": 1.0
     },
     {
@@ -200,6 +476,205 @@
         "ats_platform": null
       },
       "last_scraped": "2026-08-02T11:14:13.510141",
+      "data_completeness": 1.0
+    },
+    {
+      "yc_id": 30789,
+      "name": "Interfere",
+      "slug": "interfere",
+      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/c788f853f55de9b0ed57c42d5dd9b8c7388fc49f.png",
+      "website": "https://interfere.com",
+      "location": "New York City, NY, USA",
+      "description": "Give engineering, product, and design teams insight into unseen issues",
+      "long_description": "Interfere empowers engineers, product managers and designers with real-time understanding of previously unseen bugs and issues.",
+      "industry": "B2B",
+      "industries": [
+        "B2B",
+        "Engineering, Product and Design"
+      ],
+      "subindustry": "B2B -> Engineering, Product and Design",
+      "batch": null,
+      "is_hiring": true,
+      "is_top_company": false,
+      "status": "Active",
+      "stage": "Early",
+      "team_size": 8,
+      "tags": [
+        "Developer Tools",
+        "Design",
+        "AI"
+      ],
+      "regions": [
+        "United States of America",
+        "America / Canada"
+      ],
+      "source_vc": "Y Combinator",
+      "founders": [
+        {
+          "name": "Luke Shiels",
+          "college": null,
+          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/074d55d99df939d0665c5bc71d222ecdaedfce9f.jpg",
+          "linkedin_url": "https://linkedin.com/in/shiels",
+          "raw_bio": "Founder of Interfere (YC S25), we’re building the self-healing layer of the internet: software that helps software engineers spend less time fixing bugs, and for the first time allow non-technical members of your team to understand how your product actually works in real-life."
+        }
+      ],
+      "job_board": {
+        "count": null,
+        "url": "https://interfere.com/careers",
+        "source_type": "manual_visit",
+        "ats_platform": null
+      },
+      "last_scraped": "2026-08-02T11:14:13.508729",
+      "data_completeness": 1.0
+    },
+    {
+      "yc_id": 30769,
+      "name": "Juxta",
+      "slug": "juxta",
+      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/0e2406b819c520b6b5c6f58e45423c720bf0661d.png",
+      "website": "https://juxta.com",
+      "location": "San Francisco, CA, USA",
+      "description": "Building a GPS alternative 100x more powerful with no hardware needed.",
+      "long_description": "Juxta is creating the first Universal Positioning System (UPS) — a GPS alternative that can monitor movement anywhere on earth with no new hardware, minimal internet connection, and remote deployment. Using custom machine learning models and a first-of-its-kind synthetic fingerprinting technology, Juxta can make any indoor, outdoor, or underground space location-aware in minutes for a fraction of the cost of any other geospatial technology.\r\n\r\nJuxta's UPS can be leveraged across industries — from securely tracking soldiers in combat zones to providing offline positioning for robots to offering asset tracking in warehouses and ports around the globe.",
+      "industry": "B2B",
+      "industries": [
+        "B2B"
+      ],
+      "subindustry": "B2B",
+      "batch": null,
+      "is_hiring": true,
+      "is_top_company": false,
+      "status": "Active",
+      "stage": "Early",
+      "team_size": null,
+      "tags": [],
+      "regions": [
+        "United States of America",
+        "America / Canada",
+        "Remote",
+        "Partly Remote"
+      ],
+      "source_vc": "Y Combinator",
+      "founders": [
+        {
+          "name": "John Ferrara",
+          "college": "Northwestern University",
+          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/77294415a149a6787039620263367600a7b4ec64.jpg",
+          "linkedin_url": "https://www.linkedin.com/in/ferrara-john/",
+          "raw_bio": "Prev. Northwestern data science + journalism; CEO at Juxta, working to create the next frontier of asset and personnel tracking!"
+        }
+      ],
+      "job_board": {
+        "count": null,
+        "url": "https://juxta.com/careers",
+        "source_type": "manual_visit",
+        "ats_platform": null
+      },
+      "last_scraped": "2026-08-02T11:14:13.509393",
+      "data_completeness": 1.0
+    },
+    {
+      "yc_id": 30754,
+      "name": "Locata",
+      "slug": "locata",
+      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/c0351a7bc0e508af83b9f25fa8db67212e25a78c.png",
+      "website": "https://www.locatahealth.com/",
+      "location": "New York City, NY, USA",
+      "description": "AI Referral Automation for Primary Care Clinics",
+      "long_description": "Locata is an AI referral management platform for Primary Care. We deploy AI agents to automate every step of the referral process that back-office staff face daily, from submitting prior authorizations to broadcasting updates and following up with patients. This frees up staff to focus on patient care.\r\n\r\nPrimary care back-offices are severely understaffed and overburdened by administrative work associated with referrals. Additionally, patients suffer navigating the complex referral process, which can have disastrous health effects if they don’t get the care they need. These factors point to a glaring gap in the system—where out of over 100 million specialist referrals issued annually in the US, only half are actually completed. Locata is tackling this problem head-on, saving administrative staff hours each week and ensuring that the referral process goes as smoothly as possible for patients and their providers.\r\n\r\nAlejandro and Josh met at Stanford where they graduated with BS degrees in Computer Science. Alejandro was a senior software engineer at Meta’s Reality Labs where he led development of several AI features for wearable products and prior to that conducted AI research at Stanford Medicine. Josh graduated with a masters in Computer Science, specializing in AI, before working as a software engineer at Google where he developed AI products that served over 1 billion users.\r\n\r\nWithin two weeks of building our product, we signed a major regional health center and have saved them over 100 hours of work in our first month live.",
+      "industry": "Healthcare",
+      "industries": [
+        "Healthcare",
+        "Healthcare IT"
+      ],
+      "subindustry": "Healthcare -> Healthcare IT",
+      "batch": null,
+      "is_hiring": true,
+      "is_top_company": false,
+      "status": "Active",
+      "stage": "Early",
+      "team_size": 4,
+      "tags": [],
+      "regions": [
+        "United States of America",
+        "America / Canada"
+      ],
+      "source_vc": "Y Combinator",
+      "founders": [
+        {
+          "name": "Alejandro Salinas",
+          "college": "Stanford University",
+          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/ea245a1d6647bf826cc9b6e4b39cbc797fc6c732.jpg",
+          "linkedin_url": "https://www.linkedin.com/in/asalinas21/",
+          "raw_bio": "Alejandro is the Co-Founder of Locata. He holds a BS in Computer Science from Stanford University where he conducted AI research at Stanford Medicine. A former pre-med, Alejandro spent multiple summers shadowing doctors domestically and internationally. He has deep experience building AI products. As a Senior Software Engineer at Meta Reality Labs, he led development of several AI features for wearable products. He also authored an AI patent."
+        },
+        {
+          "name": "Joshua Chang",
+          "college": "Stanford",
+          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/bf9b9eb0e350ca7ad0c4d397202bea868156e10b.jpg",
+          "linkedin_url": "https://www.linkedin.com/in/joshua-r-chang/",
+          "raw_bio": "Joshua is the Co-Founder of Locata. He graduated Stanford with a BS & MS in Computer Science, specializing in AI. Previously he was a software engineer at Google, developing AI products that served over 1 billion users."
+        }
+      ],
+      "job_board": {
+        "count": null,
+        "url": "https://www.locatahealth.com/careers",
+        "source_type": "manual_visit",
+        "ats_platform": null
+      },
+      "last_scraped": "2026-08-02T11:14:13.509748",
+      "data_completeness": 1.0
+    },
+    {
+      "yc_id": 30776,
+      "name": "Magnetic",
+      "slug": "magnetic",
+      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/9c6be0818283f49c20fc921c3bc7db67bfb60bf5.png",
+      "website": "https://www.magnetictax.com",
+      "location": "San Francisco, CA, USA",
+      "description": "AI Tax Preparer for CPA firms",
+      "long_description": "Magnetic scans client documents - from handwritten charity notes to excel spreadsheet Schedule Cs to multi-state K-1s - and enters them into tax software automatically, saving hours of tedious data entry. \r\n\r\nThe accounting profession is facing a massive talent shortage, as graduates choose different professions and the old guard begins to retire. As a result, CPA and tax preparation firms are awash in clientele, but unable to keep up. At many firms, phones go unanswered, clients are \"fired\", and websites are taken down, as the existing workforce tries to handle the grueling 80 hour+ weeks necessary to push through tax season to the April 15th deadline.\r\n\r\nWe built this because a former colleague who owns her own tax firm asked us to automate her workload, and we quickly realized the massive opportunity. Thomas brings deep domain expertise as the former Head of Product at Keeper (YC W19), where he built tax engine automation systems and an OCR form scanning system that outperformed everything else on the market. At Keeper, he leveraged early access to OpenAI's LLMs (well before ChatGPT) to build systems that automated the entire tax filing process, allowing a tiny team of CPAs to process thousands of returns with near zero busy work. Patrick was the first engineer at FunCraft, shipping multiple mobile games with 1M+ downloads and building scalable shared codebases. We've worked together since 2017, including co-leading multiple teams at Zynga as PM & Tech Lead respectively.\r\n\r\nThe opportunity is massive - there are 80M US personal tax returns filed via professionals annually, in a $2B outsourcing market where individual CPA firms currently pay $100k-$1M per year for inferior services. We're positioned to capture significant market share by offering better accuracy & document coverage, instant processing, and superior user experience.\r\n\r\nWe've built this kind of software before, we've worked together for years (and even lived together), we've built products to $10M ARR before, and we have the grit to outwork anyone in this space.",
+      "industry": "B2B",
+      "industries": [
+        "B2B",
+        "Productivity"
+      ],
+      "subindustry": "B2B -> Productivity",
+      "batch": null,
+      "is_hiring": true,
+      "is_top_company": false,
+      "status": "Active",
+      "stage": "Early",
+      "team_size": 10,
+      "tags": [],
+      "regions": [
+        "United States of America",
+        "America / Canada"
+      ],
+      "source_vc": "Y Combinator",
+      "founders": [
+        {
+          "name": "Thomas Shelley",
+          "college": "Carnegie Mellon",
+          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/c295aae39ffad4770fcf977a236483ee592b8f1b.jpg",
+          "linkedin_url": "https://linkedin.com/in/thomasjshelley",
+          "raw_bio": "Thomas is the co-founder and CEO of Magnetic. He was most recently Head of Product at Keeper (YC W19), where he designed tax engine automation and OCR tax doc scanning systems for the world's first consumer AI tax filing product. Previously, Thomas ran product teams at Niantic and Zynga, and before that dropped out of Carnegie Mellon to build a digital item marketplace."
+        },
+        {
+          "name": "Patrick Fay",
+          "college": null,
+          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/58d611e4e4b47dfdbc6eae6b982670795665c3a6.jpg",
+          "linkedin_url": "https://linkedin.com/in/patrick-fay-5418a822",
+          "raw_bio": "Patrick is the co-founder and CTO of Magnetic. He was the first engineer at FunCraft, where he shipped 14 new games in four years, including two multi-million dollar hits. Patrick led multiple engineering teams at Zynga, and was ranked #1 in the world for DotA Underlords Duos."
+        }
+      ],
+      "job_board": {
+        "count": null,
+        "url": "https://www.magnetictax.com/careers",
+        "source_type": "manual_visit",
+        "ats_platform": null
+      },
+      "last_scraped": "2026-08-02T11:14:13.508952",
       "data_completeness": 1.0
     },
     {
@@ -310,6 +785,59 @@
         "ats_platform": null
       },
       "last_scraped": "2026-08-02T11:14:13.510680",
+      "data_completeness": 1.0
+    },
+    {
+      "yc_id": 30795,
+      "name": "NOSO LABS",
+      "slug": "noso-labs",
+      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/65242d9e142c66d4afe70eb47ebf05c1dcff789c.png",
+      "website": "https://noso.so",
+      "location": "San Francisco, CA, USA",
+      "description": "Build AI agents for field technicians to diagnose and sell 10x better",
+      "long_description": "In the home services industry, field technicians are expected to handle three key tasks: diagnosing issues, making sales, and completing paperwork. It's rare to find individuals who excel at all three. We build AI agents to support technicians by improving diagnostic accuracy and helping them capture sales opportunities.",
+      "industry": "Industrials",
+      "industries": [
+        "Industrials"
+      ],
+      "subindustry": "Industrials",
+      "batch": null,
+      "is_hiring": true,
+      "is_top_company": false,
+      "status": "Active",
+      "stage": "Early",
+      "team_size": 6,
+      "tags": [
+        "Artificial Intelligence"
+      ],
+      "regions": [
+        "United States of America",
+        "America / Canada"
+      ],
+      "source_vc": "Y Combinator",
+      "founders": [
+        {
+          "name": "Winston Chi",
+          "college": null,
+          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/40eb2defebe9c63af381e0143de00bbcffa1b448.jpg",
+          "linkedin_url": "https://www.linkedin.com/in/lwchi/",
+          "raw_bio": "2x founder, love building Vertical AI Currently working on HVAC diagnostics for field technicians Previously, founder of butter technologies, acquired by Grubmarket"
+        },
+        {
+          "name": "Alex Xi",
+          "college": null,
+          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/1212e495a7ff574a6f9d8f7f092723e66570edb4.jpg",
+          "linkedin_url": null,
+          "raw_bio": "Currently working on AI agent for trade industry, starting from HVAC Previously, Principle Engineer led Code LLM | ex-ByteDance AI | ex-Meta AI | PhD"
+        }
+      ],
+      "job_board": {
+        "count": null,
+        "url": "https://noso.so/careers",
+        "source_type": "manual_visit",
+        "ats_platform": null
+      },
+      "last_scraped": "2026-08-02T11:14:13.508472",
       "data_completeness": 1.0
     },
     {
@@ -570,6 +1098,63 @@
       "data_completeness": 1.0
     },
     {
+      "yc_id": 30778,
+      "name": "Perspectives Health",
+      "slug": "perspectives-health",
+      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/d4d717434657a084785d53a7ab208f3a1b202dae.png",
+      "website": "https://perspectiveshealth.ai/",
+      "location": "Chicago, IL, USA",
+      "description": "Automating away admin for behavioral health clinics",
+      "long_description": "America is facing an addiction and mental health crisis. We're building a suite of AI agents to automate away the tasks that occupy half of the time and resources of behavioral health clinics—documentation, compliance, audits, utilization review, and more.",
+      "industry": "Healthcare",
+      "industries": [
+        "Healthcare",
+        "Healthcare IT"
+      ],
+      "subindustry": "Healthcare -> Healthcare IT",
+      "batch": null,
+      "is_hiring": true,
+      "is_top_company": false,
+      "status": "Active",
+      "stage": "Early",
+      "team_size": 5,
+      "tags": [
+        "Workflow Automation",
+        "Healthcare",
+        "Mental Health",
+        "Healthcare IT"
+      ],
+      "regions": [
+        "United States of America",
+        "America / Canada"
+      ],
+      "source_vc": "Y Combinator",
+      "founders": [
+        {
+          "name": "Eshan Dosani",
+          "college": "University of Chicago",
+          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/82b2141759123737c726fcdc466ec142c3bd40d3.jpg",
+          "linkedin_url": "https://www.linkedin.com/in/eshan-dosani/",
+          "raw_bio": "UChicago, fmr White House Drug Policy"
+        },
+        {
+          "name": "Kyle Jung",
+          "college": "Stanford University",
+          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/76c7b10d44d923aa745450d3689cd0880684ef53.jpg",
+          "linkedin_url": "https://www.linkedin.com/in/kyle-hyun-woo-jung-a06814180/",
+          "raw_bio": "I like building cool things, martial arts, and golf."
+        }
+      ],
+      "job_board": {
+        "count": 2,
+        "url": "https://www.perspectiveshealth.ai/careers",
+        "source_type": "html_heuristic",
+        "ats_platform": null
+      },
+      "last_scraped": "2026-08-02T11:14:13.508830",
+      "data_completeness": 1.0
+    },
+    {
       "yc_id": 30719,
       "name": "ProcIndex",
       "slug": "procindex",
@@ -676,6 +1261,64 @@
         "ats_platform": null
       },
       "last_scraped": "2026-08-02T11:14:13.487959",
+      "data_completeness": 1.0
+    },
+    {
+      "yc_id": 30761,
+      "name": "Reacher",
+      "slug": "reacher",
+      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/e18f0a8b8fff511049fe03b4ad0dc3b98bce28b5.png",
+      "website": "https://reacherapp.com/",
+      "location": "San Francisco, CA, USA; Remote",
+      "description": "We automate creator marketing for the world's largest brands",
+      "long_description": "Reacher is an AI-powered platform that automates creator marketing workflows—from discovery and outreach to campaign management and content strategy—making marketing teams 10x more productive. \r\n\r\nWe handle the manual tasks so brands can focus on building relationships with creators while centralizing their operations in one platform to manage creators on TikTok Shop, Instagram, and YouTube.\r\n\r\n\r\n\r\n\r\n",
+      "industry": "B2B",
+      "industries": [
+        "B2B"
+      ],
+      "subindustry": "B2B",
+      "batch": null,
+      "is_hiring": true,
+      "is_top_company": false,
+      "status": "Active",
+      "stage": "Early",
+      "team_size": 10,
+      "tags": [
+        "Artificial Intelligence",
+        "B2B",
+        "E-commerce",
+        "Creator Economy"
+      ],
+      "regions": [
+        "United States of America",
+        "America / Canada",
+        "Remote",
+        "Fully Remote"
+      ],
+      "source_vc": "Y Combinator",
+      "founders": [
+        {
+          "name": "Jerry Qian",
+          "college": "Stanford University",
+          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/ec1ee882a67209bd8aedbe13d8a0bfbcb164e25f.jpg",
+          "linkedin_url": "https://linkedin.com/in/j-qian",
+          "raw_bio": "Co-Founder and CEO @ Reacher Prev @ Meta, Berkeley, NASA"
+        },
+        {
+          "name": "Bora Mutluoglu",
+          "college": "UC Berkeley",
+          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/4fd8c23ceb198400a3b742659ae87f2e47e2ad57.jpg",
+          "linkedin_url": "https://linkedin.com/in/bora-mutluoglu",
+          "raw_bio": "Bay area born and raised. Cupertino native. Work, gym, hiking, nature, walking, rugby, soccer, dogs, birds, edm, heavy metal, healthy lifestyle, work. Cupertino High School -> UC Santa Cruz -> UC San Diego -> UC Berkeley -> Palo Alto Networks -> Reacher. Currently building Reacher. The AI Brand Manager for ecommerce businesses scaling through the creator economy."
+        }
+      ],
+      "job_board": {
+        "count": 8,
+        "url": "https://jobs.ashbyhq.com/reacher",
+        "source_type": "ats_api",
+        "ats_platform": "ashby"
+      },
+      "last_scraped": "2026-08-02T11:14:13.509492",
       "data_completeness": 1.0
     },
     {
@@ -895,6 +1538,65 @@
       "data_completeness": 1.0
     },
     {
+      "yc_id": 30794,
+      "name": "Vulcan Technologies",
+      "slug": "vulcan-technologies",
+      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/9dc164f31a43f3059a961dca44229c015bb26437.png",
+      "website": "https://vulcan.ai/",
+      "location": "Austin, TX, USA",
+      "description": "Secure frontier AI for government & adjacent knowledge work",
+      "long_description": "Vulcan builds agents for government and government-adjacent work. We currently sell two agents: Justinian and Trajan.\r\n\r\nJustinian is an AI agent coworker for people who work in and adjacent to American government. To power Justinian, we created the world’s largest legal and policy database and knowledge graph, accessible to our customers via our platform, email, and Slack.\r\n\r\nTrajan is a public-facing AI concierge built to help governments modernize service delivery. Hosted on a government website, Trajan helps businesses and citizens automatically complete permits, licenses, applications, and answer regulatory and legal questions.\r\n\r\nIn addition to government customers, Vulcan's agents serve regulatory, legal, policy, and government relations teams at major U.S. enterprises.",
+      "industry": "B2B",
+      "industries": [
+        "B2B",
+        "Legal"
+      ],
+      "subindustry": "B2B -> Legal",
+      "batch": null,
+      "is_hiring": true,
+      "is_top_company": false,
+      "status": "Active",
+      "stage": "Early",
+      "team_size": 17,
+      "tags": [],
+      "regions": [
+        "United States of America",
+        "America / Canada"
+      ],
+      "source_vc": "Y Combinator",
+      "founders": [
+        {
+          "name": "Tanner Jones",
+          "college": "Dartmouth",
+          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/890d9cda7329b04ea252602793ab6c242c9bb32a.jpg",
+          "linkedin_url": "https://www.linkedin.com/in/tanner-jones-817192167/",
+          "raw_bio": "Tanner studied PPE and Classics at Dartmouth. Previously, he founded and exited Downballot Solutions with Arvind Veluvali (Fresco AI, YC F24), a political campaign tech startup. Later, Tanner was the Technology and Regulatory Policy Director at Joe Lonsdale's Cicero Institute, where he was the 2024 employee of the year. Tanner also coached the 2021 speech and debate national champion, holds powerlifting records in two states, and qualified to the 2023 IPL world powerlifting championships."
+        },
+        {
+          "name": "Chris Minge",
+          "college": "Princeton University",
+          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/e12e60e49ca5697b947173d89c372b7ba546e81e.jpg",
+          "linkedin_url": "https://www.linkedin.com/in/chrisminge",
+          "raw_bio": "Chris studied computer science and philosophy at Princeton University, graduating in 2022. After graduating, he was a software engineer at Google, where he worked on ML infrastructure, supporting Gemini, Waymo, Vertex AI, and other services."
+        },
+        {
+          "name": "Aleksander Mekhanik",
+          "college": "Dartmouth",
+          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/f5ad77596e26bc49b796e7efe41dbe27b84d5929.jpg",
+          "linkedin_url": "https://www.linkedin.com/in/aleksander-mekhanik-41547b272/",
+          "raw_bio": "Alek earned the prestigious Jack Byrne grant offered to the top math students at Dartmouth, where he studied electrical computer engineering with a focus in machine learning. Previously, Alek was a nationally competitive chess player and high school varsity athlete. He has also contributed to several startups as a machine learning engineer. Beyond Vulcan, Alek holds Ivy League and Arizona powerlifting records and qualified to USAPL collegiate nationals."
+        }
+      ],
+      "job_board": {
+        "count": null,
+        "url": "https://vulcan.ai/careers",
+        "source_type": "manual_visit",
+        "ats_platform": null
+      },
+      "last_scraped": "2026-08-02T11:14:13.508575",
+      "data_completeness": 1.0
+    },
+    {
       "yc_id": 31098,
       "name": "10x Science",
       "slug": "10x-science",
@@ -913,12 +1615,12 @@
       "is_top_company": false,
       "status": "Active",
       "stage": "Early",
-      "team_size": 4,
+      "team_size": 5,
       "tags": [
-        "Artificial Intelligence",
         "SaaS",
         "B2B",
-        "Biotech"
+        "Biotech",
+        "AI"
       ],
       "regions": [
         "United States of America",
@@ -956,7 +1658,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.807549",
+      "last_scraped": "2026-08-17T09:37:49.305032",
       "data_completeness": 0.75
     },
     {
@@ -1018,7 +1720,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.762057",
+      "last_scraped": "2026-08-17T09:37:49.268116",
       "data_completeness": 0.75
     },
     {
@@ -1077,7 +1779,7 @@
         "source_type": "ats_api",
         "ats_platform": "ashby"
       },
-      "last_scraped": "2026-08-10T10:14:54.801068",
+      "last_scraped": "2026-08-17T09:37:49.300182",
       "data_completeness": 0.75
     },
     {
@@ -1122,7 +1824,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.780539",
+      "last_scraped": "2026-08-17T09:37:49.285136",
       "data_completeness": 0.75
     },
     {
@@ -1171,12 +1873,12 @@
         }
       ],
       "job_board": {
-        "count": 2,
+        "count": 3,
         "url": "https://adialante.com/careers",
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.787341",
+      "last_scraped": "2026-08-17T09:37:49.291350",
       "data_completeness": 0.75
     },
     {
@@ -1227,7 +1929,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.805990",
+      "last_scraped": "2026-08-17T09:37:49.303862",
       "data_completeness": 0.75
     },
     {
@@ -1279,7 +1981,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.776243",
+      "last_scraped": "2026-08-17T09:37:49.281424",
       "data_completeness": 0.75
     },
     {
@@ -1329,7 +2031,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.731761",
+      "last_scraped": "2026-08-17T09:37:49.241619",
       "data_completeness": 0.75
     },
     {
@@ -1380,7 +2082,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.831122",
+      "last_scraped": "2026-08-17T09:37:49.322074",
       "data_completeness": 0.75
     },
     {
@@ -1435,12 +2137,12 @@
         }
       ],
       "job_board": {
-        "count": 32,
+        "count": 34,
         "url": "https://boards.greenhouse.io/algolia",
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-10T10:14:54.702778",
+      "last_scraped": "2026-08-17T09:37:49.214652",
       "data_completeness": 0.75
     },
     {
@@ -1507,7 +2209,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.823546",
+      "last_scraped": "2026-08-17T09:37:49.316664",
       "data_completeness": 0.75
     },
     {
@@ -1566,7 +2268,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.788340",
+      "last_scraped": "2026-08-17T09:37:49.292243",
       "data_completeness": 0.75
     },
     {
@@ -1619,7 +2321,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.824501",
+      "last_scraped": "2026-08-17T09:37:49.317434",
       "data_completeness": 0.75
     },
     {
@@ -1674,7 +2376,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.813033",
+      "last_scraped": "2026-08-17T09:37:49.309229",
       "data_completeness": 0.75
     },
     {
@@ -1739,7 +2441,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.745695",
+      "last_scraped": "2026-08-17T09:37:49.253661",
       "data_completeness": 0.75
     },
     {
@@ -1797,7 +2499,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.750529",
+      "last_scraped": "2026-08-17T09:37:49.257863",
       "data_completeness": 0.75
     },
     {
@@ -1853,7 +2555,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.786093",
+      "last_scraped": "2026-08-17T09:37:49.290275",
       "data_completeness": 0.75
     },
     {
@@ -1898,7 +2600,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.781722",
+      "last_scraped": "2026-08-17T09:37:49.286313",
       "data_completeness": 0.75
     },
     {
@@ -1941,7 +2643,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.771471",
+      "last_scraped": "2026-08-17T09:37:49.277830",
       "data_completeness": 0.75
     },
     {
@@ -1993,7 +2695,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.778530",
+      "last_scraped": "2026-08-17T09:37:49.283277",
       "data_completeness": 0.75
     },
     {
@@ -2044,7 +2746,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.773548",
+      "last_scraped": "2026-08-17T09:37:49.279513",
       "data_completeness": 0.75
     },
     {
@@ -2098,7 +2800,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.783940",
+      "last_scraped": "2026-08-17T09:37:49.288290",
       "data_completeness": 0.75
     },
     {
@@ -2162,7 +2864,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.820620",
+      "last_scraped": "2026-08-17T09:37:49.315014",
       "data_completeness": 0.75
     },
     {
@@ -2209,7 +2911,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.807945",
+      "last_scraped": "2026-08-17T09:37:49.305254",
       "data_completeness": 0.75
     },
     {
@@ -2268,7 +2970,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.828759",
+      "last_scraped": "2026-08-17T09:37:49.320629",
       "data_completeness": 0.75
     },
     {
@@ -2319,7 +3021,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.772076",
+      "last_scraped": "2026-08-17T09:37:49.278358",
       "data_completeness": 0.75
     },
     {
@@ -2380,7 +3082,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.825700",
+      "last_scraped": "2026-08-17T09:37:49.318338",
       "data_completeness": 0.75
     },
     {
@@ -2425,7 +3127,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.796450",
+      "last_scraped": "2026-08-17T09:37:49.296312",
       "data_completeness": 0.75
     },
     {
@@ -2471,7 +3173,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.834120",
+      "last_scraped": "2026-08-17T09:37:49.324117",
       "data_completeness": 0.75
     },
     {
@@ -2530,7 +3232,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.798480",
+      "last_scraped": "2026-08-17T09:37:49.297973",
       "data_completeness": 0.75
     },
     {
@@ -2552,7 +3254,7 @@
       "is_top_company": false,
       "status": "Active",
       "stage": "Early",
-      "team_size": 0,
+      "team_size": 4,
       "tags": [],
       "regions": [
         "United States of America",
@@ -2581,7 +3283,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.781113",
+      "last_scraped": "2026-08-17T09:37:49.285706",
       "data_completeness": 0.75
     },
     {
@@ -2640,12 +3342,12 @@
         }
       ],
       "job_board": {
-        "count": 10,
+        "count": 9,
         "url": "https://boards.greenhouse.io/bitmovin",
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-10T10:14:54.727033",
+      "last_scraped": "2026-08-17T09:37:49.237084",
       "data_completeness": 0.75
     },
     {
@@ -2695,7 +3397,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.764121",
+      "last_scraped": "2026-08-17T09:37:49.269970",
       "data_completeness": 0.75
     },
     {
@@ -2748,12 +3450,12 @@
         }
       ],
       "job_board": {
-        "count": null,
-        "url": "https://bolna.ai/careers",
-        "source_type": "manual_visit",
-        "ats_platform": null
+        "count": 4,
+        "url": "https://jobs.ashbyhq.com/bolna",
+        "source_type": "ats_api",
+        "ats_platform": "ashby"
       },
-      "last_scraped": "2026-08-10T10:14:54.829351",
+      "last_scraped": "2026-08-17T09:37:49.320997",
       "data_completeness": 0.75
     },
     {
@@ -2804,7 +3506,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.797878",
+      "last_scraped": "2026-08-17T09:37:49.297369",
       "data_completeness": 0.75
     },
     {
@@ -2852,64 +3554,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.733201",
-      "data_completeness": 0.75
-    },
-    {
-      "yc_id": 30917,
-      "name": "Bravi",
-      "slug": "bravi",
-      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/f454d5ba03bb70a84b22fc085d9687287771440b.png",
-      "website": "https://www.bravi.app/",
-      "location": "Paris, Île-de-France, France",
-      "description": "The AI operating system powering home services businesses",
-      "long_description": "Bravi is building the AI operating system for home-services businesses, using AI-powered customer communication as the wedge.\r\n\r\nWe replace the front office (calls, chats, follow-ups) with AI agents that never miss a lead, then layer an internal AI copilot that understands products, pricing, and technical documentation.\r\n\r\nWe started with fenestration (shutters, windows, garage doors), a large, complex vertical with no modern software, before expanding to adjacent trades.\r\n\r\nBravi is already live with leading installers and manufacturers across Europe and the US, turning missed demand into revenue.",
-      "industry": "B2B",
-      "industries": [
-        "B2B"
-      ],
-      "subindustry": "B2B",
-      "batch": null,
-      "is_hiring": true,
-      "is_top_company": false,
-      "status": "Active",
-      "stage": "Early",
-      "team_size": 2,
-      "tags": [
-        "B2B",
-        "Manufacturing",
-        "Automation",
-        "Home Services",
-        "AI Assistant"
-      ],
-      "regions": [
-        "France",
-        "Europe"
-      ],
-      "source_vc": "Y Combinator",
-      "founders": [
-        {
-          "name": "Anas Bouassami",
-          "college": "UC Berkeley",
-          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/843c0e7207b31b53a786edabe00362860887c3a1.jpg",
-          "linkedin_url": "https://www.linkedin.com/in/anas-bouassami",
-          "raw_bio": "Co-founder & CEO of Bravi (YC F25), the AI communication platform for home service companies. Alongside Bravi, he also runs Volet Dumont, an online rolling shutter business that serves as a live testing ground for Bravi’s technology and customer workflows. He previously co-founded Snipfeed in 2017, where he scaled the company to 20+ employees before its acquisition in 2024. Anas holds a Master Degree from UC Berkeley and a Bachelor of Science in Mechanical Engineering from EPFL."
-        },
-        {
-          "name": "Pierre-Habte Nouvellon",
-          "college": "Massachusetts Institute of Technology (MIT)",
-          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/ef29a9e4166d4b4e83e3e4bf6f92ae1c5d6a3601.jpg",
-          "linkedin_url": "https://www.linkedin.com/in/pierre-habte-nouvellon/",
-          "raw_bio": "Co-founder and CPTO of Bravi. Previously co-founded and exited Snipfeed ($7M raised, 20+ employees). South American Math Olympiad #1. Trained as a space/aerospace engineer before moving into ML and AI product."
-        }
-      ],
-      "job_board": {
-        "count": null,
-        "url": "https://www.bravi.app/careers",
-        "source_type": "manual_visit",
-        "ats_platform": null
-      },
-      "last_scraped": "2026-08-10T10:14:54.822402",
+      "last_scraped": "2026-08-17T09:37:49.243042",
       "data_completeness": 0.75
     },
     {
@@ -2966,7 +3611,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.831423",
+      "last_scraped": "2026-08-17T09:37:49.322315",
       "data_completeness": 0.75
     },
     {
@@ -3018,7 +3663,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.830032",
+      "last_scraped": "2026-08-17T09:37:49.321363",
       "data_completeness": 0.75
     },
     {
@@ -3068,7 +3713,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.757401",
+      "last_scraped": "2026-08-17T09:37:49.264350",
       "data_completeness": 0.75
     },
     {
@@ -3133,7 +3778,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.766122",
+      "last_scraped": "2026-08-17T09:37:49.271840",
       "data_completeness": 0.75
     },
     {
@@ -3187,7 +3832,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.788089",
+      "last_scraped": "2026-08-17T09:37:49.292010",
       "data_completeness": 0.75
     },
     {
@@ -3233,7 +3878,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.749820",
+      "last_scraped": "2026-08-17T09:37:49.257275",
       "data_completeness": 0.75
     },
     {
@@ -3284,7 +3929,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.802406",
+      "last_scraped": "2026-08-17T09:37:49.301454",
       "data_completeness": 0.75
     },
     {
@@ -3335,7 +3980,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.795628",
+      "last_scraped": "2026-08-17T09:37:49.295705",
       "data_completeness": 0.75
     },
     {
@@ -3387,7 +4032,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.810884",
+      "last_scraped": "2026-08-17T09:37:49.307529",
       "data_completeness": 0.75
     },
     {
@@ -3439,7 +4084,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.807115",
+      "last_scraped": "2026-08-17T09:37:49.304859",
       "data_completeness": 0.75
     },
     {
@@ -3493,7 +4138,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.777823",
+      "last_scraped": "2026-08-17T09:37:49.282614",
       "data_completeness": 0.75
     },
     {
@@ -3544,7 +4189,7 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.798758",
+      "last_scraped": "2026-08-17T09:37:49.298220",
       "data_completeness": 0.75
     },
     {
@@ -3599,12 +4244,12 @@
         }
       ],
       "job_board": {
-        "count": 49,
+        "count": 47,
         "url": "https://boards.greenhouse.io/checkr",
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-10T10:14:54.705256",
+      "last_scraped": "2026-08-17T09:37:49.216666",
       "data_completeness": 0.75
     },
     {
@@ -3657,7 +4302,7 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.754005",
+      "last_scraped": "2026-08-17T09:37:49.261307",
       "data_completeness": 0.75
     },
     {
@@ -3716,7 +4361,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.810231",
+      "last_scraped": "2026-08-17T09:37:49.307093",
       "data_completeness": 0.75
     },
     {
@@ -3773,7 +4418,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.812302",
+      "last_scraped": "2026-08-17T09:37:49.308869",
       "data_completeness": 0.75
     },
     {
@@ -3819,51 +4464,12 @@
         }
       ],
       "job_board": {
-        "count": 32,
+        "count": 29,
         "url": "https://jobs.ashbyhq.com/clipboard",
         "source_type": "ats_api",
         "ats_platform": "ashby"
       },
-      "last_scraped": "2026-08-10T10:14:54.705922",
-      "data_completeness": 0.75
-    },
-    {
-      "yc_id": 31461,
-      "name": "Collar",
-      "slug": "collar",
-      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/9eb4e7455b35796c4972c68f65a621d21e458003.png",
-      "website": "https://usecollarai.com",
-      "location": "Singapore, Singapore",
-      "description": "The platform for AI-native private market investors.",
-      "long_description": "Connect your inboxes and conversations to Collar. \r\nGet a proprietary company brain from your past deals, context, and current mandate. Agents then run the entire pre-investment process: inbound and outbound sourcing, diligence, IC memos, and slides, in your fund's voice rather than a generic one. \r\nIt deploys inside your architecture, so every fund owns its platform and its data.",
-      "industry": "B2B",
-      "industries": [
-        "B2B"
-      ],
-      "subindustry": "B2B",
-      "batch": null,
-      "is_hiring": true,
-      "is_top_company": false,
-      "status": "Active",
-      "stage": "Early",
-      "team_size": 2,
-      "tags": [
-        "Finance",
-        "AI"
-      ],
-      "regions": [
-        "Singapore",
-        "Southeast Asia"
-      ],
-      "source_vc": "Y Combinator",
-      "founders": [],
-      "job_board": {
-        "count": null,
-        "url": "https://usecollarai.com/careers",
-        "source_type": "manual_visit",
-        "ats_platform": null
-      },
-      "last_scraped": "2026-08-10T10:14:54.785869",
+      "last_scraped": "2026-08-17T09:37:49.217366",
       "data_completeness": 0.75
     },
     {
@@ -3924,63 +4530,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.786877",
-      "data_completeness": 0.75
-    },
-    {
-      "yc_id": 30747,
-      "name": "Convexia",
-      "slug": "convexia",
-      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/c68bf871c0fe363c6048343df283d9282ab990f4.png",
-      "website": "https://convexia.bio",
-      "location": "San Francisco, CA, USA",
-      "description": "The world's first AI-maximalist pharma company",
-      "long_description": "An AI-maximalist pharma platform. We use agents to buy drugs, run clinical trials, and sell for a profit. 10x faster and 20x leaner than incumbents.\r\n\r\nSourcing Agent: Mines public/private databases and unstructured global data to surface overlooked preclinical candidates.\r\nScientific Agent: Runs comp bio models (ESM-3, RFdiffusion, Boltz-2, AlphaFold) to assess safety and efficacy in silico.\r\nCommercial Agent: Analyzes FDA incentives, pricing dynamics, TAM, competitive landscape, and payer alignment.\r\nClinical Agent: Runs digital twin simulations, evaluates CRO/CMC risk, and builds trial plans to Phase 1.\r\nPoS Agent: Evaluates the most critical factors that impact the likelihood of clinical trial success. \r\n\r\nBuilt by 2 Stanford CS students who have built 3 startups together before. ",
-      "industry": "Healthcare",
-      "industries": [
-        "Healthcare",
-        "Drug Discovery and Delivery"
-      ],
-      "subindustry": "Healthcare -> Drug Discovery and Delivery",
-      "batch": null,
-      "is_hiring": true,
-      "is_top_company": false,
-      "status": "Active",
-      "stage": "Early",
-      "team_size": 4,
-      "tags": [
-        "AI-powered Drug Discovery",
-        "Biotech",
-        "Drug Delivery"
-      ],
-      "regions": [
-        "United States of America",
-        "America / Canada"
-      ],
-      "source_vc": "Y Combinator",
-      "founders": [
-        {
-          "name": "Ayaan Parikh",
-          "college": "Stanford",
-          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/ae7004ae9a37271f3847d9919c6c0cd92a310ac2.jpg",
-          "linkedin_url": "https://www.linkedin.com/in/ayaan-parikh",
-          "raw_bio": "Building agents to find and acquire early-stage drug assets. Stanford CS + Bio Built 3 healthtech startups (telemedicine, addiction recovery, hydroponic systems). Published 4 papers on molecular dynamics. Biotech VC and consulting experience."
-        },
-        {
-          "name": "Rahul Vijayan",
-          "college": null,
-          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/b62fd8479d819d4020ab4de6ddaa6a655eccfd2a.jpg",
-          "linkedin_url": "https://www.linkedin.com/in/rahulvijayan28/",
-          "raw_bio": "Building agents to find and acquire early-stage drug assets. Stanford CS + Econ Built 3 healthtech startups (telemedicine, gamified recovery, hydroponic systems)."
-        }
-      ],
-      "job_board": {
-        "count": null,
-        "url": "https://convexia.bio/careers",
-        "source_type": "manual_visit",
-        "ats_platform": null
-      },
-      "last_scraped": "2026-08-10T10:14:54.838048",
+      "last_scraped": "2026-08-17T09:37:49.290963",
       "data_completeness": 0.75
     },
     {
@@ -4027,12 +4577,12 @@
         }
       ],
       "job_board": {
-        "count": 2,
-        "url": "https://cranston.ai/careers",
-        "source_type": "html_heuristic",
+        "count": null,
+        "url": "https://www.cranston.ai/careers",
+        "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.827035",
+      "last_scraped": "2026-08-17T09:37:49.319337",
       "data_completeness": 0.75
     },
     {
@@ -4079,48 +4629,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.806605",
-      "data_completeness": 0.75
-    },
-    {
-      "yc_id": 33344,
-      "name": "Dawn Industries",
-      "slug": "dawn-industries",
-      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/be237324cf82c0125a34763f99ffb0cf35ca384d.png",
-      "website": "https://www.dawnxr.com",
-      "location": "San Francisco, CA, USA",
-      "description": "Automatic Diagnosis & Fix for Industrial Automation Cells",
-      "long_description": "VIM connects to the entire cell: PLCs, robots, CNC machines, sensors. When a cell faults, VIM finds the cause, stages the fix, and the operator approves with one click. When a part drifts, VIM catches it seconds after the cut, inside the machine, and recommends the correction. Recovery drops from 30 minutes to under two, saving more than $15,000 per fault in large factories.",
-      "industry": "Industrials",
-      "industries": [
-        "Industrials",
-        "Manufacturing and Robotics"
-      ],
-      "subindustry": "Industrials -> Manufacturing and Robotics",
-      "batch": null,
-      "is_hiring": true,
-      "is_top_company": false,
-      "status": "Active",
-      "stage": "Early",
-      "team_size": 2,
-      "tags": [
-        "Artificial Intelligence"
-      ],
-      "regions": [
-        "United States of America",
-        "America / Canada",
-        "Remote",
-        "Partly Remote"
-      ],
-      "source_vc": "Y Combinator",
-      "founders": [],
-      "job_board": {
-        "count": null,
-        "url": "https://www.dawnxr.com/careers",
-        "source_type": "manual_visit",
-        "ats_platform": null
-      },
-      "last_scraped": "2026-08-10T10:14:54.760637",
+      "last_scraped": "2026-08-17T09:37:49.304456",
       "data_completeness": 0.75
     },
     {
@@ -4172,7 +4681,7 @@
         "source_type": "ats_api",
         "ats_platform": "ashby"
       },
-      "last_scraped": "2026-08-10T10:14:54.790179",
+      "last_scraped": "2026-08-17T09:37:49.293665",
       "data_completeness": 0.75
     },
     {
@@ -4232,7 +4741,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.706748",
+      "last_scraped": "2026-08-17T09:37:49.218073",
       "data_completeness": 0.75
     },
     {
@@ -4275,7 +4784,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.722120",
+      "last_scraped": "2026-08-17T09:37:49.232709",
       "data_completeness": 0.75
     },
     {
@@ -4326,61 +4835,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.828522",
-      "data_completeness": 0.75
-    },
-    {
-      "yc_id": 31080,
-      "name": "Didit",
-      "slug": "didit",
-      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/202e6cd94d0ec2c8de835c56ce6b880f99f033d5.png",
-      "website": "https://didit.me/",
-      "location": "San Francisco, CA, USA",
-      "description": "Infrastructure for identity and fraud.",
-      "long_description": "One API for KYC, KYB, AML, biometrics, and fraud — powered by 1,000+ data sources, 200+ signals, and in-house AI models. Global coverage. Integrate in minutes, pay as you go, 500 free checks/month. Start free at business.didit.me.",
-      "industry": "B2B",
-      "industries": [
-        "B2B",
-        "Infrastructure"
-      ],
-      "subindustry": "B2B -> Infrastructure",
-      "batch": null,
-      "is_hiring": true,
-      "is_top_company": false,
-      "status": "Active",
-      "stage": "Early",
-      "team_size": 16,
-      "tags": [],
-      "regions": [
-        "United States of America",
-        "America / Canada",
-        "Remote",
-        "Partly Remote"
-      ],
-      "source_vc": "Y Combinator",
-      "founders": [
-        {
-          "name": "Alberto Rosas",
-          "college": null,
-          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/e02a81d1021c405f1e78dadb22d27f80dc4cebdf.jpg",
-          "linkedin_url": "https://www.linkedin.com/in/albertorosasg/",
-          "raw_bio": "CEO of Didit. Solving identity on the internet. Former professional tennis player."
-        },
-        {
-          "name": "Alejandro Rosas",
-          "college": "University of Pennsylvania",
-          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/fd49b0f6acee65e21e16c394677a4f17616e69de.jpg",
-          "linkedin_url": "https://www.linkedin.com/in/alejandrorosasgarcia/",
-          "raw_bio": "CTO. Math, problem solver, obsessive about details and learning by building; architecting Didit’s identity infrastructure from first principles. Former professional tennis player"
-        }
-      ],
-      "job_board": {
-        "count": null,
-        "url": "https://didit.me/careers",
-        "source_type": "manual_visit",
-        "ats_platform": null
-      },
-      "last_scraped": "2026-08-10T10:14:54.809557",
+      "last_scraped": "2026-08-17T09:37:49.320423",
       "data_completeness": 0.75
     },
     {
@@ -4438,7 +4893,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.832358",
+      "last_scraped": "2026-08-17T09:37:49.322920",
       "data_completeness": 0.75
     },
     {
@@ -4494,14 +4949,14 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.813877",
+      "last_scraped": "2026-08-17T09:37:49.309636",
       "data_completeness": 0.75
     },
     {
       "yc_id": 31362,
       "name": "Discovered Materials",
       "slug": "discovered-materials",
-      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/910cd5b0344664a22b57c59a7d459cabe1095bee.png",
+      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/8369f21b7293d92e30b956a07f47bda16f550d10.png",
       "website": "https://discoveredmaterials.com",
       "location": "San Francisco, CA, USA",
       "description": "AI scientists to discover materials for the semiconductor industry.",
@@ -4533,7 +4988,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.793415",
+      "last_scraped": "2026-08-17T09:37:49.294047",
       "data_completeness": 0.75
     },
     {
@@ -4587,7 +5042,7 @@
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-10T10:14:54.796112",
+      "last_scraped": "2026-08-17T09:37:49.296070",
       "data_completeness": 0.75
     },
     {
@@ -4635,7 +5090,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.730358",
+      "last_scraped": "2026-08-17T09:37:49.240317",
       "data_completeness": 0.75
     },
     {
@@ -4687,7 +5142,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.779827",
+      "last_scraped": "2026-08-17T09:37:49.284508",
       "data_completeness": 0.75
     },
     {
@@ -4751,7 +5206,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.725679",
+      "last_scraped": "2026-08-17T09:37:49.235926",
       "data_completeness": 0.75
     },
     {
@@ -4798,7 +5253,7 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.756172",
+      "last_scraped": "2026-08-17T09:37:49.263109",
       "data_completeness": 0.75
     },
     {
@@ -4843,7 +5298,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.816713",
+      "last_scraped": "2026-08-17T09:37:49.311147",
       "data_completeness": 0.75
     },
     {
@@ -4892,7 +5347,7 @@
         "source_type": "ats_api",
         "ats_platform": "ashby"
       },
-      "last_scraped": "2026-08-10T10:14:54.831753",
+      "last_scraped": "2026-08-17T09:37:49.322519",
       "data_completeness": 0.75
     },
     {
@@ -4951,12 +5406,12 @@
         }
       ],
       "job_board": {
-        "count": 66,
+        "count": 67,
         "url": "https://boards.greenhouse.io/faire",
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-10T10:14:54.707516",
+      "last_scraped": "2026-08-17T09:37:49.218649",
       "data_completeness": 0.75
     },
     {
@@ -5012,64 +5467,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.801751",
-      "data_completeness": 0.75
-    },
-    {
-      "yc_id": 30775,
-      "name": "Fleetline",
-      "slug": "fleetline",
-      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/8008d7d50f1ead47eae177bcede0c9d614312ad4.png",
-      "website": "https://fleetline.ai",
-      "location": "New York City, NY, USA",
-      "description": "Optimizing fleet planning with data driven algorithms",
-      "long_description": "Fleetline is building the first complete-context algorithmic load planner for mid to large-sized trucking fleets. Today’s dispatchers face an overwhelming task: balancing regulations, customer demands, live fleet data, and individual driver needs, all while coordinating across siloed tools and teams. Mistakes run rampant, and each mistake is thousands of dollars. Even the select fleets using algorithms that have fleet-wide context struggle: the outputs are rigid, hard to interpret, and are blind to real-world nuances like driver preferences and schedule exceptions. Fleetline solves this by combining advanced optimization with LLMs that can easily adapt algorithms to each fleet’s needs and capture driver-specific information. The result is smarter planning truly optimized for every fleet and its drivers.",
-      "industry": "B2B",
-      "industries": [
-        "B2B",
-        "Supply Chain and Logistics"
-      ],
-      "subindustry": "B2B -> Supply Chain and Logistics",
-      "batch": null,
-      "is_hiring": true,
-      "is_top_company": false,
-      "status": "Active",
-      "stage": "Early",
-      "team_size": 11,
-      "tags": [
-        "Artificial Intelligence",
-        "Logistics",
-        "Supply Chain",
-        "Data Science"
-      ],
-      "regions": [
-        "United States of America",
-        "America / Canada"
-      ],
-      "source_vc": "Y Combinator",
-      "founders": [
-        {
-          "name": "Saurav Kumar",
-          "college": "University of Sheffield",
-          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/39edd7839bf52e30dab32c05a547013c48aff70d.jpg",
-          "linkedin_url": "https://linkedin.com/in/sauravml",
-          "raw_bio": "Optimizing and automating dispatch ops @ Fleetline"
-        },
-        {
-          "name": "Veer Juneja",
-          "college": "University of Southern California (USC)",
-          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/fdc7a7c95b217654e469b590c4c9bbc9f06ba6a4.jpg",
-          "linkedin_url": "https://www.linkedin.com/in/veer-juneja-67255417a/",
-          "raw_bio": "Combining LLMs with traditional advanced optimization techniques to automate trucking dispatch operations. I studied philosophy @ USC."
-        }
-      ],
-      "job_board": {
-        "count": null,
-        "url": "https://fleetline.ai/careers",
-        "source_type": "manual_visit",
-        "ats_platform": null
-      },
-      "last_scraped": "2026-08-10T10:14:54.836119",
+      "last_scraped": "2026-08-17T09:37:49.300811",
       "data_completeness": 0.75
     },
     {
@@ -5115,12 +5513,12 @@
         }
       ],
       "job_board": {
-        "count": 160,
+        "count": 158,
         "url": "https://boards.greenhouse.io/flexport",
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-10T10:14:54.708283",
+      "last_scraped": "2026-08-17T09:37:49.219389",
       "data_completeness": 0.75
     },
     {
@@ -5177,7 +5575,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.825083",
+      "last_scraped": "2026-08-17T09:37:49.317864",
       "data_completeness": 0.75
     },
     {
@@ -5235,7 +5633,7 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.708858",
+      "last_scraped": "2026-08-17T09:37:49.220130",
       "data_completeness": 0.75
     },
     {
@@ -5294,7 +5692,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.798272",
+      "last_scraped": "2026-08-17T09:37:49.297772",
       "data_completeness": 0.75
     },
     {
@@ -5345,7 +5743,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.833306",
+      "last_scraped": "2026-08-17T09:37:49.323630",
       "data_completeness": 0.75
     },
     {
@@ -5401,7 +5799,7 @@
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-10T10:14:54.710426",
+      "last_scraped": "2026-08-17T09:37:49.221385",
       "data_completeness": 0.75
     },
     {
@@ -5451,7 +5849,7 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.734657",
+      "last_scraped": "2026-08-17T09:37:49.244289",
       "data_completeness": 0.75
     },
     {
@@ -5496,7 +5894,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.815968",
+      "last_scraped": "2026-08-17T09:37:49.310736",
       "data_completeness": 0.75
     },
     {
@@ -5549,12 +5947,12 @@
         }
       ],
       "job_board": {
-        "count": 12,
+        "count": 14,
         "url": "https://boards.greenhouse.io/givecampus",
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-10T10:14:54.729710",
+      "last_scraped": "2026-08-17T09:37:49.239790",
       "data_completeness": 0.75
     },
     {
@@ -5612,7 +6010,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.740871",
+      "last_scraped": "2026-08-17T09:37:49.249820",
       "data_completeness": 0.75
     },
     {
@@ -5684,7 +6082,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.709627",
+      "last_scraped": "2026-08-17T09:37:49.220672",
       "data_completeness": 0.75
     },
     {
@@ -5745,7 +6143,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.787595",
+      "last_scraped": "2026-08-17T09:37:49.291554",
       "data_completeness": 0.75
     },
     {
@@ -5809,7 +6207,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.751864",
+      "last_scraped": "2026-08-17T09:37:49.259277",
       "data_completeness": 0.75
     },
     {
@@ -5869,12 +6267,12 @@
         }
       ],
       "job_board": {
-        "count": 91,
+        "count": 88,
         "url": "https://boards.greenhouse.io/gusto",
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-10T10:14:54.711323",
+      "last_scraped": "2026-08-17T09:37:49.222002",
       "data_completeness": 0.75
     },
     {
@@ -5898,6 +6296,7 @@
       "stage": "Early",
       "team_size": 2,
       "tags": [
+        "Consumer",
         "Biotech",
         "Personalization",
         "Health & Wellness"
@@ -5929,7 +6328,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.767502",
+      "last_scraped": "2026-08-17T09:37:49.273256",
       "data_completeness": 0.75
     },
     {
@@ -5979,12 +6378,12 @@
         }
       ],
       "job_board": {
-        "count": 32,
+        "count": 30,
         "url": "https://boards.greenhouse.io/hackerrank",
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-10T10:14:54.745040",
+      "last_scraped": "2026-08-17T09:37:49.253122",
       "data_completeness": 0.75
     },
     {
@@ -6041,59 +6440,47 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.795367",
+      "last_scraped": "2026-08-17T09:37:49.295521",
       "data_completeness": 0.75
     },
     {
-      "yc_id": 30758,
-      "name": "Hera",
-      "slug": "hera-video",
-      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/74b33eae20672c87a08f3ca790501128e2c07280.png",
-      "website": "https://hera.video/",
-      "location": "Berlin, Berlin, Germany",
-      "description": "AI Motion Designer",
-      "long_description": "Hera is an AI motion designer that turns 5-hour projects into 5-minute tasks. \r\n\r\nWhen you're a YouTuber making an infographic animation, instead of spending hours manually clicking buttons in Adobe After Effects, you can create the same animation in minutes in Hera. \r\n\r\nThrough talking to our users, we realized that 95% of time spent on motion graphics is manual button clicking, not creative work. This insight led us to focus on automating the tedious parts while giving the user all creative control.\r\n\r\nWe launched in May 2025, got 100k waitlist signups in 8 weeks, and we're doubling revenue monthly.",
-      "industry": "B2B",
+      "yc_id": 35522,
+      "name": "Hemlock",
+      "slug": "hemlock",
+      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/bbacf68d8da77e7a11ad346712dd48cf4d50347d.png",
+      "website": "https://hemlock.info",
+      "location": "Los Angeles, CA, USA",
+      "description": "Force-sensing wristband for training robotic AI",
+      "long_description": "Every serious robotics lab is bottlenecked on the same thing: demonstration data. The field has converged on egocentric video and hand pose as the substrate, and both are now cheap to collect at scale. What neither of them contains is force. A video of someone picking up an egg and a video of someone picking up a rock are nearly identical in pixel space and nearly identical in joint angles. They differ almost entirely in a quantity nobody is recording. Policies trained without it learn geometry and inherit no sense of touch.\r\n\r\nHemlock closes that gap at the source. Our device, the Bracelet, is a wrist-worn surface EMG band that reads the electrical activity of the forearm muscles that actually drive the hand, which means it recovers contraction force directly rather than inferring it from motion. This distinction is the whole thesis: force cannot be reconstructed downstream of kinematics, because a hand squeezing hard isometrically and a hand resting can occupy the identical pose. Muscle signal is the only non-invasive channel that separates them.",
+      "industry": "Industrials",
       "industries": [
-        "B2B",
-        "Engineering, Product and Design"
+        "Industrials",
+        "Manufacturing and Robotics"
       ],
-      "subindustry": "B2B -> Engineering, Product and Design",
+      "subindustry": "Industrials -> Manufacturing and Robotics",
       "batch": null,
       "is_hiring": true,
       "is_top_company": false,
       "status": "Active",
       "stage": "Early",
-      "team_size": 5,
-      "tags": [],
+      "team_size": 1,
+      "tags": [
+        "Hard Tech",
+        "Hardware"
+      ],
       "regions": [
-        "Germany",
-        "Europe"
+        "United States of America",
+        "America / Canada"
       ],
       "source_vc": "Y Combinator",
-      "founders": [
-        {
-          "name": "Peter Tribelhorn",
-          "college": "Massachusetts Institute of Technology",
-          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/f387aee6f30b9154581e710224ec49db7f10e983.jpg",
-          "linkedin_url": "https://www.linkedin.com/in/peter-tribelhorn-36a967142/",
-          "raw_bio": "Building Hera to make motion design radically faster and easier. Previously acquired and managed big YouTube channels with +30m subs (e.g., Economics Explained, The Game Theorists)."
-        },
-        {
-          "name": "Chia-Lun Wu",
-          "college": "National Taiwan University",
-          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/69a1880f53fad66c9e27c12915a45ec3fce99fd2.jpg",
-          "linkedin_url": "https://www.linkedin.com/in/chialunwu/",
-          "raw_bio": "Building Hera, an AI motion designer. I was the first engineer/employee at Flagright (YC W22), where I built and led core infrastructure from the ground up and scaled it. I was also an early engineer at Vyond, where I built Vyond Studio, an online video editor used by 20,000 businesses today. I hold an MS in Computer Science from National Taiwan University (NTU) and have been working in software engineering since 2016."
-        }
-      ],
+      "founders": [],
       "job_board": {
         "count": null,
-        "url": "https://hera.video/careers",
+        "url": "https://hemlock.info/careers",
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.837337",
+      "last_scraped": "2026-08-17T09:37:49.265535",
       "data_completeness": 0.75
     },
     {
@@ -6147,12 +6534,12 @@
         }
       ],
       "job_board": {
-        "count": 18,
+        "count": 16,
         "url": "https://boards.greenhouse.io/hive",
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-10T10:14:54.746417",
+      "last_scraped": "2026-08-17T09:37:49.254262",
       "data_completeness": 0.75
     },
     {
@@ -6212,7 +6599,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.789653",
+      "last_scraped": "2026-08-17T09:37:49.293227",
       "data_completeness": 0.75
     },
     {
@@ -6235,7 +6622,7 @@
       "is_top_company": false,
       "status": "Active",
       "stage": "Early",
-      "team_size": 10,
+      "team_size": 100,
       "tags": [],
       "regions": [
         "United States of America",
@@ -6273,12 +6660,12 @@
         }
       ],
       "job_board": {
-        "count": 15,
-        "url": "https://jobs.ashbyhq.com/humanarchive",
-        "source_type": "ats_api",
-        "ats_platform": "ashby"
+        "count": null,
+        "url": "https://www.humanarchive.ai/careers",
+        "source_type": "manual_visit",
+        "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.800318",
+      "last_scraped": "2026-08-17T09:37:49.299541",
       "data_completeness": 0.75
     },
     {
@@ -6333,12 +6720,12 @@
         }
       ],
       "job_board": {
-        "count": 52,
+        "count": 54,
         "url": "https://boards.greenhouse.io/humaninterest",
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-10T10:14:54.725100",
+      "last_scraped": "2026-08-17T09:37:49.235263",
       "data_completeness": 0.75
     },
     {
@@ -6392,7 +6779,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.769514",
+      "last_scraped": "2026-08-17T09:37:49.275311",
       "data_completeness": 0.75
     },
     {
@@ -6438,12 +6825,12 @@
         }
       ],
       "job_board": {
-        "count": 1,
+        "count": 2,
         "url": "https://jobs.ashbyhq.com/hypercubic",
         "source_type": "ats_api",
         "ats_platform": "ashby"
       },
-      "last_scraped": "2026-08-10T10:14:54.826705",
+      "last_scraped": "2026-08-17T09:37:49.319101",
       "data_completeness": 0.75
     },
     {
@@ -6502,7 +6889,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.829039",
+      "last_scraped": "2026-08-17T09:37:49.320816",
       "data_completeness": 0.75
     },
     {
@@ -6546,12 +6933,12 @@
         }
       ],
       "job_board": {
-        "count": 26,
+        "count": 24,
         "url": "https://boards.greenhouse.io/icarus",
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-10T10:14:54.817307",
+      "last_scraped": "2026-08-17T09:37:49.313243",
       "data_completeness": 0.75
     },
     {
@@ -6608,7 +6995,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.821192",
+      "last_scraped": "2026-08-17T09:37:49.315484",
       "data_completeness": 0.75
     },
     {
@@ -6659,7 +7046,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.809775",
+      "last_scraped": "2026-08-17T09:37:49.306629",
       "data_completeness": 0.75
     },
     {
@@ -6711,7 +7098,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.755423",
+      "last_scraped": "2026-08-17T09:37:49.262512",
       "data_completeness": 0.75
     },
     {
@@ -6755,12 +7142,12 @@
         }
       ],
       "job_board": {
-        "count": 53,
+        "count": 54,
         "url": "https://boards.greenhouse.io/instawork",
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-10T10:14:54.726354",
+      "last_scraped": "2026-08-17T09:37:49.236540",
       "data_completeness": 0.75
     },
     {
@@ -6812,56 +7199,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.770062",
-      "data_completeness": 0.75
-    },
-    {
-      "yc_id": 30789,
-      "name": "Interfere",
-      "slug": "interfere",
-      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/c788f853f55de9b0ed57c42d5dd9b8c7388fc49f.png",
-      "website": "https://interfere.com",
-      "location": "New York City, NY, USA",
-      "description": "Give engineering, product, and design teams insight into unseen issues",
-      "long_description": "Interfere empowers engineers, product managers and designers with real-time understanding of previously unseen bugs and issues.",
-      "industry": "B2B",
-      "industries": [
-        "B2B",
-        "Engineering, Product and Design"
-      ],
-      "subindustry": "B2B -> Engineering, Product and Design",
-      "batch": null,
-      "is_hiring": true,
-      "is_top_company": false,
-      "status": "Active",
-      "stage": "Early",
-      "team_size": 8,
-      "tags": [
-        "Developer Tools",
-        "Design",
-        "AI"
-      ],
-      "regions": [
-        "United States of America",
-        "America / Canada"
-      ],
-      "source_vc": "Y Combinator",
-      "founders": [
-        {
-          "name": "Luke Shiels",
-          "college": null,
-          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/074d55d99df939d0665c5bc71d222ecdaedfce9f.jpg",
-          "linkedin_url": "https://linkedin.com/in/shiels",
-          "raw_bio": "Founder of Interfere (YC S25), we’re building the self-healing layer of the internet: software that helps software engineers spend less time fixing bugs, and for the first time allow non-technical members of your team to understand how your product actually works in real-life."
-        }
-      ],
-      "job_board": {
-        "count": null,
-        "url": "https://interfere.com/careers",
-        "source_type": "manual_visit",
-        "ats_platform": null
-      },
-      "last_scraped": "2026-08-10T10:14:54.835284",
+      "last_scraped": "2026-08-17T09:37:49.275961",
       "data_completeness": 0.75
     },
     {
@@ -6911,7 +7249,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.736118",
+      "last_scraped": "2026-08-17T09:37:49.245460",
       "data_completeness": 0.75
     },
     {
@@ -6969,7 +7307,7 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.816376",
+      "last_scraped": "2026-08-17T09:37:49.310922",
       "data_completeness": 0.75
     },
     {
@@ -7021,53 +7359,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.789080",
-      "data_completeness": 0.75
-    },
-    {
-      "yc_id": 30769,
-      "name": "Juxta",
-      "slug": "juxta",
-      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/0e2406b819c520b6b5c6f58e45423c720bf0661d.png",
-      "website": "https://juxta.com",
-      "location": "San Francisco, CA, USA",
-      "description": "Building a GPS alternative 100x more powerful with no hardware needed.",
-      "long_description": "Juxta is creating the first Universal Positioning System (UPS) — a GPS alternative that can monitor movement anywhere on earth with no new hardware, minimal internet connection, and remote deployment. Using custom machine learning models and a first-of-its-kind synthetic fingerprinting technology, Juxta can make any indoor, outdoor, or underground space location-aware in minutes for a fraction of the cost of any other geospatial technology.\r\n\r\nJuxta's UPS can be leveraged across industries — from securely tracking soldiers in combat zones to providing offline positioning for robots to offering asset tracking in warehouses and ports around the globe.",
-      "industry": "B2B",
-      "industries": [
-        "B2B"
-      ],
-      "subindustry": "B2B",
-      "batch": null,
-      "is_hiring": true,
-      "is_top_company": false,
-      "status": "Active",
-      "stage": "Early",
-      "team_size": null,
-      "tags": [],
-      "regions": [
-        "United States of America",
-        "America / Canada",
-        "Remote",
-        "Partly Remote"
-      ],
-      "source_vc": "Y Combinator",
-      "founders": [
-        {
-          "name": "John Ferrara",
-          "college": "Northwestern University",
-          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/77294415a149a6787039620263367600a7b4ec64.jpg",
-          "linkedin_url": "https://www.linkedin.com/in/ferrara-john/",
-          "raw_bio": "Prev. Northwestern data science + journalism; CEO at Juxta, working to create the next frontier of asset and personnel tracking!"
-        }
-      ],
-      "job_board": {
-        "count": null,
-        "url": "https://juxta.com/careers",
-        "source_type": "manual_visit",
-        "ats_platform": null
-      },
-      "last_scraped": "2026-08-10T10:14:54.836831",
+      "last_scraped": "2026-08-17T09:37:49.292854",
       "data_completeness": 0.75
     },
     {
@@ -7118,7 +7410,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.819109",
+      "last_scraped": "2026-08-17T09:37:49.313974",
       "data_completeness": 0.75
     },
     {
@@ -7165,7 +7457,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.788882",
+      "last_scraped": "2026-08-17T09:37:49.292666",
       "data_completeness": 0.75
     },
     {
@@ -7224,7 +7516,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.789369",
+      "last_scraped": "2026-08-17T09:37:49.293040",
       "data_completeness": 0.75
     },
     {
@@ -7261,7 +7553,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.770690",
+      "last_scraped": "2026-08-17T09:37:49.277144",
       "data_completeness": 0.75
     },
     {
@@ -7321,7 +7613,44 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.827652",
+      "last_scraped": "2026-08-17T09:37:49.319787",
+      "data_completeness": 0.75
+    },
+    {
+      "yc_id": 31540,
+      "name": "KugelAudio",
+      "slug": "kugelaudio",
+      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/44c1f17a88c6716d09288318cb5f9de77b9bdbbb.png",
+      "website": "https://kugelaudio.com/en",
+      "location": "San Francisco, CA, USA",
+      "description": "Kugel is an on-prem Voice AI model supporting 30+ languages ",
+      "long_description": "Kugel is an enterprise-ready TTS model, available on-prem, with a focus on 30+ languages and low latency. ",
+      "industry": "B2B",
+      "industries": [
+        "B2B",
+        "Infrastructure"
+      ],
+      "subindustry": "B2B -> Infrastructure",
+      "batch": null,
+      "is_hiring": true,
+      "is_top_company": false,
+      "status": "Active",
+      "stage": "Early",
+      "team_size": 4,
+      "tags": [],
+      "regions": [
+        "United States of America",
+        "America / Canada"
+      ],
+      "source_vc": "Y Combinator",
+      "founders": [],
+      "job_board": {
+        "count": null,
+        "url": "https://kugelaudio.com/en/careers",
+        "source_type": "manual_visit",
+        "ats_platform": null
+      },
+      "last_scraped": "2026-08-17T09:37:49.276494",
       "data_completeness": 0.75
     },
     {
@@ -7373,7 +7702,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.782281",
+      "last_scraped": "2026-08-17T09:37:49.286901",
       "data_completeness": 0.75
     },
     {
@@ -7416,7 +7745,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.787880",
+      "last_scraped": "2026-08-17T09:37:49.291831",
       "data_completeness": 0.75
     },
     {
@@ -7479,7 +7808,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.759057",
+      "last_scraped": "2026-08-17T09:37:49.266190",
       "data_completeness": 0.75
     },
     {
@@ -7537,7 +7866,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.808172",
+      "last_scraped": "2026-08-17T09:37:49.305432",
       "data_completeness": 0.75
     },
     {
@@ -7593,7 +7922,7 @@
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-10T10:14:54.723399",
+      "last_scraped": "2026-08-17T09:37:49.233958",
       "data_completeness": 0.75
     },
     {
@@ -7636,7 +7965,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.815272",
+      "last_scraped": "2026-08-17T09:37:49.310311",
       "data_completeness": 0.75
     },
     {
@@ -7694,7 +8023,50 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.821773",
+      "last_scraped": "2026-08-17T09:37:49.315710",
+      "data_completeness": 0.75
+    },
+    {
+      "yc_id": 30969,
+      "name": "Lemma",
+      "slug": "uselemma",
+      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/335dca5772b36d447d2e1c9b0f730539813d1846.png",
+      "website": "https://www.uselemma.ai/",
+      "location": "San Francisco, CA, USA",
+      "description": "Production Monitoring for AI agents",
+      "long_description": "Lemma catches the silent, semantic failures your observability tools miss, where your AI agent looks like it worked but didn’t. We scan every trace to surface issues before users complain, identify root causes, and help you fix them without manual digging, so your agents improve over time.",
+      "industry": "B2B",
+      "industries": [
+        "B2B",
+        "Engineering, Product and Design"
+      ],
+      "subindustry": "B2B -> Engineering, Product and Design",
+      "batch": null,
+      "is_hiring": true,
+      "is_top_company": false,
+      "status": "Active",
+      "stage": "Early",
+      "team_size": 2,
+      "tags": [
+        "Artificial Intelligence",
+        "Developer Tools",
+        "B2B",
+        "Infrastructure",
+        "AI"
+      ],
+      "regions": [
+        "United States of America",
+        "America / Canada"
+      ],
+      "source_vc": "Y Combinator",
+      "founders": [],
+      "job_board": {
+        "count": null,
+        "url": "https://www.uselemma.ai/careers",
+        "source_type": "manual_visit",
+        "ats_platform": null
+      },
+      "last_scraped": "2026-08-17T09:37:49.311361",
       "data_completeness": 0.75
     },
     {
@@ -7759,7 +8131,7 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.814179",
+      "last_scraped": "2026-08-17T09:37:49.309888",
       "data_completeness": 0.75
     },
     {
@@ -7818,7 +8190,7 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.793757",
+      "last_scraped": "2026-08-17T09:37:49.294247",
       "data_completeness": 0.75
     },
     {
@@ -7854,64 +8226,12 @@
       "source_vc": "Y Combinator",
       "founders": [],
       "job_board": {
-        "count": 6,
+        "count": 7,
         "url": "https://boards.greenhouse.io/lob",
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-10T10:14:54.751141",
-      "data_completeness": 0.75
-    },
-    {
-      "yc_id": 30754,
-      "name": "Locata",
-      "slug": "locata",
-      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/c0351a7bc0e508af83b9f25fa8db67212e25a78c.png",
-      "website": "https://www.locatahealth.com/",
-      "location": "New York City, NY, USA",
-      "description": "AI Referral Automation for Primary Care Clinics",
-      "long_description": "Locata is an AI referral management platform for Primary Care. We deploy AI agents to automate every step of the referral process that back-office staff face daily, from submitting prior authorizations to broadcasting updates and following up with patients. This frees up staff to focus on patient care.\r\n\r\nPrimary care back-offices are severely understaffed and overburdened by administrative work associated with referrals. Additionally, patients suffer navigating the complex referral process, which can have disastrous health effects if they don’t get the care they need. These factors point to a glaring gap in the system—where out of over 100 million specialist referrals issued annually in the US, only half are actually completed. Locata is tackling this problem head-on, saving administrative staff hours each week and ensuring that the referral process goes as smoothly as possible for patients and their providers.\r\n\r\nAlejandro and Josh met at Stanford where they graduated with BS degrees in Computer Science. Alejandro was a senior software engineer at Meta’s Reality Labs where he led development of several AI features for wearable products and prior to that conducted AI research at Stanford Medicine. Josh graduated with a masters in Computer Science, specializing in AI, before working as a software engineer at Google where he developed AI products that served over 1 billion users.\r\n\r\nWithin two weeks of building our product, we signed a major regional health center and have saved them over 100 hours of work in our first month live.",
-      "industry": "Healthcare",
-      "industries": [
-        "Healthcare",
-        "Healthcare IT"
-      ],
-      "subindustry": "Healthcare -> Healthcare IT",
-      "batch": null,
-      "is_hiring": true,
-      "is_top_company": false,
-      "status": "Active",
-      "stage": "Early",
-      "team_size": 4,
-      "tags": [],
-      "regions": [
-        "United States of America",
-        "America / Canada"
-      ],
-      "source_vc": "Y Combinator",
-      "founders": [
-        {
-          "name": "Alejandro Salinas",
-          "college": "Stanford University",
-          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/ea245a1d6647bf826cc9b6e4b39cbc797fc6c732.jpg",
-          "linkedin_url": "https://www.linkedin.com/in/asalinas21/",
-          "raw_bio": "Alejandro is the Co-Founder of Locata. He holds a BS in Computer Science from Stanford University where he conducted AI research at Stanford Medicine. A former pre-med, Alejandro spent multiple summers shadowing doctors domestically and internationally. He has deep experience building AI products. As a Senior Software Engineer at Meta Reality Labs, he led development of several AI features for wearable products. He also authored an AI patent."
-        },
-        {
-          "name": "Joshua Chang",
-          "college": "Stanford",
-          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/bf9b9eb0e350ca7ad0c4d397202bea868156e10b.jpg",
-          "linkedin_url": "https://www.linkedin.com/in/joshua-r-chang/",
-          "raw_bio": "Joshua is the Co-Founder of Locata. He graduated Stanford with a BS & MS in Computer Science, specializing in AI. Previously he was a software engineer at Google, developing AI products that served over 1 billion users."
-        }
-      ],
-      "job_board": {
-        "count": null,
-        "url": "https://www.locatahealth.com/careers",
-        "source_type": "manual_visit",
-        "ats_platform": null
-      },
-      "last_scraped": "2026-08-10T10:14:54.837755",
+      "last_scraped": "2026-08-17T09:37:49.258642",
       "data_completeness": 0.75
     },
     {
@@ -7921,8 +8241,8 @@
       "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/ef45315b5a753af3ca5decc639d785a08eb897be.png",
       "website": "https://locke.inc",
       "location": "San Francisco, CA, USA",
-      "description": "Builders of the first AI-native government affairs firm.",
-      "long_description": "Locke is an applied AI company changing the way companies and governments work together. \r\n\r\nOur first focus is building Locke Government Affairs, an AI-native government affairs firm helping early-stage companies monitor regulations, lobby policymakers, and win government contracts.",
+      "description": "Locke is changing the way companies and governments work together.",
+      "long_description": "Locke builds AI agents that help companies and governments work together.\r\n\r\nOur agents also power Locke Government Affairs, the first AI-native government affairs firm.",
       "industry": "B2B",
       "industries": [
         "B2B"
@@ -7935,8 +8255,8 @@
       "stage": "Early",
       "team_size": 2,
       "tags": [
-        "Artificial Intelligence",
-        "GovTech"
+        "GovTech",
+        "AI"
       ],
       "regions": [
         "United States of America",
@@ -7958,7 +8278,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.761373",
+      "last_scraped": "2026-08-17T09:37:49.267409",
       "data_completeness": 0.75
     },
     {
@@ -8011,7 +8331,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.819622",
+      "last_scraped": "2026-08-17T09:37:49.314224",
       "data_completeness": 0.75
     },
     {
@@ -8067,7 +8387,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.736791",
+      "last_scraped": "2026-08-17T09:37:49.246144",
       "data_completeness": 0.75
     },
     {
@@ -8090,12 +8410,12 @@
       "is_top_company": false,
       "status": "Active",
       "stage": "Early",
-      "team_size": 5,
+      "team_size": 7,
       "tags": [
         "AIOps",
+        "Artificial Intelligence",
         "Developer Tools",
-        "Cloud Computing",
-        "AI"
+        "Cloud Computing"
       ],
       "regions": [
         "United States of America",
@@ -8117,7 +8437,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.833031",
+      "last_scraped": "2026-08-17T09:37:49.323404",
       "data_completeness": 0.75
     },
     {
@@ -8169,7 +8489,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.787129",
+      "last_scraped": "2026-08-17T09:37:49.291151",
       "data_completeness": 0.75
     },
     {
@@ -8246,59 +8566,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.743325",
-      "data_completeness": 0.75
-    },
-    {
-      "yc_id": 30776,
-      "name": "Magnetic",
-      "slug": "magnetic",
-      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/9c6be0818283f49c20fc921c3bc7db67bfb60bf5.png",
-      "website": "https://www.magnetictax.com",
-      "location": "San Francisco, CA, USA",
-      "description": "AI Tax Preparer for CPA firms",
-      "long_description": "Magnetic scans client documents - from handwritten charity notes to excel spreadsheet Schedule Cs to multi-state K-1s - and enters them into tax software automatically, saving hours of tedious data entry. \r\n\r\nThe accounting profession is facing a massive talent shortage, as graduates choose different professions and the old guard begins to retire. As a result, CPA and tax preparation firms are awash in clientele, but unable to keep up. At many firms, phones go unanswered, clients are \"fired\", and websites are taken down, as the existing workforce tries to handle the grueling 80 hour+ weeks necessary to push through tax season to the April 15th deadline.\r\n\r\nWe built this because a former colleague who owns her own tax firm asked us to automate her workload, and we quickly realized the massive opportunity. Thomas brings deep domain expertise as the former Head of Product at Keeper (YC W19), where he built tax engine automation systems and an OCR form scanning system that outperformed everything else on the market. At Keeper, he leveraged early access to OpenAI's LLMs (well before ChatGPT) to build systems that automated the entire tax filing process, allowing a tiny team of CPAs to process thousands of returns with near zero busy work. Patrick was the first engineer at FunCraft, shipping multiple mobile games with 1M+ downloads and building scalable shared codebases. We've worked together since 2017, including co-leading multiple teams at Zynga as PM & Tech Lead respectively.\r\n\r\nThe opportunity is massive - there are 80M US personal tax returns filed via professionals annually, in a $2B outsourcing market where individual CPA firms currently pay $100k-$1M per year for inferior services. We're positioned to capture significant market share by offering better accuracy & document coverage, instant processing, and superior user experience.\r\n\r\nWe've built this kind of software before, we've worked together for years (and even lived together), we've built products to $10M ARR before, and we have the grit to outwork anyone in this space.",
-      "industry": "B2B",
-      "industries": [
-        "B2B",
-        "Productivity"
-      ],
-      "subindustry": "B2B -> Productivity",
-      "batch": null,
-      "is_hiring": true,
-      "is_top_company": false,
-      "status": "Active",
-      "stage": "Early",
-      "team_size": 10,
-      "tags": [],
-      "regions": [
-        "United States of America",
-        "America / Canada"
-      ],
-      "source_vc": "Y Combinator",
-      "founders": [
-        {
-          "name": "Thomas Shelley",
-          "college": "Carnegie Mellon",
-          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/c295aae39ffad4770fcf977a236483ee592b8f1b.jpg",
-          "linkedin_url": "https://linkedin.com/in/thomasjshelley",
-          "raw_bio": "Thomas is the co-founder and CEO of Magnetic. He was most recently Head of Product at Keeper (YC W19), where he designed tax engine automation and OCR tax doc scanning systems for the world's first consumer AI tax filing product. Previously, Thomas ran product teams at Niantic and Zynga, and before that dropped out of Carnegie Mellon to build a digital item marketplace."
-        },
-        {
-          "name": "Patrick Fay",
-          "college": null,
-          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/58d611e4e4b47dfdbc6eae6b982670795665c3a6.jpg",
-          "linkedin_url": "https://linkedin.com/in/patrick-fay-5418a822",
-          "raw_bio": "Patrick is the co-founder and CTO of Magnetic. He was the first engineer at FunCraft, where he shipped 14 new games in four years, including two multi-million dollar hits. Patrick led multiple engineering teams at Zynga, and was ranked #1 in the world for DotA Underlords Duos."
-        }
-      ],
-      "job_board": {
-        "count": null,
-        "url": "https://www.magnetictax.com/careers",
-        "source_type": "manual_visit",
-        "ats_platform": null
-      },
-      "last_scraped": "2026-08-10T10:14:54.835809",
+      "last_scraped": "2026-08-17T09:37:49.251664",
       "data_completeness": 0.75
     },
     {
@@ -8352,7 +8620,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.772658",
+      "last_scraped": "2026-08-17T09:37:49.278918",
       "data_completeness": 0.75
     },
     {
@@ -8397,7 +8665,7 @@
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-10T10:14:54.811128",
+      "last_scraped": "2026-08-17T09:37:49.307774",
       "data_completeness": 0.75
     },
     {
@@ -8452,12 +8720,12 @@
         }
       ],
       "job_board": {
-        "count": 17,
+        "count": 15,
         "url": "https://jobs.lever.co/mashgin",
         "source_type": "ats_api",
         "ats_platform": "lever"
       },
-      "last_scraped": "2026-08-10T10:14:54.737596",
+      "last_scraped": "2026-08-17T09:37:49.246737",
       "data_completeness": 0.75
     },
     {
@@ -8507,7 +8775,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.720025",
+      "last_scraped": "2026-08-17T09:37:49.230438",
       "data_completeness": 0.75
     },
     {
@@ -8568,7 +8836,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.801477",
+      "last_scraped": "2026-08-17T09:37:49.300560",
       "data_completeness": 0.75
     },
     {
@@ -8614,7 +8882,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.817948",
+      "last_scraped": "2026-08-17T09:37:49.313741",
       "data_completeness": 0.75
     },
     {
@@ -8668,7 +8936,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.786421",
+      "last_scraped": "2026-08-17T09:37:49.290548",
       "data_completeness": 0.75
     },
     {
@@ -8720,7 +8988,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.797372",
+      "last_scraped": "2026-08-17T09:37:49.296957",
       "data_completeness": 0.75
     },
     {
@@ -8774,7 +9042,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.805486",
+      "last_scraped": "2026-08-17T09:37:49.303483",
       "data_completeness": 0.75
     },
     {
@@ -8831,7 +9099,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.811808",
+      "last_scraped": "2026-08-17T09:37:49.308195",
       "data_completeness": 0.75
     },
     {
@@ -8876,7 +9144,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.823093",
+      "last_scraped": "2026-08-17T09:37:49.316383",
       "data_completeness": 0.75
     },
     {
@@ -8948,60 +9216,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.724323",
-      "data_completeness": 0.75
-    },
-    {
-      "yc_id": 30795,
-      "name": "NOSO LABS",
-      "slug": "noso-labs",
-      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/65242d9e142c66d4afe70eb47ebf05c1dcff789c.png",
-      "website": "https://noso.so",
-      "location": "San Francisco, CA, USA",
-      "description": "Build AI agents for field technicians to diagnose and sell 10x better",
-      "long_description": "In the home services industry, field technicians are expected to handle three key tasks: diagnosing issues, making sales, and completing paperwork. It's rare to find individuals who excel at all three. We build AI agents to support technicians by improving diagnostic accuracy and helping them capture sales opportunities.",
-      "industry": "Industrials",
-      "industries": [
-        "Industrials"
-      ],
-      "subindustry": "Industrials",
-      "batch": null,
-      "is_hiring": true,
-      "is_top_company": false,
-      "status": "Active",
-      "stage": "Early",
-      "team_size": 6,
-      "tags": [
-        "Artificial Intelligence"
-      ],
-      "regions": [
-        "United States of America",
-        "America / Canada"
-      ],
-      "source_vc": "Y Combinator",
-      "founders": [
-        {
-          "name": "Winston Chi",
-          "college": null,
-          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/40eb2defebe9c63af381e0143de00bbcffa1b448.jpg",
-          "linkedin_url": "https://www.linkedin.com/in/lwchi/",
-          "raw_bio": "2x founder, love building Vertical AI Currently working on HVAC diagnostics for field technicians Previously, founder of butter technologies, acquired by Grubmarket"
-        },
-        {
-          "name": "Alex Xi",
-          "college": null,
-          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/1212e495a7ff574a6f9d8f7f092723e66570edb4.jpg",
-          "linkedin_url": null,
-          "raw_bio": "Currently working on AI agent for trade industry, starting from HVAC Previously, Principle Engineer led Code LLM | ex-ByteDance AI | ex-Meta AI | PhD"
-        }
-      ],
-      "job_board": {
-        "count": null,
-        "url": "https://noso.so/careers",
-        "source_type": "manual_visit",
-        "ats_platform": null
-      },
-      "last_scraped": "2026-08-10T10:14:54.834724",
+      "last_scraped": "2026-08-17T09:37:49.234523",
       "data_completeness": 0.75
     },
     {
@@ -9052,7 +9267,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.826357",
+      "last_scraped": "2026-08-17T09:37:49.318860",
       "data_completeness": 0.75
     },
     {
@@ -9109,7 +9324,7 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.735371",
+      "last_scraped": "2026-08-17T09:37:49.244888",
       "data_completeness": 0.75
     },
     {
@@ -9165,7 +9380,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.793116",
+      "last_scraped": "2026-08-17T09:37:49.293855",
       "data_completeness": 0.75
     },
     {
@@ -9213,7 +9428,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.749133",
+      "last_scraped": "2026-08-17T09:37:49.256666",
       "data_completeness": 0.75
     },
     {
@@ -9260,7 +9475,7 @@
         "source_type": "ats_api",
         "ats_platform": "ashby"
       },
-      "last_scraped": "2026-08-10T10:14:54.832024",
+      "last_scraped": "2026-08-17T09:37:49.322708",
       "data_completeness": 0.75
     },
     {
@@ -9304,12 +9519,12 @@
         }
       ],
       "job_board": {
-        "count": 22,
+        "count": 17,
         "url": "https://boards.greenhouse.io/odeko",
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-10T10:14:54.712135",
+      "last_scraped": "2026-08-17T09:37:49.222708",
       "data_completeness": 0.75
     },
     {
@@ -9361,7 +9576,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.809349",
+      "last_scraped": "2026-08-17T09:37:49.306370",
       "data_completeness": 0.75
     },
     {
@@ -9421,7 +9636,7 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.742572",
+      "last_scraped": "2026-08-17T09:37:49.250975",
       "data_completeness": 0.75
     },
     {
@@ -9431,8 +9646,8 @@
       "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/ad1b7cce12014a7746a7f8b912560717f6e2f037.png",
       "website": "https://ooakdata.com/",
       "location": "Paris, Île-de-France, France",
-      "description": "We build the world's largest library of real-world business workflow…",
-      "long_description": "The promise of AI agents is still unmet in complex, real-world business environments. Our mission is to make it possible for agents to reliably accomplish concrete and useful tasks.\r\n\r\nThat’s why we're building **Alexandria,** the world's largest library of real-world business workflow datasets.",
+      "description": "We turn company data into RL environnements.",
+      "long_description": "Ooak Data turns internal company data into a training ground where AI agents can be tested on real work.\r\n",
       "industry": "B2B",
       "industries": [
         "B2B"
@@ -9445,8 +9660,8 @@
       "stage": "Early",
       "team_size": 5,
       "tags": [
-        "Artificial Intelligence",
-        "Reinforcement Learning"
+        "Reinforcement Learning",
+        "AI"
       ],
       "regions": [
         "France",
@@ -9470,7 +9685,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.763474",
+      "last_scraped": "2026-08-17T09:37:49.269339",
       "data_completeness": 0.75
     },
     {
@@ -9510,12 +9725,12 @@
         }
       ],
       "job_board": {
-        "count": 15,
+        "count": 12,
         "url": "https://boards.greenhouse.io/openwork",
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-10T10:14:54.779235",
+      "last_scraped": "2026-08-17T09:37:49.283996",
       "data_completeness": 0.75
     },
     {
@@ -9563,7 +9778,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.762773",
+      "last_scraped": "2026-08-17T09:37:49.268712",
       "data_completeness": 0.75
     },
     {
@@ -9613,7 +9828,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.756823",
+      "last_scraped": "2026-08-17T09:37:49.263692",
       "data_completeness": 0.75
     },
     {
@@ -9636,7 +9851,7 @@
       "is_top_company": false,
       "status": "Active",
       "stage": "Early",
-      "team_size": 10,
+      "team_size": 11,
       "tags": [],
       "regions": [
         "United States of America",
@@ -9672,7 +9887,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.802972",
+      "last_scraped": "2026-08-17T09:37:49.301960",
       "data_completeness": 0.75
     },
     {
@@ -9721,7 +9936,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.768240",
+      "last_scraped": "2026-08-17T09:37:49.273895",
       "data_completeness": 0.75
     },
     {
@@ -9782,7 +9997,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.829611",
+      "last_scraped": "2026-08-17T09:37:49.321180",
       "data_completeness": 0.75
     },
     {
@@ -9833,7 +10048,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.809978",
+      "last_scraped": "2026-08-17T09:37:49.306826",
       "data_completeness": 0.75
     },
     {
@@ -9884,64 +10099,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.794864",
-      "data_completeness": 0.75
-    },
-    {
-      "yc_id": 30778,
-      "name": "Perspectives Health",
-      "slug": "perspectives-health",
-      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/d4d717434657a084785d53a7ab208f3a1b202dae.png",
-      "website": "https://perspectiveshealth.ai/",
-      "location": "Chicago, IL, USA",
-      "description": "AI to run behavioral health programs better",
-      "long_description": "America is facing an addiction and mental health crisis, but the treatment programs trying to solve the problem are faced with administrative burden, staff shortages, and pressure from payers. \r\nWe work with treatment programs to incorporate AI that reduces administrative burden, prevents insurance denials, and helps directors run their program better.",
-      "industry": "Healthcare",
-      "industries": [
-        "Healthcare",
-        "Healthcare IT"
-      ],
-      "subindustry": "Healthcare -> Healthcare IT",
-      "batch": null,
-      "is_hiring": true,
-      "is_top_company": false,
-      "status": "Active",
-      "stage": "Early",
-      "team_size": 5,
-      "tags": [
-        "Workflow Automation",
-        "Healthcare",
-        "Mental Health",
-        "Healthcare IT"
-      ],
-      "regions": [
-        "United States of America",
-        "America / Canada"
-      ],
-      "source_vc": "Y Combinator",
-      "founders": [
-        {
-          "name": "Eshan Dosani",
-          "college": "University of Chicago",
-          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/82b2141759123737c726fcdc466ec142c3bd40d3.jpg",
-          "linkedin_url": "https://www.linkedin.com/in/eshan-dosani/",
-          "raw_bio": "UChicago, fmr White House Drug Policy"
-        },
-        {
-          "name": "Kyle Jung",
-          "college": "Stanford University",
-          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/76c7b10d44d923aa745450d3689cd0880684ef53.jpg",
-          "linkedin_url": "https://www.linkedin.com/in/kyle-hyun-woo-jung-a06814180/",
-          "raw_bio": "I like building cool things, martial arts, and golf."
-        }
-      ],
-      "job_board": {
-        "count": null,
-        "url": "https://perspectiveshealth.ai/careers",
-        "source_type": "manual_visit",
-        "ats_platform": null
-      },
-      "last_scraped": "2026-08-10T10:14:54.835528",
+      "last_scraped": "2026-08-17T09:37:49.295107",
       "data_completeness": 0.75
     },
     {
@@ -10000,7 +10158,7 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.747116",
+      "last_scraped": "2026-08-17T09:37:49.254864",
       "data_completeness": 0.75
     },
     {
@@ -10056,7 +10214,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.748416",
+      "last_scraped": "2026-08-17T09:37:49.256134",
       "data_completeness": 0.75
     },
     {
@@ -10113,7 +10271,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.806811",
+      "last_scraped": "2026-08-17T09:37:49.304656",
       "data_completeness": 0.75
     },
     {
@@ -10154,12 +10312,12 @@
         }
       ],
       "job_board": {
-        "count": 29,
+        "count": 24,
         "url": "https://ploy.ai/careers",
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.810567",
+      "last_scraped": "2026-08-17T09:37:49.307332",
       "data_completeness": 0.75
     },
     {
@@ -10212,7 +10370,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.799796",
+      "last_scraped": "2026-08-17T09:37:49.299097",
       "data_completeness": 0.75
     },
     {
@@ -10271,7 +10429,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.712871",
+      "last_scraped": "2026-08-17T09:37:49.223327",
       "data_completeness": 0.75
     },
     {
@@ -10322,7 +10480,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.799567",
+      "last_scraped": "2026-08-17T09:37:49.298918",
       "data_completeness": 0.75
     },
     {
@@ -10374,7 +10532,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.803231",
+      "last_scraped": "2026-08-17T09:37:49.302206",
       "data_completeness": 0.75
     },
     {
@@ -10432,7 +10590,7 @@
         "source_type": "ats_api",
         "ats_platform": "lever"
       },
-      "last_scraped": "2026-08-10T10:14:54.738187",
+      "last_scraped": "2026-08-17T09:37:49.247358",
       "data_completeness": 0.75
     },
     {
@@ -10486,12 +10644,12 @@
         }
       ],
       "job_board": {
-        "count": 24,
+        "count": 22,
         "url": "https://boards.greenhouse.io/qventus",
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-10T10:14:54.744223",
+      "last_scraped": "2026-08-17T09:37:49.252329",
       "data_completeness": 0.75
     },
     {
@@ -10536,12 +10694,12 @@
         }
       ],
       "job_board": {
-        "count": 19,
+        "count": 18,
         "url": "https://boards.greenhouse.io/radar",
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-10T10:14:54.754634",
+      "last_scraped": "2026-08-17T09:37:49.261951",
       "data_completeness": 0.75
     },
     {
@@ -10598,7 +10756,7 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.805758",
+      "last_scraped": "2026-08-17T09:37:49.303662",
       "data_completeness": 0.75
     },
     {
@@ -10663,7 +10821,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.713599",
+      "last_scraped": "2026-08-17T09:37:49.224066",
       "data_completeness": 0.75
     },
     {
@@ -10717,12 +10875,12 @@
         }
       ],
       "job_board": {
-        "count": null,
-        "url": "https://razorpay.com/careers",
-        "source_type": "manual_visit",
+        "count": 2,
+        "url": "https://razorpay.com/careers/",
+        "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.714369",
+      "last_scraped": "2026-08-17T09:37:49.224760",
       "data_completeness": 0.75
     },
     {
@@ -10772,65 +10930,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.732478",
-      "data_completeness": 0.75
-    },
-    {
-      "yc_id": 30761,
-      "name": "Reacher",
-      "slug": "reacher",
-      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/e18f0a8b8fff511049fe03b4ad0dc3b98bce28b5.png",
-      "website": "https://reacherapp.com/",
-      "location": "San Francisco, CA, USA; Remote",
-      "description": "We automate creator marketing for the world's largest brands",
-      "long_description": "Reacher is an AI-powered platform that automates creator marketing workflows—from discovery and outreach to campaign management and content strategy—making marketing teams 10x more productive. \r\n\r\nWe handle the manual tasks so brands can focus on building relationships with creators while centralizing their operations in one platform to manage creators on TikTok Shop, Instagram, and YouTube.\r\n\r\n\r\n\r\n\r\n",
-      "industry": "B2B",
-      "industries": [
-        "B2B"
-      ],
-      "subindustry": "B2B",
-      "batch": null,
-      "is_hiring": true,
-      "is_top_company": false,
-      "status": "Active",
-      "stage": "Early",
-      "team_size": 10,
-      "tags": [
-        "Artificial Intelligence",
-        "B2B",
-        "E-commerce",
-        "Creator Economy"
-      ],
-      "regions": [
-        "United States of America",
-        "America / Canada",
-        "Remote",
-        "Fully Remote"
-      ],
-      "source_vc": "Y Combinator",
-      "founders": [
-        {
-          "name": "Jerry Qian",
-          "college": "Stanford University",
-          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/ec1ee882a67209bd8aedbe13d8a0bfbcb164e25f.jpg",
-          "linkedin_url": "https://linkedin.com/in/j-qian",
-          "raw_bio": "Co-Founder and CEO @ Reacher Prev @ Meta, Berkeley, NASA"
-        },
-        {
-          "name": "Bora Mutluoglu",
-          "college": "UC Berkeley",
-          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/4fd8c23ceb198400a3b742659ae87f2e47e2ad57.jpg",
-          "linkedin_url": "https://linkedin.com/in/bora-mutluoglu",
-          "raw_bio": "Bay area born and raised. Cupertino native. Work, gym, hiking, nature, walking, rugby, soccer, dogs, birds, edm, heavy metal, healthy lifestyle, work. Cupertino High School -> UC Santa Cruz -> UC San Diego -> UC Berkeley -> Palo Alto Networks -> Reacher. Currently building Reacher. The AI Brand Manager for ecommerce businesses scaling through the creator economy."
-        }
-      ],
-      "job_board": {
-        "count": 8,
-        "url": "https://jobs.ashbyhq.com/reacher",
-        "source_type": "ats_api",
-        "ats_platform": "ashby"
-      },
-      "last_scraped": "2026-08-10T10:14:54.837114",
+      "last_scraped": "2026-08-17T09:37:49.242466",
       "data_completeness": 0.75
     },
     {
@@ -10882,14 +10982,14 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.794332",
+      "last_scraped": "2026-08-17T09:37:49.294690",
       "data_completeness": 0.75
     },
     {
       "yc_id": 31189,
       "name": "Revion",
       "slug": "revion",
-      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/083700d7d477f8653353926e2c024cda96cf803d.png",
+      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/84522703b8ea76ce25606b2150693133260bc1a1.png",
       "website": "https://revion.inc",
       "location": "New York City, NY, USA",
       "description": "Intelligence for Automotive Operations",
@@ -10938,7 +11038,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.801271",
+      "last_scraped": "2026-08-17T09:37:49.300356",
       "data_completeness": 0.75
     },
     {
@@ -10979,7 +11079,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.774629",
+      "last_scraped": "2026-08-17T09:37:49.280270",
       "data_completeness": 0.75
     },
     {
@@ -11025,7 +11125,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.802722",
+      "last_scraped": "2026-08-17T09:37:49.301722",
       "data_completeness": 0.75
     },
     {
@@ -11081,7 +11181,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.715203",
+      "last_scraped": "2026-08-17T09:37:49.225619",
       "data_completeness": 0.75
     },
     {
@@ -11146,7 +11246,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.766734",
+      "last_scraped": "2026-08-17T09:37:49.272467",
       "data_completeness": 0.75
     },
     {
@@ -11197,7 +11297,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.786659",
+      "last_scraped": "2026-08-17T09:37:49.290753",
       "data_completeness": 0.75
     },
     {
@@ -11234,7 +11334,44 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.800861",
+      "last_scraped": "2026-08-17T09:37:49.300002",
+      "data_completeness": 0.75
+    },
+    {
+      "yc_id": 31135,
+      "name": "RoboDock",
+      "slug": "robodock",
+      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/8d6ce96c0e4a1cbd7e0458649e2af7fa551e2bfb.png",
+      "website": "https://www.robodock.tech/",
+      "location": "San Francisco, CA, USA",
+      "description": "Robots that run autonomous depots for autonomous fleets.",
+      "long_description": "RoboDock builds robots that automate depot operations, like charging and vehicle checks, for electric and autonomous vehicle fleets. We turn fleet depots from manual sites into self-running systems that lower operational costs and increase vehicle uptime.",
+      "industry": "Industrials",
+      "industries": [
+        "Industrials",
+        "Energy"
+      ],
+      "subindustry": "Industrials -> Energy",
+      "batch": null,
+      "is_hiring": true,
+      "is_top_company": false,
+      "status": "Active",
+      "stage": "Early",
+      "team_size": 3,
+      "tags": [],
+      "regions": [
+        "United States of America",
+        "America / Canada"
+      ],
+      "source_vc": "Y Combinator",
+      "founders": [],
+      "job_board": {
+        "count": null,
+        "url": "https://www.robodock.tech/careers",
+        "source_type": "manual_visit",
+        "ats_platform": null
+      },
+      "last_scraped": "2026-08-17T09:37:49.304049",
       "data_completeness": 0.75
     },
     {
@@ -11291,7 +11428,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.815622",
+      "last_scraped": "2026-08-17T09:37:49.310520",
       "data_completeness": 0.75
     },
     {
@@ -11343,7 +11480,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.794000",
+      "last_scraped": "2026-08-17T09:37:49.294431",
       "data_completeness": 0.75
     },
     {
@@ -11394,7 +11531,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.808876",
+      "last_scraped": "2026-08-17T09:37:49.305970",
       "data_completeness": 0.75
     },
     {
@@ -11446,7 +11583,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.808427",
+      "last_scraped": "2026-08-17T09:37:49.305721",
       "data_completeness": 0.75
     },
     {
@@ -11498,7 +11635,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.777055",
+      "last_scraped": "2026-08-17T09:37:49.282036",
       "data_completeness": 0.75
     },
     {
@@ -11552,7 +11689,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.722776",
+      "last_scraped": "2026-08-17T09:37:49.233285",
       "data_completeness": 0.75
     },
     {
@@ -11563,7 +11700,7 @@
       "website": "https://www.usesalus.ai/",
       "location": "San Francisco, CA, USA",
       "description": "Guardrails to validate your agent's actions before they execute",
-      "long_description": "Your agent processed a refund without looking up the order ID, costing you thousands. You only found out three hours later from a support ticket. Evals, output scoring, and observability can reduce the likelihood of mistakes like these occurring - but there's no solution that inspects and prevents an action as it’s about to execute. Salus does that.\r\n\r\nWe’ve built an API that wraps around your agent and checks its actions at run time, blocking incorrect ones and providing immediate feedback to guide retries. Kevin and Vedant were roommates at Stanford, where they both studied computer science. ",
+      "long_description": "Your agent processed a refund without looking up the order ID, costing you thousands. You only found out three hours later from a support ticket. Evals, output scoring, and observability can reduce the likelihood of mistakes like these occurring - but there's no solution that inspects and prevents an action as it’s about to execute. Salus does that.\r\n\r\nWe’ve built an API that wraps around your agent and checks its actions at run time, blocking incorrect ones and providing immediate feedback to guide retries. ",
       "industry": "B2B",
       "industries": [
         "B2B",
@@ -11577,11 +11714,11 @@
       "stage": "Early",
       "team_size": 2,
       "tags": [
+        "Artificial Intelligence",
         "Developer Tools",
         "B2B",
         "API",
-        "Infrastructure",
-        "AI"
+        "Infrastructure"
       ],
       "regions": [
         "United States of America",
@@ -11599,11 +11736,11 @@
       ],
       "job_board": {
         "count": 5,
-        "url": "https://www.usesalus.ai/careers",
+        "url": "https://usesalus.ai/careers",
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.805151",
+      "last_scraped": "2026-08-17T09:37:49.303298",
       "data_completeness": 0.75
     },
     {
@@ -11654,7 +11791,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.817592",
+      "last_scraped": "2026-08-17T09:37:49.313541",
       "data_completeness": 0.75
     },
     {
@@ -11704,7 +11841,7 @@
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-10T10:14:54.715829",
+      "last_scraped": "2026-08-17T09:37:49.226418",
       "data_completeness": 0.75
     },
     {
@@ -11755,7 +11892,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.820882",
+      "last_scraped": "2026-08-17T09:37:49.315256",
       "data_completeness": 0.75
     },
     {
@@ -11814,7 +11951,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.801993",
+      "last_scraped": "2026-08-17T09:37:49.301080",
       "data_completeness": 0.75
     },
     {
@@ -11868,7 +12005,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.824884",
+      "last_scraped": "2026-08-17T09:37:49.317661",
       "data_completeness": 0.75
     },
     {
@@ -11910,7 +12047,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.799032",
+      "last_scraped": "2026-08-17T09:37:49.298480",
       "data_completeness": 0.75
     },
     {
@@ -11968,7 +12105,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.728450",
+      "last_scraped": "2026-08-17T09:37:49.238556",
       "data_completeness": 0.75
     },
     {
@@ -12025,7 +12162,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.716488",
+      "last_scraped": "2026-08-17T09:37:49.227231",
       "data_completeness": 0.75
     },
     {
@@ -12083,7 +12220,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.759844",
+      "last_scraped": "2026-08-17T09:37:49.266863",
       "data_completeness": 0.75
     },
     {
@@ -12130,7 +12267,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.753195",
+      "last_scraped": "2026-08-17T09:37:49.260656",
       "data_completeness": 0.75
     },
     {
@@ -12186,7 +12323,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.800593",
+      "last_scraped": "2026-08-17T09:37:49.299774",
       "data_completeness": 0.75
     },
     {
@@ -12238,7 +12375,7 @@
         "source_type": "ats_api",
         "ats_platform": "ashby"
       },
-      "last_scraped": "2026-08-10T10:14:54.733872",
+      "last_scraped": "2026-08-17T09:37:49.243647",
       "data_completeness": 0.75
     },
     {
@@ -12280,7 +12417,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.828205",
+      "last_scraped": "2026-08-17T09:37:49.320195",
       "data_completeness": 0.75
     },
     {
@@ -12329,7 +12466,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.827907",
+      "last_scraped": "2026-08-17T09:37:49.320006",
       "data_completeness": 0.75
     },
     {
@@ -12366,7 +12503,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.785520",
+      "last_scraped": "2026-08-17T09:37:49.289880",
       "data_completeness": 0.75
     },
     {
@@ -12422,7 +12559,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.819888",
+      "last_scraped": "2026-08-17T09:37:49.314486",
       "data_completeness": 0.75
     },
     {
@@ -12431,7 +12568,7 @@
       "slug": "sparkles",
       "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/2fa726d414c3f4d378fa6af116bb14e3abb29e0f.png",
       "website": "https://sparkles.dev",
-      "location": "San Francisco, CA, USA",
+      "location": "London, England, United Kingdom",
       "description": "Make everyone on your team an engineer",
       "long_description": "Sparkles is like Lovable for existing projects, so even Sharon from Marketing can change the button styling on the front page without going back and forth with the dev team.\r\n\r\nSomeone technical connects their GitHub to Sparkles, sets up the repository and environment variables, and then anyone on the team with a @yourcompany.com email can log in on Sparkles and create pull requests without needing to know what Git is.",
       "industry": "B2B",
@@ -12448,8 +12585,8 @@
       "team_size": 1,
       "tags": [],
       "regions": [
-        "United States of America",
-        "America / Canada"
+        "United Kingdom",
+        "Europe"
       ],
       "source_vc": "Y Combinator",
       "founders": [
@@ -12467,7 +12604,7 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.804949",
+      "last_scraped": "2026-08-17T09:37:49.303114",
       "data_completeness": 0.75
     },
     {
@@ -12519,7 +12656,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.788659",
+      "last_scraped": "2026-08-17T09:37:49.292481",
       "data_completeness": 0.75
     },
     {
@@ -12584,7 +12721,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.803606",
+      "last_scraped": "2026-08-17T09:37:49.302424",
       "data_completeness": 0.75
     },
     {
@@ -12633,7 +12770,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.740231",
+      "last_scraped": "2026-08-17T09:37:49.249189",
       "data_completeness": 0.75
     },
     {
@@ -12685,12 +12822,12 @@
         }
       ],
       "job_board": {
-        "count": 549,
+        "count": 576,
         "url": "https://boards.greenhouse.io/stripe",
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-10T10:14:54.717214",
+      "last_scraped": "2026-08-17T09:37:49.227807",
       "data_completeness": 0.75
     },
     {
@@ -12754,7 +12891,7 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.830389",
+      "last_scraped": "2026-08-17T09:37:49.321587",
       "data_completeness": 0.75
     },
     {
@@ -12800,7 +12937,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.822789",
+      "last_scraped": "2026-08-17T09:37:49.316120",
       "data_completeness": 0.75
     },
     {
@@ -12860,12 +12997,12 @@
         }
       ],
       "job_board": {
-        "count": 4,
+        "count": 2,
         "url": "https://boards.greenhouse.io/superset",
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-10T10:14:54.799249",
+      "last_scraped": "2026-08-17T09:37:49.298667",
       "data_completeness": 0.75
     },
     {
@@ -12916,7 +13053,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.739464",
+      "last_scraped": "2026-08-17T09:37:49.248563",
       "data_completeness": 0.75
     },
     {
@@ -12976,7 +13113,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.738808",
+      "last_scraped": "2026-08-17T09:37:49.248004",
       "data_completeness": 0.75
     },
     {
@@ -13030,7 +13167,7 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.783222",
+      "last_scraped": "2026-08-17T09:37:49.287654",
       "data_completeness": 0.75
     },
     {
@@ -13087,7 +13224,7 @@
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-10T10:14:54.741447",
+      "last_scraped": "2026-08-17T09:37:49.250396",
       "data_completeness": 0.75
     },
     {
@@ -13139,7 +13276,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.803984",
+      "last_scraped": "2026-08-17T09:37:49.302703",
       "data_completeness": 0.75
     },
     {
@@ -13183,7 +13320,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.789915",
+      "last_scraped": "2026-08-17T09:37:49.293460",
       "data_completeness": 0.75
     },
     {
@@ -13228,7 +13365,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.814963",
+      "last_scraped": "2026-08-17T09:37:49.310119",
       "data_completeness": 0.75
     },
     {
@@ -13284,7 +13421,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.821999",
+      "last_scraped": "2026-08-17T09:37:49.315916",
       "data_completeness": 0.75
     },
     {
@@ -13341,7 +13478,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.768838",
+      "last_scraped": "2026-08-17T09:37:49.274794",
       "data_completeness": 0.75
     },
     {
@@ -13393,7 +13530,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.794646",
+      "last_scraped": "2026-08-17T09:37:49.294925",
       "data_completeness": 0.75
     },
     {
@@ -13437,12 +13574,12 @@
         }
       ],
       "job_board": {
-        "count": 10,
+        "count": 11,
         "url": "https://jobs.lever.co/tovala",
         "source_type": "ats_api",
         "ats_platform": "lever"
       },
-      "last_scraped": "2026-08-10T10:14:54.720754",
+      "last_scraped": "2026-08-17T09:37:49.231330",
       "data_completeness": 0.75
     },
     {
@@ -13502,7 +13639,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.764709",
+      "last_scraped": "2026-08-17T09:37:49.270580",
       "data_completeness": 0.75
     },
     {
@@ -13559,7 +13696,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.827345",
+      "last_scraped": "2026-08-17T09:37:49.319596",
       "data_completeness": 0.75
     },
     {
@@ -13602,7 +13739,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.775375",
+      "last_scraped": "2026-08-17T09:37:49.280900",
       "data_completeness": 0.75
     },
     {
@@ -13658,7 +13795,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.823829",
+      "last_scraped": "2026-08-17T09:37:49.316932",
       "data_completeness": 0.75
     },
     {
@@ -13723,7 +13860,7 @@
         "source_type": "ats_api",
         "ats_platform": "ashby"
       },
-      "last_scraped": "2026-08-10T10:14:54.830708",
+      "last_scraped": "2026-08-17T09:37:49.321828",
       "data_completeness": 0.75
     },
     {
@@ -13779,7 +13916,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.832687",
+      "last_scraped": "2026-08-17T09:37:49.323162",
       "data_completeness": 0.75
     },
     {
@@ -13830,7 +13967,7 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.797112",
+      "last_scraped": "2026-08-17T09:37:49.296727",
       "data_completeness": 0.75
     },
     {
@@ -13882,7 +14019,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.812556",
+      "last_scraped": "2026-08-17T09:37:49.309053",
       "data_completeness": 0.75
     },
     {
@@ -13933,7 +14070,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.797662",
+      "last_scraped": "2026-08-17T09:37:49.297190",
       "data_completeness": 0.75
     },
     {
@@ -13989,7 +14126,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.813370",
+      "last_scraped": "2026-08-17T09:37:49.309438",
       "data_completeness": 0.75
     },
     {
@@ -14040,7 +14177,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.804751",
+      "last_scraped": "2026-08-17T09:37:49.302926",
       "data_completeness": 0.75
     },
     {
@@ -14087,7 +14224,7 @@
         "source_type": "ats_api",
         "ats_platform": "ashby"
       },
-      "last_scraped": "2026-08-10T10:14:54.731126",
+      "last_scraped": "2026-08-17T09:37:49.241004",
       "data_completeness": 0.75
     },
     {
@@ -14152,66 +14289,44 @@
         "source_type": "ats_api",
         "ats_platform": "ashby"
       },
-      "last_scraped": "2026-08-10T10:14:54.834435",
+      "last_scraped": "2026-08-17T09:37:49.324345",
       "data_completeness": 0.75
     },
     {
-      "yc_id": 30794,
-      "name": "Vulcan Technologies",
-      "slug": "vulcan-technologies",
-      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/9dc164f31a43f3059a961dca44229c015bb26437.png",
-      "website": "https://vulcan.ai/",
-      "location": "Austin, TX, USA",
-      "description": "Secure frontier AI for government & adjacent knowledge work",
-      "long_description": "Vulcan builds agents for government and government-adjacent work. We currently sell two agents: Justinian and Trajan.\r\n\r\nJustinian is an AI agent coworker for people who work in and adjacent to American government. To power Justinian, we created the world’s largest legal and policy database and knowledge graph, accessible to our customers via our platform, email, and Slack.\r\n\r\nTrajan is a public-facing AI concierge built to help governments modernize service delivery. Hosted on a government website, Trajan helps businesses and citizens automatically complete permits, licenses, applications, and answer regulatory and legal questions.\r\n\r\nIn addition to government customers, Vulcan's agents serve regulatory, legal, policy, and government relations teams at major U.S. enterprises.",
-      "industry": "B2B",
+      "yc_id": 31003,
+      "name": "Voltair",
+      "slug": "voltair",
+      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/a981c3ee0de6ecf9a915e188b211780fce335e44.png",
+      "website": "https://voltairlabs.com/",
+      "location": "San Francisco, CA, USA",
+      "description": "Autonomous Drones for Earth Observation",
+      "long_description": "Voltair is building the world's first globally distributed network of autonomous drones for Earth observation.\r\n\r\nPower utilities are the perfect first customer. Aging infrastructure and extreme weather drive the need for millimeter-scale inspection data on the power grid. Utilities spend tens of billions of dollars every year just looking at their own equipment. Autonomous drone fleets will enable utilities to inspect 7 million miles of infrastructure more frequently, quickly, and accurately. Our long-range, weatherized flying robots work with charging pads installed directly on utility poles. Each new pad unlocks 1000 square miles of coverage.\r\n\r\nWith a charging network deployed on the power grid, we can serve existing multi-billion dollar data markets in road, rail and telecom inspection at 10x lower prices while enabling entirely new applications in hyperlocal weather monitoring, forestry, construction, search & rescue, and insurance.\r\n\r\nWe envision a future in which drone \"instances\" are requested on-demand through our platform, enabling any application builder to serve these critical markets without ever operating their own hardware.",
+      "industry": "Industrials",
       "industries": [
-        "B2B",
-        "Legal"
+        "Industrials",
+        "Drones"
       ],
-      "subindustry": "B2B -> Legal",
+      "subindustry": "Industrials -> Drones",
       "batch": null,
       "is_hiring": true,
       "is_top_company": false,
       "status": "Active",
       "stage": "Early",
-      "team_size": 17,
+      "team_size": 5,
       "tags": [],
       "regions": [
         "United States of America",
         "America / Canada"
       ],
       "source_vc": "Y Combinator",
-      "founders": [
-        {
-          "name": "Tanner Jones",
-          "college": "Dartmouth",
-          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/890d9cda7329b04ea252602793ab6c242c9bb32a.jpg",
-          "linkedin_url": "https://www.linkedin.com/in/tanner-jones-817192167/",
-          "raw_bio": "Tanner studied PPE and Classics at Dartmouth. Previously, he founded and exited Downballot Solutions with Arvind Veluvali (Fresco AI, YC F24), a political campaign tech startup. Later, Tanner was the Technology and Regulatory Policy Director at Joe Lonsdale's Cicero Institute, where he was the 2024 employee of the year. Tanner also coached the 2021 speech and debate national champion, holds powerlifting records in two states, and qualified to the 2023 IPL world powerlifting championships."
-        },
-        {
-          "name": "Chris Minge",
-          "college": "Princeton University",
-          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/e12e60e49ca5697b947173d89c372b7ba546e81e.jpg",
-          "linkedin_url": "https://www.linkedin.com/in/chrisminge",
-          "raw_bio": "Chris studied computer science and philosophy at Princeton University, graduating in 2022. After graduating, he was a software engineer at Google, where he worked on ML infrastructure, supporting Gemini, Waymo, Vertex AI, and other services."
-        },
-        {
-          "name": "Aleksander Mekhanik",
-          "college": "Dartmouth",
-          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/f5ad77596e26bc49b796e7efe41dbe27b84d5929.jpg",
-          "linkedin_url": "https://www.linkedin.com/in/aleksander-mekhanik-41547b272/",
-          "raw_bio": "Alek earned the prestigious Jack Byrne grant offered to the top math students at Dartmouth, where he studied electrical computer engineering with a focus in machine learning. Previously, Alek was a nationally competitive chess player and high school varsity athlete. He has also contributed to several startups as a machine learning engineer. Beyond Vulcan, Alek holds Ivy League and Arizona powerlifting records and qualified to USAPL collegiate nationals."
-        }
-      ],
+      "founders": [],
       "job_board": {
         "count": null,
-        "url": "https://vulcan.ai/careers",
+        "url": "https://voltairlabs.com/careers",
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.834981",
+      "last_scraped": "2026-08-17T09:37:49.308640",
       "data_completeness": 0.75
     },
     {
@@ -14269,7 +14384,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.825963",
+      "last_scraped": "2026-08-17T09:37:49.318609",
       "data_completeness": 0.75
     },
     {
@@ -14314,7 +14429,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.795871",
+      "last_scraped": "2026-08-17T09:37:49.295893",
       "data_completeness": 0.75
     },
     {
@@ -14367,12 +14482,12 @@
         }
       ],
       "job_board": {
-        "count": 29,
+        "count": 28,
         "url": "https://boards.greenhouse.io/webflow",
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-10T10:14:54.717880",
+      "last_scraped": "2026-08-17T09:37:49.228462",
       "data_completeness": 0.75
     },
     {
@@ -14427,7 +14542,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.752535",
+      "last_scraped": "2026-08-17T09:37:49.260077",
       "data_completeness": 0.75
     },
     {
@@ -14483,7 +14598,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.718558",
+      "last_scraped": "2026-08-17T09:37:49.229141",
       "data_completeness": 0.75
     },
     {
@@ -14542,12 +14657,12 @@
         }
       ],
       "job_board": {
-        "count": 25,
+        "count": 23,
         "url": "https://boards.greenhouse.io/xendit",
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-10T10:14:54.727751",
+      "last_scraped": "2026-08-17T09:37:49.237819",
       "data_completeness": 0.75
     },
     {
@@ -14599,7 +14714,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.820260",
+      "last_scraped": "2026-08-17T09:37:49.314752",
       "data_completeness": 0.75
     },
     {
@@ -14650,7 +14765,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.719327",
+      "last_scraped": "2026-08-17T09:37:49.229870",
       "data_completeness": 0.75
     },
     {
@@ -14690,7 +14805,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.812111",
+      "last_scraped": "2026-08-17T09:37:49.308433",
       "data_completeness": 0.75
     },
     {
@@ -14738,7 +14853,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.758355",
+      "last_scraped": "2026-08-17T09:37:49.264931",
       "data_completeness": 0.75
     },
     {
@@ -14748,7 +14863,7 @@
       "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/15c98b3bf7b3907fd2d08caff7a209dd0bc20fd3.png",
       "website": "https://www.zymbly.com",
       "location": "London, England, United Kingdom",
-      "description": "Automates admin for aircraft mechanics",
+      "description": "The decision-support layer for aviation ops teams to know what to do…",
       "long_description": "",
       "industry": "B2B",
       "industries": [
@@ -14760,7 +14875,7 @@
       "is_top_company": false,
       "status": "Active",
       "stage": "Early",
-      "team_size": 3,
+      "team_size": 0,
       "tags": [],
       "regions": [
         "United Kingdom",
@@ -14774,7 +14889,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.796887",
+      "last_scraped": "2026-08-17T09:37:49.296540",
       "data_completeness": 0.75
     },
     {
@@ -14837,7 +14952,7 @@
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-10T10:14:54.833749",
+      "last_scraped": "2026-08-17T09:37:49.323879",
       "data_completeness": 0.75
     },
     {
@@ -14884,7 +14999,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.825463",
+      "last_scraped": "2026-08-17T09:37:49.318119",
       "data_completeness": 0.75
     },
     {
@@ -14935,7 +15050,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.721557",
+      "last_scraped": "2026-08-17T09:37:49.232053",
       "data_completeness": 0.75
     },
     {
@@ -14992,7 +15107,7 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.811347",
+      "last_scraped": "2026-08-17T09:37:49.307952",
       "data_completeness": 0.75
     },
     {
@@ -15037,7 +15152,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.795117",
+      "last_scraped": "2026-08-17T09:37:49.295338",
       "data_completeness": 0.75
     },
     {
@@ -15090,7 +15205,58 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.765443",
+      "last_scraped": "2026-08-17T09:37:49.271156",
+      "data_completeness": 0.75
+    },
+    {
+      "yc_id": 30772,
+      "name": "stagewise",
+      "slug": "stagewise",
+      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/d9ff55657c9c6cb094a914f151062d5bc781a912.png",
+      "website": "https://stagewise.io",
+      "location": "",
+      "description": "The Open Source Agentic IDE",
+      "long_description": "stagewise is building the open-source agentic IDE: a developer workspace for creating and orchestrating coding agents, previewing running apps, and managing Git workflows. Developers can run agents in parallel, use their preferred models or existing coding subscriptions, and keep agents connected to browser/runtime context as well as the broader codebase, from APIs and tests to docs and deployment paths.",
+      "industry": "B2B",
+      "industries": [
+        "B2B",
+        "Engineering, Product and Design"
+      ],
+      "subindustry": "B2B -> Engineering, Product and Design",
+      "batch": null,
+      "is_hiring": true,
+      "is_top_company": false,
+      "status": "Active",
+      "stage": "Early",
+      "team_size": 2,
+      "tags": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "source_vc": "Y Combinator",
+      "founders": [
+        {
+          "name": "Glenn Töws",
+          "college": "DHBW Mosbach",
+          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/84ae12082a6285c6c94045e88521128f946d5080.jpg",
+          "linkedin_url": "https://www.linkedin.com/in/glenntws/",
+          "raw_bio": "Co-founder and CEO of stagewise, the open source agentic IDE for open weight models. Studied electrical engineering at DHBW Mosbach and in partnership with Rheinmetall, focussing on functional safety in automotive embedded software. Led the efforts for development and adoption of a state-of-the-art componentization framework for embedded software at Miele, before making a pivot to artificial intelligence and web technologies."
+        },
+        {
+          "name": "Julian Goetze",
+          "college": null,
+          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/7402b27631eb72027ded2678491accc374ae88c0.jpg",
+          "linkedin_url": "https://www.linkedin.com/in/juliangoetze/",
+          "raw_bio": "Founder/ CTO of stagewise.io, a frontend coding agent that lives inside your browser on localhost. As a core engineer, I helped scale saasmetrix. I also built a PLG product strukto.io that helped fellow CS students from 0 to 5,000 MAU. I love building great products."
+        }
+      ],
+      "job_board": {
+        "count": 2,
+        "url": "https://stagewise.io/careers",
+        "source_type": "llm_extracted",
+        "ats_platform": null
+      },
+      "last_scraped": "2026-08-02T11:14:13.509250",
       "data_completeness": 0.75
     },
     {
@@ -15134,7 +15300,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.806274",
+      "last_scraped": "2026-08-17T09:37:49.304272",
       "data_completeness": 0.5
     },
     {
@@ -15189,7 +15355,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.729089",
+      "last_scraped": "2026-08-17T09:37:49.239120",
       "data_completeness": 0.5
     },
     {
@@ -15240,7 +15406,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.798072",
+      "last_scraped": "2026-08-17T09:37:49.297570",
       "data_completeness": 0.5
     },
     {
@@ -15291,7 +15457,7 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.802200",
+      "last_scraped": "2026-08-17T09:37:49.301265",
       "data_completeness": 0.5
     },
     {
@@ -15314,7 +15480,7 @@
       "is_top_company": false,
       "status": "Active",
       "stage": "Early",
-      "team_size": 5,
+      "team_size": 6,
       "tags": [],
       "regions": [
         "Unspecified"
@@ -15342,14 +15508,14 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.817026",
+      "last_scraped": "2026-08-17T09:37:49.311617",
       "data_completeness": 0.5
     },
     {
       "yc_id": 30891,
       "name": "SF Tensor",
       "slug": "sf-tensor",
-      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/7b80c521c36f8132868240eedba730602859b428.png",
+      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/524a578009f692a6daadfe853089aabd437361d4.png",
       "website": "https://sf-tensor.com",
       "location": "",
       "description": "Infrastructure for AI labs to focus on research.",
@@ -15400,7 +15566,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.824118",
+      "last_scraped": "2026-08-17T09:37:49.317172",
       "data_completeness": 0.5
     },
     {
@@ -15458,7 +15624,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.800037",
+      "last_scraped": "2026-08-17T09:37:49.299313",
       "data_completeness": 0.5
     },
     {
@@ -15502,58 +15668,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-10T10:14:54.747795",
-      "data_completeness": 0.5
-    },
-    {
-      "yc_id": 30772,
-      "name": "stagewise",
-      "slug": "stagewise",
-      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/d9ff55657c9c6cb094a914f151062d5bc781a912.png",
-      "website": "https://stagewise.io",
-      "location": "",
-      "description": "The Open Source Agentic IDE",
-      "long_description": "stagewise is building the open-source agentic IDE: a developer workspace for creating and orchestrating coding agents, previewing running apps, and managing Git workflows. Developers can run agents in parallel, use their preferred models or existing coding subscriptions, and keep agents connected to browser/runtime context as well as the broader codebase, from APIs and tests to docs and deployment paths.",
-      "industry": "B2B",
-      "industries": [
-        "B2B",
-        "Engineering, Product and Design"
-      ],
-      "subindustry": "B2B -> Engineering, Product and Design",
-      "batch": null,
-      "is_hiring": true,
-      "is_top_company": false,
-      "status": "Active",
-      "stage": "Early",
-      "team_size": 2,
-      "tags": [],
-      "regions": [
-        "Unspecified"
-      ],
-      "source_vc": "Y Combinator",
-      "founders": [
-        {
-          "name": "Glenn Töws",
-          "college": "DHBW Mosbach",
-          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/84ae12082a6285c6c94045e88521128f946d5080.jpg",
-          "linkedin_url": "https://www.linkedin.com/in/glenntws/",
-          "raw_bio": "Co-founder and CEO of stagewise, the open source agentic IDE for open weight models. Studied electrical engineering at DHBW Mosbach and in partnership with Rheinmetall, focussing on functional safety in automotive embedded software. Led the efforts for development and adoption of a state-of-the-art componentization framework for embedded software at Miele, before making a pivot to artificial intelligence and web technologies."
-        },
-        {
-          "name": "Julian Goetze",
-          "college": null,
-          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/7402b27631eb72027ded2678491accc374ae88c0.jpg",
-          "linkedin_url": "https://www.linkedin.com/in/juliangoetze/",
-          "raw_bio": "Founder/ CTO of stagewise.io, a frontend coding agent that lives inside your browser on localhost. As a core engineer, I helped scale saasmetrix. I also built a PLG product strukto.io that helped fellow CS students from 0 to 5,000 MAU. I love building great products."
-        }
-      ],
-      "job_board": {
-        "count": null,
-        "url": "https://stagewise.io/careers",
-        "source_type": "manual_visit",
-        "ats_platform": null
-      },
-      "last_scraped": "2026-08-10T10:14:54.836522",
+      "last_scraped": "2026-08-17T09:37:49.255403",
       "data_completeness": 0.5
     }
   ]

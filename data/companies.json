@@ -1,24 +1,70 @@
 {
   "metadata": {
-    "exported_at": "2026-08-17T09:37:49.343270",
-    "total_companies": 293,
+    "exported_at": "2026-08-24T09:44:05.130969",
+    "total_companies": 302,
     "avg_completeness": 0.77,
-    "hiring_count": 293,
-    "last_updated": "2026-08-17T09:37:49.324345",
+    "hiring_count": 302,
+    "last_updated": "2026-08-24T09:44:05.117106",
     "tier_breakdown": {
       "ats_api": 45,
       "html_heuristic": 23,
-      "llm_extracted": 3,
-      "manual_visit": 222
+      "llm_extracted": 4,
+      "manual_visit": 230
     },
     "tier_percentages": {
-      "ats_api": 15.4,
-      "html_heuristic": 7.8,
-      "llm_extracted": 1.0,
-      "manual_visit": 75.8
+      "ats_api": 14.9,
+      "html_heuristic": 7.6,
+      "llm_extracted": 1.3,
+      "manual_visit": 76.2
     }
   },
   "companies": [
+    {
+      "yc_id": 30799,
+      "name": "Avent",
+      "slug": "avent",
+      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/1db65d6a1bb5d7e7c777ac05121880f5ead05061.png",
+      "website": "https://www.aventindustrial.com",
+      "location": "San Francisco, CA, USA",
+      "description": "AI agents for industrial commerce",
+      "long_description": "Avent helps manufacturers and industrial distributors run quoting and order entry on autopilot. \r\n\r\nOur AI agents manage sales inboxes, build quotes from past pricing and tribal knowledge, and keep records up to date in existing ERPs.",
+      "industry": "B2B",
+      "industries": [
+        "B2B"
+      ],
+      "subindustry": "B2B",
+      "batch": null,
+      "is_hiring": true,
+      "is_top_company": false,
+      "status": "Active",
+      "stage": "Early",
+      "team_size": 3,
+      "tags": [],
+      "regions": [
+        "United States of America",
+        "America / Canada",
+        "Remote",
+        "Partly Remote"
+      ],
+      "source_vc": "Y Combinator",
+      "founders": [
+        {
+          "name": "Abhay Kalra",
+          "college": "UC Berkeley",
+          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/df88f59059043154cae6581ae2e0718a9da90997.jpg",
+          "linkedin_url": "https://www.linkedin.com/in/abhay-kalra-683688214",
+          "raw_bio": "Abhay is the Founder and CEO of Avent. Abhay studied Electrical Engineering and Computer Science at UC Berkeley, where he conducted computer vision research for defect detection in manufacturing. Before Avent, Abhay was an operator in the manufacturing and industrial distribution space."
+        }
+      ],
+      "job_board": {
+        "count": 1,
+        "url": "https://www.aventindustrial.com/careers",
+        "source_type": "llm_extracted",
+        "ats_platform": null
+      },
+      "last_scraped": "2026-08-02T11:14:13.508214",
+      "data_completeness": 1.0
+    },
     {
       "yc_id": 30917,
       "name": "Bravi",
@@ -366,6 +412,57 @@
       "data_completeness": 1.0
     },
     {
+      "yc_id": 30802,
+      "name": "Freya",
+      "slug": "freya",
+      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/cd359a60dfecfce9e7a798a4a228f08f05943dcb.png",
+      "website": "https://freyavoice.ai/",
+      "location": "San Francisco, CA, USA",
+      "description": "Voice AI for Enterprises",
+      "long_description": "",
+      "industry": "Fintech",
+      "industries": [
+        "Fintech"
+      ],
+      "subindustry": "Fintech",
+      "batch": null,
+      "is_hiring": true,
+      "is_top_company": false,
+      "status": "Active",
+      "stage": "Early",
+      "team_size": 14,
+      "tags": [],
+      "regions": [
+        "United States of America",
+        "America / Canada"
+      ],
+      "source_vc": "Y Combinator",
+      "founders": [
+        {
+          "name": "Tunga Bayrak",
+          "college": "Penn",
+          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/5988e3dbc514a9cf4555dbc17245e81f1a7499e7.jpg",
+          "linkedin_url": "https://www.linkedin.com/in/tunga-bayrak/",
+          "raw_bio": "CEO and Co-founder of Freya. Previously, he built VLMs for geometric reasoning and worked on Audio Transformers as an AI research engineer. As a Math Olympian, ranked 1st among 250,000 students at the Urfodu Math Olympiad and later 203rd Turkey’s national exams out of 3.5M+. At 16, he wrote his first paper on Quantum Machine Learning. Before dropping out of UPenn, he was a Teaching Assistant in the Engineering School and part of an AI Research team at Penn."
+        },
+        {
+          "name": "Tomas Nepala",
+          "college": null,
+          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/8ce29b05b214167fc2e4abd82c1c2ccc3ff4864c.jpg",
+          "linkedin_url": "https://www.linkedin.com/in/tomas-nepala",
+          "raw_bio": "Tomas is the Co-Founder and COO of Freya, where he is building human-like Voice AI agents for the financial services industry. A former Wharton student, he gained experience across multiple financial services firms, including Gallagher, the world’s second-largest insurance broker. Now on his second startup, Tomas is focused on transforming customer support by bringing it into the era of AI."
+        }
+      ],
+      "job_board": {
+        "count": null,
+        "url": "https://freyavoice.ai/careers",
+        "source_type": "manual_visit",
+        "ats_platform": null
+      },
+      "last_scraped": "2026-08-02T11:14:13.507894",
+      "data_completeness": 1.0
+    },
+    {
       "yc_id": 30758,
       "name": "Hera",
       "slug": "hera-video",
@@ -623,6 +720,56 @@
         "ats_platform": null
       },
       "last_scraped": "2026-08-02T11:14:13.509748",
+      "data_completeness": 1.0
+    },
+    {
+      "yc_id": 30804,
+      "name": "Luminal",
+      "slug": "luminal",
+      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/200fe1fa3e40bd9aed419582490f17ed6cf00c37.png",
+      "website": "https://luminal.com",
+      "location": "San Francisco, CA, USA",
+      "description": "Making AI run fast on any hardware.",
+      "long_description": "Luminal builds an ML framework and compiler that generates GPU code.\r\nOur stack 10x's model speed while simplifying deployment and cutting idle GPU costs\r\n\r\nGithub: https://github.com/luminal-ai/luminal\r\nDiscord: https://discord.gg/APjuwHAbGy",
+      "industry": "B2B",
+      "industries": [
+        "B2B",
+        "Infrastructure"
+      ],
+      "subindustry": "B2B -> Infrastructure",
+      "batch": null,
+      "is_hiring": true,
+      "is_top_company": false,
+      "status": "Active",
+      "stage": "Early",
+      "team_size": 5,
+      "tags": [
+        "AIOps",
+        "Developer Tools",
+        "Cloud Computing",
+        "AI"
+      ],
+      "regions": [
+        "United States of America",
+        "America / Canada"
+      ],
+      "source_vc": "Y Combinator",
+      "founders": [
+        {
+          "name": "Joe Fioti",
+          "college": "University of California, Berkeley",
+          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/0583e75ba29d754c8f1ed1c3827cf290ad883aae.jpg",
+          "linkedin_url": "https://linkedin.com/in/joe-fioti-24a986189",
+          "raw_bio": "Generating GPU kernels automatically to speed up ML models. Ex-Intel, worked on CPU microcode and ML accelerators."
+        }
+      ],
+      "job_board": {
+        "count": null,
+        "url": "https://luminal.com/careers",
+        "source_type": "manual_visit",
+        "ats_platform": null
+      },
+      "last_scraped": "2026-08-02T11:14:13.507786",
       "data_completeness": 1.0
     },
     {
@@ -991,6 +1138,65 @@
         "ats_platform": null
       },
       "last_scraped": "2026-08-02T11:14:13.510398",
+      "data_completeness": 1.0
+    },
+    {
+      "yc_id": 31174,
+      "name": "Parameter (fka Hex Security)",
+      "slug": "parameter-fka-hex-security",
+      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/10c4b553697048031ea44635278f71a342e7f4dc.png",
+      "website": "https://parameter.ai?utm_source=ycombinator&utm_medium=referral&utm_campaign=parameter-profile",
+      "location": "San Francisco, CA, USA",
+      "description": "Agentic Offensive Security at Scale",
+      "long_description": "Parameter builds AI agents that run continuous penetration tests against your apps and infrastructure. Instead of a once-a-year penetration test, Hex Security's agents works 24/7 to find and verify critical vulnerabilities so you can prevent them before attackers.\r\n\r\nFormerly Hex Security",
+      "industry": "B2B",
+      "industries": [
+        "B2B",
+        "Security"
+      ],
+      "subindustry": "B2B -> Security",
+      "batch": null,
+      "is_hiring": true,
+      "is_top_company": false,
+      "status": "Active",
+      "stage": "Early",
+      "team_size": 10,
+      "tags": [],
+      "regions": [
+        "United States of America",
+        "America / Canada"
+      ],
+      "source_vc": "Y Combinator",
+      "founders": [
+        {
+          "name": "Ahmad Khan",
+          "college": "University of Waterloo",
+          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/fb13d4b1cc92b0b8f09c4a24a36fe8e89027df53.jpg",
+          "linkedin_url": "https://www.linkedin.com/in/ahmad-khan-b6584b225/",
+          "raw_bio": "Co-Founder, Parameter. Previously, I was building robots that learned from each other by sharing skills on-chain, and researching World Models that give robots complete environmental understanding. Our robot became the first in history to ring the NASDAQ bell. I studied Math at University of Waterloo."
+        },
+        {
+          "name": "Huzaifa Ahmad",
+          "college": "University at Albany",
+          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/6020e21b469a93c206367db43cbad4a06f4ca99c.jpg",
+          "linkedin_url": "https://linkedin.com/in/hzzaifa",
+          "raw_bio": "Cofounder, Parameter. Previously, I built software at companies like PlayAI, AWS, and Capital One. On the side, I built consumer apps that reached millions of downloads. But I've always loved breaking things just as much as building them. In college, I reverse engineered every major ATS platform and built Talently, a tool that sent over 200K job applications. Now we build AI that hacks before attackers do."
+        },
+        {
+          "name": "Prama Yudhistira",
+          "college": "University of Michigan",
+          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/a1d67b527be838a072da4b2c709b3df445c96ccb.jpg",
+          "linkedin_url": "https://www.linkedin.com/in/pramayudhistira/",
+          "raw_bio": "Co-Founder, Parameter. At Codegen, I built asynchronous coding agents that improved the workflow of developers, and even got non-developers writing production software. At AMD, I built infrastructure for MI300 GPU firmware testing. I competed internationally in piano, winning multiple competitions and performing with orchestras like the Qatar Philharmonic Orchestra."
+        }
+      ],
+      "job_board": {
+        "count": null,
+        "url": "https://parameter.ai?utm_source=ycombinator&utm_medium=referral&utm_campaign=parameter-profile/careers",
+        "source_type": "manual_visit",
+        "ats_platform": null
+      },
+      "last_scraped": "2026-08-02T11:14:13.495840",
       "data_completeness": 1.0
     },
     {
@@ -1377,6 +1583,71 @@
       "data_completeness": 1.0
     },
     {
+      "yc_id": 32192,
+      "name": "Rise Reforming",
+      "slug": "rise-reforming",
+      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/5b908857ac82ef0d2a3b793f89fa198298587f8a.png",
+      "website": "https://rise-reforming.com/home",
+      "location": "Chicago, IL, USA",
+      "description": "We turn waste gases into valuable supply-secure chemicals ",
+      "long_description": "Geopolitical conflicts and natural disasters frequently expose the vulnerability of the American chemical industry. The reason? Production is centralized and fossil fuel-dependent. The solution? Localized production using an undervalued resource: biogas. The US produces enough biogas to make over $20 bn/y worth of chemicals, but 60% is wasted in low-margin applications or flared altogether.\r\n\r\nRise Reforming is commercializing a modular process to transform this underutilized biogas on-site into cheap, supply-secure chemicals. Our beachhead market is dimethyl ether (DME), used as an aerosol propellant and a low-carbon fuel additive in propane. Our target market is methanol: an established billion $ chemical and the future of low-carbon shipping.\r\n\r\nWe're doing our pilot project at a Chicagoland wastewater plant. This will be the first wastewater biogas-to-methanol demo in the Americas.\r\n\r\nWe're hiring for a senior chemical process engineer. Apply here: https://www.ycombinator.com/companies/rise-reforming/jobs/wJ9Q9nv-senior-chemical-process-engineer",
+      "industry": "Industrials",
+      "industries": [
+        "Industrials",
+        "Climate"
+      ],
+      "subindustry": "Industrials -> Climate",
+      "batch": null,
+      "is_hiring": true,
+      "is_top_company": false,
+      "status": "Active",
+      "stage": "Early",
+      "team_size": 4,
+      "tags": [
+        "Hard Tech",
+        "Smart Waste Management",
+        "Alternative Fuels",
+        "Renewable Energy",
+        "ClimateTech"
+      ],
+      "regions": [
+        "United States of America",
+        "America / Canada"
+      ],
+      "source_vc": "Y Combinator",
+      "founders": [
+        {
+          "name": "George Rose",
+          "college": "UChicago",
+          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/ee413aabedd5216b24ad28029e4413061ab156fa.jpg",
+          "linkedin_url": "https://www.linkedin.com/in/george-rose25/",
+          "raw_bio": "Co-founder and CEO at Rise Reforming (S26). Previously @ Nexamp, Highland Electric Fleets, Mantel Capture, GenH. Background in Molecular Engineering @ UChicago."
+        },
+        {
+          "name": "Lucas Zubillaga",
+          "college": "University of Chicago",
+          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/209b2a1f6985cd73931fc7cb16aa2a3bb8462a42.jpg",
+          "linkedin_url": "https://www.linkedin.com/in/lucaszubillagamaharg/",
+          "raw_bio": "Co-Founder & CTO at Rise Reforming (S26). Double B.Sc. in Molecular Engineering and Physics from the University of Chicago. Prev: nuclear waste management at Argonne National Laboratory, offshore wind at Avangrid/Iberdrola. Led the design, procurement, construction, and operation of a bench-scale reforming unit with controls. Also have a Spotify playlist with 200k+ saves. Check it out at: https://open.spotify.com/playlist/3rV2gyEKHxixpKa3IDQLvF?si=3458c33e03e84738&nd=1&dlsi=d0006826be884d"
+        },
+        {
+          "name": "Jona van Oord",
+          "college": "University of Chicago",
+          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/e79cd2c8431a00a358ef4d9b12c2ee2e95e79849.jpg",
+          "linkedin_url": "https://www.linkedin.com/in/jonavanoord/",
+          "raw_bio": "Environmentalist turned engineer. Plan on spending the rest of my life building hardware to address the climate disaster :) Co-Founder and COO @ Rise Reforming (S26), Molecular Engineering @ UChicago"
+        }
+      ],
+      "job_board": {
+        "count": null,
+        "url": "https://rise-reforming.com/home/careers",
+        "source_type": "manual_visit",
+        "ats_platform": null
+      },
+      "last_scraped": "2026-08-02T11:14:13.483651",
+      "data_completeness": 1.0
+    },
+    {
       "yc_id": 414,
       "name": "SmartAsset",
       "slug": "smartasset",
@@ -1538,6 +1809,127 @@
       "data_completeness": 1.0
     },
     {
+      "yc_id": 30806,
+      "name": "Uplift AI",
+      "slug": "uplift-ai",
+      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/4c2008e580fb1146da7922b566c2a03af87f5a0c.png",
+      "website": "https://upliftai.org/",
+      "location": "San Francisco, CA, USA",
+      "description": "Foundational Voice Models for regional languages",
+      "long_description": "We build Voice Models for regional languages (like Urdu, Bengali, Greek etc) and make them available through simple APIs and SDKs. \r\nDevelopers use us to create Voice-first digital experiences (eg. Voice eCommerce, Voice Banking, Voice AI Tutors etc).\r\n\r\nWe gather our own data, develop our own labelling tools, train our own models, and design our own voice infra. This fully integrated approach enables us to offer the best models and the best developer experience for regional languages.\r\n\r\n---\r\n\r\nPeople who would previously never use certain digital services (like online ordering), actually use the service when they are given an intuitive Voice based interface.\r\nWe believe that Voice Interfaces will onboard 100s of millions of new users onto digital services; and double the addressable market for technology companies. \r\nUplift AI will provide the best models to create these Voice Interfaces for 60% of the world's population that only speaks their regional language and represents 42 trillion dollars in GDP.\r\n",
+      "industry": "B2B",
+      "industries": [
+        "B2B"
+      ],
+      "subindustry": "B2B",
+      "batch": null,
+      "is_hiring": true,
+      "is_top_company": false,
+      "status": "Active",
+      "stage": "Early",
+      "team_size": 3,
+      "tags": [
+        "Speech Recognition",
+        "Conversational AI"
+      ],
+      "regions": [
+        "United States of America",
+        "America / Canada",
+        "Remote",
+        "Partly Remote"
+      ],
+      "source_vc": "Y Combinator",
+      "founders": [
+        {
+          "name": "Hammad Malik",
+          "college": "Cornell University",
+          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/68417dab5a3c88034acc6500406a732dc3fc6ed6.jpg",
+          "linkedin_url": "https://www.linkedin.com/in/hammad2",
+          "raw_bio": "CEO at Uplift AI. Building Voice Models for regional languages. Previously developed voice technology at Apple Siri and Amazon Alexa for about 9 years. Cornell University alumni."
+        },
+        {
+          "name": "Zaid Qureshi",
+          "college": null,
+          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/213c6ace31f4682223f0ff84235321060d66a70d.jpg",
+          "linkedin_url": "https://linkedin.com/in/zaidqureshi",
+          "raw_bio": "CTO at Uplift AI. Building Voice Models for regional languages. Previously: Designed AWS Bedrock Guardrails."
+        }
+      ],
+      "job_board": {
+        "count": null,
+        "url": "https://upliftai.org/careers",
+        "source_type": "manual_visit",
+        "ats_platform": null
+      },
+      "last_scraped": "2026-08-02T11:14:13.507639",
+      "data_completeness": 1.0
+    },
+    {
+      "yc_id": 30797,
+      "name": "Veritus",
+      "slug": "veritus",
+      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/a784e9084818b8c7af26cd462448e7fd4415c18b.png",
+      "website": "https://www.veritus.com",
+      "location": "San Francisco, CA, USA",
+      "description": "AI agents for the consumer lending industry",
+      "long_description": "Veritus is a omni-channel platform for deploying AI agents for loan servicing and collections, including inbound and outbound voice agents. Our agents negotiate repayment plans, follow up across channels, and drive recoveries with zero human involvement.\r\n\r\nBy combining cutting edge voice AI with deep regulatory compliance and vertical specialization we're able to drastically reduce the cost-to-collect while increasing recovery rates. ",
+      "industry": "Fintech",
+      "industries": [
+        "Fintech",
+        "Credit and Lending"
+      ],
+      "subindustry": "Fintech -> Credit and Lending",
+      "batch": null,
+      "is_hiring": true,
+      "is_top_company": false,
+      "status": "Active",
+      "stage": "Early",
+      "team_size": 10,
+      "tags": [
+        "Fintech",
+        "Lending",
+        "AI"
+      ],
+      "regions": [
+        "United States of America",
+        "America / Canada",
+        "Remote",
+        "Partly Remote"
+      ],
+      "source_vc": "Y Combinator",
+      "founders": [
+        {
+          "name": "Joshua March",
+          "college": null,
+          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/e4dd6e8ed88496382b6a27b6ab4a143cbe1724c2.jpg",
+          "linkedin_url": "https://www.linkedin.com/in/joshuamarch/",
+          "raw_bio": "I’m the Founder & CEO of Veritus Agent, an AI agent platform the consumer lending industry. I’ve been a serial founder with multiple exits, including enterprise SaaS company Conversocial, acquired by Verint (VRNT), and I was the co-founder & CEO of a16z-backed SCiFi Foods. I’m also the author of Message Me, a book about the future of customer service in the era of AI and social media."
+        },
+        {
+          "name": "David Schlesinger",
+          "college": "Harvard University",
+          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/b23533a188e4ea88997f1f2a4082613e5122b549.jpg",
+          "linkedin_url": "https://www.linkedin.com/in/davidschles/",
+          "raw_bio": "Co-founder at Veritus Agent. 10+ experience in startups including Divvy Homes and Cloudflare."
+        },
+        {
+          "name": "Joseph Stein",
+          "college": null,
+          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/b6946906dd3ceffaee99102a127adcf1a2cf0cbb.jpg",
+          "linkedin_url": "https://www.linkedin.com/in/josephstein1",
+          "raw_bio": "Co-founder of Veritus Agent, an AI-powered debt buyer and collections platform. 10+ years in startups, including one acquired by Fitbit → Google"
+        }
+      ],
+      "job_board": {
+        "count": 2,
+        "url": "https://jobs.ashbyhq.com/veritus",
+        "source_type": "ats_api",
+        "ats_platform": "ashby"
+      },
+      "last_scraped": "2026-08-02T11:14:13.508355",
+      "data_completeness": 1.0
+    },
+    {
       "yc_id": 30794,
       "name": "Vulcan Technologies",
       "slug": "vulcan-technologies",
@@ -1594,6 +1986,69 @@
         "ats_platform": null
       },
       "last_scraped": "2026-08-02T11:14:13.508575",
+      "data_completeness": 1.0
+    },
+    {
+      "yc_id": 30801,
+      "name": "burnt",
+      "slug": "burnt",
+      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/2af9e43cd6c77970b3bff5071024e812ac9ee3e0.png",
+      "website": "https://getburnt.ai/",
+      "location": "San Francisco, CA, USA",
+      "description": "Agentic Operating System for Food Supply Chain",
+      "long_description": "Food Supply Chain companies have been using legacy ERPs for decades. Everyone knows these are necessary evils that essentially run the business but take up a lot of operational capacity. They are not about to just rip and replace their existing system that runs their whole business with a system that takes years to implement. Imagine if they could implement AI that runs the ERP for them, in weeks?\r\n\r\nBurnt’s building an agentic OS for the Food Supply Chain with AI Agents for each department. \r\n\r\nOur AI Agent, Ozai, has started by replacing the whole order management job function at food distribution companies, so that sales and customer service teams can focus on what matters - the customer. Ozai monitors all incoming messages (emails, phone calls, voicemails, whatsapp, fax etc.), figures out if it's an order, learns each customer's habits, shorthand, and favorite products, picks up on any prep notes, and enters it straight into the existing ERP. It'll even go back to the customers on your behalf when it's not sure about something, clarify things and carry on working. \r\n\r\nThe more it sees, the smarter it gets. \r\n",
+      "industry": "B2B",
+      "industries": [
+        "B2B",
+        "Supply Chain and Logistics"
+      ],
+      "subindustry": "B2B -> Supply Chain and Logistics",
+      "batch": null,
+      "is_hiring": true,
+      "is_top_company": false,
+      "status": "Active",
+      "stage": "Early",
+      "team_size": 3,
+      "tags": [
+        "Supply Chain",
+        "Food Tech",
+        "AI"
+      ],
+      "regions": [
+        "United States of America",
+        "America / Canada"
+      ],
+      "source_vc": "Y Combinator",
+      "founders": [
+        {
+          "name": "Joseph Jacob",
+          "college": "MIT",
+          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/d735f867a1cf54d1e20ec19c2727ab6caa25ca8d.jpg",
+          "linkedin_url": "https://www.linkedin.com/in/josephjacob93",
+          "raw_bio": "Spent my whole career in food supply chain, intimately understanding the pain points at each step of the supply chain. Now we're reinventing the fundamental technical infrastructure that the industry is run on."
+        },
+        {
+          "name": "Rhea Karimpanal",
+          "college": "University of California, Berkeley",
+          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/920bfceb325ccada2cd07b600a9914ecd1d8828b.jpg",
+          "linkedin_url": "https://www.linkedin.com/in/rheakarimpanal/",
+          "raw_bio": "Product at burnt! Creativity is my jam, details matter to me, and I’m all about understanding how people in food relate to technology."
+        },
+        {
+          "name": "Chandru Shanumugasundaram",
+          "college": "Harvard University",
+          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/b6350b115e5bbaa86266e69c0c605bf5258872a5.jpg",
+          "linkedin_url": "https://linkedin.com/in/chandrushanmugasundaram",
+          "raw_bio": "Built backed systems for Legal tech, Dev tools, Banking, Restaurant applications. Currently building agents for food distributors and suppliers."
+        }
+      ],
+      "job_board": {
+        "count": 8,
+        "url": "https://boards.greenhouse.io/burnt",
+        "source_type": "ats_api",
+        "ats_platform": "greenhouse"
+      },
+      "last_scraped": "2026-08-02T11:14:13.508049",
       "data_completeness": 1.0
     },
     {
@@ -1658,7 +2113,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.305032",
+      "last_scraped": "2026-08-24T09:44:05.097837",
       "data_completeness": 0.75
     },
     {
@@ -1720,7 +2175,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.268116",
+      "last_scraped": "2026-08-24T09:44:05.056834",
       "data_completeness": 0.75
     },
     {
@@ -1779,7 +2234,7 @@
         "source_type": "ats_api",
         "ats_platform": "ashby"
       },
-      "last_scraped": "2026-08-17T09:37:49.300182",
+      "last_scraped": "2026-08-24T09:44:05.092618",
       "data_completeness": 0.75
     },
     {
@@ -1824,7 +2279,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.285136",
+      "last_scraped": "2026-08-24T09:44:05.077938",
       "data_completeness": 0.75
     },
     {
@@ -1878,7 +2333,7 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.291350",
+      "last_scraped": "2026-08-24T09:44:05.082570",
       "data_completeness": 0.75
     },
     {
@@ -1929,7 +2384,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.303862",
+      "last_scraped": "2026-08-24T09:44:05.096506",
       "data_completeness": 0.75
     },
     {
@@ -1981,7 +2436,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.281424",
+      "last_scraped": "2026-08-24T09:44:05.072806",
       "data_completeness": 0.75
     },
     {
@@ -2031,7 +2486,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.241619",
+      "last_scraped": "2026-08-24T09:44:05.027805",
       "data_completeness": 0.75
     },
     {
@@ -2082,7 +2537,47 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.322074",
+      "last_scraped": "2026-08-24T09:44:05.116175",
+      "data_completeness": 0.75
+    },
+    {
+      "yc_id": 32621,
+      "name": "Aktoria Robotics",
+      "slug": "aktoria-robotics",
+      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/87a10d62adb927072657a9be3281af92a78ab9c6.png",
+      "website": "https://aktoria.com/",
+      "location": "San Francisco, CA, USA",
+      "description": "Human as API for robots",
+      "long_description": "Operate any robot, anywhere in the world.",
+      "industry": "Industrials",
+      "industries": [
+        "Industrials",
+        "Manufacturing and Robotics"
+      ],
+      "subindustry": "Industrials -> Manufacturing and Robotics",
+      "batch": null,
+      "is_hiring": true,
+      "is_top_company": false,
+      "status": "Active",
+      "stage": "Early",
+      "team_size": 6,
+      "tags": [
+        "Robotics",
+        "Enterprise Software"
+      ],
+      "regions": [
+        "United States of America",
+        "America / Canada"
+      ],
+      "source_vc": "Y Combinator",
+      "founders": [],
+      "job_board": {
+        "count": null,
+        "url": "https://aktoria.com/careers",
+        "source_type": "manual_visit",
+        "ats_platform": null
+      },
+      "last_scraped": "2026-08-24T09:44:05.059928",
       "data_completeness": 0.75
     },
     {
@@ -2137,12 +2632,12 @@
         }
       ],
       "job_board": {
-        "count": 34,
+        "count": 32,
         "url": "https://boards.greenhouse.io/algolia",
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-17T09:37:49.214652",
+      "last_scraped": "2026-08-24T09:44:05.000311",
       "data_completeness": 0.75
     },
     {
@@ -2209,7 +2704,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.316664",
+      "last_scraped": "2026-08-24T09:44:05.110489",
       "data_completeness": 0.75
     },
     {
@@ -2268,7 +2763,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.292243",
+      "last_scraped": "2026-08-24T09:44:05.083478",
       "data_completeness": 0.75
     },
     {
@@ -2321,7 +2816,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.317434",
+      "last_scraped": "2026-08-24T09:44:05.111254",
       "data_completeness": 0.75
     },
     {
@@ -2376,7 +2871,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.309229",
+      "last_scraped": "2026-08-24T09:44:05.102250",
       "data_completeness": 0.75
     },
     {
@@ -2441,7 +2936,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.253661",
+      "last_scraped": "2026-08-24T09:44:05.040609",
       "data_completeness": 0.75
     },
     {
@@ -2499,7 +2994,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.257863",
+      "last_scraped": "2026-08-24T09:44:05.045129",
       "data_completeness": 0.75
     },
     {
@@ -2555,7 +3050,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.290275",
+      "last_scraped": "2026-08-24T09:44:05.081486",
       "data_completeness": 0.75
     },
     {
@@ -2600,7 +3095,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.286313",
+      "last_scraped": "2026-08-24T09:44:05.080112",
       "data_completeness": 0.75
     },
     {
@@ -2643,7 +3138,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.277830",
+      "last_scraped": "2026-08-24T09:44:05.068866",
       "data_completeness": 0.75
     },
     {
@@ -2695,7 +3190,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.283277",
+      "last_scraped": "2026-08-24T09:44:05.074750",
       "data_completeness": 0.75
     },
     {
@@ -2746,7 +3241,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.279513",
+      "last_scraped": "2026-08-24T09:44:05.070816",
       "data_completeness": 0.75
     },
     {
@@ -2800,7 +3295,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.288290",
+      "last_scraped": "2026-08-24T09:44:05.081041",
       "data_completeness": 0.75
     },
     {
@@ -2864,7 +3359,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.315014",
+      "last_scraped": "2026-08-24T09:44:05.108738",
       "data_completeness": 0.75
     },
     {
@@ -2911,7 +3406,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.305254",
+      "last_scraped": "2026-08-24T09:44:05.098102",
       "data_completeness": 0.75
     },
     {
@@ -2970,7 +3465,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.320629",
+      "last_scraped": "2026-08-24T09:44:05.114509",
       "data_completeness": 0.75
     },
     {
@@ -3021,7 +3516,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.278358",
+      "last_scraped": "2026-08-24T09:44:05.069505",
       "data_completeness": 0.75
     },
     {
@@ -3082,7 +3577,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.318338",
+      "last_scraped": "2026-08-24T09:44:05.112151",
       "data_completeness": 0.75
     },
     {
@@ -3127,53 +3622,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.296312",
-      "data_completeness": 0.75
-    },
-    {
-      "yc_id": 30799,
-      "name": "Avent",
-      "slug": "avent",
-      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/1db65d6a1bb5d7e7c777ac05121880f5ead05061.png",
-      "website": "https://www.aventindustrial.com",
-      "location": "San Francisco, CA, USA",
-      "description": "AI agents for industrial commerce",
-      "long_description": "Avent helps manufacturers and industrial distributors run quoting and order entry on autopilot. \r\n\r\nOur AI agents manage sales inboxes, build quotes from past pricing and tribal knowledge, and keep records up to date in existing ERPs.",
-      "industry": "B2B",
-      "industries": [
-        "B2B"
-      ],
-      "subindustry": "B2B",
-      "batch": null,
-      "is_hiring": true,
-      "is_top_company": false,
-      "status": "Active",
-      "stage": "Early",
-      "team_size": 3,
-      "tags": [],
-      "regions": [
-        "United States of America",
-        "America / Canada",
-        "Remote",
-        "Partly Remote"
-      ],
-      "source_vc": "Y Combinator",
-      "founders": [
-        {
-          "name": "Abhay Kalra",
-          "college": "UC Berkeley",
-          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/df88f59059043154cae6581ae2e0718a9da90997.jpg",
-          "linkedin_url": "https://www.linkedin.com/in/abhay-kalra-683688214",
-          "raw_bio": "Abhay is the Founder and CEO of Avent. Abhay studied Electrical Engineering and Computer Science at UC Berkeley, where he conducted computer vision research for defect detection in manufacturing. Before Avent, Abhay was an operator in the manufacturing and industrial distribution space."
-        }
-      ],
-      "job_board": {
-        "count": null,
-        "url": "https://www.aventindustrial.com/careers",
-        "source_type": "manual_visit",
-        "ats_platform": null
-      },
-      "last_scraped": "2026-08-17T09:37:49.324117",
+      "last_scraped": "2026-08-24T09:44:05.087974",
       "data_completeness": 0.75
     },
     {
@@ -3232,7 +3681,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.297973",
+      "last_scraped": "2026-08-24T09:44:05.089962",
       "data_completeness": 0.75
     },
     {
@@ -3283,7 +3732,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.285706",
+      "last_scraped": "2026-08-24T09:44:05.078603",
       "data_completeness": 0.75
     },
     {
@@ -3347,7 +3796,7 @@
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-17T09:37:49.237084",
+      "last_scraped": "2026-08-24T09:44:05.023173",
       "data_completeness": 0.75
     },
     {
@@ -3397,7 +3846,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.269970",
+      "last_scraped": "2026-08-24T09:44:05.061623",
       "data_completeness": 0.75
     },
     {
@@ -3450,12 +3899,12 @@
         }
       ],
       "job_board": {
-        "count": 4,
+        "count": 6,
         "url": "https://jobs.ashbyhq.com/bolna",
         "source_type": "ats_api",
         "ats_platform": "ashby"
       },
-      "last_scraped": "2026-08-17T09:37:49.320997",
+      "last_scraped": "2026-08-24T09:44:05.115041",
       "data_completeness": 0.75
     },
     {
@@ -3506,7 +3955,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.297369",
+      "last_scraped": "2026-08-24T09:44:05.089379",
       "data_completeness": 0.75
     },
     {
@@ -3554,7 +4003,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.243042",
+      "last_scraped": "2026-08-24T09:44:05.029246",
       "data_completeness": 0.75
     },
     {
@@ -3611,7 +4060,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.322315",
+      "last_scraped": "2026-08-24T09:44:05.116456",
       "data_completeness": 0.75
     },
     {
@@ -3663,7 +4112,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.321363",
+      "last_scraped": "2026-08-24T09:44:05.115453",
       "data_completeness": 0.75
     },
     {
@@ -3713,7 +4162,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.264350",
+      "last_scraped": "2026-08-24T09:44:05.051518",
       "data_completeness": 0.75
     },
     {
@@ -3778,7 +4227,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.271840",
+      "last_scraped": "2026-08-24T09:44:05.063578",
       "data_completeness": 0.75
     },
     {
@@ -3832,7 +4281,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.292010",
+      "last_scraped": "2026-08-24T09:44:05.083233",
       "data_completeness": 0.75
     },
     {
@@ -3878,7 +4327,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.257275",
+      "last_scraped": "2026-08-24T09:44:05.044495",
       "data_completeness": 0.75
     },
     {
@@ -3929,7 +4378,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.301454",
+      "last_scraped": "2026-08-24T09:44:05.093923",
       "data_completeness": 0.75
     },
     {
@@ -3980,7 +4429,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.295705",
+      "last_scraped": "2026-08-24T09:44:05.087316",
       "data_completeness": 0.75
     },
     {
@@ -4032,7 +4481,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.307529",
+      "last_scraped": "2026-08-24T09:44:05.100200",
       "data_completeness": 0.75
     },
     {
@@ -4084,7 +4533,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.304859",
+      "last_scraped": "2026-08-24T09:44:05.097641",
       "data_completeness": 0.75
     },
     {
@@ -4138,7 +4587,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.282614",
+      "last_scraped": "2026-08-24T09:44:05.074079",
       "data_completeness": 0.75
     },
     {
@@ -4189,7 +4638,7 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.298220",
+      "last_scraped": "2026-08-24T09:44:05.090207",
       "data_completeness": 0.75
     },
     {
@@ -4244,12 +4693,12 @@
         }
       ],
       "job_board": {
-        "count": 47,
+        "count": 45,
         "url": "https://boards.greenhouse.io/checkr",
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-17T09:37:49.216666",
+      "last_scraped": "2026-08-24T09:44:05.002701",
       "data_completeness": 0.75
     },
     {
@@ -4302,7 +4751,7 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.261307",
+      "last_scraped": "2026-08-24T09:44:05.048384",
       "data_completeness": 0.75
     },
     {
@@ -4361,7 +4810,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.307093",
+      "last_scraped": "2026-08-24T09:44:05.099736",
       "data_completeness": 0.75
     },
     {
@@ -4369,7 +4818,7 @@
       "name": "Clicks Health",
       "slug": "clicks-health",
       "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/9ba947944afd3b1dfe85a7f3891e69a0b39e5fe9.png",
-      "website": "https://clickshealth.com/",
+      "website": "https://www.goclicks.ai/",
       "location": "San Francisco, CA, USA",
       "description": "AI agents for your healthcare back-office operations.",
       "long_description": "Clicks Health builds AI agents that automate back-office operations for RCM companies and healthcare providers. Our agents work across EHRs, payer portals, desktop applications, and legacy systems, following existing processes, handling exceptions, and escalating when human judgment is needed. Backed by Y Combinator, Clicks helps teams improve accuracy, shorten turnaround times, and reduce operating costs, with SOC 2 Type II and HIPAA compliance built in.",
@@ -4386,10 +4835,10 @@
       "stage": "Early",
       "team_size": 8,
       "tags": [
+        "Artificial Intelligence",
         "Health Tech",
         "Healthcare",
-        "Health Insurance",
-        "AI"
+        "Health Insurance"
       ],
       "regions": [
         "United States of America",
@@ -4414,11 +4863,11 @@
       ],
       "job_board": {
         "count": null,
-        "url": "https://clickshealth.com/careers",
+        "url": "https://www.goclicks.ai/careers",
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.308869",
+      "last_scraped": "2026-08-24T09:44:05.101755",
       "data_completeness": 0.75
     },
     {
@@ -4464,12 +4913,12 @@
         }
       ],
       "job_board": {
-        "count": 29,
+        "count": 33,
         "url": "https://jobs.ashbyhq.com/clipboard",
         "source_type": "ats_api",
         "ats_platform": "ashby"
       },
-      "last_scraped": "2026-08-17T09:37:49.217366",
+      "last_scraped": "2026-08-24T09:44:05.003328",
       "data_completeness": 0.75
     },
     {
@@ -4530,7 +4979,46 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.290963",
+      "last_scraped": "2026-08-24T09:44:05.082158",
+      "data_completeness": 0.75
+    },
+    {
+      "yc_id": 36084,
+      "name": "Covera",
+      "slug": "covera",
+      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/e711e58f600a9ea3c53a45d934c825989e9b5b57.png",
+      "website": "https://www.covera-agents.com/",
+      "location": "San Francisco, CA, USA",
+      "description": "AI-native OS for insurance brokers",
+      "long_description": "Covera builds AI agents for insurance brokers. Our ready-to-use agents take over the day-to-day servicing work: submission intake, carrier quoting, quote comparison, claims handling, past-due collections, and account rounding. That means brokers can spend their time advising and selling clients instead of doing data entry. We work with agencies of every size and connect natively to the tools they already use.",
+      "industry": "Fintech",
+      "industries": [
+        "Fintech",
+        "Insurance"
+      ],
+      "subindustry": "Fintech -> Insurance",
+      "batch": null,
+      "is_hiring": true,
+      "is_top_company": false,
+      "status": "Active",
+      "stage": "Early",
+      "team_size": 2,
+      "tags": [
+        "AIOps"
+      ],
+      "regions": [
+        "United States of America",
+        "America / Canada"
+      ],
+      "source_vc": "Y Combinator",
+      "founders": [],
+      "job_board": {
+        "count": null,
+        "url": "https://www.covera-agents.com/careers",
+        "source_type": "manual_visit",
+        "ats_platform": null
+      },
+      "last_scraped": "2026-08-24T09:44:05.052885",
       "data_completeness": 0.75
     },
     {
@@ -4582,7 +5070,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.319337",
+      "last_scraped": "2026-08-24T09:44:05.113163",
       "data_completeness": 0.75
     },
     {
@@ -4629,7 +5117,48 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.304456",
+      "last_scraped": "2026-08-24T09:44:05.097226",
+      "data_completeness": 0.75
+    },
+    {
+      "yc_id": 33344,
+      "name": "Dawn Industries",
+      "slug": "dawn-industries",
+      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/be237324cf82c0125a34763f99ffb0cf35ca384d.png",
+      "website": "https://www.dawnxr.com",
+      "location": "San Francisco, CA, USA",
+      "description": "Automatic Diagnosis & Fix for Industrial Automation Cells",
+      "long_description": "VIM connects to the entire cell: PLCs, robots, CNC machines, sensors. When a cell faults, VIM finds the cause, stages the fix, and the operator approves with one click. When a part drifts, VIM catches it seconds after the cut, inside the machine, and recommends the correction. Recovery drops from 30 minutes to under two, saving more than $15,000 per fault in large factories.",
+      "industry": "Industrials",
+      "industries": [
+        "Industrials",
+        "Manufacturing and Robotics"
+      ],
+      "subindustry": "Industrials -> Manufacturing and Robotics",
+      "batch": null,
+      "is_hiring": true,
+      "is_top_company": false,
+      "status": "Active",
+      "stage": "Early",
+      "team_size": 2,
+      "tags": [
+        "Artificial Intelligence"
+      ],
+      "regions": [
+        "United States of America",
+        "America / Canada",
+        "Remote",
+        "Partly Remote"
+      ],
+      "source_vc": "Y Combinator",
+      "founders": [],
+      "job_board": {
+        "count": null,
+        "url": "https://www.dawnxr.com/careers",
+        "source_type": "manual_visit",
+        "ats_platform": null
+      },
+      "last_scraped": "2026-08-24T09:44:05.055452",
       "data_completeness": 0.75
     },
     {
@@ -4676,12 +5205,12 @@
         }
       ],
       "job_board": {
-        "count": 4,
+        "count": 2,
         "url": "https://jobs.ashbyhq.com/dayjob-ai",
         "source_type": "ats_api",
         "ats_platform": "ashby"
       },
-      "last_scraped": "2026-08-17T09:37:49.293665",
+      "last_scraped": "2026-08-24T09:44:05.085177",
       "data_completeness": 0.75
     },
     {
@@ -4741,7 +5270,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.218073",
+      "last_scraped": "2026-08-24T09:44:05.003919",
       "data_completeness": 0.75
     },
     {
@@ -4784,7 +5313,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.232709",
+      "last_scraped": "2026-08-24T09:44:05.018430",
       "data_completeness": 0.75
     },
     {
@@ -4835,7 +5364,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.320423",
+      "last_scraped": "2026-08-24T09:44:05.114302",
       "data_completeness": 0.75
     },
     {
@@ -4893,7 +5422,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.322920",
+      "last_scraped": "2026-08-24T09:44:05.117106",
       "data_completeness": 0.75
     },
     {
@@ -4949,7 +5478,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.309636",
+      "last_scraped": "2026-08-24T09:44:05.102725",
       "data_completeness": 0.75
     },
     {
@@ -4988,7 +5517,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.294047",
+      "last_scraped": "2026-08-24T09:44:05.085565",
       "data_completeness": 0.75
     },
     {
@@ -5042,7 +5571,7 @@
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-17T09:37:49.296070",
+      "last_scraped": "2026-08-24T09:44:05.087709",
       "data_completeness": 0.75
     },
     {
@@ -5090,7 +5619,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.240317",
+      "last_scraped": "2026-08-24T09:44:05.026561",
       "data_completeness": 0.75
     },
     {
@@ -5142,7 +5671,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.284508",
+      "last_scraped": "2026-08-24T09:44:05.077148",
       "data_completeness": 0.75
     },
     {
@@ -5206,7 +5735,43 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.235926",
+      "last_scraped": "2026-08-24T09:44:05.021906",
+      "data_completeness": 0.75
+    },
+    {
+      "yc_id": 31388,
+      "name": "Elyra",
+      "slug": "elyra",
+      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/dfc0518b0601b15bf131b045d7c9085b3ab4ac5e.png",
+      "website": "https://www.elyrasystems.com/",
+      "location": "Stockholm, Stockholm County, Sweden",
+      "description": "AI Reservation System for Restaurants ",
+      "long_description": "Elyra is an AI reservation system for restaurants. Instead of missing 40% of incoming phone calls and taking days to reply to emails, leaving over $100,000 in bookings on the table every year, restaurants get AI agents that answer every call and email instantly, 24/7, connected to a reservation system that optimizes table placements in real time so empty seats get filled with the right guests.\r\n\r\nFelix and Alan met in primary school in Stockholm and have been building things together ever since.\r\n\r\nWe launched with a single restaurant and within weeks they hit record occupancy, bookings they used to miss were suddenly being captured automatically, and empty Tuesday nights started filling up. Today we power top restaurants groups. \r\n\r\nThere are over 1 million restaurants in the US and Europe alone. The average restaurant loses $100K+ a year to missed calls and slow email replies. At our current pricing, that's a $10B+ market opportunity, and we're the only system that handles the call, the email, and the table allocation in one place.",
+      "industry": "B2B",
+      "industries": [
+        "B2B"
+      ],
+      "subindustry": "B2B",
+      "batch": null,
+      "is_hiring": true,
+      "is_top_company": false,
+      "status": "Active",
+      "stage": "Early",
+      "team_size": 5,
+      "tags": [],
+      "regions": [
+        "Sweden",
+        "Europe"
+      ],
+      "source_vc": "Y Combinator",
+      "founders": [],
+      "job_board": {
+        "count": null,
+        "url": "https://www.elyrasystems.com/careers",
+        "source_type": "manual_visit",
+        "ats_platform": null
+      },
+      "last_scraped": "2026-08-24T09:44:05.084133",
       "data_completeness": 0.75
     },
     {
@@ -5253,7 +5818,7 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.263109",
+      "last_scraped": "2026-08-24T09:44:05.050251",
       "data_completeness": 0.75
     },
     {
@@ -5298,7 +5863,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.311147",
+      "last_scraped": "2026-08-24T09:44:05.106226",
       "data_completeness": 0.75
     },
     {
@@ -5342,12 +5907,12 @@
         }
       ],
       "job_board": {
-        "count": 11,
+        "count": 10,
         "url": "https://jobs.ashbyhq.com/f2-ai",
         "source_type": "ats_api",
         "ats_platform": "ashby"
       },
-      "last_scraped": "2026-08-17T09:37:49.322519",
+      "last_scraped": "2026-08-24T09:44:05.116668",
       "data_completeness": 0.75
     },
     {
@@ -5406,12 +5971,12 @@
         }
       ],
       "job_board": {
-        "count": 67,
+        "count": 62,
         "url": "https://boards.greenhouse.io/faire",
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-17T09:37:49.218649",
+      "last_scraped": "2026-08-24T09:44:05.004635",
       "data_completeness": 0.75
     },
     {
@@ -5467,7 +6032,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.300811",
+      "last_scraped": "2026-08-24T09:44:05.093285",
       "data_completeness": 0.75
     },
     {
@@ -5513,12 +6078,12 @@
         }
       ],
       "job_board": {
-        "count": 158,
+        "count": 165,
         "url": "https://boards.greenhouse.io/flexport",
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-17T09:37:49.219389",
+      "last_scraped": "2026-08-24T09:44:05.005345",
       "data_completeness": 0.75
     },
     {
@@ -5575,7 +6140,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.317864",
+      "last_scraped": "2026-08-24T09:44:05.111661",
       "data_completeness": 0.75
     },
     {
@@ -5633,7 +6198,7 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.220130",
+      "last_scraped": "2026-08-24T09:44:05.005977",
       "data_completeness": 0.75
     },
     {
@@ -5692,58 +6257,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.297772",
-      "data_completeness": 0.75
-    },
-    {
-      "yc_id": 30802,
-      "name": "Freya",
-      "slug": "freya",
-      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/cd359a60dfecfce9e7a798a4a228f08f05943dcb.png",
-      "website": "https://freyavoice.ai/",
-      "location": "San Francisco, CA, USA",
-      "description": "Voice AI for Enterprises",
-      "long_description": "",
-      "industry": "Fintech",
-      "industries": [
-        "Fintech"
-      ],
-      "subindustry": "Fintech",
-      "batch": null,
-      "is_hiring": true,
-      "is_top_company": false,
-      "status": "Active",
-      "stage": "Early",
-      "team_size": 14,
-      "tags": [],
-      "regions": [
-        "United States of America",
-        "America / Canada"
-      ],
-      "source_vc": "Y Combinator",
-      "founders": [
-        {
-          "name": "Tunga Bayrak",
-          "college": "Penn",
-          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/5988e3dbc514a9cf4555dbc17245e81f1a7499e7.jpg",
-          "linkedin_url": "https://www.linkedin.com/in/tunga-bayrak/",
-          "raw_bio": "CEO and Co-founder of Freya. Previously, he built VLMs for geometric reasoning and worked on Audio Transformers as an AI research engineer. As a Math Olympian, ranked 1st among 250,000 students at the Urfodu Math Olympiad and later 203rd Turkey’s national exams out of 3.5M+. At 16, he wrote his first paper on Quantum Machine Learning. Before dropping out of UPenn, he was a Teaching Assistant in the Engineering School and part of an AI Research team at Penn."
-        },
-        {
-          "name": "Tomas Nepala",
-          "college": null,
-          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/8ce29b05b214167fc2e4abd82c1c2ccc3ff4864c.jpg",
-          "linkedin_url": "https://www.linkedin.com/in/tomas-nepala",
-          "raw_bio": "Tomas is the Co-Founder and COO of Freya, where he is building human-like Voice AI agents for the financial services industry. A former Wharton student, he gained experience across multiple financial services firms, including Gallagher, the world’s second-largest insurance broker. Now on his second startup, Tomas is focused on transforming customer support by bringing it into the era of AI."
-        }
-      ],
-      "job_board": {
-        "count": null,
-        "url": "https://freyavoice.ai/careers",
-        "source_type": "manual_visit",
-        "ats_platform": null
-      },
-      "last_scraped": "2026-08-17T09:37:49.323630",
+      "last_scraped": "2026-08-24T09:44:05.089755",
       "data_completeness": 0.75
     },
     {
@@ -5794,12 +6308,12 @@
         }
       ],
       "job_board": {
-        "count": 30,
+        "count": 19,
         "url": "https://boards.greenhouse.io/goatgroup",
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-17T09:37:49.221385",
+      "last_scraped": "2026-08-24T09:44:05.007351",
       "data_completeness": 0.75
     },
     {
@@ -5849,7 +6363,7 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.244289",
+      "last_scraped": "2026-08-24T09:44:05.030548",
       "data_completeness": 0.75
     },
     {
@@ -5894,7 +6408,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.310736",
+      "last_scraped": "2026-08-24T09:44:05.105738",
       "data_completeness": 0.75
     },
     {
@@ -5947,12 +6461,12 @@
         }
       ],
       "job_board": {
-        "count": 14,
+        "count": 16,
         "url": "https://boards.greenhouse.io/givecampus",
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-17T09:37:49.239790",
+      "last_scraped": "2026-08-24T09:44:05.025995",
       "data_completeness": 0.75
     },
     {
@@ -6010,7 +6524,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.249820",
+      "last_scraped": "2026-08-24T09:44:05.036518",
       "data_completeness": 0.75
     },
     {
@@ -6082,7 +6596,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.220672",
+      "last_scraped": "2026-08-24T09:44:05.006616",
       "data_completeness": 0.75
     },
     {
@@ -6143,7 +6657,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.291554",
+      "last_scraped": "2026-08-24T09:44:05.082761",
       "data_completeness": 0.75
     },
     {
@@ -6207,7 +6721,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.259277",
+      "last_scraped": "2026-08-24T09:44:05.046421",
       "data_completeness": 0.75
     },
     {
@@ -6267,12 +6781,12 @@
         }
       ],
       "job_board": {
-        "count": 88,
+        "count": 91,
         "url": "https://boards.greenhouse.io/gusto",
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-17T09:37:49.222002",
+      "last_scraped": "2026-08-24T09:44:05.007969",
       "data_completeness": 0.75
     },
     {
@@ -6328,7 +6842,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.273256",
+      "last_scraped": "2026-08-24T09:44:05.064277",
       "data_completeness": 0.75
     },
     {
@@ -6378,12 +6892,54 @@
         }
       ],
       "job_board": {
-        "count": 30,
+        "count": 29,
         "url": "https://boards.greenhouse.io/hackerrank",
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-17T09:37:49.253122",
+      "last_scraped": "2026-08-24T09:44:05.039898",
+      "data_completeness": 0.75
+    },
+    {
+      "yc_id": 31030,
+      "name": "Haladir",
+      "slug": "haladir",
+      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/6b1a47bf16f93d71a3d1f3af6d10a6c736e170b2.png",
+      "website": "https://www.haladir.com/",
+      "location": "San Francisco, CA, USA",
+      "description": "Operational Superintelligence for Global Logistics",
+      "long_description": "Haladir is the decisional AI layer for logistics. We sit on top of your WMS, TMS, OMS, etc., unify their data into one operational graph, and embed solver-grade optimization, ML models, and process intelligence into the decisions that power supply chains. Today's AI brought intelligence. The next frontier is judgement.",
+      "industry": "B2B",
+      "industries": [
+        "B2B",
+        "Supply Chain and Logistics"
+      ],
+      "subindustry": "B2B -> Supply Chain and Logistics",
+      "batch": null,
+      "is_hiring": true,
+      "is_top_company": false,
+      "status": "Active",
+      "stage": "Early",
+      "team_size": 4,
+      "tags": [
+        "Artificial Intelligence",
+        "Logistics",
+        "Supply Chain",
+        "Operations"
+      ],
+      "regions": [
+        "United States of America",
+        "America / Canada"
+      ],
+      "source_vc": "Y Combinator",
+      "founders": [],
+      "job_board": {
+        "count": null,
+        "url": "https://www.haladir.com/careers",
+        "source_type": "manual_visit",
+        "ats_platform": null
+      },
+      "last_scraped": "2026-08-24T09:44:05.100642",
       "data_completeness": 0.75
     },
     {
@@ -6440,7 +6996,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.295521",
+      "last_scraped": "2026-08-24T09:44:05.087120",
       "data_completeness": 0.75
     },
     {
@@ -6480,7 +7036,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.265535",
+      "last_scraped": "2026-08-24T09:44:05.053544",
       "data_completeness": 0.75
     },
     {
@@ -6534,12 +7090,12 @@
         }
       ],
       "job_board": {
-        "count": 16,
+        "count": 10,
         "url": "https://boards.greenhouse.io/hive",
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-17T09:37:49.254262",
+      "last_scraped": "2026-08-24T09:44:05.041193",
       "data_completeness": 0.75
     },
     {
@@ -6599,7 +7155,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.293227",
+      "last_scraped": "2026-08-24T09:44:05.084738",
       "data_completeness": 0.75
     },
     {
@@ -6665,7 +7221,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.299541",
+      "last_scraped": "2026-08-24T09:44:05.091870",
       "data_completeness": 0.75
     },
     {
@@ -6725,7 +7281,7 @@
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-17T09:37:49.235263",
+      "last_scraped": "2026-08-24T09:44:05.021228",
       "data_completeness": 0.75
     },
     {
@@ -6779,7 +7335,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.275311",
+      "last_scraped": "2026-08-24T09:44:05.066302",
       "data_completeness": 0.75
     },
     {
@@ -6830,7 +7386,7 @@
         "source_type": "ats_api",
         "ats_platform": "ashby"
       },
-      "last_scraped": "2026-08-17T09:37:49.319101",
+      "last_scraped": "2026-08-24T09:44:05.112907",
       "data_completeness": 0.75
     },
     {
@@ -6889,7 +7445,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.320816",
+      "last_scraped": "2026-08-24T09:44:05.114709",
       "data_completeness": 0.75
     },
     {
@@ -6933,12 +7489,12 @@
         }
       ],
       "job_board": {
-        "count": 24,
+        "count": 21,
         "url": "https://boards.greenhouse.io/icarus",
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-17T09:37:49.313243",
+      "last_scraped": "2026-08-24T09:44:05.106940",
       "data_completeness": 0.75
     },
     {
@@ -6995,7 +7551,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.315484",
+      "last_scraped": "2026-08-24T09:44:05.109311",
       "data_completeness": 0.75
     },
     {
@@ -7046,7 +7602,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.306629",
+      "last_scraped": "2026-08-24T09:44:05.099279",
       "data_completeness": 0.75
     },
     {
@@ -7098,7 +7654,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.262512",
+      "last_scraped": "2026-08-24T09:44:05.049669",
       "data_completeness": 0.75
     },
     {
@@ -7142,12 +7698,12 @@
         }
       ],
       "job_board": {
-        "count": 54,
+        "count": 53,
         "url": "https://boards.greenhouse.io/instawork",
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-17T09:37:49.236540",
+      "last_scraped": "2026-08-24T09:44:05.022483",
       "data_completeness": 0.75
     },
     {
@@ -7199,7 +7755,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.275961",
+      "last_scraped": "2026-08-24T09:44:05.066884",
       "data_completeness": 0.75
     },
     {
@@ -7249,7 +7805,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.245460",
+      "last_scraped": "2026-08-24T09:44:05.031859",
       "data_completeness": 0.75
     },
     {
@@ -7307,7 +7863,7 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.310922",
+      "last_scraped": "2026-08-24T09:44:05.105965",
       "data_completeness": 0.75
     },
     {
@@ -7359,7 +7915,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.292854",
+      "last_scraped": "2026-08-24T09:44:05.084352",
       "data_completeness": 0.75
     },
     {
@@ -7410,7 +7966,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.313974",
+      "last_scraped": "2026-08-24T09:44:05.107633",
       "data_completeness": 0.75
     },
     {
@@ -7457,7 +8013,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.292666",
+      "last_scraped": "2026-08-24T09:44:05.083935",
       "data_completeness": 0.75
     },
     {
@@ -7516,7 +8072,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.293040",
+      "last_scraped": "2026-08-24T09:44:05.084543",
       "data_completeness": 0.75
     },
     {
@@ -7553,7 +8109,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.277144",
+      "last_scraped": "2026-08-24T09:44:05.068214",
       "data_completeness": 0.75
     },
     {
@@ -7613,7 +8169,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.319787",
+      "last_scraped": "2026-08-24T09:44:05.113603",
       "data_completeness": 0.75
     },
     {
@@ -7650,7 +8206,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.276494",
+      "last_scraped": "2026-08-24T09:44:05.067549",
       "data_completeness": 0.75
     },
     {
@@ -7702,7 +8258,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.286901",
+      "last_scraped": "2026-08-24T09:44:05.080461",
       "data_completeness": 0.75
     },
     {
@@ -7745,7 +8301,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.291831",
+      "last_scraped": "2026-08-24T09:44:05.083037",
       "data_completeness": 0.75
     },
     {
@@ -7808,7 +8364,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.266190",
+      "last_scraped": "2026-08-24T09:44:05.054107",
       "data_completeness": 0.75
     },
     {
@@ -7866,7 +8422,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.305432",
+      "last_scraped": "2026-08-24T09:44:05.098327",
       "data_completeness": 0.75
     },
     {
@@ -7917,12 +8473,12 @@
         }
       ],
       "job_board": {
-        "count": 8,
+        "count": 9,
         "url": "https://boards.greenhouse.io/lattice",
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-17T09:37:49.233958",
+      "last_scraped": "2026-08-24T09:44:05.019841",
       "data_completeness": 0.75
     },
     {
@@ -7965,7 +8521,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.310311",
+      "last_scraped": "2026-08-24T09:44:05.103567",
       "data_completeness": 0.75
     },
     {
@@ -8023,7 +8579,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.315710",
+      "last_scraped": "2026-08-24T09:44:05.109553",
       "data_completeness": 0.75
     },
     {
@@ -8066,7 +8622,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.311361",
+      "last_scraped": "2026-08-24T09:44:05.106443",
       "data_completeness": 0.75
     },
     {
@@ -8131,7 +8687,7 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.309888",
+      "last_scraped": "2026-08-24T09:44:05.103030",
       "data_completeness": 0.75
     },
     {
@@ -8190,7 +8746,7 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.294247",
+      "last_scraped": "2026-08-24T09:44:05.085779",
       "data_completeness": 0.75
     },
     {
@@ -8226,12 +8782,12 @@
       "source_vc": "Y Combinator",
       "founders": [],
       "job_board": {
-        "count": 7,
+        "count": 9,
         "url": "https://boards.greenhouse.io/lob",
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-17T09:37:49.258642",
+      "last_scraped": "2026-08-24T09:44:05.045759",
       "data_completeness": 0.75
     },
     {
@@ -8278,7 +8834,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.267409",
+      "last_scraped": "2026-08-24T09:44:05.056189",
       "data_completeness": 0.75
     },
     {
@@ -8331,7 +8887,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.314224",
+      "last_scraped": "2026-08-24T09:44:05.107879",
       "data_completeness": 0.75
     },
     {
@@ -8387,57 +8943,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.246144",
-      "data_completeness": 0.75
-    },
-    {
-      "yc_id": 30804,
-      "name": "Luminal",
-      "slug": "luminal",
-      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/200fe1fa3e40bd9aed419582490f17ed6cf00c37.png",
-      "website": "https://luminal.com",
-      "location": "San Francisco, CA, USA",
-      "description": "Making AI run fast on any hardware.",
-      "long_description": "Luminal builds an ML framework and compiler that generates GPU code.\r\nOur stack 10x's model speed while simplifying deployment and cutting idle GPU costs\r\n\r\nGithub: https://github.com/luminal-ai/luminal\r\nDiscord: https://discord.gg/APjuwHAbGy",
-      "industry": "B2B",
-      "industries": [
-        "B2B",
-        "Infrastructure"
-      ],
-      "subindustry": "B2B -> Infrastructure",
-      "batch": null,
-      "is_hiring": true,
-      "is_top_company": false,
-      "status": "Active",
-      "stage": "Early",
-      "team_size": 7,
-      "tags": [
-        "AIOps",
-        "Artificial Intelligence",
-        "Developer Tools",
-        "Cloud Computing"
-      ],
-      "regions": [
-        "United States of America",
-        "America / Canada"
-      ],
-      "source_vc": "Y Combinator",
-      "founders": [
-        {
-          "name": "Joe Fioti",
-          "college": "University of California, Berkeley",
-          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/0583e75ba29d754c8f1ed1c3827cf290ad883aae.jpg",
-          "linkedin_url": "https://linkedin.com/in/joe-fioti-24a986189",
-          "raw_bio": "Generating GPU kernels automatically to speed up ML models. Ex-Intel, worked on CPU microcode and ML accelerators."
-        }
-      ],
-      "job_board": {
-        "count": null,
-        "url": "https://luminal.com/careers",
-        "source_type": "manual_visit",
-        "ats_platform": null
-      },
-      "last_scraped": "2026-08-17T09:37:49.323404",
+      "last_scraped": "2026-08-24T09:44:05.032490",
       "data_completeness": 0.75
     },
     {
@@ -8489,7 +8995,47 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.291151",
+      "last_scraped": "2026-08-24T09:44:05.082366",
+      "data_completeness": 0.75
+    },
+    {
+      "yc_id": 30975,
+      "name": "MadeThis",
+      "slug": "madethis",
+      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/73b59fa186ca146c4f90522806e84fb89b3f9f10.png",
+      "website": "https://madethis.com",
+      "location": "San Francisco, CA, USA",
+      "description": "The autonomous business platform",
+      "long_description": "",
+      "industry": "B2B",
+      "industries": [
+        "B2B",
+        "Operations"
+      ],
+      "subindustry": "B2B -> Operations",
+      "batch": null,
+      "is_hiring": true,
+      "is_top_company": false,
+      "status": "Active",
+      "stage": "Early",
+      "team_size": 3,
+      "tags": [
+        "Artificial Intelligence",
+        "Operations"
+      ],
+      "regions": [
+        "United States of America",
+        "America / Canada"
+      ],
+      "source_vc": "Y Combinator",
+      "founders": [],
+      "job_board": {
+        "count": null,
+        "url": "https://madethis.com/careers",
+        "source_type": "manual_visit",
+        "ats_platform": null
+      },
+      "last_scraped": "2026-08-24T09:44:05.105559",
       "data_completeness": 0.75
     },
     {
@@ -8566,7 +9112,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.251664",
+      "last_scraped": "2026-08-24T09:44:05.038402",
       "data_completeness": 0.75
     },
     {
@@ -8620,7 +9166,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.278918",
+      "last_scraped": "2026-08-24T09:44:05.070128",
       "data_completeness": 0.75
     },
     {
@@ -8665,7 +9211,7 @@
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-17T09:37:49.307774",
+      "last_scraped": "2026-08-24T09:44:05.100449",
       "data_completeness": 0.75
     },
     {
@@ -8720,12 +9266,12 @@
         }
       ],
       "job_board": {
-        "count": 15,
+        "count": 16,
         "url": "https://jobs.lever.co/mashgin",
         "source_type": "ats_api",
         "ats_platform": "lever"
       },
-      "last_scraped": "2026-08-17T09:37:49.246737",
+      "last_scraped": "2026-08-24T09:44:05.033194",
       "data_completeness": 0.75
     },
     {
@@ -8775,7 +9321,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.230438",
+      "last_scraped": "2026-08-24T09:44:05.016389",
       "data_completeness": 0.75
     },
     {
@@ -8836,7 +9382,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.300560",
+      "last_scraped": "2026-08-24T09:44:05.093036",
       "data_completeness": 0.75
     },
     {
@@ -8882,7 +9428,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.313741",
+      "last_scraped": "2026-08-24T09:44:05.107423",
       "data_completeness": 0.75
     },
     {
@@ -8936,7 +9482,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.290548",
+      "last_scraped": "2026-08-24T09:44:05.081732",
       "data_completeness": 0.75
     },
     {
@@ -8988,7 +9534,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.296957",
+      "last_scraped": "2026-08-24T09:44:05.088941",
       "data_completeness": 0.75
     },
     {
@@ -9042,7 +9588,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.303483",
+      "last_scraped": "2026-08-24T09:44:05.096101",
       "data_completeness": 0.75
     },
     {
@@ -9099,7 +9645,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.308195",
+      "last_scraped": "2026-08-24T09:44:05.101081",
       "data_completeness": 0.75
     },
     {
@@ -9144,7 +9690,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.316383",
+      "last_scraped": "2026-08-24T09:44:05.110234",
       "data_completeness": 0.75
     },
     {
@@ -9216,7 +9762,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.234523",
+      "last_scraped": "2026-08-24T09:44:05.020501",
       "data_completeness": 0.75
     },
     {
@@ -9267,7 +9813,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.318860",
+      "last_scraped": "2026-08-24T09:44:05.112658",
       "data_completeness": 0.75
     },
     {
@@ -9324,7 +9870,7 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.244888",
+      "last_scraped": "2026-08-24T09:44:05.031194",
       "data_completeness": 0.75
     },
     {
@@ -9380,7 +9926,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.293855",
+      "last_scraped": "2026-08-24T09:44:05.085368",
       "data_completeness": 0.75
     },
     {
@@ -9428,7 +9974,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.256666",
+      "last_scraped": "2026-08-24T09:44:05.043756",
       "data_completeness": 0.75
     },
     {
@@ -9470,12 +10016,12 @@
         }
       ],
       "job_board": {
-        "count": 14,
+        "count": 13,
         "url": "https://jobs.ashbyhq.com/nox-metals",
         "source_type": "ats_api",
         "ats_platform": "ashby"
       },
-      "last_scraped": "2026-08-17T09:37:49.322708",
+      "last_scraped": "2026-08-24T09:44:05.116866",
       "data_completeness": 0.75
     },
     {
@@ -9519,12 +10065,12 @@
         }
       ],
       "job_board": {
-        "count": 17,
+        "count": 16,
         "url": "https://boards.greenhouse.io/odeko",
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-17T09:37:49.222708",
+      "last_scraped": "2026-08-24T09:44:05.008643",
       "data_completeness": 0.75
     },
     {
@@ -9576,7 +10122,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.306370",
+      "last_scraped": "2026-08-24T09:44:05.099076",
       "data_completeness": 0.75
     },
     {
@@ -9636,7 +10182,7 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.250975",
+      "last_scraped": "2026-08-24T09:44:05.037771",
       "data_completeness": 0.75
     },
     {
@@ -9645,8 +10191,8 @@
       "slug": "ooak-data",
       "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/ad1b7cce12014a7746a7f8b912560717f6e2f037.png",
       "website": "https://ooakdata.com/",
-      "location": "Paris, Île-de-France, France",
-      "description": "We turn company data into RL environnements.",
+      "location": "San Francisco, CA, USA",
+      "description": "We turn company data into training data",
       "long_description": "Ooak Data turns internal company data into a training ground where AI agents can be tested on real work.\r\n",
       "industry": "B2B",
       "industries": [
@@ -9660,12 +10206,12 @@
       "stage": "Early",
       "team_size": 5,
       "tags": [
-        "Reinforcement Learning",
-        "AI"
+        "Artificial Intelligence",
+        "Reinforcement Learning"
       ],
       "regions": [
-        "France",
-        "Europe",
+        "United States of America",
+        "America / Canada",
         "Remote",
         "Partly Remote"
       ],
@@ -9685,7 +10231,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.269339",
+      "last_scraped": "2026-08-24T09:44:05.060948",
       "data_completeness": 0.75
     },
     {
@@ -9730,7 +10276,7 @@
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-17T09:37:49.283996",
+      "last_scraped": "2026-08-24T09:44:05.076433",
       "data_completeness": 0.75
     },
     {
@@ -9778,7 +10324,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.268712",
+      "last_scraped": "2026-08-24T09:44:05.057548",
       "data_completeness": 0.75
     },
     {
@@ -9828,66 +10374,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.263692",
-      "data_completeness": 0.75
-    },
-    {
-      "yc_id": 31174,
-      "name": "Parameter (fka Hex Security)",
-      "slug": "parameter-fka-hex-security",
-      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/10c4b553697048031ea44635278f71a342e7f4dc.png",
-      "website": "https://parameter.ai?utm_source=ycombinator&utm_medium=referral&utm_campaign=parameter-profile",
-      "location": "San Francisco, CA, USA",
-      "description": "Agentic Offensive Security at Scale",
-      "long_description": "Parameter builds AI agents that run continuous penetration tests against your apps and infrastructure. Instead of a once-a-year penetration test, Parameter's agents works 24/7 to find and verify critical vulnerabilities so you can prevent them before attackers.\r\n\r\nFormerly Hex Security",
-      "industry": "B2B",
-      "industries": [
-        "B2B",
-        "Security"
-      ],
-      "subindustry": "B2B -> Security",
-      "batch": null,
-      "is_hiring": true,
-      "is_top_company": false,
-      "status": "Active",
-      "stage": "Early",
-      "team_size": 11,
-      "tags": [],
-      "regions": [
-        "United States of America",
-        "America / Canada"
-      ],
-      "source_vc": "Y Combinator",
-      "founders": [
-        {
-          "name": "Ahmad Khan",
-          "college": "University of Waterloo",
-          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/fb13d4b1cc92b0b8f09c4a24a36fe8e89027df53.jpg",
-          "linkedin_url": "https://www.linkedin.com/in/ahmad-khan-b6584b225/",
-          "raw_bio": "Co-Founder, Parameter. Previously, I was building robots that learned from each other by sharing skills on-chain, and researching World Models that give robots complete environmental understanding. Our robot became the first in history to ring the NASDAQ bell. I studied Math at University of Waterloo."
-        },
-        {
-          "name": "Huzaifa Ahmad",
-          "college": "University at Albany",
-          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/6020e21b469a93c206367db43cbad4a06f4ca99c.jpg",
-          "linkedin_url": "https://linkedin.com/in/hzzaifa",
-          "raw_bio": "Cofounder, Parameter. Previously, I built software at companies like PlayAI, AWS, and Capital One. On the side, I built consumer apps that reached millions of downloads. But I've always loved breaking things just as much as building them. In college, I reverse engineered every major ATS platform and built Talently, a tool that sent over 200K job applications. Now we build AI that hacks before attackers do."
-        },
-        {
-          "name": "Prama Yudhistira",
-          "college": "University of Michigan",
-          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/a1d67b527be838a072da4b2c709b3df445c96ccb.jpg",
-          "linkedin_url": "https://www.linkedin.com/in/pramayudhistira/",
-          "raw_bio": "Co-Founder, Parameter. At Codegen, I built asynchronous coding agents that improved the workflow of developers, and even got non-developers writing production software. At AMD, I built infrastructure for MI300 GPU firmware testing. I competed internationally in piano, winning multiple competitions and performing with orchestras like the Qatar Philharmonic Orchestra."
-        }
-      ],
-      "job_board": {
-        "count": null,
-        "url": "https://parameter.ai?utm_source=ycombinator&utm_medium=referral&utm_campaign=parameter-profile/careers",
-        "source_type": "manual_visit",
-        "ats_platform": null
-      },
-      "last_scraped": "2026-08-17T09:37:49.301960",
+      "last_scraped": "2026-08-24T09:44:05.050937",
       "data_completeness": 0.75
     },
     {
@@ -9936,7 +10423,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.273895",
+      "last_scraped": "2026-08-24T09:44:05.064962",
       "data_completeness": 0.75
     },
     {
@@ -9997,7 +10484,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.321180",
+      "last_scraped": "2026-08-24T09:44:05.115249",
       "data_completeness": 0.75
     },
     {
@@ -10048,7 +10535,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.306826",
+      "last_scraped": "2026-08-24T09:44:05.099485",
       "data_completeness": 0.75
     },
     {
@@ -10099,7 +10586,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.295107",
+      "last_scraped": "2026-08-24T09:44:05.086678",
       "data_completeness": 0.75
     },
     {
@@ -10158,7 +10645,7 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.254864",
+      "last_scraped": "2026-08-24T09:44:05.041824",
       "data_completeness": 0.75
     },
     {
@@ -10214,7 +10701,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.256134",
+      "last_scraped": "2026-08-24T09:44:05.043080",
       "data_completeness": 0.75
     },
     {
@@ -10271,7 +10758,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.304656",
+      "last_scraped": "2026-08-24T09:44:05.097433",
       "data_completeness": 0.75
     },
     {
@@ -10317,7 +10804,7 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.307332",
+      "last_scraped": "2026-08-24T09:44:05.100001",
       "data_completeness": 0.75
     },
     {
@@ -10370,7 +10857,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.299097",
+      "last_scraped": "2026-08-24T09:44:05.091329",
       "data_completeness": 0.75
     },
     {
@@ -10429,7 +10916,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.223327",
+      "last_scraped": "2026-08-24T09:44:05.009336",
       "data_completeness": 0.75
     },
     {
@@ -10480,7 +10967,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.298918",
+      "last_scraped": "2026-08-24T09:44:05.091114",
       "data_completeness": 0.75
     },
     {
@@ -10532,7 +11019,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.302206",
+      "last_scraped": "2026-08-24T09:44:05.094613",
       "data_completeness": 0.75
     },
     {
@@ -10590,7 +11077,7 @@
         "source_type": "ats_api",
         "ats_platform": "lever"
       },
-      "last_scraped": "2026-08-17T09:37:49.247358",
+      "last_scraped": "2026-08-24T09:44:05.033894",
       "data_completeness": 0.75
     },
     {
@@ -10644,12 +11131,12 @@
         }
       ],
       "job_board": {
-        "count": 22,
+        "count": 18,
         "url": "https://boards.greenhouse.io/qventus",
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-17T09:37:49.252329",
+      "last_scraped": "2026-08-24T09:44:05.039142",
       "data_completeness": 0.75
     },
     {
@@ -10694,12 +11181,12 @@
         }
       ],
       "job_board": {
-        "count": 18,
+        "count": 14,
         "url": "https://boards.greenhouse.io/radar",
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-17T09:37:49.261951",
+      "last_scraped": "2026-08-24T09:44:05.049024",
       "data_completeness": 0.75
     },
     {
@@ -10756,7 +11243,7 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.303662",
+      "last_scraped": "2026-08-24T09:44:05.096303",
       "data_completeness": 0.75
     },
     {
@@ -10821,7 +11308,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.224066",
+      "last_scraped": "2026-08-24T09:44:05.010109",
       "data_completeness": 0.75
     },
     {
@@ -10880,7 +11367,7 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.224760",
+      "last_scraped": "2026-08-24T09:44:05.010700",
       "data_completeness": 0.75
     },
     {
@@ -10930,7 +11417,44 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.242466",
+      "last_scraped": "2026-08-24T09:44:05.028601",
+      "data_completeness": 0.75
+    },
+    {
+      "yc_id": 31279,
+      "name": "Regbase",
+      "slug": "regbase",
+      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/fd72b079b781bbd2a4eb03627c44c4901fd5da63.png",
+      "website": "https://regbase.com",
+      "location": "New York City, NY, USA",
+      "description": "Automating Corporate Compliance, Worldwide",
+      "long_description": "",
+      "industry": "B2B",
+      "industries": [
+        "B2B",
+        "Legal"
+      ],
+      "subindustry": "B2B -> Legal",
+      "batch": null,
+      "is_hiring": true,
+      "is_top_company": false,
+      "status": "Active",
+      "stage": "Early",
+      "team_size": 3,
+      "tags": [],
+      "regions": [
+        "United States of America",
+        "America / Canada"
+      ],
+      "source_vc": "Y Combinator",
+      "founders": [],
+      "job_board": {
+        "count": 2,
+        "url": "https://regbase.com/?not-found=%2Fcareers",
+        "source_type": "html_heuristic",
+        "ats_platform": null
+      },
+      "last_scraped": "2026-08-24T09:44:05.088221",
       "data_completeness": 0.75
     },
     {
@@ -10938,7 +11462,7 @@
       "name": "Replicas",
       "slug": "replicas",
       "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/45f1eda8aab66eabaa151ae4c6fdca3a6325a068.png",
-      "website": "https://tryreplicas.com",
+      "website": "https://replicas.dev",
       "location": "San Francisco, CA, USA",
       "description": "Run any coding agent harness in the cloud",
       "long_description": "Replicas is a background coding agent that allows you to delegate tasks to Claude Code or Codex from Slack, Linear, GitHub, and more. Each task works inside of a sandboxed virtual machine, allowing teams to heavily parallelize work and burn through tickets.\r\n\r\nReplicas agents output higher quality PRs via feedback loops - each task automatically is notified and fixes CI failures and reads all code reviews. With Environments, engineering teams can configure agents to run their entire codebase locally, verify its work, and provide preview URLs.",
@@ -10978,11 +11502,11 @@
       ],
       "job_board": {
         "count": null,
-        "url": "https://tryreplicas.com/careers",
+        "url": "https://replicas.dev/careers",
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.294690",
+      "last_scraped": "2026-08-24T09:44:05.086252",
       "data_completeness": 0.75
     },
     {
@@ -11038,7 +11562,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.300356",
+      "last_scraped": "2026-08-24T09:44:05.092816",
       "data_completeness": 0.75
     },
     {
@@ -11079,7 +11603,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.280270",
+      "last_scraped": "2026-08-24T09:44:05.071536",
       "data_completeness": 0.75
     },
     {
@@ -11125,7 +11649,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.301722",
+      "last_scraped": "2026-08-24T09:44:05.094184",
       "data_completeness": 0.75
     },
     {
@@ -11181,72 +11705,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.225619",
-      "data_completeness": 0.75
-    },
-    {
-      "yc_id": 32192,
-      "name": "Rise Reforming",
-      "slug": "rise-reforming",
-      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/5b908857ac82ef0d2a3b793f89fa198298587f8a.png",
-      "website": "https://rise-reforming.com/home",
-      "location": "Chicago, IL, USA",
-      "description": "We turn waste gases into valuable supply-secure chemicals ",
-      "long_description": "Geopolitical conflicts and natural disasters frequently expose the vulnerability of the American chemical industry. The reason? Production is centralized and fossil fuel-dependent. The solution? Localized production using an undervalued resource: biogas. The US produces enough biogas to make over $20 bn/y worth of chemicals, but 60% is wasted in low-margin applications or flared altogether.\r\n\r\nRise Reforming is commercializing a modular process to transform this underutilized biogas on-site into cheap, supply-secure chemicals. Our beachhead market is dimethyl ether (DME), used as an aerosol propellant and a low-carbon fuel additive in propane. Our target market is methanol: an established billion $ chemical and the future of low-carbon shipping.\r\n\r\nWe're doing our pilot project at a Chicagoland wastewater plant. This will be the first wastewater biogas-to-methanol demo in the Americas.\r\n\r\nWe're hiring for a senior chemical process engineer. Apply here: https://www.ycombinator.com/companies/rise-reforming/jobs/wJ9Q9nv-senior-chemical-process-engineer",
-      "industry": "Industrials",
-      "industries": [
-        "Industrials",
-        "Climate"
-      ],
-      "subindustry": "Industrials -> Climate",
-      "batch": null,
-      "is_hiring": true,
-      "is_top_company": false,
-      "status": "Active",
-      "stage": "Early",
-      "team_size": 4,
-      "tags": [
-        "Hard Tech",
-        "Smart Waste Management",
-        "Alternative Fuels",
-        "Renewable Energy",
-        "ClimateTech"
-      ],
-      "regions": [
-        "United States of America",
-        "America / Canada"
-      ],
-      "source_vc": "Y Combinator",
-      "founders": [
-        {
-          "name": "George Rose",
-          "college": "UChicago",
-          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/ee413aabedd5216b24ad28029e4413061ab156fa.jpg",
-          "linkedin_url": "https://www.linkedin.com/in/george-rose25/",
-          "raw_bio": "Co-founder and CEO at Rise Reforming (S26). Previously @ Nexamp, Highland Electric Fleets, Mantel Capture, GenH. Background in Molecular Engineering @ UChicago."
-        },
-        {
-          "name": "Lucas Zubillaga",
-          "college": "University of Chicago",
-          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/209b2a1f6985cd73931fc7cb16aa2a3bb8462a42.jpg",
-          "linkedin_url": "https://www.linkedin.com/in/lucaszubillagamaharg/",
-          "raw_bio": "Co-Founder & CTO at Rise Reforming (S26). Double B.Sc. in Molecular Engineering and Physics from the University of Chicago. Prev: nuclear waste management at Argonne National Laboratory, offshore wind at Avangrid/Iberdrola. Led the design, procurement, construction, and operation of a bench-scale reforming unit with controls. Also have a Spotify playlist with 200k+ saves. Check it out at: https://open.spotify.com/playlist/3rV2gyEKHxixpKa3IDQLvF?si=3458c33e03e84738&nd=1&dlsi=d0006826be884d"
-        },
-        {
-          "name": "Jona van Oord",
-          "college": "University of Chicago",
-          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/e79cd2c8431a00a358ef4d9b12c2ee2e95e79849.jpg",
-          "linkedin_url": "https://www.linkedin.com/in/jonavanoord/",
-          "raw_bio": "Environmentalist turned engineer. Plan on spending the rest of my life building hardware to address the climate disaster :) Co-Founder and COO @ Rise Reforming (S26), Molecular Engineering @ UChicago"
-        }
-      ],
-      "job_board": {
-        "count": null,
-        "url": "https://rise-reforming.com/home/careers",
-        "source_type": "manual_visit",
-        "ats_platform": null
-      },
-      "last_scraped": "2026-08-17T09:37:49.272467",
+      "last_scraped": "2026-08-24T09:44:05.011566",
       "data_completeness": 0.75
     },
     {
@@ -11297,7 +11756,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.290753",
+      "last_scraped": "2026-08-24T09:44:05.081941",
       "data_completeness": 0.75
     },
     {
@@ -11334,7 +11793,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.300002",
+      "last_scraped": "2026-08-24T09:44:05.092393",
       "data_completeness": 0.75
     },
     {
@@ -11371,7 +11830,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.304049",
+      "last_scraped": "2026-08-24T09:44:05.096736",
       "data_completeness": 0.75
     },
     {
@@ -11428,7 +11887,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.310520",
+      "last_scraped": "2026-08-24T09:44:05.105176",
       "data_completeness": 0.75
     },
     {
@@ -11480,7 +11939,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.294431",
+      "last_scraped": "2026-08-24T09:44:05.085994",
       "data_completeness": 0.75
     },
     {
@@ -11502,7 +11961,7 @@
       "is_top_company": false,
       "status": "Active",
       "stage": "Early",
-      "team_size": 2,
+      "team_size": 5,
       "tags": [],
       "regions": [
         "United States of America",
@@ -11531,7 +11990,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.305970",
+      "last_scraped": "2026-08-24T09:44:05.098806",
       "data_completeness": 0.75
     },
     {
@@ -11583,7 +12042,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.305721",
+      "last_scraped": "2026-08-24T09:44:05.098576",
       "data_completeness": 0.75
     },
     {
@@ -11635,7 +12094,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.282036",
+      "last_scraped": "2026-08-24T09:44:05.073468",
       "data_completeness": 0.75
     },
     {
@@ -11689,7 +12148,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.233285",
+      "last_scraped": "2026-08-24T09:44:05.019235",
       "data_completeness": 0.75
     },
     {
@@ -11735,12 +12194,12 @@
         }
       ],
       "job_board": {
-        "count": 5,
-        "url": "https://usesalus.ai/careers",
-        "source_type": "html_heuristic",
+        "count": null,
+        "url": "https://www.usesalus.ai/careers",
+        "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.303298",
+      "last_scraped": "2026-08-24T09:44:05.095882",
       "data_completeness": 0.75
     },
     {
@@ -11791,7 +12250,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.313541",
+      "last_scraped": "2026-08-24T09:44:05.107181",
       "data_completeness": 0.75
     },
     {
@@ -11836,12 +12295,12 @@
         }
       ],
       "job_board": {
-        "count": 210,
+        "count": 208,
         "url": "https://boards.greenhouse.io/scaleai",
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-17T09:37:49.226418",
+      "last_scraped": "2026-08-24T09:44:05.012185",
       "data_completeness": 0.75
     },
     {
@@ -11892,7 +12351,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.315256",
+      "last_scraped": "2026-08-24T09:44:05.109053",
       "data_completeness": 0.75
     },
     {
@@ -11951,7 +12410,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.301080",
+      "last_scraped": "2026-08-24T09:44:05.093530",
       "data_completeness": 0.75
     },
     {
@@ -12005,7 +12464,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.317661",
+      "last_scraped": "2026-08-24T09:44:05.111460",
       "data_completeness": 0.75
     },
     {
@@ -12047,7 +12506,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.298480",
+      "last_scraped": "2026-08-24T09:44:05.090460",
       "data_completeness": 0.75
     },
     {
@@ -12105,7 +12564,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.238556",
+      "last_scraped": "2026-08-24T09:44:05.024631",
       "data_completeness": 0.75
     },
     {
@@ -12162,7 +12621,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.227231",
+      "last_scraped": "2026-08-24T09:44:05.012925",
       "data_completeness": 0.75
     },
     {
@@ -12220,7 +12679,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.266863",
+      "last_scraped": "2026-08-24T09:44:05.054753",
       "data_completeness": 0.75
     },
     {
@@ -12267,7 +12726,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.260656",
+      "last_scraped": "2026-08-24T09:44:05.047718",
       "data_completeness": 0.75
     },
     {
@@ -12323,7 +12782,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.299774",
+      "last_scraped": "2026-08-24T09:44:05.092139",
       "data_completeness": 0.75
     },
     {
@@ -12375,7 +12834,7 @@
         "source_type": "ats_api",
         "ats_platform": "ashby"
       },
-      "last_scraped": "2026-08-17T09:37:49.243647",
+      "last_scraped": "2026-08-24T09:44:05.029906",
       "data_completeness": 0.75
     },
     {
@@ -12417,7 +12876,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.320195",
+      "last_scraped": "2026-08-24T09:44:05.114068",
       "data_completeness": 0.75
     },
     {
@@ -12427,8 +12886,8 @@
       "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/490097dc2bb667a63917b9fa0c6e2003442ad353.png",
       "website": "https://usesoren.com",
       "location": "San Francisco, CA, USA",
-      "description": "Specialized AI for Real-World Deployment",
-      "long_description": "Soren helps organizations turn frontier AI into specialized systems built for real-world deployment. We train, deploy, and continuously improve models around the data, workflows, and decisions that matter most.\r\n\r\nLearn more at https://www.usesoren.com",
+      "description": "The AI workforce for business operations.",
+      "long_description": "Soren builds the AI workforce for business operations. We power companies around the world across a range of traditional industries, including legal, financial services, healthcare, and more.\r\n\r\nOur specialized AI agents combine frontier intelligence with deep operational expertise to execute critical work behind the scenes, becoming an engine businesses rely on to run faster, leaner, and more effectively.\r\n\r\nOur goal is to build the AI operating layer that the world’s businesses will run on.\r\n",
       "industry": "B2B",
       "industries": [
         "B2B"
@@ -12441,10 +12900,11 @@
       "stage": "Early",
       "team_size": null,
       "tags": [
-        "Artificial Intelligence",
         "B2B",
         "Enterprise",
-        "Enterprise Software"
+        "Enterprise Software",
+        "Operations",
+        "AI"
       ],
       "regions": [
         "United States of America",
@@ -12466,7 +12926,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.320006",
+      "last_scraped": "2026-08-24T09:44:05.113830",
       "data_completeness": 0.75
     },
     {
@@ -12503,7 +12963,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.289880",
+      "last_scraped": "2026-08-24T09:44:05.081289",
       "data_completeness": 0.75
     },
     {
@@ -12559,7 +13019,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.314486",
+      "last_scraped": "2026-08-24T09:44:05.108173",
       "data_completeness": 0.75
     },
     {
@@ -12604,7 +13064,7 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.303114",
+      "last_scraped": "2026-08-24T09:44:05.095672",
       "data_completeness": 0.75
     },
     {
@@ -12656,7 +13116,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.292481",
+      "last_scraped": "2026-08-24T09:44:05.083723",
       "data_completeness": 0.75
     },
     {
@@ -12721,7 +13181,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.302424",
+      "last_scraped": "2026-08-24T09:44:05.094934",
       "data_completeness": 0.75
     },
     {
@@ -12770,7 +13230,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.249189",
+      "last_scraped": "2026-08-24T09:44:05.035802",
       "data_completeness": 0.75
     },
     {
@@ -12822,12 +13282,12 @@
         }
       ],
       "job_board": {
-        "count": 576,
+        "count": 581,
         "url": "https://boards.greenhouse.io/stripe",
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-17T09:37:49.227807",
+      "last_scraped": "2026-08-24T09:44:05.013686",
       "data_completeness": 0.75
     },
     {
@@ -12891,7 +13351,7 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.321587",
+      "last_scraped": "2026-08-24T09:44:05.115651",
       "data_completeness": 0.75
     },
     {
@@ -12937,7 +13397,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.316120",
+      "last_scraped": "2026-08-24T09:44:05.109979",
       "data_completeness": 0.75
     },
     {
@@ -12947,7 +13407,7 @@
       "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/9c4aa01fc589ba1d208558f7b720c6081f672b08.png",
       "website": "https://www.superset.sh/",
       "location": "San Francisco, CA, USA",
-      "description": "Building the platform for software factories",
+      "description": "Building self-improving software",
       "long_description": "Superset is an open-source IDE that helps engineers run 100s of coding agents in parallel.\r\n\r\nOur desktop app is loved by tens of thousands of engineers, and we're scaling out our effort to build a collaborative, cross-platform tool to allow users to code anywhere.",
       "industry": "B2B",
       "industries": [
@@ -12962,11 +13422,11 @@
       "stage": "Early",
       "team_size": 3,
       "tags": [
+        "Artificial Intelligence",
         "Developer Tools",
         "Consumer",
         "B2B",
-        "Enterprise Software",
-        "AI"
+        "Enterprise Software"
       ],
       "regions": [
         "United States of America",
@@ -13002,7 +13462,7 @@
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-17T09:37:49.298667",
+      "last_scraped": "2026-08-24T09:44:05.090777",
       "data_completeness": 0.75
     },
     {
@@ -13053,7 +13513,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.248563",
+      "last_scraped": "2026-08-24T09:44:05.035101",
       "data_completeness": 0.75
     },
     {
@@ -13113,7 +13573,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.248004",
+      "last_scraped": "2026-08-24T09:44:05.034475",
       "data_completeness": 0.75
     },
     {
@@ -13167,7 +13627,7 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.287654",
+      "last_scraped": "2026-08-24T09:44:05.080748",
       "data_completeness": 0.75
     },
     {
@@ -13224,7 +13684,7 @@
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-17T09:37:49.250396",
+      "last_scraped": "2026-08-24T09:44:05.037101",
       "data_completeness": 0.75
     },
     {
@@ -13276,7 +13736,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.302703",
+      "last_scraped": "2026-08-24T09:44:05.095230",
       "data_completeness": 0.75
     },
     {
@@ -13320,7 +13780,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.293460",
+      "last_scraped": "2026-08-24T09:44:05.084985",
       "data_completeness": 0.75
     },
     {
@@ -13365,7 +13825,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.310119",
+      "last_scraped": "2026-08-24T09:44:05.103304",
       "data_completeness": 0.75
     },
     {
@@ -13421,7 +13881,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.315916",
+      "last_scraped": "2026-08-24T09:44:05.109762",
       "data_completeness": 0.75
     },
     {
@@ -13443,7 +13903,7 @@
       "is_top_company": false,
       "status": "Active",
       "stage": "Early",
-      "team_size": 5,
+      "team_size": 6,
       "tags": [
         "Construction",
         "Energy",
@@ -13478,7 +13938,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.274794",
+      "last_scraped": "2026-08-24T09:44:05.065632",
       "data_completeness": 0.75
     },
     {
@@ -13530,7 +13990,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.294925",
+      "last_scraped": "2026-08-24T09:44:05.086488",
       "data_completeness": 0.75
     },
     {
@@ -13574,12 +14034,12 @@
         }
       ],
       "job_board": {
-        "count": 11,
+        "count": 10,
         "url": "https://jobs.lever.co/tovala",
         "source_type": "ats_api",
         "ats_platform": "lever"
       },
-      "last_scraped": "2026-08-17T09:37:49.231330",
+      "last_scraped": "2026-08-24T09:44:05.017129",
       "data_completeness": 0.75
     },
     {
@@ -13639,7 +14099,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.270580",
+      "last_scraped": "2026-08-24T09:44:05.062285",
       "data_completeness": 0.75
     },
     {
@@ -13696,7 +14156,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.319596",
+      "last_scraped": "2026-08-24T09:44:05.113404",
       "data_completeness": 0.75
     },
     {
@@ -13739,7 +14199,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.280900",
+      "last_scraped": "2026-08-24T09:44:05.072186",
       "data_completeness": 0.75
     },
     {
@@ -13795,7 +14255,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.316932",
+      "last_scraped": "2026-08-24T09:44:05.110731",
       "data_completeness": 0.75
     },
     {
@@ -13860,63 +14320,7 @@
         "source_type": "ats_api",
         "ats_platform": "ashby"
       },
-      "last_scraped": "2026-08-17T09:37:49.321828",
-      "data_completeness": 0.75
-    },
-    {
-      "yc_id": 30806,
-      "name": "Uplift AI",
-      "slug": "uplift-ai",
-      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/4c2008e580fb1146da7922b566c2a03af87f5a0c.png",
-      "website": "https://upliftai.org/",
-      "location": "San Francisco, CA, USA",
-      "description": "Foundational Voice Models for regional languages",
-      "long_description": "We build Voice Models for regional languages (like Urdu, Bengali, Greek etc) and make them available through simple APIs and SDKs. \r\nDevelopers use us to create Voice-first digital experiences (eg. Voice eCommerce, Voice Banking, Voice AI Tutors etc).\r\n\r\nWe gather our own data, develop our own labelling tools, train our own models, and design our own voice infra. This fully integrated approach enables us to offer the best models and the best developer experience for regional languages.\r\n\r\n---\r\n\r\nPeople who would previously never use certain digital services (like online ordering), actually use the service when they are given an intuitive Voice based interface.\r\nWe believe that Voice Interfaces will onboard 100s of millions of new users onto digital services; and double the addressable market for technology companies. \r\nUplift AI will provide the best models to create these Voice Interfaces for 60% of the world's population that only speaks their regional language and represents 42 trillion dollars in GDP.\r\n",
-      "industry": "B2B",
-      "industries": [
-        "B2B"
-      ],
-      "subindustry": "B2B",
-      "batch": null,
-      "is_hiring": true,
-      "is_top_company": false,
-      "status": "Active",
-      "stage": "Early",
-      "team_size": 3,
-      "tags": [
-        "Speech Recognition",
-        "Conversational AI"
-      ],
-      "regions": [
-        "United States of America",
-        "America / Canada",
-        "Remote",
-        "Partly Remote"
-      ],
-      "source_vc": "Y Combinator",
-      "founders": [
-        {
-          "name": "Hammad Malik",
-          "college": "Cornell University",
-          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/68417dab5a3c88034acc6500406a732dc3fc6ed6.jpg",
-          "linkedin_url": "https://www.linkedin.com/in/hammad2",
-          "raw_bio": "CEO at Uplift AI. Building Voice Models for regional languages. Previously developed voice technology at Apple Siri and Amazon Alexa for about 9 years. Cornell University alumni."
-        },
-        {
-          "name": "Zaid Qureshi",
-          "college": null,
-          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/213c6ace31f4682223f0ff84235321060d66a70d.jpg",
-          "linkedin_url": "https://linkedin.com/in/zaidqureshi",
-          "raw_bio": "CTO at Uplift AI. Building Voice Models for regional languages. Previously: Designed AWS Bedrock Guardrails."
-        }
-      ],
-      "job_board": {
-        "count": null,
-        "url": "https://upliftai.org/careers",
-        "source_type": "manual_visit",
-        "ats_platform": null
-      },
-      "last_scraped": "2026-08-17T09:37:49.323162",
+      "last_scraped": "2026-08-24T09:44:05.115911",
       "data_completeness": 0.75
     },
     {
@@ -13967,7 +14371,7 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.296727",
+      "last_scraped": "2026-08-24T09:44:05.088683",
       "data_completeness": 0.75
     },
     {
@@ -14019,7 +14423,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.309053",
+      "last_scraped": "2026-08-24T09:44:05.101986",
       "data_completeness": 0.75
     },
     {
@@ -14070,7 +14474,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.297190",
+      "last_scraped": "2026-08-24T09:44:05.089185",
       "data_completeness": 0.75
     },
     {
@@ -14126,7 +14530,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.309438",
+      "last_scraped": "2026-08-24T09:44:05.102514",
       "data_completeness": 0.75
     },
     {
@@ -14177,7 +14581,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.302926",
+      "last_scraped": "2026-08-24T09:44:05.095480",
       "data_completeness": 0.75
     },
     {
@@ -14224,72 +14628,47 @@
         "source_type": "ats_api",
         "ats_platform": "ashby"
       },
-      "last_scraped": "2026-08-17T09:37:49.241004",
+      "last_scraped": "2026-08-24T09:44:05.027250",
       "data_completeness": 0.75
     },
     {
-      "yc_id": 30797,
-      "name": "Veritus",
-      "slug": "veritus",
-      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/a784e9084818b8c7af26cd462448e7fd4415c18b.png",
-      "website": "https://www.veritus.com",
+      "yc_id": 32751,
+      "name": "Vestris",
+      "slug": "vestris",
+      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/e17d90c0a32a27bdb75bac6bb8a2ca4e0ad1646d.png",
+      "website": "https://vestris.ai/",
       "location": "San Francisco, CA, USA",
-      "description": "AI agents for the consumer lending industry",
-      "long_description": "Veritus is a omni-channel platform for deploying AI agents for loan servicing and collections, including inbound and outbound voice agents. Our agents negotiate repayment plans, follow up across channels, and drive recoveries with zero human involvement.\r\n\r\nBy combining cutting edge voice AI with deep regulatory compliance and vertical specialization we're able to drastically reduce the cost-to-collect while increasing recovery rates. ",
-      "industry": "Fintech",
+      "description": "AI native platform for real estate closings",
+      "long_description": "Vestris automates title processing end-to-end, from contract to close, so title shops can close more deals with fewer processors. Title insurance has famously high margins, but slow, manual processing is a constant pain — especially in today's bleeding housing market.",
+      "industry": "Real Estate and Construction",
       "industries": [
-        "Fintech",
-        "Credit and Lending"
+        "Real Estate and Construction",
+        "Housing and Real Estate"
       ],
-      "subindustry": "Fintech -> Credit and Lending",
+      "subindustry": "Real Estate and Construction -> Housing and Real Estate",
       "batch": null,
       "is_hiring": true,
       "is_top_company": false,
       "status": "Active",
       "stage": "Early",
-      "team_size": 10,
+      "team_size": 2,
       "tags": [
-        "Fintech",
-        "Lending",
-        "AI"
+        "Workflow Automation",
+        "Home Services"
       ],
       "regions": [
         "United States of America",
-        "America / Canada",
-        "Remote",
-        "Partly Remote"
+        "America / Canada"
       ],
       "source_vc": "Y Combinator",
-      "founders": [
-        {
-          "name": "Joshua March",
-          "college": null,
-          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/e4dd6e8ed88496382b6a27b6ab4a143cbe1724c2.jpg",
-          "linkedin_url": "https://www.linkedin.com/in/joshuamarch/",
-          "raw_bio": "I’m the Founder & CEO of Veritus Agent, an AI agent platform the consumer lending industry. I’ve been a serial founder with multiple exits, including enterprise SaaS company Conversocial, acquired by Verint (VRNT), and I was the co-founder & CEO of a16z-backed SCiFi Foods. I’m also the author of Message Me, a book about the future of customer service in the era of AI and social media."
-        },
-        {
-          "name": "David Schlesinger",
-          "college": "Harvard University",
-          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/b23533a188e4ea88997f1f2a4082613e5122b549.jpg",
-          "linkedin_url": "https://www.linkedin.com/in/davidschles/",
-          "raw_bio": "Co-founder at Veritus Agent. 10+ experience in startups including Divvy Homes and Cloudflare."
-        },
-        {
-          "name": "Joseph Stein",
-          "college": null,
-          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/b6946906dd3ceffaee99102a127adcf1a2cf0cbb.jpg",
-          "linkedin_url": "https://www.linkedin.com/in/josephstein1",
-          "raw_bio": "Co-founder of Veritus Agent, an AI-powered debt buyer and collections platform. 10+ years in startups, including one acquired by Fitbit → Google"
-        }
-      ],
+      "founders": [],
       "job_board": {
-        "count": 2,
-        "url": "https://jobs.ashbyhq.com/veritus",
-        "source_type": "ats_api",
-        "ats_platform": "ashby"
+        "count": null,
+        "url": "https://vestris.ai/careers",
+        "source_type": "manual_visit",
+        "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.324345",
+      "last_scraped": "2026-08-24T09:44:05.058912",
       "data_completeness": 0.75
     },
     {
@@ -14326,7 +14705,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.308640",
+      "last_scraped": "2026-08-24T09:44:05.101528",
       "data_completeness": 0.75
     },
     {
@@ -14384,7 +14763,48 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.318609",
+      "last_scraped": "2026-08-24T09:44:05.112409",
+      "data_completeness": 0.75
+    },
+    {
+      "yc_id": 32948,
+      "name": "Waybill",
+      "slug": "waybill",
+      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/b91adedb53afabc881281324143485f1dc3c6674.png",
+      "website": "https://www.waybill.to/",
+      "location": "Gurugram, HR, India",
+      "description": "Managed procurement & inventory for hardware teams.",
+      "long_description": "Hardware teams burn weeks on procurement. An engineer needs a part. Someone emails five distributors, chases quotes, gets an approval, wires the money, tracks a shipment across three carriers, clears customs, and then nobody knows where the box is or what's actually on the shelf.\r\n\r\nWaybill runs that entire loop. Send us a part, a spec, or a BOM. We source it, pull quotes, route approvals, pay the supplier, handle freight and customs, track it to your dock, and keep your stock count updated. \r\n\r\nTake your supply chain for granted.\r\n\r\nBuilt by a team that's seen it at LAT Aerospace and WareIQ (YC S20).",
+      "industry": "B2B",
+      "industries": [
+        "B2B",
+        "Supply Chain and Logistics"
+      ],
+      "subindustry": "B2B -> Supply Chain and Logistics",
+      "batch": null,
+      "is_hiring": true,
+      "is_top_company": false,
+      "status": "Active",
+      "stage": "Early",
+      "team_size": 5,
+      "tags": [
+        "Artificial Intelligence",
+        "Logistics",
+        "Procurement"
+      ],
+      "regions": [
+        "India",
+        "South Asia"
+      ],
+      "source_vc": "Y Combinator",
+      "founders": [],
+      "job_board": {
+        "count": null,
+        "url": "https://www.waybill.to/careers",
+        "source_type": "manual_visit",
+        "ats_platform": null
+      },
+      "last_scraped": "2026-08-24T09:44:05.058160",
       "data_completeness": 0.75
     },
     {
@@ -14429,7 +14849,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.295893",
+      "last_scraped": "2026-08-24T09:44:05.087510",
       "data_completeness": 0.75
     },
     {
@@ -14487,7 +14907,7 @@
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-17T09:37:49.228462",
+      "last_scraped": "2026-08-24T09:44:05.014294",
       "data_completeness": 0.75
     },
     {
@@ -14542,7 +14962,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.260077",
+      "last_scraped": "2026-08-24T09:44:05.047083",
       "data_completeness": 0.75
     },
     {
@@ -14598,7 +15018,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.229141",
+      "last_scraped": "2026-08-24T09:44:05.014952",
       "data_completeness": 0.75
     },
     {
@@ -14657,12 +15077,12 @@
         }
       ],
       "job_board": {
-        "count": 23,
+        "count": 24,
         "url": "https://boards.greenhouse.io/xendit",
         "source_type": "ats_api",
         "ats_platform": "greenhouse"
       },
-      "last_scraped": "2026-08-17T09:37:49.237819",
+      "last_scraped": "2026-08-24T09:44:05.023845",
       "data_completeness": 0.75
     },
     {
@@ -14714,7 +15134,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.314752",
+      "last_scraped": "2026-08-24T09:44:05.108429",
       "data_completeness": 0.75
     },
     {
@@ -14765,7 +15185,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.229870",
+      "last_scraped": "2026-08-24T09:44:05.015679",
       "data_completeness": 0.75
     },
     {
@@ -14805,7 +15225,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.308433",
+      "last_scraped": "2026-08-24T09:44:05.101335",
       "data_completeness": 0.75
     },
     {
@@ -14853,7 +15273,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.264931",
+      "last_scraped": "2026-08-24T09:44:05.052241",
       "data_completeness": 0.75
     },
     {
@@ -14889,70 +15309,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.296540",
-      "data_completeness": 0.75
-    },
-    {
-      "yc_id": 30801,
-      "name": "burnt",
-      "slug": "burnt",
-      "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/2af9e43cd6c77970b3bff5071024e812ac9ee3e0.png",
-      "website": "https://getburnt.ai/",
-      "location": "San Francisco, CA, USA",
-      "description": "Agentic Operating System for Food Supply Chain",
-      "long_description": "Food Supply Chain companies have been using legacy ERPs for decades. Everyone knows these are necessary evils that essentially run the business but take up a lot of operational capacity. They are not about to just rip and replace their existing system that runs their whole business with a system that takes years to implement. Imagine if they could implement AI that runs the ERP for them, in weeks?\r\n\r\nBurnt’s building an agentic OS for the Food Supply Chain with AI Agents for each department. \r\n\r\nOur AI Agent, Ozai, has started by replacing the whole order management job function at food distribution companies, so that sales and customer service teams can focus on what matters - the customer. Ozai monitors all incoming messages (emails, phone calls, voicemails, whatsapp, fax etc.), figures out if it's an order, learns each customer's habits, shorthand, and favorite products, picks up on any prep notes, and enters it straight into the existing ERP. It'll even go back to the customers on your behalf when it's not sure about something, clarify things and carry on working. \r\n\r\nThe more it sees, the smarter it gets. \r\n",
-      "industry": "B2B",
-      "industries": [
-        "B2B",
-        "Supply Chain and Logistics"
-      ],
-      "subindustry": "B2B -> Supply Chain and Logistics",
-      "batch": null,
-      "is_hiring": true,
-      "is_top_company": false,
-      "status": "Active",
-      "stage": "Early",
-      "team_size": 3,
-      "tags": [
-        "Supply Chain",
-        "Food Tech",
-        "AI"
-      ],
-      "regions": [
-        "United States of America",
-        "America / Canada"
-      ],
-      "source_vc": "Y Combinator",
-      "founders": [
-        {
-          "name": "Joseph Jacob",
-          "college": "MIT",
-          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/d735f867a1cf54d1e20ec19c2727ab6caa25ca8d.jpg",
-          "linkedin_url": "https://www.linkedin.com/in/josephjacob93",
-          "raw_bio": "Spent my whole career in food supply chain, intimately understanding the pain points at each step of the supply chain. Now we're reinventing the fundamental technical infrastructure that the industry is run on."
-        },
-        {
-          "name": "Rhea Karimpanal",
-          "college": "University of California, Berkeley",
-          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/920bfceb325ccada2cd07b600a9914ecd1d8828b.jpg",
-          "linkedin_url": "https://www.linkedin.com/in/rheakarimpanal/",
-          "raw_bio": "Product at burnt! Creativity is my jam, details matter to me, and I’m all about understanding how people in food relate to technology."
-        },
-        {
-          "name": "Chandru Shanumugasundaram",
-          "college": "Harvard University",
-          "photo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/b6350b115e5bbaa86266e69c0c605bf5258872a5.jpg",
-          "linkedin_url": "https://linkedin.com/in/chandrushanmugasundaram",
-          "raw_bio": "Built backed systems for Legal tech, Dev tools, Banking, Restaurant applications. Currently building agents for food distributors and suppliers."
-        }
-      ],
-      "job_board": {
-        "count": 8,
-        "url": "https://boards.greenhouse.io/burnt",
-        "source_type": "ats_api",
-        "ats_platform": "greenhouse"
-      },
-      "last_scraped": "2026-08-17T09:37:49.323879",
+      "last_scraped": "2026-08-24T09:44:05.088441",
       "data_completeness": 0.75
     },
     {
@@ -14999,7 +15356,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.318119",
+      "last_scraped": "2026-08-24T09:44:05.111927",
       "data_completeness": 0.75
     },
     {
@@ -15050,7 +15407,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.232053",
+      "last_scraped": "2026-08-24T09:44:05.017840",
       "data_completeness": 0.75
     },
     {
@@ -15107,7 +15464,7 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.307952",
+      "last_scraped": "2026-08-24T09:44:05.100876",
       "data_completeness": 0.75
     },
     {
@@ -15152,7 +15509,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.295338",
+      "last_scraped": "2026-08-24T09:44:05.086923",
       "data_completeness": 0.75
     },
     {
@@ -15177,11 +15534,11 @@
       "stage": "Early",
       "team_size": 2,
       "tags": [
-        "Artificial Intelligence",
         "SaaS",
         "B2B",
         "Enterprise",
-        "Enterprise Software"
+        "Enterprise Software",
+        "AI"
       ],
       "regions": [
         "United States of America",
@@ -15205,7 +15562,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.271156",
+      "last_scraped": "2026-08-24T09:44:05.062949",
       "data_completeness": 0.75
     },
     {
@@ -15300,7 +15657,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.304272",
+      "last_scraped": "2026-08-24T09:44:05.097013",
       "data_completeness": 0.5
     },
     {
@@ -15355,7 +15712,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.239120",
+      "last_scraped": "2026-08-24T09:44:05.025321",
       "data_completeness": 0.5
     },
     {
@@ -15406,7 +15763,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.297570",
+      "last_scraped": "2026-08-24T09:44:05.089566",
       "data_completeness": 0.5
     },
     {
@@ -15457,7 +15814,7 @@
         "source_type": "html_heuristic",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.301265",
+      "last_scraped": "2026-08-24T09:44:05.093726",
       "data_completeness": 0.5
     },
     {
@@ -15508,7 +15865,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.311617",
+      "last_scraped": "2026-08-24T09:44:05.106699",
       "data_completeness": 0.5
     },
     {
@@ -15566,7 +15923,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.317172",
+      "last_scraped": "2026-08-24T09:44:05.111013",
       "data_completeness": 0.5
     },
     {
@@ -15624,7 +15981,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.299313",
+      "last_scraped": "2026-08-24T09:44:05.091595",
       "data_completeness": 0.5
     },
     {
@@ -15668,7 +16025,7 @@
         "source_type": "manual_visit",
         "ats_platform": null
       },
-      "last_scraped": "2026-08-17T09:37:49.255403",
+      "last_scraped": "2026-08-24T09:44:05.042455",
       "data_completeness": 0.5
     }
   ]

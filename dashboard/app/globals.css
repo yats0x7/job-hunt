@@ -4,11 +4,15 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-surface: var(--surface);
+  --color-surface-raised: var(--surface-raised);
   --color-surface-hover: var(--surface-hover);
   --color-border: var(--border-color);
+  --color-border-strong: var(--border-strong);
   --color-accent: var(--accent);
   --color-accent-muted: var(--accent-muted);
   --color-muted: var(--muted);
+  --color-subtle: var(--subtle);
+  --color-faint: var(--faint);
   --color-success: var(--success);
   --color-warning: var(--warning);
   --font-sans: var(--font-geist-sans);
@@ -16,20 +20,29 @@
 }
 
 :root {
-  --background: #0a0a0a;
+  --background: #09090b;
   --foreground: #fafafa;
-  --surface: #111111;
-  --surface-hover: #1a1a1a;
-  --border-color: rgba(255, 255, 255, 0.06);
+  --surface: #111113;
+  --surface-raised: #17171a;
+  --surface-hover: #1c1c20;
+  --border-color: rgba(255, 255, 255, 0.07);
+  --border-strong: rgba(255, 255, 255, 0.14);
   --accent: #f97316;
   --accent-muted: #c2410c;
-  --muted: #71717a;
+  --muted: #a1a1aa;
+  --subtle: #71717a;
+  --faint: #52525b;
   --success: #22c55e;
   --warning: #eab308;
+  color-scheme: dark;
 }
 
 * {
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -38,17 +51,45 @@ body {
   font-family: var(--font-sans), system-ui, -apple-system, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+/* Ambient glow behind the top of every page */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    radial-gradient(70% 45% at 50% -12%, rgba(249, 115, 22, 0.14), transparent 70%),
+    radial-gradient(40% 30% at 100% 0%, rgba(59, 130, 246, 0.05), transparent 70%);
 }
 
 /* Global transition defaults */
-a, button {
-  transition: all 200ms ease;
+a,
+button {
+  transition:
+    color 180ms ease,
+    background-color 180ms ease,
+    border-color 180ms ease,
+    box-shadow 180ms ease,
+    opacity 180ms ease,
+    transform 180ms ease;
+}
+
+/* Keyboard focus */
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 6px;
 }
 
 /* Scrollbar styling */
 ::-webkit-scrollbar {
-  width: 5px;
-  height: 5px;
+  width: 6px;
+  height: 6px;
 }
 
 ::-webkit-scrollbar-track {
@@ -56,23 +97,23 @@ a, button {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.08);
-  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 999px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.18);
 }
 
 /* Selection */
 ::selection {
-  background: rgba(249, 115, 22, 0.25);
+  background: rgba(249, 115, 22, 0.3);
   color: #fafafa;
 }
 
-/* Animate-in utilities for detail page */
+/* Entrance animation for server-rendered sections */
 .animate-in {
-  animation: animateIn 0.5s ease forwards;
+  animation: animateIn 0.5s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
 @keyframes animateIn {
@@ -86,10 +127,20 @@ a, button {
   }
 }
 
-.fade-in { animation-name: animateIn; }
-.slide-in-from-bottom-4 { /* handled by animateIn */ }
-.fill-mode-both { animation-fill-mode: both; }
 .delay-100 { animation-delay: 100ms; }
 .delay-200 { animation-delay: 200ms; }
 .delay-300 { animation-delay: 300ms; }
 .delay-500 { animation-delay: 500ms; }
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

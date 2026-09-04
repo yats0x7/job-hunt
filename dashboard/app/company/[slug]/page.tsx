@@ -1,8 +1,19 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { Company, Founder } from "@/lib/types";
 import { getCompanyData } from "@/lib/data";
-import FounderChip from "@/components/FounderChip";
+import { batchChipClasses, displayUrl, formatDate, plural } from "@/lib/format";
+import { FounderAvatar } from "@/components/FounderChip";
 import { JobSourceBadge } from "@/components/JobBadge";
+import {
+  ArrowLeftIcon,
+  ExternalLinkIcon,
+  LinkedInIcon,
+  PinIcon,
+  StarIcon,
+  TrendingUpIcon,
+  UsersIcon,
+} from "@/components/Icons";
 
 export async function generateStaticParams() {
   const { companies } = await getCompanyData();
@@ -16,6 +27,20 @@ async function getCompanyBySlug(slug: string): Promise<Company | undefined> {
   return (companies ?? []).find((c) => c?.slug === slug);
 }
 
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const company = await getCompanyBySlug(slug);
+  if (!company) return { title: "Company not found" };
+  return {
+    title: company.name,
+    description: company.description ?? undefined,
+  };
+}
+
 export default async function CompanyDetailPage({
   params,
 }: {
@@ -26,22 +51,21 @@ export default async function CompanyDetailPage({
 
   if (!company) {
     return (
-      <div className="min-h-screen flex items-center justify-center">
-        <div className="text-center">
-          <h1 className="text-xl font-bold text-[#e4e4e7] mb-2">
-            Company not found
-          </h1>
-          <p className="text-[#52525b] mb-6 font-light text-sm">
-            No company with slug &ldquo;{slug}&rdquo; exists in the database.
+      <div className="min-h-screen flex items-center justify-center px-6">
+        <div className="text-center max-w-sm">
+          <div className="w-14 h-14 mx-auto rounded-2xl bg-surface border border-border flex items-center justify-center mb-5 text-faint text-xl font-semibold">
+            ?
+          </div>
+          <h1 className="text-xl font-semibold text-foreground mb-2">Company not found</h1>
+          <p className="text-subtle mb-6 text-sm">
+            No company with slug &ldquo;{slug}&rdquo; exists in the dataset.
           </p>
           <Link
             href="/"
-            className="inline-flex items-center gap-2 text-sm text-[#f97316]/80 hover:text-[#f97316] transition-colors duration-200"
+            className="inline-flex items-center gap-2 h-9 px-4 rounded-full text-sm font-medium bg-white/[0.05] border border-border text-foreground hover:border-border-strong"
           >
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"/>
-            </svg>
-            Back to discovery feed
+            <ArrowLeftIcon size={14} />
+            Back to companies
           </Link>
         </div>
       </div>
@@ -56,242 +80,202 @@ export default async function CompanyDetailPage({
   return (
     <div className="min-h-screen">
       {/* Navigation */}
-      <nav className="border-b border-white/[0.06] bg-[#0a0a0a]">
-        <div className="max-w-[900px] mx-auto px-6 py-4">
+      <nav className="sticky top-0 z-40 border-b border-border bg-background/80 backdrop-blur-xl">
+        <div className="max-w-[1100px] mx-auto px-4 sm:px-6 h-14 flex items-center justify-between gap-4">
           <Link
             href="/"
-            className="inline-flex items-center gap-2 text-[13px] text-[#52525b] hover:text-[#a1a1aa] transition-colors duration-200 font-light"
             id="back-link"
+            className="inline-flex items-center gap-2 text-[13px] text-subtle hover:text-foreground"
           >
-            <svg
-              className="w-4 h-4"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              strokeWidth={1.5}
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"
-              />
-            </svg>
+            <ArrowLeftIcon size={15} />
             Back to companies
           </Link>
+          {company.website && (
+            <a
+              href={company.website}
+              target="_blank"
+              rel="noopener noreferrer"
+              id="company-website-link"
+              className="inline-flex items-center gap-1.5 h-8 px-3 rounded-full text-[12px] font-medium text-muted bg-white/[0.04] border border-border hover:text-foreground hover:border-border-strong"
+            >
+              {displayUrl(company.website)}
+              <ExternalLinkIcon size={12} className="text-faint" />
+            </a>
+          )}
         </div>
       </nav>
 
-      <main className="max-w-[900px] mx-auto px-6 py-12">
-        {/* Hero */}
-        <div className="animate-in fade-in slide-in-from-bottom-4 duration-500">
+      <main className="max-w-[1100px] mx-auto px-4 sm:px-6 py-8 sm:py-12">
+        <div className="animate-in">
           <HeroSection company={company} />
         </div>
 
-        {/* Founders */}
-        {founders.length > 0 && (
-          <div className="animate-in fade-in slide-in-from-bottom-4 duration-500 delay-100 fill-mode-both">
-            <FoundersSection founders={founders} />
+        <div className="mt-10 grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_320px] gap-8 lg:gap-10 items-start">
+          {/* Primary column */}
+          <div className="min-w-0 space-y-10">
+            {company.long_description && (
+              <div className="animate-in delay-100">
+                <Section title="About">
+                  <p className="text-[14px] text-muted leading-[1.75] whitespace-pre-line">
+                    {company.long_description}
+                  </p>
+                </Section>
+              </div>
+            )}
+
+            {founders.length > 0 && (
+              <div className="animate-in delay-200">
+                <FoundersSection founders={founders} />
+              </div>
+            )}
           </div>
-        )}
 
-        {/* Jobs */}
-        <div className="animate-in fade-in slide-in-from-bottom-4 duration-500 delay-200 fill-mode-both">
-          <JobsSection company={company} />
-        </div>
-
-        {/* Description */}
-        {company.long_description && (
-          <div className="animate-in fade-in slide-in-from-bottom-4 duration-500 delay-300 fill-mode-both">
-            <Section title="About">
-              <p className="text-[13px] text-[#a1a1aa] leading-[1.7] whitespace-pre-line font-light">
-                {company.long_description}
-              </p>
-            </Section>
-          </div>
-        )}
-
-        {/* Details Grid */}
-        <div className="animate-in fade-in slide-in-from-bottom-4 duration-500 delay-500 fill-mode-both">
-          <DetailsSection
-            company={company}
-            industries={industries}
-            tags={tags}
-            regions={regions}
-          />
+          {/* Side column */}
+          <aside className="space-y-6 lg:sticky lg:top-20">
+            <div className="animate-in delay-100">
+              <JobsCard company={company} />
+            </div>
+            <div className="animate-in delay-300">
+              <DetailsCard
+                company={company}
+                industries={industries}
+                tags={tags}
+                regions={regions}
+              />
+            </div>
+          </aside>
         </div>
       </main>
     </div>
   );
 }
 
-/* ─── SVG Icon Components ────────────────────────────────────────── */
+/* ─── Hero ────────────────────────────────────────────────────────── */
 
-function TrendingUpIcon() {
-  return (
-    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="flex-shrink-0">
-      <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/>
-      <polyline points="17 6 23 6 23 12"/>
-    </svg>
-  );
-}
-
-function UsersIcon() {
-  return (
-    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="flex-shrink-0">
-      <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
-      <circle cx="9" cy="7" r="4"/>
-      <path d="M23 21v-2a4 4 0 00-3-3.87"/>
-      <path d="M16 3.13a4 4 0 010 7.75"/>
-    </svg>
-  );
-}
-
-function StarIcon() {
-  return (
-    <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" className="flex-shrink-0 opacity-90">
-      <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-    </svg>
-  );
-}
-
-/* ─── Sub-components ────────────────────────────────────────────── */
+const STATUS_CLASSES: Record<string, string> = {
+  Active: "bg-emerald-500/10 text-emerald-300 border-emerald-500/20",
+  Public: "bg-blue-500/10 text-blue-300 border-blue-500/20",
+  Acquired: "bg-violet-500/10 text-violet-300 border-violet-500/20",
+  Inactive: "bg-white/[0.04] text-subtle border-border",
+};
 
 function HeroSection({ company }: { company: Company }) {
-  const statusColors: Record<string, string> = {
-    Active: "bg-emerald-500/10 text-emerald-400/80 border-emerald-500/10",
-    Public: "bg-blue-500/10 text-blue-400/80 border-blue-500/10",
-    Acquired: "bg-violet-500/10 text-violet-400/80 border-violet-500/10",
-  };
-
-  const dataCompleteness = Math.round((company.data_completeness ?? 0) * 100);
+  const name = company.name ?? "Unknown Company";
 
   return (
-    <div className="flex items-start gap-5 mb-12">
-      <div className="w-14 h-14 rounded-2xl bg-[#111111] border border-white/[0.06] flex-shrink-0 overflow-hidden flex items-center justify-center">
+    <div className="flex flex-col sm:flex-row sm:items-start gap-5 sm:gap-6">
+      <div className="w-16 h-16 sm:w-20 sm:h-20 shrink-0 rounded-2xl bg-surface border border-border ring-1 ring-white/[0.04] overflow-hidden flex items-center justify-center shadow-[0_20px_40px_-20px_rgba(0,0,0,0.8)]">
         {company.logo_url ? (
           <img
             src={company.logo_url}
-            alt={`${company.name ?? "Company"} logo`}
+            alt={`${name} logo`}
             referrerPolicy="no-referrer"
-            className="w-full h-full object-contain p-2"
+            className="w-full h-full object-contain p-2.5"
           />
         ) : (
-          <span className="text-xl font-bold text-white w-full h-full flex items-center justify-center bg-gradient-to-br from-indigo-500/80 to-purple-600/80 rounded-2xl">
-            {(company.name ?? "C").charAt(0)}
+          <span className="w-full h-full flex items-center justify-center text-2xl font-bold text-white bg-gradient-to-br from-indigo-500 to-purple-600">
+            {name.charAt(0)}
           </span>
         )}
       </div>
 
       <div className="flex-1 min-w-0">
-        <div className="flex flex-wrap items-center gap-2.5 mb-2">
-          <h1 className="text-xl font-bold text-[#e4e4e7] tracking-tight">
-            {company.name ?? "Unknown Company"}
+        <div className="flex flex-wrap items-center gap-2 mb-2">
+          <h1 className="text-2xl sm:text-[32px] font-semibold text-foreground tracking-tight leading-none">
+            {name}
           </h1>
-          {company.batch && (
-            <span className="px-2 py-0.5 rounded-md text-[11px] font-medium bg-orange-500/10 text-orange-400/80 border border-orange-500/10">
-              {company.batch}
-            </span>
-          )}
-          {company.status && (
-            <span
-              className={`px-2 py-0.5 rounded-md text-[11px] font-medium border ${
-                statusColors[company.status] ||
-                "bg-white/[0.04] text-[#52525b] border-white/[0.06]"
-              }`}
-            >
-              {company.status}
-            </span>
-          )}
           {company.is_top_company && (
-            <span className="inline-flex items-center gap-1 px-2 py-0.5 bg-gradient-to-r from-orange-500 to-amber-500 text-[11px] font-semibold text-white rounded-md">
-              <StarIcon />
-              Top Company
+            <span className="inline-flex items-center gap-1 h-6 px-2 rounded-full bg-amber-400/10 border border-amber-400/25 text-amber-300 text-[10px] font-semibold uppercase tracking-wider">
+              <StarIcon size={10} />
+              Top company
             </span>
           )}
         </div>
 
         {company.description && (
-          <p className="text-[13px] text-[#71717a] mb-3 font-light leading-relaxed">{company.description}</p>
+          <p className="text-[15px] text-muted leading-relaxed mb-4 max-w-2xl">{company.description}</p>
         )}
 
-        <div className="flex flex-wrap items-center gap-4 text-[12px] text-[#52525b]">
-          {company.website && (
-            <a
-              href={company.website}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-[#f97316] transition-colors duration-200 flex items-center gap-1.5 font-light"
-              id="company-website-link"
-            >
-              <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
-              </svg>
-              {company.website.replace(/https?:\/\/(www\.)?/, "").replace(/\/$/, "")}
-            </a>
-          )}
-          {company.location && (
-            <span className="flex items-center gap-1.5 font-light">
-              <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
-                <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
-              </svg>
-              {company.location}
-            </span>
+        <div className="flex flex-wrap items-center gap-2">
+          {company.batch && <Chip className={batchChipClasses(company.batch)}>{company.batch}</Chip>}
+          {company.status && (
+            <Chip className={STATUS_CLASSES[company.status] ?? "bg-white/[0.04] text-subtle border-border"}>
+              <span className="w-1.5 h-1.5 rounded-full bg-current opacity-80" />
+              {company.status}
+            </Chip>
           )}
           {company.stage && (
-            <span className="flex items-center gap-1.5 font-light">
-              <TrendingUpIcon />
-              {company.stage}
-            </span>
+            <Chip className="bg-white/[0.04] text-muted border-border">
+              <TrendingUpIcon size={12} className="text-faint" />
+              {company.stage} stage
+            </Chip>
           )}
           {company.team_size && (
-            <span className="flex items-center gap-1.5 font-light">
-              <UsersIcon />
-              {company.team_size.toLocaleString()} team members
-            </span>
+            <Chip className="bg-white/[0.04] text-muted border-border">
+              <UsersIcon size={12} className="text-faint" />
+              {company.team_size.toLocaleString()} {plural(company.team_size, "person", "people")}
+            </Chip>
           )}
-        </div>
-
-        {/* Data completeness bar */}
-        <div className="mt-5 flex items-center gap-3">
-          <span className="text-[10px] text-[#3f3f46] uppercase tracking-[0.08em] font-medium">
-            Data completeness
-          </span>
-          <div className="flex-1 max-w-[200px] h-1 bg-white/[0.04] rounded-full overflow-hidden">
-            <div className="h-full rounded-full bg-gradient-to-r from-[#f97316] to-[#22c55e]" style={{ width: `${dataCompleteness}%` }} />
-          </div>
-          <span className="text-[10px] font-medium text-[#71717a]">
-            {dataCompleteness}%
-          </span>
+          {company.location && (
+            <Chip className="bg-white/[0.04] text-muted border-border">
+              <PinIcon size={12} className="text-faint" />
+              {company.location}
+            </Chip>
+          )}
         </div>
       </div>
     </div>
   );
 }
 
+function Chip({ className, children }: { className: string; children: React.ReactNode }) {
+  return (
+    <span
+      className={`inline-flex items-center gap-1.5 h-7 px-2.5 rounded-full text-[12px] font-medium border ${className}`}
+    >
+      {children}
+    </span>
+  );
+}
+
+/* ─── Founders ────────────────────────────────────────────────────── */
+
 function FoundersSection({ founders }: { founders: Founder[] }) {
   return (
-    <Section title="Founders">
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+    <Section title="Founders" count={founders.length}>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
         {founders.map((founder, i) => (
           <div
-            key={i}
-            className="flex items-center gap-3 p-3.5 bg-[#111111] border border-white/[0.06] rounded-xl hover:border-white/[0.1] transition-all duration-200"
+            key={`${founder.name ?? "founder"}-${i}`}
+            className="flex gap-3.5 p-4 bg-surface border border-border rounded-2xl hover:border-border-strong transition-colors duration-200"
           >
-            <FounderChip founder={founder} size="md" />
-            <div className="ml-auto flex-shrink-0">
-              {founder.linkedin_url && (
-                <a
-                  href={founder.linkedin_url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-8 h-8 rounded-lg bg-white/[0.04] flex items-center justify-center text-[#52525b] hover:text-[#0a66c2] hover:bg-[#0a66c2]/8 transition-all duration-200"
-                  title={`${founder.name ?? "Founder"} on LinkedIn`}
-                >
-                  <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-                  </svg>
-                </a>
+            <FounderAvatar founder={founder} size="lg" className="ring-0" />
+            <div className="flex-1 min-w-0">
+              <div className="flex items-start justify-between gap-2">
+                <div className="min-w-0">
+                  <p className="text-[14px] font-medium text-foreground truncate">
+                    {founder.name ?? "Founder"}
+                  </p>
+                  <p className={`text-[12px] truncate ${founder.college ? "text-subtle" : "text-faint"}`}>
+                    {founder.college ?? "Background unknown"}
+                  </p>
+                </div>
+                {founder.linkedin_url && (
+                  <a
+                    href={founder.linkedin_url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`${founder.name ?? "Founder"} on LinkedIn`}
+                    className="w-8 h-8 shrink-0 rounded-lg bg-white/[0.04] border border-border flex items-center justify-center text-subtle hover:text-[#4c9be8] hover:border-[#0a66c2]/40 hover:bg-[#0a66c2]/10"
+                  >
+                    <LinkedInIcon size={13} />
+                  </a>
+                )}
+              </div>
+              {founder.raw_bio && (
+                <p className="mt-2 text-[12.5px] text-subtle leading-relaxed line-clamp-3">
+                  {founder.raw_bio}
+                </p>
               )}
             </div>
           </div>
@@ -301,71 +285,64 @@ function FoundersSection({ founders }: { founders: Founder[] }) {
   );
 }
 
-function JobsSection({ company }: { company: Company }) {
+/* ─── Jobs ────────────────────────────────────────────────────────── */
+
+function JobsCard({ company }: { company: Company }) {
   const jb = company.job_board;
+  const hasCount = jb?.count !== null && jb?.count !== undefined;
+  const count = hasCount ? (jb!.count as number) : null;
+  const careersUrl = company.website ? `${company.website.replace(/\/+$/, "")}/careers` : null;
+  const primaryUrl = jb?.url ?? careersUrl;
 
   return (
-    <Section title="Jobs">
-      <div className="p-5 bg-[#111111] border border-white/[0.06] rounded-xl">
-        {jb ? (
-          <div className="flex flex-wrap items-center justify-between gap-4">
-            <div className="flex items-center gap-4">
-              {jb.count !== null && jb.count !== undefined ? (
-                <div className="flex items-baseline gap-2">
-                  <span className="text-2xl font-bold text-[#e4e4e7] tracking-tight">
-                    {jb.count}
-                  </span>
-                  <span className="text-[13px] text-[#52525b] font-light">
-                    open role{jb.count !== 1 ? "s" : ""}
-                  </span>
-                </div>
-              ) : (
-                <span className="text-[13px] text-[#52525b] font-light">
-                  Job count not available
-                </span>
-              )}
+    <div className="relative overflow-hidden rounded-2xl bg-surface border border-border p-5">
+      <div
+        aria-hidden
+        className="pointer-events-none absolute -top-16 -right-16 w-40 h-40 rounded-full bg-accent/15 blur-3xl"
+      />
+      <div className="relative">
+        <p className="text-[11px] font-semibold uppercase tracking-[0.1em] text-subtle mb-3">Open roles</p>
 
-              <div className="flex flex-col gap-1">
-                <JobSourceBadge jobBoard={jb} />
-                {jb.ats_platform && (
-                  <span className="text-[10px] text-[#3f3f46] font-light">
-                    via{" "}
-                    <span className="capitalize font-normal text-[#52525b]">
-                      {jb.ats_platform}
-                    </span>
-                  </span>
-                )}
-              </div>
-            </div>
-
-            {jb.url && (
-              <a
-                href={jb.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-4 py-2 rounded-lg text-[13px] font-medium
-                  bg-[#f97316] text-white hover:bg-[#ea580c]
-                  transition-all duration-200"
-                id="view-jobs-link"
-              >
-                View all jobs
-                <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
-                </svg>
-              </a>
-            )}
+        {count !== null ? (
+          <div className="flex items-baseline gap-2">
+            <span className="text-4xl font-semibold text-foreground tracking-tight tabular-nums leading-none">
+              {count}
+            </span>
+            <span className="text-[13px] text-subtle">{plural(count, "open role")}</span>
           </div>
         ) : (
-          <p className="text-[13px] text-[#3f3f46] font-light">
-            No job board data available for this company.
+          <p className="text-[14px] text-muted leading-snug">
+            Marked as hiring by YC. Role count not published yet.
           </p>
         )}
+
+        {jb && (
+          <div className="mt-3">
+            <JobSourceBadge jobBoard={jb} />
+          </div>
+        )}
+
+        {primaryUrl && (
+          <a
+            href={primaryUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            id="view-jobs-link"
+            className="mt-5 flex items-center justify-center gap-2 h-10 w-full rounded-xl text-[13px] font-medium
+              bg-accent text-white hover:bg-orange-500 shadow-[0_10px_30px_-10px_rgba(249,115,22,0.8)]"
+          >
+            {jb?.url ? "View all jobs" : "Visit careers page"}
+            <ExternalLinkIcon size={13} />
+          </a>
+        )}
       </div>
-    </Section>
+    </div>
   );
 }
 
-function DetailsSection({
+/* ─── Details ─────────────────────────────────────────────────────── */
+
+function DetailsCard({
   company,
   industries,
   tags,
@@ -376,107 +353,98 @@ function DetailsSection({
   tags: string[];
   regions: string[];
 }) {
-  const lastScrapedText = company.last_scraped
-    ? new Date(company.last_scraped).toLocaleDateString("en-US", {
-        month: "long",
-        day: "numeric",
-        year: "numeric",
-      })
-    : "Recently";
+  const completeness = Math.round((company.data_completeness ?? 0) * 100);
 
   return (
-    <Section title="Details">
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-        {industries.length > 0 && (
-          <DetailCard label="Industries">
-            <div className="flex flex-wrap gap-1.5">
-              {industries.map((ind) => (
-                <span
-                  key={ind}
-                  className="px-2 py-0.5 rounded-md text-[11px] font-normal bg-white/[0.04] text-[#71717a] border border-white/[0.04]"
-                >
-                  {ind}
-                </span>
-              ))}
-            </div>
-          </DetailCard>
-        )}
-
-        {tags.length > 0 && (
-          <DetailCard label="Tags">
-            <div className="flex flex-wrap gap-1.5">
-              {tags.map((tag) => (
-                <span
-                  key={tag}
-                  className="px-2 py-0.5 rounded-md text-[11px] font-normal bg-white/[0.04] text-[#52525b] border border-white/[0.04]"
-                >
-                  {tag}
-                </span>
-              ))}
-            </div>
-          </DetailCard>
-        )}
-
-        {regions.length > 0 && (
-          <DetailCard label="Regions">
-            <p className="text-[13px] text-[#71717a] font-light">
-              {regions.join(", ")}
-            </p>
-          </DetailCard>
-        )}
-
-        {company.team_size && (
-          <DetailCard label="Team Size">
-            <p className="text-[13px] text-[#71717a] font-light">
-              {company.team_size.toLocaleString()} people
-            </p>
-          </DetailCard>
-        )}
-
-        <DetailCard label="Source">
-          <p className="text-[13px] text-[#71717a] font-light">{company.source_vc ?? "Y Combinator"}</p>
-        </DetailCard>
-
-        <DetailCard label="Last Updated">
-          <p className="text-[13px] text-[#71717a] font-light">
-            {lastScrapedText}
-          </p>
-        </DetailCard>
-      </div>
-    </Section>
+    <div className="rounded-2xl bg-surface border border-border divide-y divide-border">
+      {industries.length > 0 && (
+        <DetailRow label="Industries">
+          <ChipList items={industries} />
+        </DetailRow>
+      )}
+      {tags.length > 0 && (
+        <DetailRow label="Tags">
+          <ChipList items={tags} muted />
+        </DetailRow>
+      )}
+      {regions.length > 0 && (
+        <DetailRow label="Regions">
+          <p className="text-[13px] text-muted leading-relaxed">{regions.join(", ")}</p>
+        </DetailRow>
+      )}
+      <DetailRow label="Source">
+        <p className="text-[13px] text-muted">{company.source_vc ?? "Y Combinator"}</p>
+      </DetailRow>
+      <DetailRow label="Last updated">
+        <p className="text-[13px] text-muted">{formatDate(company.last_scraped, "long")}</p>
+      </DetailRow>
+      <DetailRow label="Data completeness">
+        <div className="flex items-center gap-3">
+          <div
+            className="flex-1 h-1.5 rounded-full bg-white/[0.06] overflow-hidden"
+            role="progressbar"
+            aria-valuenow={completeness}
+            aria-valuemin={0}
+            aria-valuemax={100}
+          >
+            <div
+              className="h-full rounded-full bg-gradient-to-r from-accent to-emerald-400"
+              style={{ width: `${completeness}%` }}
+            />
+          </div>
+          <span className="text-[12px] font-medium text-muted tabular-nums">{completeness}%</span>
+        </div>
+      </DetailRow>
+    </div>
   );
 }
+
+function DetailRow({ label, children }: { label: string; children: React.ReactNode }) {
+  return (
+    <div className="px-5 py-4">
+      <p className="text-[10px] font-semibold text-faint uppercase tracking-[0.1em] mb-2">{label}</p>
+      {children}
+    </div>
+  );
+}
+
+function ChipList({ items, muted = false }: { items: string[]; muted?: boolean }) {
+  return (
+    <div className="flex flex-wrap gap-1.5">
+      {items.map((item) => (
+        <span
+          key={item}
+          className={`px-2 py-0.5 rounded-md text-[11px] border border-border bg-white/[0.04] ${
+            muted ? "text-subtle" : "text-muted"
+          }`}
+        >
+          {item}
+        </span>
+      ))}
+    </div>
+  );
+}
+
+/* ─── Section ─────────────────────────────────────────────────────── */
 
 function Section({
   title,
+  count,
   children,
 }: {
   title: string;
+  count?: number;
   children: React.ReactNode;
 }) {
   return (
-    <section className="mb-10">
-      <h2 className="text-[11px] font-semibold text-[#3f3f46] uppercase tracking-[0.1em] mb-4">
+    <section>
+      <h2 className="flex items-center gap-2 text-[11px] font-semibold text-subtle uppercase tracking-[0.12em] mb-4">
         {title}
+        {typeof count === "number" && (
+          <span className="text-faint font-medium tabular-nums normal-case tracking-normal">{count}</span>
+        )}
       </h2>
       {children}
     </section>
-  );
-}
-
-function DetailCard({
-  label,
-  children,
-}: {
-  label: string;
-  children: React.ReactNode;
-}) {
-  return (
-    <div className="p-4 bg-[#111111] border border-white/[0.06] rounded-xl">
-      <p className="text-[10px] text-[#3f3f46] uppercase tracking-[0.08em] font-medium mb-2.5">
-        {label}
-      </p>
-      {children}
-    </div>
   );
 }

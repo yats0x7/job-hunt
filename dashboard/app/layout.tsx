@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import { Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -14,10 +14,17 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Startup Discovery — YC Company Explorer",
+  title: {
+    default: "Startup Discovery — YC Company Explorer",
+    template: "%s — Startup Discovery",
+  },
   description:
     "Discover and explore Y Combinator startups with enriched founder data, hiring status, and real-time job board intelligence. Powered by automated data pipelines.",
   keywords: ["YC", "Y Combinator", "startups", "hiring", "jobs", "founders"],
+};
+
+export const viewport: Viewport = {
+  themeColor: "#09090b",
 };
 
 export default function RootLayout({
@@ -30,7 +37,7 @@ export default function RootLayout({
       lang="en"
       className={`${inter.variable} ${geistMono.variable} h-full antialiased dark`}
     >
-      <body className="min-h-full flex flex-col bg-[#0a0a0a] text-[#fafafa]">
+      <body className="min-h-full flex flex-col bg-background text-foreground">
         {children}
       </body>
     </html>

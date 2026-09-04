@@ -1,272 +1,220 @@
 "use client";
 
-import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import { Company } from "@/lib/types";
+import { useEffect, useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
+import type { CompanyFilters, FilterOption } from "@/lib/useCompanyFilters";
+import { plural } from "@/lib/format";
+import { CheckIcon, CloseIcon, FilterIcon, SearchIcon, StarIcon } from "./Icons";
 
 interface FilterSidebarProps {
-  companies: Company[];
-  onFilterChange: (filtered: Company[]) => void;
+  filters: CompanyFilters;
+  resultCount: number;
 }
 
-/* ─── SVG Icons ──────────────────────────────────────────────────── */
+export default function FilterSidebar({ filters, resultCount }: FilterSidebarProps) {
+  const [drawerOpen, setDrawerOpen] = useState(false);
+  const close = () => setDrawerOpen(false);
 
-function StarIcon() {
-  return (
-    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="flex-shrink-0">
-      <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-    </svg>
-  );
-}
-
-export default function FilterSidebar({
-  companies = [],
-  onFilterChange,
-}: FilterSidebarProps) {
-  const [selectedBatches, setSelectedBatches] = useState<Set<string>>(
-    new Set()
-  );
-  const [selectedIndustries, setSelectedIndustries] = useState<Set<string>>(
-    new Set()
-  );
-
-  const [topOnly, setTopOnly] = useState(false);
-  const [searchQuery, setSearchQuery] = useState("");
-  const [isOpen, setIsOpen] = useState(true);
-
-  const validCompanies = Array.isArray(companies) ? companies : [];
-
-  // Extract unique batches and industries
-  const batches = [
-    ...new Set(validCompanies.map((c) => c?.batch).filter(Boolean) as string[]),
-  ].sort((a, b) => {
-    const yearA = parseInt(a.match(/\d{4}/)?.[0] || "0");
-    const yearB = parseInt(b.match(/\d{4}/)?.[0] || "0");
-    return yearB - yearA;
-  });
-
-  const industries = [
-    ...new Set(validCompanies.flatMap((c) => c?.industries ?? []).filter(Boolean)),
-  ].sort();
-
-  const applyFilters = (
-    batchSet: Set<string>,
-    industrySet: Set<string>,
-    top: boolean,
-    query: string
-  ) => {
-    let filtered = [...validCompanies];
-
-    if (batchSet.size > 0) {
-      filtered = filtered.filter((c) => c?.batch && batchSet.has(c.batch));
-    }
-
-    if (industrySet.size > 0) {
-      filtered = filtered.filter((c) =>
-        (c?.industries ?? []).some((ind) => industrySet.has(ind))
-      );
-    }
-
-
-
-    if (top) {
-      filtered = filtered.filter((c) => Boolean(c?.is_top_company));
-    }
-
-    if (query.trim()) {
-      const q = query.toLowerCase();
-      filtered = filtered.filter(
-        (c) =>
-          c?.name?.toLowerCase().includes(q) ||
-          c?.description?.toLowerCase().includes(q) ||
-          c?.industry?.toLowerCase().includes(q) ||
-          c?.location?.toLowerCase().includes(q)
-      );
-    }
-
-    onFilterChange(filtered);
-  };
-
-  const toggleBatch = (batch: string) => {
-    const next = new Set(selectedBatches);
-    if (next.has(batch)) next.delete(batch);
-    else next.add(batch);
-    setSelectedBatches(next);
-    applyFilters(next, selectedIndustries, topOnly, searchQuery);
-  };
-
-  const toggleIndustry = (industry: string) => {
-    const next = new Set(selectedIndustries);
-    if (next.has(industry)) next.delete(industry);
-    else next.add(industry);
-    setSelectedIndustries(next);
-    applyFilters(selectedBatches, next, topOnly, searchQuery);
-  };
-
-
-
-  const toggleTop = () => {
-    const next = !topOnly;
-    setTopOnly(next);
-    applyFilters(selectedBatches, selectedIndustries, next, searchQuery);
-  };
-
-  const handleSearch = (query: string) => {
-    setSearchQuery(query);
-    applyFilters(selectedBatches, selectedIndustries, topOnly, query);
-  };
-
-  const clearAll = () => {
-    setSelectedBatches(new Set());
-    setSelectedIndustries(new Set());
-    setTopOnly(false);
-    setSearchQuery("");
-    onFilterChange(validCompanies);
-  };
-
-  const hasActiveFilters =
-    selectedBatches.size > 0 ||
-    selectedIndustries.size > 0 ||
-    topOnly ||
-    searchQuery.trim() !== "";
+  // Lock page scroll and support Escape while the mobile drawer is open.
+  useEffect(() => {
+    if (!drawerOpen) return;
+    const previous = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setDrawerOpen(false);
+    };
+    window.addEventListener("keydown", onKey);
+    return () => {
+      document.body.style.overflow = previous;
+      window.removeEventListener("keydown", onKey);
+    };
+  }, [drawerOpen]);
 
   return (
     <>
-      {/* Mobile toggle */}
-      <button
-        onClick={() => setIsOpen(!isOpen)}
-        className="lg:hidden fixed bottom-6 right-6 z-40 w-12 h-12 rounded-full bg-[#f97316] text-white shadow-lg shadow-orange-500/20 flex items-center justify-center hover:bg-[#ea580c] transition-all duration-200"
-        id="filter-toggle"
+      {/* Desktop sidebar */}
+      <aside
+        id="filter-sidebar"
+        className="hidden lg:block w-64 shrink-0 sticky top-6 self-start"
+        aria-label="Filters"
       >
-        <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-          <path strokeLinecap="round" strokeLinejoin="round" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z" />
-        </svg>
-        {hasActiveFilters && (
-          <span className="absolute -top-1 -right-1 w-4 h-4 bg-red-500 rounded-full text-[10px] flex items-center justify-center font-bold">
-            !
+        <div className="rounded-2xl bg-surface border border-border p-4">
+          <div className="flex items-center justify-between mb-4">
+            <span className="text-[11px] font-semibold uppercase tracking-[0.1em] text-subtle">
+              Filters
+            </span>
+            {filters.hasActiveFilters && (
+              <button
+                onClick={filters.clearAll}
+                className="text-[11px] font-medium text-accent/90 hover:text-accent"
+                id="clear-filters"
+              >
+                Clear all
+              </button>
+            )}
+          </div>
+          <FilterPanel filters={filters} />
+        </div>
+      </aside>
+
+      {/* Mobile trigger */}
+      <button
+        id="filter-toggle"
+        onClick={() => setDrawerOpen(true)}
+        aria-haspopup="dialog"
+        aria-expanded={drawerOpen}
+        className="lg:hidden fixed bottom-5 right-5 z-40 inline-flex items-center gap-2 h-11 pl-4 pr-4 rounded-full
+          bg-accent text-white text-[13px] font-medium
+          shadow-[0_10px_30px_-8px_rgba(249,115,22,0.7)] hover:bg-orange-500 active:scale-95"
+      >
+        <FilterIcon size={16} />
+        Filters
+        {filters.activeCount > 0 && (
+          <span className="min-w-5 h-5 px-1.5 rounded-full bg-white/25 text-[11px] font-semibold flex items-center justify-center tabular-nums">
+            {filters.activeCount}
           </span>
         )}
       </button>
 
+      {/* Mobile drawer */}
       <AnimatePresence>
-        {isOpen && (
-          <motion.aside
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: -20 }}
-            transition={{ duration: 0.2 }}
-            className="w-60 flex-shrink-0 sticky top-[120px] self-start hidden lg:block"
-            id="filter-sidebar"
-          >
-            <div className="bg-[#111111] border border-white/[0.06] rounded-xl p-4 space-y-5">
-              {/* Search */}
-              <div>
-                <div className="relative">
-                  <svg
-                    className="absolute left-3 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-[#3f3f46]"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    strokeWidth={1.5}
+        {drawerOpen && (
+          <>
+            <motion.div
+              key="backdrop"
+              className="lg:hidden fixed inset-0 z-50 bg-black/60 backdrop-blur-sm"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.2 }}
+              onClick={close}
+            />
+            <motion.div
+              key="sheet"
+              role="dialog"
+              aria-modal="true"
+              aria-label="Filters"
+              className="lg:hidden fixed inset-x-0 bottom-0 z-50 flex flex-col max-h-[88dvh]
+                rounded-t-3xl bg-surface border-t border-border shadow-2xl"
+              initial={{ y: "100%" }}
+              animate={{ y: 0 }}
+              exit={{ y: "100%" }}
+              transition={{ type: "spring", damping: 30, stiffness: 320 }}
+            >
+              <div className="relative flex items-center justify-between px-5 pt-5 pb-3 border-b border-border">
+                <span className="absolute left-1/2 top-2 -translate-x-1/2 w-10 h-1 rounded-full bg-white/15" />
+                <h2 className="text-sm font-semibold text-foreground">Filters</h2>
+                <div className="flex items-center gap-3">
+                  {filters.hasActiveFilters && (
+                    <button
+                      onClick={filters.clearAll}
+                      className="text-[12px] font-medium text-accent/90 hover:text-accent"
+                    >
+                      Clear all
+                    </button>
+                  )}
+                  <button
+                    onClick={close}
+                    aria-label="Close filters"
+                    className="w-8 h-8 rounded-full bg-white/[0.05] text-muted hover:text-foreground hover:bg-white/[0.1] flex items-center justify-center"
                   >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
-                    />
-                  </svg>
-                  <input
-                    type="text"
-                    placeholder="Search companies..."
-                    value={searchQuery}
-                    onChange={(e) => handleSearch(e.target.value)}
-                    className="w-full pl-9 pr-3 py-2 bg-[#0a0a0a] border border-white/[0.06] rounded-lg text-[13px] text-[#e4e4e7] placeholder-[#3f3f46] focus:outline-none focus:border-[#f97316]/40 focus:ring-1 focus:ring-[#f97316]/10 transition-all duration-200 font-light"
-                    id="search-input"
-                  />
+                    <CloseIcon size={15} />
+                  </button>
                 </div>
               </div>
 
-              {/* Toggles */}
-              <div className="space-y-2">
-                <ToggleFilter
-                  id="top-toggle"
-                  label="Top companies"
-                  icon={<StarIcon />}
-                  checked={topOnly}
-                  onChange={toggleTop}
-                />
+              <div className="flex-1 overflow-y-auto px-5 py-5">
+                <FilterPanel filters={filters} />
               </div>
 
-              {/* Batch multi-select */}
-              <FilterSection title="Batch" count={selectedBatches.size}>
-                <div className="space-y-0.5 max-h-40 overflow-y-auto pr-1">
-                  {batches.slice(0, 12).map((batch) => (
-                    <CheckboxFilter
-                      key={batch}
-                      label={batch}
-                      checked={selectedBatches.has(batch)}
-                      onChange={() => toggleBatch(batch)}
-                    />
-                  ))}
-                </div>
-              </FilterSection>
-
-              {/* Industry multi-select */}
-              <FilterSection title="Industry" count={selectedIndustries.size}>
-                <div className="space-y-0.5 max-h-40 overflow-y-auto pr-1">
-                  {industries.slice(0, 15).map((ind) => (
-                    <CheckboxFilter
-                      key={ind}
-                      label={ind}
-                      checked={selectedIndustries.has(ind)}
-                      onChange={() => toggleIndustry(ind)}
-                    />
-                  ))}
-                </div>
-              </FilterSection>
-
-              {/* Clear all */}
-              {hasActiveFilters && (
+              <div className="p-4 pb-[max(1rem,env(safe-area-inset-bottom))] border-t border-border">
                 <button
-                  onClick={clearAll}
-                  className="w-full py-2 text-[11px] font-medium text-[#f97316]/80 hover:text-[#f97316] transition-colors duration-200 tracking-wide"
-                  id="clear-filters"
+                  onClick={close}
+                  className="w-full h-11 rounded-xl bg-accent text-white text-sm font-medium hover:bg-orange-500 active:scale-[0.99] tabular-nums"
                 >
-                  Clear all filters
+                  Show {resultCount.toLocaleString()} {plural(resultCount, "company", "companies")}
                 </button>
-              )}
-            </div>
-          </motion.aside>
+              </div>
+            </motion.div>
+          </>
         )}
       </AnimatePresence>
     </>
   );
 }
 
-/* ─── Sub-components ─────────────────────────────────────────────── */
+/* ─── Panel (shared by sidebar and drawer) ───────────────────────── */
 
-function FilterSection({
-  title,
-  count,
-  children,
+function FilterPanel({ filters }: { filters: CompanyFilters }) {
+  return (
+    <div className="space-y-6">
+      <SearchInput value={filters.query} onChange={filters.setQuery} />
+
+      <ToggleFilter
+        id="top-toggle"
+        label="Top companies"
+        hint="YC’s highest-valued"
+        icon={<StarIcon size={14} className="text-amber-400" />}
+        checked={filters.topOnly}
+        onChange={filters.toggleTop}
+      />
+
+      {filters.batchOptions.length > 0 && (
+        <OptionGroup
+          title="Batch"
+          options={filters.batchOptions}
+          selected={filters.selectedBatches}
+          onToggle={filters.toggleBatch}
+        />
+      )}
+
+      {filters.industryOptions.length > 0 && (
+        <OptionGroup
+          title="Industry"
+          options={filters.industryOptions}
+          selected={filters.selectedIndustries}
+          onToggle={filters.toggleIndustry}
+        />
+      )}
+    </div>
+  );
+}
+
+function SearchInput({
+  value,
+  onChange,
 }: {
-  title: string;
-  count: number;
-  children: React.ReactNode;
+  value: string;
+  onChange: (value: string) => void;
 }) {
   return (
-    <div>
-      <div className="flex items-center justify-between mb-2">
-        <h4 className="text-[10px] font-semibold text-[#52525b] uppercase tracking-[0.08em]">
-          {title}
-        </h4>
-        {count > 0 && (
-          <span className="text-[10px] font-medium text-[#f97316]/80 bg-[#f97316]/8 px-1.5 py-0.5 rounded-full">
-            {count}
-          </span>
-        )}
-      </div>
-      {children}
+    <div className="relative">
+      <SearchIcon
+        size={15}
+        className="absolute left-3 top-1/2 -translate-y-1/2 text-faint pointer-events-none"
+      />
+      <input
+        id="search-input"
+        type="search"
+        placeholder="Search companies…"
+        value={value}
+        onChange={(e) => onChange(e.target.value)}
+        autoComplete="off"
+        className="w-full h-10 pl-9 pr-9 bg-background border border-border rounded-xl text-[13px] text-foreground
+          placeholder:text-faint
+          focus:outline-none focus:border-accent/50 focus:ring-2 focus:ring-accent/15
+          [&::-webkit-search-cancel-button]:hidden"
+      />
+      {value && (
+        <button
+          type="button"
+          onClick={() => onChange("")}
+          aria-label="Clear search"
+          className="absolute right-2 top-1/2 -translate-y-1/2 w-6 h-6 rounded-full text-faint hover:text-foreground hover:bg-white/[0.08] flex items-center justify-center"
+        >
+          <CloseIcon size={12} />
+        </button>
+      )}
     </div>
   );
 }
@@ -274,12 +222,14 @@ function FilterSection({
 function ToggleFilter({
   id,
   label,
+  hint,
   icon,
   checked,
   onChange,
 }: {
   id: string;
   label: string;
+  hint?: string;
   icon: React.ReactNode;
   checked: boolean;
   onChange: () => void;
@@ -287,64 +237,128 @@ function ToggleFilter({
   return (
     <button
       id={id}
+      type="button"
+      role="switch"
+      aria-checked={checked}
       onClick={onChange}
-      className={`w-full flex items-center justify-between px-3 py-2 rounded-lg text-[13px] transition-all duration-200 ${
+      className={`w-full flex items-center justify-between gap-3 px-3 py-2.5 rounded-xl border text-left ${
         checked
-          ? "bg-[#f97316]/8 border border-[#f97316]/20 text-[#e4e4e7]"
-          : "bg-[#0a0a0a] border border-white/[0.06] text-[#71717a] hover:border-white/[0.1]"
+          ? "bg-accent/10 border-accent/30"
+          : "bg-background border-border hover:border-border-strong"
       }`}
     >
-      <span className="flex items-center gap-2 font-light">
+      <span className="flex items-center gap-2.5 min-w-0">
         {icon}
-        {label}
+        <span className="flex flex-col min-w-0">
+          <span className={`text-[13px] leading-tight ${checked ? "text-foreground" : "text-muted"}`}>
+            {label}
+          </span>
+          {hint && <span className="text-[11px] text-faint leading-tight mt-0.5">{hint}</span>}
+        </span>
       </span>
-      <div
-        className={`w-8 h-4.5 rounded-full transition-colors duration-200 relative ${
-          checked ? "bg-[#f97316]" : "bg-[#27272a]"
+      <span
+        className={`relative w-9 h-5 shrink-0 rounded-full transition-colors duration-200 ${
+          checked ? "bg-accent" : "bg-white/[0.12]"
         }`}
       >
-        <div
-          className={`absolute top-0.5 w-3.5 h-3.5 rounded-full bg-white shadow-sm transition-transform duration-200 ${
-            checked ? "translate-x-4" : "translate-x-0.5"
+        <span
+          className={`absolute top-0.5 left-0.5 w-4 h-4 rounded-full bg-white shadow transition-transform duration-200 ${
+            checked ? "translate-x-4" : "translate-x-0"
           }`}
         />
-      </div>
+      </span>
     </button>
   );
 }
 
-function CheckboxFilter({
-  label,
+const INITIAL_VISIBLE = 8;
+
+function OptionGroup({
+  title,
+  options,
+  selected,
+  onToggle,
+}: {
+  title: string;
+  options: FilterOption[];
+  selected: Set<string>;
+  onToggle: (value: string) => void;
+}) {
+  const [expanded, setExpanded] = useState(false);
+  const canExpand = options.length > INITIAL_VISIBLE;
+  const visible = expanded
+    ? options
+    : options.filter((o, i) => i < INITIAL_VISIBLE || selected.has(o.value));
+
+  return (
+    <div>
+      <div className="flex items-center justify-between mb-2">
+        <h4 className="text-[11px] font-semibold text-subtle uppercase tracking-[0.1em]">
+          {title}
+        </h4>
+        {selected.size > 0 && (
+          <span className="text-[10px] font-semibold text-accent bg-accent/10 border border-accent/20 px-1.5 py-px rounded-full tabular-nums">
+            {selected.size}
+          </span>
+        )}
+      </div>
+
+      <div className={`space-y-px -mx-1 ${expanded ? "max-h-72 overflow-y-auto pr-1" : ""}`}>
+        {visible.map((option) => (
+          <CheckboxOption
+            key={option.value}
+            option={option}
+            checked={selected.has(option.value)}
+            onChange={() => onToggle(option.value)}
+          />
+        ))}
+      </div>
+
+      {canExpand && (
+        <button
+          type="button"
+          onClick={() => setExpanded((v) => !v)}
+          className="mt-1.5 px-1 text-[11px] font-medium text-subtle hover:text-accent"
+        >
+          {expanded ? "Show fewer" : `Show all ${options.length}`}
+        </button>
+      )}
+    </div>
+  );
+}
+
+function CheckboxOption({
+  option,
   checked,
   onChange,
 }: {
-  label: string;
+  option: FilterOption;
   checked: boolean;
   onChange: () => void;
 }) {
   return (
     <button
+      type="button"
+      role="checkbox"
+      aria-checked={checked}
       onClick={onChange}
-      className={`w-full flex items-center gap-2 px-2 py-1.5 rounded-md text-[12px] transition-all duration-200 ${
+      className={`w-full flex items-center gap-2.5 px-2 py-1.5 rounded-lg text-[12.5px] text-left ${
         checked
-          ? "text-[#e4e4e7] bg-[#f97316]/8"
-          : "text-[#71717a] hover:text-[#a1a1aa] hover:bg-white/[0.03]"
+          ? "text-foreground bg-accent/10"
+          : "text-muted hover:text-foreground hover:bg-white/[0.04]"
       }`}
     >
-      <div
-        className={`w-3.5 h-3.5 rounded border flex-shrink-0 flex items-center justify-center transition-all duration-200 ${
-          checked
-            ? "bg-[#f97316] border-[#f97316]"
-            : "border-white/[0.1] bg-transparent"
+      <span
+        className={`w-4 h-4 rounded-[5px] border shrink-0 flex items-center justify-center transition-colors duration-150 ${
+          checked ? "bg-accent border-accent" : "border-white/[0.16] bg-transparent"
         }`}
       >
-        {checked && (
-          <svg className="w-2.5 h-2.5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
-            <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-          </svg>
-        )}
-      </div>
-      <span className="truncate font-light">{label}</span>
+        {checked && <CheckIcon size={10} className="text-white" />}
+      </span>
+      <span className="truncate flex-1">{option.value}</span>
+      <span className={`text-[11px] tabular-nums ${checked ? "text-orange-300" : "text-faint"}`}>
+        {option.count}
+      </span>
     </button>
   );
 }

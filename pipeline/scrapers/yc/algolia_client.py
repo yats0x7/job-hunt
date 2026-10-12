@@ -146,6 +146,9 @@ class AlgoliaClient:
 
     def __init__(self):
         self._credentials: AlgoliaCredentials | None = None
+        # True when the last fetch_all_companies() call returned every hit
+        # the index reported for the query.
+        self.last_fetch_complete = False
 
     @retry(
         retry=retry_if_exception_type(RETRYABLE),
@@ -315,6 +318,7 @@ class AlgoliaClient:
             AlgoliaKeyRotatedError: If Algolia rejects a freshly read key (403).
         """
         filter_string = build_filter_string(filters)
+        self.last_fetch_complete = False
 
         async with httpx.AsyncClient() as client:
             hits, expected = await self._fetch_slice(
@@ -332,5 +336,6 @@ class AlgoliaClient:
                 f"Algolia: fetched {len(companies)} companies but the index "
                 f"reports {expected}"
             )
+        self.last_fetch_complete = len(companies) >= expected > 0
         logger.info(f"Algolia: fetched {len(companies)} of {expected} companies")
         return companies

@@ -20,6 +20,11 @@ class VCSource(ABC):
     name: str  # Human-readable, e.g. "Y Combinator"
     slug: str  # Used in registry, e.g. "yc"
 
+    # Set by list_companies_raw() when it is sure it returned every company
+    # the source lists. Only then may the pipeline drop stored rows that were
+    # missing from the fetch.
+    fetch_complete: bool = False
+
     @abstractmethod
     async def list_companies_raw(self) -> list[dict]:
         """

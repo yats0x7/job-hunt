@@ -36,7 +36,9 @@ class YCSource(VCSource):
 
     async def list_companies_raw(self) -> list[dict]:
         """Fetch all active companies from the YC Algolia index."""
-        return await self._algolia.fetch_all_companies()
+        hits = await self._algolia.fetch_all_companies()
+        self.fetch_complete = self._algolia.last_fetch_complete
+        return hits
 
     def parse_company(self, raw: dict) -> Company:
         """Normalize Algolia hit into canonical Company model."""

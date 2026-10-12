@@ -14,9 +14,9 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.11"
 
@@ -37,6 +37,9 @@ jobs:
           from pipeline.enrichment.photo_url import normalize_photo_url
           signed = "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/x.jpg?X-Amz-Expires=3600"
           assert normalize_photo_url(signed) == "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/x.jpg"
+          from pipeline.scrapers.yc.algolia_client import parse_algolia_opts
+          creds = parse_algolia_opts('window.AlgoliaOpts = {"app":"APP","key":"abc","valid_until":1};')
+          assert (creds.app_id, creds.api_key) == ("APP", "abc")
           print("pipeline checks OK")
           PY
 
@@ -47,9 +50,9 @@ jobs:
       run:
         working-directory: dashboard
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v5
         with:
           node-version: "20"
           cache: npm

@@ -11,7 +11,8 @@ Run order:
   7. FounderEnricher.enrich_batch() on ALL
   8. Calculate completeness
   9. Upsert to SQLite
-  10. Export to JSON
+  10. Drop stored rows the source no longer returns (full fetches only)
+  11. Export to JSON
 """
 
 import argparse
@@ -48,6 +49,7 @@ async def run_pipeline(
         "source": source_slug,
         "companies_fetched": 0,
         "companies_stored": 0,
+        "companies_removed": 0,
         "job_resolution_tiers": {
             "ats_api": 0,
             "html_heuristic": 0,
@@ -141,7 +143,18 @@ async def run_pipeline(
     
     stats["companies_stored"] = stored_count
 
-    # 11. Export to data/companies.json
+    # 11. Drop this source's rows that the run did not see: companies that
+    # left the source's list, or stopped hiring under --hiring-only. Skipped
+    # for partial fetches and --limit runs, which only cover part of the list,
+    # and for empty results, which would wipe the source.
+    if source.fetch_complete and limit is None and companies:
+        removed = db.delete_companies_not_in(source.name, {c.slug for c in companies})
+        stats["companies_removed"] = removed
+        logger.info(f"Removed {removed} stale {source.name} companies.")
+    else:
+        logger.info("Not a full run; keeping previously stored companies.")
+
+    # 12. Export to data/companies.json
     logger.info("Exporting to JSON...")
     export_path = Path(__file__).parent.parent.parent / "data" / "companies.json"
     export_to_json(db, str(export_path))

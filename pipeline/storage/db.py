@@ -273,6 +273,26 @@ class Database:
                 )
         return count
 
+    def delete_companies_not_in(self, source_vc: str, keep_slugs: set[str]) -> int:
+        """
+        Delete one source's rows whose slug is not in keep_slugs.
+
+        Rows from other sources are left alone. Returns the number deleted.
+        """
+        cursor = self._conn.execute(
+            "SELECT slug FROM companies WHERE source_vc = ?", (source_vc,)
+        )
+        stale = [
+            row["slug"] for row in cursor.fetchall()
+            if row["slug"] not in keep_slugs
+        ]
+        self._conn.executemany(
+            "DELETE FROM companies WHERE source_vc = ? AND slug = ?",
+            [(source_vc, slug) for slug in stale],
+        )
+        self._conn.commit()
+        return len(stale)
+
     def get_all_companies(self) -> list[Company]:
         """Retrieve all companies from the database."""
         cursor = self._conn.execute(

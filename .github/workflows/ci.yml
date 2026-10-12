@@ -42,6 +42,21 @@ jobs:
           assert build_filter_string({"isHiring": True, "batch": 'A "b"'}) == 'isHiring:true AND batch:"A \\"b\\""'
           creds = parse_algolia_opts('window.AlgoliaOpts = {"app":"APP","key":"abc","valid_until":1};')
           assert (creds.app_id, creds.api_key) == ("APP", "abc")
+          import json, tempfile
+          from pipeline.storage.db import Database
+          from pipeline.storage.export import export_to_json
+          from pipeline.storage.models import Company
+          with tempfile.TemporaryDirectory() as tmp:
+              db = Database(f"{tmp}/t.db")
+              db.connect()
+              db.upsert_company(Company(yc_id=1, name="Still Hiring", slug="still", is_hiring=True))
+              db.upsert_company(Company(yc_id=2, name="Stopped Hiring", slug="stopped", is_hiring=True))
+              db.upsert_company(Company(name="Other", slug="stopped", is_hiring=True, source_vc="Antler"))
+              assert db.delete_companies_not_in("Y Combinator", {"still"}) == 1
+              export_to_json(db, f"{tmp}/out.json")
+              db.close()
+              exported = json.load(open(f"{tmp}/out.json"))["companies"]
+              assert sorted((c["source_vc"], c["slug"]) for c in exported) == [("Antler", "stopped"), ("Y Combinator", "still")]
           print("pipeline checks OK")
           PY
 

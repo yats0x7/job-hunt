@@ -3,14 +3,14 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
-import { Company } from "@/lib/types";
+import { CompanySummary } from "@/lib/types";
 import { batchChipClasses } from "@/lib/format";
 import { FounderAvatarStack } from "./FounderChip";
 import JobBadge from "./JobBadge";
 import { ArrowRightIcon, PinIcon, StarIcon } from "./Icons";
 
 interface CompanyCardProps {
-  company: Company;
+  company: CompanySummary;
   index: number;
 }
 

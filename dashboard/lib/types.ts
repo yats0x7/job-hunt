@@ -47,6 +47,32 @@ export interface Company {
   data_completeness: number;
 }
 
+/**
+ * What the discovery list needs for one company. The list is sent to the
+ * browser in full, so it leaves out long descriptions, tags, regions and
+ * founder bios. Company pages read the full record at build time.
+ */
+export type CompanySummary = Pick<
+  Company,
+  | "name"
+  | "slug"
+  | "logo_url"
+  | "website"
+  | "location"
+  | "description"
+  | "industry"
+  | "industries"
+  | "batch"
+  | "is_hiring"
+  | "is_top_company"
+  | "stage"
+  | "team_size"
+  | "source_vc"
+  | "job_board"
+> & {
+  founders: Pick<Founder, "name" | "college" | "photo_url">[];
+};
+
 export interface TierBreakdown {
   ats_api: number;
   html_heuristic: number;

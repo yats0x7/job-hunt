@@ -1,7 +1,8 @@
 "use client";
 
+import { useEffect, useRef, useState } from "react";
 import { MotionConfig, motion } from "framer-motion";
-import { Company, DataMetadata } from "@/lib/types";
+import { CompanySummary, DataMetadata } from "@/lib/types";
 import { useCompanyFilters, type CompanyFilters } from "@/lib/useCompanyFilters";
 import { formatDate, plural } from "@/lib/format";
 import StatsBar from "@/components/StatsBar";
@@ -9,15 +10,28 @@ import FilterSidebar from "@/components/FilterSidebar";
 import CompanyCard from "@/components/CompanyCard";
 import { CloseIcon, RocketIcon, SearchIcon } from "@/components/Icons";
 
+/** Cards drawn per step. Divisible by 2 and 3 so every grid row is full. */
+const PAGE_SIZE = 60;
+
 export default function DashboardClient({
   companies,
   metadata,
 }: {
-  companies: Company[];
+  companies: CompanySummary[];
   metadata: DataMetadata;
 }) {
   const filters = useCompanyFilters(companies);
   const { filtered } = filters;
+
+  // Draw the list a page at a time. Start over whenever the filters change.
+  const [shown, setShown] = useState({ list: filtered, count: PAGE_SIZE });
+  if (shown.list !== filtered) {
+    setShown({ list: filtered, count: PAGE_SIZE });
+  }
+  const visible = filtered.slice(0, shown.count);
+  const remaining = filtered.length - visible.length;
+  const showMore = () =>
+    setShown((s) => ({ list: s.list, count: s.count + PAGE_SIZE }));
 
   return (
     <MotionConfig reducedMotion="user">
@@ -65,11 +79,23 @@ export default function DashboardClient({
               <ResultsHeader filters={filters} total={companies.length} />
 
               {filtered.length > 0 ? (
-                <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4">
-                  {filtered.map((company, i) => (
-                    <CompanyCard key={company.slug} company={company} index={i} />
-                  ))}
-                </div>
+                <>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4">
+                    {visible.map((company, i) => (
+                      <CompanyCard
+                        key={company.slug}
+                        company={company}
+                        index={i % PAGE_SIZE}
+                      />
+                    ))}
+                  </div>
+                  <ListFooter
+                    shown={visible.length}
+                    total={filtered.length}
+                    nextCount={Math.min(PAGE_SIZE, remaining)}
+                    onShowMore={showMore}
+                  />
+                </>
               ) : (
                 <EmptyState onReset={filters.clearAll} />
               )}
@@ -154,6 +180,57 @@ function ResultsHeader({ filters, total }: { filters: CompanyFilters; total: num
         </div>
       )}
     </motion.div>
+  );
+}
+
+/* ─── List footer: progress, and more cards on scroll or click ────── */
+
+function ListFooter({
+  shown,
+  total,
+  nextCount,
+  onShowMore,
+}: {
+  shown: number;
+  total: number;
+  nextCount: number;
+  onShowMore: () => void;
+}) {
+  const sentinel = useRef<HTMLDivElement>(null);
+  const done = nextCount <= 0;
+
+  // Load the next page shortly before the reader reaches the end. The button
+  // below does the same thing for keyboards and browsers without the observer.
+  useEffect(() => {
+    const node = sentinel.current;
+    if (done || !node || typeof IntersectionObserver === "undefined") return;
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries.some((entry) => entry.isIntersecting)) onShowMore();
+      },
+      { rootMargin: "800px 0px" }
+    );
+    observer.observe(node);
+    return () => observer.disconnect();
+  }, [done, shown, onShowMore]);
+
+  if (total <= PAGE_SIZE) return null;
+
+  return (
+    <div ref={sentinel} className="mt-8 flex flex-col items-center gap-3">
+      <p className="text-[12px] text-muted tabular-nums">
+        Showing {shown.toLocaleString()} of {total.toLocaleString()}
+      </p>
+      {!done && (
+        <button
+          type="button"
+          onClick={onShowMore}
+          className="h-9 px-4 rounded-full text-[12px] font-medium bg-white/[0.05] text-foreground border border-border hover:border-border-strong hover:bg-white/[0.08]"
+        >
+          Show {nextCount.toLocaleString()} more
+        </button>
+      )}
+    </div>
   );
 }
 

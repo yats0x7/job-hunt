@@ -37,7 +37,9 @@ jobs:
           from pipeline.enrichment.photo_url import normalize_photo_url
           signed = "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/x.jpg?X-Amz-Expires=3600"
           assert normalize_photo_url(signed) == "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/x.jpg"
-          from pipeline.scrapers.yc.algolia_client import parse_algolia_opts
+          from pipeline.scrapers.yc.algolia_client import build_filter_string, parse_algolia_opts
+          assert build_filter_string(None) == 'status:"Active"'
+          assert build_filter_string({"isHiring": True, "batch": 'A "b"'}) == 'isHiring:true AND batch:"A \\"b\\""'
           creds = parse_algolia_opts('window.AlgoliaOpts = {"app":"APP","key":"abc","valid_until":1};')
           assert (creds.app_id, creds.api_key) == ("APP", "abc")
           print("pipeline checks OK")

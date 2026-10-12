@@ -168,6 +168,18 @@ class Database:
         company.data_completeness = company.calculate_completeness()
         company.last_scraped = datetime.utcnow()
 
+        # A company that changed its slug still has the same id. Move the
+        # existing row to the new slug so the insert below updates it in place
+        # (keeping its cached founders) instead of failing on the primary key.
+        if company.yc_id is not None:
+            self._conn.execute(
+                """
+                UPDATE OR IGNORE companies SET slug = ?
+                WHERE yc_id = ? AND source_vc = ? AND slug != ?
+                """,
+                (company.slug, company.yc_id, company.source_vc, company.slug),
+            )
+
         self._conn.execute(
             """
             INSERT INTO companies (

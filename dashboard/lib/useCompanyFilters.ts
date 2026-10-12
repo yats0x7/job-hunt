@@ -1,7 +1,7 @@
 "use client";
 
 import { useCallback, useMemo, useState } from "react";
-import { Company } from "@/lib/types";
+import { CompanySummary } from "@/lib/types";
 
 export interface FilterOption {
   value: string;
@@ -15,7 +15,7 @@ export interface CompanyFilters {
   selectedIndustries: Set<string>;
   batchOptions: FilterOption[];
   industryOptions: FilterOption[];
-  filtered: Company[];
+  filtered: CompanySummary[];
   activeCount: number;
   hasActiveFilters: boolean;
   setQuery: (query: string) => void;
@@ -40,7 +40,7 @@ function batchYear(batch: string): number {
  * Owns every piece of filter state for the discovery page so the sidebar,
  * the mobile drawer and the results header can all read and update it.
  */
-export function useCompanyFilters(companies: Company[]): CompanyFilters {
+export function useCompanyFilters(companies: CompanySummary[]): CompanyFilters {
   const valid = useMemo(
     () => (Array.isArray(companies) ? companies : []),
     [companies]

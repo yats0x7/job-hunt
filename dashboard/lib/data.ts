@@ -1,6 +1,6 @@
 import fs from "fs";
 import path from "path";
-import { Company, DataMetadata, CompanyData } from "./types";
+import { Company, CompanySummary, DataMetadata, CompanyData } from "./types";
 
 /**
  * YC Bookface serves founder avatars as S3 presigned URLs that expire in ~1 hour.
@@ -108,6 +108,36 @@ export function normalizeJobBoardUrl(
   return trimmed;
 }
 
+/** Cut a company down to the fields the discovery list renders and filters on. */
+export function toCompanySummary(c: Company): CompanySummary {
+  return {
+    name: c.name,
+    slug: c.slug,
+    logo_url: c.logo_url ?? null,
+    website: c.website ?? null,
+    location: c.location ?? null,
+    description: c.description ?? null,
+    industry: c.industry ?? null,
+    industries: c.industries,
+    batch: c.batch ?? null,
+    is_hiring: c.is_hiring,
+    is_top_company: c.is_top_company,
+    stage: c.stage ?? null,
+    team_size: c.team_size ?? null,
+    source_vc: c.source_vc,
+    job_board: c.job_board ?? null,
+    founders: c.founders.map((f) => ({
+      name: f.name,
+      college: f.college ?? null,
+      photo_url: f.photo_url ?? null,
+    })),
+  };
+}
+
+// Every company page asks for the full dataset, twice. Parse the file once
+// per process and reuse it until the file on disk changes.
+let cached: { key: string; data: CompanyData } | null = null;
+
 export async function getCompanyData(): Promise<CompanyData> {
   const emptyMetadata: DataMetadata = {
     exported_at: new Date().toISOString(),
@@ -120,21 +150,23 @@ export async function getCompanyData(): Promise<CompanyData> {
   };
 
   try {
-    let fileContent = "";
-    
-    // Primary path: public/companies.json in current directory (dashboard)
-    const publicPath = path.join(process.cwd(), "public", "companies.json");
-    if (fs.existsSync(publicPath)) {
-      fileContent = fs.readFileSync(publicPath, "utf-8");
-    } else {
-      // Secondary path: data/companies.json relative to repository root
-      const rootDataPath = path.join(process.cwd(), "..", "data", "companies.json");
-      if (fs.existsSync(rootDataPath)) {
-        fileContent = fs.readFileSync(rootDataPath, "utf-8");
-      }
+    // Primary path: public/companies.json in current directory (dashboard).
+    // Secondary path: data/companies.json relative to repository root.
+    const dataPath = [
+      path.join(process.cwd(), "public", "companies.json"),
+      path.join(process.cwd(), "..", "data", "companies.json"),
+    ].find((candidate) => fs.existsSync(candidate));
+
+    if (!dataPath) {
+      return { metadata: emptyMetadata, companies: [] };
     }
 
-    if (!fileContent || !fileContent.trim()) {
+    const stat = fs.statSync(dataPath);
+    const cacheKey = `${dataPath}:${stat.mtimeMs}:${stat.size}`;
+    if (cached?.key === cacheKey) return cached.data;
+
+    const fileContent = fs.readFileSync(dataPath, "utf-8");
+    if (!fileContent.trim()) {
       return { metadata: emptyMetadata, companies: [] };
     }
 
@@ -233,7 +265,9 @@ export async function getCompanyData(): Promise<CompanyData> {
       },
     };
 
-    return { metadata: finalMetadata, companies };
+    const data = { metadata: finalMetadata, companies };
+    cached = { key: cacheKey, data };
+    return data;
   } catch (error) {
     console.error("Error reading or parsing companies.json during build:", error);
     return { metadata: emptyMetadata, companies: [] };

@@ -22,9 +22,9 @@ A **pipeline + dashboard** for job hunting among Y Combinator companies:
 
 | Metric | Value |
 |--------|-------|
-| Companies tracked | **~276** (hiring-only YC set in the dashboard) |
-| Algolia universe | **4000+** active YC companies scraped before hiring filter |
-| Hiring companies | **~276** (what the live site shows) |
+| Companies tracked | **~1,500** (hiring-only YC set in the dashboard) |
+| Algolia universe | **4,300+** active YC companies scraped before hiring filter |
+| Hiring companies | **~1,500** (what the live site shows) |
 | Data source | Y Combinator (Algolia + company pages) |
 | Refresh cadence | Weekly (Monday 09:00 UTC) or manual workflow dispatch |
 | Deployed site | [job-hunt-self.vercel.app](https://job-hunt-self.vercel.app/) |
@@ -35,7 +35,7 @@ A **pipeline + dashboard** for job hunting among Y Combinator companies:
 
 ## How It Works
 
-1. **Fetch** — paginate YC’s Algolia index for active companies.
+1. **Fetch** — paginate YC’s Algolia index for active companies, one batch at a time, because Algolia returns at most 1,000 results per query.
 2. **Resolve jobs** — 4-tier cascade for open-role count + **public** job board URL:
    | Tier | Method | Notes |
    |------|--------|--------|

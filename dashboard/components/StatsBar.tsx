@@ -1,13 +1,13 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Company, DataMetadata } from "@/lib/types";
+import { CompanySummary, DataMetadata } from "@/lib/types";
 import { plural } from "@/lib/format";
 import { BuildingIcon, LayersIcon, PulseIcon, ShieldCheckIcon } from "./Icons";
 
 interface StatsBarProps {
   metadata: DataMetadata;
-  companies: Company[];
+  companies: CompanySummary[];
 }
 
 const TIERS = [
